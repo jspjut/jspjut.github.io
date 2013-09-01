@@ -72,7 +72,7 @@ Systems (TCAD)*, December 2009.
 **Comparing Incoherent Ray Performance of TRaX vs. Manta**,
 *IEEE Symposium on Interactive Ray Tracing, 2008 (RT08)*, August 9-10, 2008.
 
-
+<!---
 ## HMC Clinic Projects
 
 At Harvey Mudd College I advised a couple [clinic
@@ -93,7 +93,7 @@ students, after are liaisons from the company.
 **Immersive Audio Game Development Kit**
 *Clinic Report for Texas Instruments*, Harvey Mudd College, 110 pages,
   May 2013.
-
+--->
 ## People
 
 I've been fortunate to work with a large number of talented
@@ -124,7 +124,6 @@ Solomon Boulos, Spencer Kellis,
 <!--- 2005 --->
 Frank Vahid, David Sheldon, Scott Sirowy, Roman Lysecky
 
-<!---
    [dk]: http://www.cs.utah.edu/~dkopta
    [ks]: http://www.cs.utah.edu/~kshkurko
    [jbs]: http://www3.hmc.edu/~jspjut
@@ -139,4 +138,3 @@ Frank Vahid, David Sheldon, Scott Sirowy, Roman Lysecky
    [nc]: http://www.cs.utah.edu/~nil
    [sb]: http://graphics.stanford.edu/~boulos/research.htm
    [sp]: http://www.cs.utah.edu/~sparker
---->
