@@ -101,29 +101,6 @@ people. The ones I've worked with on research are listed below. Email
 me if you think you should be on this list and I forgot.
 --->
 
-### Current Research Students
-
-<!--- 2014 --->
-Andrew Carter '13, Paula Ning '13, Max Korbel '13, Katherine Yang '15
-
-### Current and Recent (within 3 years) Collaborators
-<!--- 2013 --->
-Timo Aila, David Luebke, Mike Parker, Erik Brunvand,
-  Konstantin Shkurko, Danny Kopta, Al Davis, Seth Pugsley,
-<!--- 2012 --->
-Thiago Ize, Andrew Kensler, 
-<!--- 2011 --->
-Rajeev Balasubramonian, 
-<!--- 2010 --->
-David Nellans
-
-### Past Collaborators
-<!--- 2009 --->
-Niladrish Chatterjee, Pete Shirley, Steve Parker,
-<!--- 2008 --->
-Solomon Boulos, Spencer Kellis, 
-<!--- 2005 --->
-Frank Vahid, David Sheldon, Scott Sirowy, Roman Lysecky
 
    [dk]: http://www.cs.utah.edu/~dkopta
    [ks]: http://www.cs.utah.edu/~kshkurko
