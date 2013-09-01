@@ -54,6 +54,13 @@ Systems (TCAD)*, December 2009.
 **(Best paper award)**
 [paper](http://www.cs.utah.edu/~dkopta/papers/hwrt_sasp08.pdf)
 
+## People
+
+I've been fortunate to work with a large number of talented
+people. The ones I've worked with on research are listed below. Email
+me if you think you should be on this list and I forgot.
+
+
    [dk]: http://www.cs.utah.edu/~dkopta
    [ks]: http://www.cs.utah.edu/~kshkurko
    [jbs]: http://www3.hmc.edu/~jspjut
@@ -68,34 +75,4 @@ Systems (TCAD)*, December 2009.
    [nc]: http://www.cs.utah.edu/~nil
    [sb]: http://graphics.stanford.edu/~boulos/research.htm
    [sp]: http://www.cs.utah.edu/~sparker
-
-## People
-
-I've been fortunate to work with a large number of talented
-people. The ones I've worked with on research are listed below. Email
-me if you think you should be on this list and I forgot.
-
-### Current Research Students
-
-<!--- 2014 --->
-Andrew Carter '13, Paula Ning '13, Max Korbel '13, Katherine Yang '15
-
-### Current and Recent (within 3 years) Collaborators
-<!--- 2013 --->
-Timo Aila, David Luebke, Mike Parker, Erik Brunvand,
-  Konstantin Shkurko, Danny Kopta, Al Davis, Seth Pugsley,
-<!--- 2012 --->
-Thiago Ize, Andrew Kensler, 
-<!--- 2011 --->
-Rajeev Balasubramonian, 
-<!--- 2010 --->
-David Nellans
-
-### Past Collaborators
-<!--- 2009 --->
-Niladrish Chatterjee, Pete Shirley, Steve Parker,
-<!--- 2008 --->
-Solomon Boulos, Spencer Kellis, 
-<!--- 2005 --->
-Frank Vahid, David Sheldon, Scott Sirowy, Roman Lysecky
 
