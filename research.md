@@ -54,6 +54,45 @@ Systems (TCAD)*, December 2009.
 **(Best paper award)**
 [paper](http://www.cs.utah.edu/~dkopta/papers/hwrt_sasp08.pdf)
 
+## Tech Reports
+
+1. [Daniel Kopta][dk], [Andrew Kensler][aek], [Thiago Ize][ti],
+**[Josef Spjut][jbs]**, [Erik Brunvand][elb], [Al Davis][ald];
+**Fast, Effective BVH Updates for Dynamic Ray-Traced Scenes Using Tree
+  Rotations**
+*Tech Report, UUCS 11-002*, University of Utah, July 2011.
+[paper](http://www.cs.utah.edu/research/techreports/2011/pdf/UUCS-11-002.pdf)
+
+## Refereed Posters
+
+1. [Daniel Kopta][dk], **[Josef Spjut][jbs]**, [Erik Brunvand][elb];
+**Grid-Based Ray Tracing for a Parallel Computing Architecture**,
+*High Performance Graphics (HPG'09)*, New Orleans, August 1-3, 2009.
+1. [Daniel Kopta][dk], **[Josef Spjut][jbs]**, [Erik Brunvand][elb] and [Steven Parker][sp];
+**Comparing Incoherent Ray Performance of TRaX vs. Manta**,
+*IEEE Symposium on Interactive Ray Tracing, 2008 (RT08)*, August 9-10, 2008.
+
+## HMC Clinic Projects
+
+At Harvey Mudd College I advised a couple [clinic
+projects](http://newwww.hmc.edu/clinic/index.php) with junior and
+senior level students paid for by companies. The following is a list
+of those projects and the people involved. Those before my name are
+students, after are liaisons from the company.
+
+* Dylan Stow, Carl Pearson, Jeffrey Steele,
+  Shreyasha Paudel, Adam Parower, Gurchetan Singh, Dong-hyeon Park,
+  **Josef Spjut**, Warren Furguson;
+**Multiplicative Based Division**,
+*Clinic Report for Intel Corp*, Harvey Mudd College, 117 pages, May
+  2013.
+* Allison Card, Kacyn Fujii, Hannah
+  Kastein, Paula Ning, Matthew Tambara, Stephanie Fawaz, **Josef Spjut**,
+  Sourabh Ravindran, Nitish Murthy,
+**Immersive Audio Game Development Kit**
+*Clinic Report for Texas Instruments*, Harvey Mudd College, 110 pages,
+  May 2013.
+
 ## People
 
 I've been fortunate to work with a large number of talented
