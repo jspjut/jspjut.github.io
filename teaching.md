@@ -2,6 +2,7 @@
 layout: page
 title: Teaching
 tagline: Past and Present Courses
+group: navigation
 ---
 {% include JB/setup %}
 

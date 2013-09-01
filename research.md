@@ -2,6 +2,7 @@
 layout: page
 title: Research
 tagline: Publications and Interests
+group: navigation
 ---
 {% include JB/setup %}
 
@@ -125,7 +126,7 @@ Frank Vahid, David Sheldon, Scott Sirowy, Roman Lysecky
 
    [dk]: http://www.cs.utah.edu/~dkopta
    [ks]: http://www.cs.utah.edu/~kshkurko
-   [jbs]: http://jspjut.github.io
+   [jbs]: http://www3.hmc.edu/~jspjut
    [elb]: http://www.cs.utah.edu/~elb
    [ald]: http://www.cs.utah.edu/~ald
    [ti]: http://www.cs.utah.edu/~thiago
