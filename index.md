@@ -1,36 +1,37 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
+title: Josef Spjut
+tagline: Researcher and Professor of Computing
 ---
 {% include JB/setup %}
 
-Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
+I am a Visiting Professor in the department of Engineering at [Harvey
+Mudd College][HMC] and a consulting researcher for [NVIDIA][]. My [CV][CV].
 
-Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
+My research interests include Graphics, Architecture, Embedded
+Systems, and Real-Time Systems. It is my hope that my research will contribute towards getting real
+time ray tracing to replace rasterization as the primary method of
+hardware accelerated rendering.
+Use the tabs above to see what publications and projects I
+have been involved in.
+[My Google Scholar Page][GScholar].
+I have an [Erdos number of 4][Erdos] through Rajeev Balasubramanian.
 
-## Update Author Attributes
+   [GScholar]: http://scholar.google.com/citations?user=WzhSQzkAAAAJ
+   [Erdos]: http://academic.research.microsoft.com/VisualExplorer#3829195&1112639
 
-In `_config.yml` remember to specify your own data:
-    
-    title : My Blog =)
-    
-    author :
-      name : Name Lastname
-      email : blah@email.test
-      github : username
-      twitter : username
+I did my Ph.D. in the [School of Computing][SoC] at the [University of
+Utah][UofU] and received my B.S. in Computer Engineering from the
+[University of California, Riverside][UCR].
 
-The theme should reference these variables whenever needed.
-    
-## Sample Posts
+   [CV]: http://www.cs.utah.edu/~sjosef/CV.pdf
+   [HMC]: http://hmc.edu
+   [NVIDIA]: http://research.nvidia.com
+   [SoC]: http://www.cs.utah.edu
+   [UofU]: http://www.utah.edu
+   [UCR]: http://ucr.edu
 
-This blog contains sample posts which help stage pages and blog data.
-When you don't need the samples anymore just delete the `_posts/core-samples` folder.
-
-    $ rm -rf _posts/core-samples
-
-Here's a sample "posts list".
+## Blog Posts
 
 <ul class="posts">
   {% for post in site.posts %}
@@ -38,9 +39,7 @@ Here's a sample "posts list".
   {% endfor %}
 </ul>
 
-## To-Do
+## Interesting Links
 
-This theme is still unfinished. If you'd like to be added as a contributor, [please fork](http://github.com/plusjade/jekyll-bootstrap)!
-We need to clean up the themes, make theme usage guides with theme-specific markup examples.
-
-
+* [Android OpenGL Test App](http://www3.hmc.edu/~jspjut/OpenGLTest-debug.apk)
+* [Procedural Jigsaw Puzzles](http://n-e-r-v-o-u-s.com/projects/puzzles/)
