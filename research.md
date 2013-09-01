@@ -10,6 +10,7 @@ My Research interests include Ray Tracing, Computer Graphics, Computer
 Architecture, Parallel Computing, Real Time Systems, Application
 Specific Processing, and Human Computer Interaction.
 
+<!---
 ## Refereed Publications
 
 1. [Daniel Kopta][dk], [Konstantin Shkurko][ks], **[Josef Spjut][jbs]**,
@@ -54,7 +55,6 @@ Systems (TCAD)*, December 2009.
 **(Best paper award)**
 [paper](http://www.cs.utah.edu/~dkopta/papers/hwrt_sasp08.pdf)
 
-<!---
 ## Tech Reports
 
 1. [Daniel Kopta][dk], [Andrew Kensler][aek], [Thiago Ize][ti],
