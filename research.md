@@ -54,6 +54,21 @@ Systems (TCAD)*, December 2009.
 **(Best paper award)**
 [paper](http://www.cs.utah.edu/~dkopta/papers/hwrt_sasp08.pdf)
 
+   [dk]: http://www.cs.utah.edu/~dkopta
+   [ks]: http://www.cs.utah.edu/~kshkurko
+   [jbs]: http://www3.hmc.edu/~jspjut
+   [elb]: http://www.cs.utah.edu/~elb
+   [ald]: http://www.cs.utah.edu/~ald
+   [ti]: http://www.cs.utah.edu/~thiago
+   [aek]: http://www.cs.utah.edu/~aek
+   [dn]: http://david.nellans.org
+   [shp]: http://www.cs.utah.edu/~pugsley
+   [rb]: http://www.cs.utah.edu/~rajeev
+   [sk]: http://vis.caltech.edu/~skellis
+   [nc]: http://www.cs.utah.edu/~nil
+   [sb]: http://graphics.stanford.edu/~boulos/research.htm
+   [sp]: http://www.cs.utah.edu/~sparker
+
 ## People
 
 I've been fortunate to work with a large number of talented
@@ -84,17 +99,3 @@ Solomon Boulos, Spencer Kellis,
 <!--- 2005 --->
 Frank Vahid, David Sheldon, Scott Sirowy, Roman Lysecky
 
-   [dk]: http://www.cs.utah.edu/~dkopta
-   [ks]: http://www.cs.utah.edu/~kshkurko
-   [jbs]: http://www3.hmc.edu/~jspjut
-   [elb]: http://www.cs.utah.edu/~elb
-   [ald]: http://www.cs.utah.edu/~ald
-   [ti]: http://www.cs.utah.edu/~thiago
-   [aek]: http://www.cs.utah.edu/~aek
-   [dn]: http://david.nellans.org
-   [shp]: http://www.cs.utah.edu/~pugsley
-   [rb]: http://www.cs.utah.edu/~rajeev
-   [sk]: http://vis.caltech.edu/~skellis
-   [nc]: http://www.cs.utah.edu/~nil
-   [sb]: http://graphics.stanford.edu/~boulos/research.htm
-   [sp]: http://www.cs.utah.edu/~sparker
