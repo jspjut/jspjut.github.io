@@ -2,6 +2,7 @@
 layout: page
 title: Projects
 tagline: Other things I've done
+group: navigation
 ---
 {% include JB/setup %}
 
