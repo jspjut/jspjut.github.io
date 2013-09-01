@@ -124,6 +124,7 @@ Solomon Boulos, Spencer Kellis,
 <!--- 2005 --->
 Frank Vahid, David Sheldon, Scott Sirowy, Roman Lysecky
 
+<!---
    [dk]: http://www.cs.utah.edu/~dkopta
    [ks]: http://www.cs.utah.edu/~kshkurko
    [jbs]: http://www3.hmc.edu/~jspjut
@@ -138,3 +139,4 @@ Frank Vahid, David Sheldon, Scott Sirowy, Roman Lysecky
    [nc]: http://www.cs.utah.edu/~nil
    [sb]: http://graphics.stanford.edu/~boulos/research.htm
    [sp]: http://www.cs.utah.edu/~sparker
+--->
