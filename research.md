@@ -99,6 +99,7 @@ I've been fortunate to work with a large number of talented
 people. The ones I've worked with on research are listed below. Email
 me if you think you should be on this list and I forgot.
 
+<!-- test -->
 
    [dk]: http://www.cs.utah.edu/~dkopta
    [ks]: http://www.cs.utah.edu/~kshkurko
