@@ -54,6 +54,7 @@ Systems (TCAD)*, December 2009.
 **(Best paper award)**
 [paper](http://www.cs.utah.edu/~dkopta/papers/hwrt_sasp08.pdf)
 
+<!---
 ## Tech Reports
 
 1. [Daniel Kopta][dk], [Andrew Kensler][aek], [Thiago Ize][ti],
@@ -72,7 +73,6 @@ Systems (TCAD)*, December 2009.
 **Comparing Incoherent Ray Performance of TRaX vs. Manta**,
 *IEEE Symposium on Interactive Ray Tracing, 2008 (RT08)*, August 9-10, 2008.
 
-<!---
 ## HMC Clinic Projects
 
 At Harvey Mudd College I advised a couple [clinic
@@ -93,12 +93,13 @@ students, after are liaisons from the company.
 **Immersive Audio Game Development Kit**
 *Clinic Report for Texas Instruments*, Harvey Mudd College, 110 pages,
   May 2013.
---->
+
 ## People
 
 I've been fortunate to work with a large number of talented
 people. The ones I've worked with on research are listed below. Email
 me if you think you should be on this list and I forgot.
+--->
 
 ### Current Research Students
 
