@@ -5,8 +5,8 @@ tagline: Researcher and Professor of Computing
 ---
 {% include JB/setup %}
 
-I am a Visiting Professor in the department of Engineering at [Harvey
-Mudd College][HMC] and a consulting researcher for [NVIDIA][]. My [CV][CV].
+Visiting Professor in the department of Engineering at [Harvey
+Mudd College][HMC] and consulting researcher for [NVIDIA][]. My [CV][CV].
 
 My research interests include Graphics, Architecture, Embedded
 Systems, and Real-Time Systems. It is my hope that my research will contribute towards getting real
@@ -20,8 +20,8 @@ I have an [Erdos number of 4][Erdos] through Rajeev Balasubramanian.
    [GScholar]: http://scholar.google.com/citations?user=WzhSQzkAAAAJ
    [Erdos]: http://academic.research.microsoft.com/VisualExplorer#3829195&1112639
 
-I did my Ph.D. in the [School of Computing][SoC] at the [University of
-Utah][UofU] and received my B.S. in Computer Engineering from the
+Ph.D. from the [School of Computing][SoC] at the [University of
+Utah][UofU] and B.S. in Computer Engineering from the
 [University of California, Riverside][UCR].
 
    [CV]: http://www.cs.utah.edu/~sjosef/CV.pdf
