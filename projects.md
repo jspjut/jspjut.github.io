@@ -6,7 +6,7 @@ group: navigation
 ---
 {% include JB/setup %}
 
-My hobbies include gaming and studying game design. If I ever get
+My hobbies include music, composition, reading, writing, gaming, and game design. If I ever get
 enough time, I'll spend some of it trying out new ways to design games
 and explore interactive computing entertainment. Here are a couple
 things I've done.
