@@ -24,6 +24,7 @@ Utah][UofU] and B.S. in Computer Engineering from the
 * [My CV][CV]
 * [My Google Scholar Page][GScholar]
 * [My Erdos number of 4][Erdos]
+
 .
    [GScholar]: http://scholar.google.com/citations?user=WzhSQzkAAAAJ
    [Erdos]: http://academic.research.microsoft.com/VisualExplorer#3829195&1112639
