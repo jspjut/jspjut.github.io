@@ -31,13 +31,15 @@ Utah][UofU] and B.S. in Computer Engineering from the
    [UofU]: http://www.utah.edu
    [UCR]: http://ucr.edu
 
-## Blog Posts
+## Recent Blog Posts
 
 <ul class="posts">
-  {% for post in site.posts %}
+  {% for post in site.posts limit:8 %}
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
+
+[Blog Archive](archive.html)
 
 ## Interesting Links
 
