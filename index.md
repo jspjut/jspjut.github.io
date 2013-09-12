@@ -19,21 +19,17 @@ Ph.D. from the [School of Computing][SoC] at the [University of
 Utah][UofU] and B.S. in Computer Engineering from the
 [University of California, Riverside][UCR].
 
-## Links
-
-* [My CV][CV]
-* [My Google Scholar Page][GScholar]
-* [My Erdos number of 4][Erdos]
-
-.
-   [GScholar]: http://scholar.google.com/citations?user=WzhSQzkAAAAJ
-   [Erdos]: http://academic.research.microsoft.com/VisualExplorer#3829195&1112639
-   [CV]: http://www.cs.utah.edu/~sjosef/CV.pdf
    [HMC]: http://hmc.edu
    [NVIDIA]: http://research.nvidia.com
    [SoC]: http://www.cs.utah.edu
    [UofU]: http://www.utah.edu
    [UCR]: http://ucr.edu
+
+## Links
+
+* [My CV](http://www.cs.utah.edu/~sjosef/CV.pdf)
+* [My Google Scholar Page](http://scholar.google.com/citations?user=WzhSQzkAAAAJ)
+* [My Erdos number of 4](http://academic.research.microsoft.com/VisualExplorer#3829195&1112639)
 
 ## Recent [Blog](/blog/) Posts
 
