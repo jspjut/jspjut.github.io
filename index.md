@@ -6,7 +6,7 @@ tagline: Researcher and Professor of Computing
 {% include JB/setup %}
 
 Visiting Professor in the department of Engineering at [Harvey
-Mudd College][HMC] and consulting researcher for [NVIDIA][]. My [CV][CV].
+Mudd College][HMC] and consulting researcher for [NVIDIA][].
 
 My research interests include Graphics, Architecture, Embedded
 Systems, and Real-Time Systems. It is my hope that my research will contribute towards getting real
@@ -14,16 +14,19 @@ time ray tracing to replace rasterization as the primary method of
 hardware accelerated rendering.
 Use the tabs above to see what publications and projects I
 have been involved in.
-[My Google Scholar Page][GScholar].
-I have an [Erdos number of 4][Erdos] through Rajeev Balasubramanian.
-
-   [GScholar]: http://scholar.google.com/citations?user=WzhSQzkAAAAJ
-   [Erdos]: http://academic.research.microsoft.com/VisualExplorer#3829195&1112639
 
 Ph.D. from the [School of Computing][SoC] at the [University of
 Utah][UofU] and B.S. in Computer Engineering from the
 [University of California, Riverside][UCR].
 
+## Links
+
+*[My CV][CV]
+*[My Google Scholar Page][GScholar]
+*[My Erdos number of 4][Erdos]
+
+   [GScholar]: http://scholar.google.com/citations?user=WzhSQzkAAAAJ
+   [Erdos]: http://academic.research.microsoft.com/VisualExplorer#3829195&1112639
    [CV]: http://www.cs.utah.edu/~sjosef/CV.pdf
    [HMC]: http://hmc.edu
    [NVIDIA]: http://research.nvidia.com
@@ -38,8 +41,6 @@ Utah][UofU] and B.S. in Computer Engineering from the
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
-
-[Blog Archive](archive.html)
 
 ## Interesting Links
 
