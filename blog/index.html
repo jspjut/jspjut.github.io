@@ -1,0 +1,78 @@
+---
+layout: default
+title: Blog
+tagline: Thoughts and Experiences
+---
+{% include JB/setup %}
+
+<!-- This loops through the paginated posts -->
+{% for post in paginator.posts %}
+  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+  <p class="author">
+    <span class="date">{{ post.date }}</span>
+  </p>
+  <!-- post content -->
+  <div class="post-content-truncate">
+       {% if post.content contains "<!-- more -->" %}
+         {{ post.content | split:"<!-- more -->" | first % }}
+       {% else %}
+         {{ post.content | strip_html | truncatewords:100 }}
+       {% endif %}
+  </div>
+{% endfor %}
+
+<!-- Pagination links -->
+<div class="pagination pagination-centered pagination-large">
+  <ul>
+<!-- first page link -->
+{% if paginator.previous_page %}
+<li>
+  <a href="/blog/">&laquo;&laquo;</a>
+</li>
+{% else %}
+<li class="disabled">
+  <a href="#">&laquo;&laquo;</a>
+</li>
+{% endif %}
+
+<!-- previous page link -->
+{% if paginator.previous_page %}
+<li>
+  <a href="/blog/page{{paginator.previous_page}}">&laquo;</a>
+</li>
+{% else %}
+<li class="disabled">
+  <a href="#">&laquo;</a>
+</li>
+{% endif %}
+
+<!-- current page -->
+<li class="active">
+  <span class="page_number ">Page: {{paginator.page}} of
+	{{paginator.total_pages}}</span>
+</li>
+
+<!-- next page link -->
+{% if paginator.next_page %}
+<li>
+  <a href="/blog/page{{paginator.next_page}}">&raquo;</a>
+</li>
+{% else %}
+<li class="disabled">
+  <a href="#">&raquo;</a>
+</li>
+{% endif %}
+
+<!-- last page link -->
+{% if paginator.next_page %}
+<li>
+  <a href="/blog/page{{ paginator.total_pages }}">&raquo;&raquo;</a>
+</li>
+{% else %}
+<li class="disabled">
+  <a href="#">&raquo;&raquo;</a>
+</li>
+{% endif %}
+  </ul>
+</div>
+
