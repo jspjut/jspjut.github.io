@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Blog
 tagline: Thoughts and Experiences
 ---
@@ -9,7 +9,7 @@ tagline: Thoughts and Experiences
 {% for post in paginator.posts %}
   <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
   <p class="author">
-    <span class="date">{{ post.date }}</span>
+    <span class="date">{{ post.date | date: "%d %B %Y"}}</span>
   </p>
   <!-- post content -->
   <div class="post-content-truncate">
@@ -19,6 +19,8 @@ tagline: Thoughts and Experiences
          {{ post.content | strip_html | truncatewords:100 }}
        {% endif %}
   </div>
+  <div> <a href="{{ post.url }}">Read more...</a> </div>
+  <hr />
 {% endfor %}
 
 <!-- Pagination links -->
@@ -48,8 +50,8 @@ tagline: Thoughts and Experiences
 
 <!-- current page -->
 <li class="active">
-  <span class="page_number ">Page: {{paginator.page}} of
-	{{paginator.total_pages}}</span>
+  <a href="#" style="color:grey">Page: {{paginator.page}} of
+	{{paginator.total_pages}}</a>
 </li>
 
 <!-- next page link -->

@@ -31,7 +31,7 @@ Utah][UofU] and B.S. in Computer Engineering from the
    [UofU]: http://www.utah.edu
    [UCR]: http://ucr.edu
 
-## Recent Blog Posts
+## Recent [Blog](/blog/) Posts
 
 <ul class="posts">
   {% for post in site.posts limit:8 %}

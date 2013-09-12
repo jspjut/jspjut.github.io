@@ -14,6 +14,7 @@ pages, which allows a reasonably good citation syntax for adding links
 to my co-authors.
 As an example, the following is the syntax for one paper along with
 the citations to my co-authors:
+<!-- more -->
 
    [jekyllbootstrap]: http://jekyllbootstrap.com
    [jekyll]: http://jekyllrb.com
