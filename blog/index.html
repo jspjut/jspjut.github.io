@@ -38,7 +38,7 @@ tagline: Thoughts and Experiences
 <!-- previous page link -->
 {% if paginator.previous_page %}
 <li>
-  <a href="/blog/page{{paginator.previous_page}}">&laquo;</a>
+  <a href="{{paginator.previous_page_path}}">&laquo;</a>
 </li>
 {% else %}
 <li class="disabled">
@@ -55,7 +55,7 @@ tagline: Thoughts and Experiences
 <!-- next page link -->
 {% if paginator.next_page %}
 <li>
-  <a href="/blog/page{{paginator.next_page}}">&raquo;</a>
+  <a href="{{paginator.next_page_path}}">&raquo;</a>
 </li>
 {% else %}
 <li class="disabled">
