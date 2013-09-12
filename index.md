@@ -25,6 +25,8 @@ Utah][UofU] and B.S. in Computer Engineering from the
 * [My Google Scholar Page][GScholar]
 * [My Erdos number of 4][Erdos]
 
+## Recent [Blog](/blog/) Posts
+
    [GScholar]: http://scholar.google.com/citations?user=WzhSQzkAAAAJ
    [Erdos]: http://academic.research.microsoft.com/VisualExplorer#3829195&1112639
    [CV]: http://www.cs.utah.edu/~sjosef/CV.pdf
@@ -33,8 +35,6 @@ Utah][UofU] and B.S. in Computer Engineering from the
    [SoC]: http://www.cs.utah.edu
    [UofU]: http://www.utah.edu
    [UCR]: http://ucr.edu
-
-## Recent [Blog](/blog/) Posts
 
 <ul class="posts">
   {% for post in site.posts limit:8 %}
