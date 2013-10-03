@@ -60,7 +60,7 @@ endmodule
 
 This module synthesized into the following RTL circuit diagram:
 
-* Picture goes here
+![Failed FSM]({{ site.url }}/blog/images/2013/10/BEH.png)
 
 The next implementation I displayed uses a traditional FSM description
 in SystemVerilog:
@@ -89,6 +89,14 @@ endmodule
 
 This module syntheizes into a much nicer looking FSM as shown:
 
-* FSM picture here
+![Good FSM]({{ site.url }}/blog/images/2013/10/FSM.png)
+
+The first synthesis results sorta resemble an FSM, but are prone to
+bugs and inconsistent behavior, and led many students to spend much
+more time than they should have on the first lab assignment.
+The second synthesis results show exactly an FSM, and if we translated
+our English to an FSM diagram before starting to code, then we will
+easily be able to match our FSM to the results.
+The second technique is very much preferred for any hardware design.
 
 
