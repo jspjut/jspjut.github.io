@@ -25,12 +25,36 @@ SystemVerilog implementation.
 This includes 2 pieces of combinational logic, and a single sequential
 state register.
 
+For this finite state machine, I describe what happens to a student when he or she sleeps.
+First, let's say that a student can be happy, very happy, unhappy, or very unhappy.
+Whenever that student sleeps, happiness increases until it saturates at very happy.
+If a student doesn't sleep, then happiness decreases until it is empty at very unhappy.
+When the student is happy, or very happy, the student will smile.
+The following examples are implementations of this description.
+
 The first thing I showed in my demo is the following behavioral
 description based on the English description:
 
 {% highlight systemverilog %}
-module student_beh( input logic clk, sleep, output logic smile );
+module student_beh (input logic sleep, clk, output logic smile);
 
+logic [1:0] happiness;
+
+initial happiness = 2'b10;
+
+always_ff @(posedge clk) begin
+	if (sleep) begin
+		if (happiness < 2'b11) // if sleeping not fully happy, increase happiness
+			happiness = happiness + 2'b01;
+	end
+	else begin
+		if (happiness > 2'b00) // if not sleeping decrease happiness
+			happiness = happiness - 2'b01;
+	end
+	
+	if (happiness >= 2'b10) begin smile <= 1; end // when happy, smile
+	else  begin smile <= 0; end
+end
 endmodule
 {% endhighlight %}
 
@@ -42,9 +66,23 @@ The next implementation I displayed uses a traditional FSM description
 in SystemVerilog:
 
 {% highlight systemverilog %}
-module student_fsm( input logic clk, sleep, output logic smile );
+module student_fsm (input logic sleep, clk, output logic smile);
+typedef enum logic [1:0] {VU, UU, HH, VH} statetype;
+statetype state, nextstate;
 
-always_ff @(posedge clk) begin
+always_ff @(posedge clk) // State register
+	state <= nextstate;
+
+always_comb // next state logic
+	case(state)
+		VU:	nextstate = sleep ? UU : VU;
+		UU:	nextstate = sleep ? HH : VU;
+		HH:	nextstate = sleep ? VH : UU;
+		VH:	nextstate = sleep ? VH : HH;
+		default: nextstate = HH;
+	endcase
+	
+assign smile = (state == HH | state == VH); // output logic
 
 endmodule
 {% endhighlight %}
