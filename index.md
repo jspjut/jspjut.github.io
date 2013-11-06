@@ -27,6 +27,7 @@ Utah][UofU] and B.S. in Computer Engineering from the
 
 ## Links
 
+* [Request a Letter of Recommendation]({{ BASE_PATH }}/recs.html)
 * [My CV](http://www.cs.utah.edu/~sjosef/CV.pdf)
 * [My Google Scholar Page](http://scholar.google.com/citations?user=WzhSQzkAAAAJ)
 * [My Erdos number of 4](http://academic.research.microsoft.com/VisualExplorer#3829195&1112639)
