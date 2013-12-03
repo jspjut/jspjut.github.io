@@ -25,7 +25,7 @@ Specific Processing, and Human Computer Interaction.
 *ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games (I3D 2012)*, Irvine, March 2012.
 [paper](http://www.cs.utah.edu/~thiago/papers/rotations.pdf)
 1. **[Josef Spjut][jbs]**, [Daniel Kopta][dk], [Erik Brunvand][elb] and [Al Davis][ald];
-**A MobileAccelerator Architecture for Ray Tracing**,
+**A Mobile Accelerator Architecture for Ray Tracing**,
 *3rd Workshop on SoCs, Heterogeneous Architectures and Workloads (SHAW-3)*, New Orleans, February 2012. 
 [paper](http://www.cs.utah.edu/~sjosef/papers/spjut-shaw12-final.pdf)
 [slides](http://www.cs.utah.edu/~sjosef/slides/spjut-shaw12-slides.pdf)
