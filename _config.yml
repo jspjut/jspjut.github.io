@@ -8,6 +8,9 @@ pygments: true
 paginate: 8
 paginate_path: "blog/page:num"
 
+# redcarpet allows ``` to work better
+markdown: redcarpet
+
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
