@@ -14,6 +14,8 @@ It includes an implementation of some of the `print` syntax
 functionality of python 2 implemented in C++.
 Here's the code (copied here, but I'm not the original author):
 
+<!-- more -->
+
 ```c++
 #include <iostream>
 
