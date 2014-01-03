@@ -24,7 +24,7 @@ the following snippet of code that should have worked.
 \author[1]{Erik Brunvand}
 \author[1]{Al Davis}
 \affil[1]{School of Computing, University of Utah, Salt Lake City, UT, USA\\
-       \{dkopta, kshkurko, sjosef, elb, ald\}@cs.utah.edu}
+       \{redacted\}@email.edu}
 \affil[2]{NVIDIA Research}
 \affil[3]{Department of Engineering, Harvey Mudd College, Claremont, CA, USA}
 \renewcommand\Authands{ and }
@@ -41,12 +41,11 @@ following set of lines:
 ```latex
 \author[D. Kopta et al.]
        {D. Kopta$^1$, K. Shkurko$^1$, J. Spjut$^{1,2,3}$,
-       E. Brunvand$^1$, and A. Davis$^1$%\thanks{email: \{dkopta,
-       kshkurko, sjosef, elb, ald\}@cs.utah.edu}$^{1}$
+       E. Brunvand$^1$, and A. Davis$^1$
        \\
        $^1$School of Computing, University of Utah, Salt Lake City,
        UT, USA\\
-       \{dkopta, kshkurko, sjosef, elb, ald\}@cs.utah.edu\\ 
+       \{redacted\}@email.edu\\ 
        $^2$NVIDIA Research\\
        $^3$Department of Engineering, Harvey Mudd College, Claremont,
        CA, USA\\
