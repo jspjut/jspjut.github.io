@@ -7,17 +7,15 @@ group: navigation
 {% include JB/setup %}
 
 ## Current Classes
-F2013
-* [e155: Microprocessor Design](http://www3.hmc.edu/~jspjut/class/e155)
-* [e85: Digital Design and Computer Architecture](http://www3.hmc.edu/~jspjut/class/e85)
+S2014
 
-## Future Classes
-S2013
-* [e190p?: Advanced Embedded Systems](https://sites.google.com/a/g.hmc.edu/e190ps2013/)
-* [e85: Digital Design and Computer Architecture]()
+* [e85: Digital Design and Computer Architecture](http://www3.hmc.edu/~jspjut/class/e85)
+* [e190p: Advanced Embedded Systems](http://www3.hmc.edu/~jspjut/class/e190p)
 
 ## Past Classes
 ### At Harvey Mudd
+* F2013: [e85: Digital Design and Computer Architecture](http://www3.hmc.edu/~jspjut/class/f2013/e85)
+* F2013: [e155: Microprocessor Design](http://www3.hmc.edu/~jspjut/class/f2013/e155)
 * S2013: [e85: Digital Design and Computer Architecture](http://www3.hmc.edu/~jspjut/class/s2013/e85)
 * S2013: [e190o: Parallel Computer Architecture](http://www3.hmc.edu/~jspjut/class/s2013/e190o)
 * F2012: [e85: Digital Design and Computer Architecture](https://sites.google.com/a/g.hmc.edu/e85f2012)
