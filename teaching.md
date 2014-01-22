@@ -9,7 +9,7 @@ group: navigation
 ## Current Classes
 S2014
 
-* [e85: Digital Design and Computer Architecture](http://www3.hmc.edu/~jspjut/class/e85)
+* [e85: Digital Design and Computer Architecture](http://fourier.eng.hmc.edu/e85)
 * [e190p: Advanced Embedded Systems](http://www3.hmc.edu/~jspjut/class/e190p)
 
 ## Past Classes
