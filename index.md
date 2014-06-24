@@ -9,11 +9,7 @@ Visiting Professor in the department of Engineering at [Harvey
 Mudd College][HMC] and consulting researcher for [NVIDIA][].
 
 My research interests include Graphics, Architecture, Embedded
-Systems, and Real-Time Systems. It is my hope that my research will contribute towards getting real
-time ray tracing to replace rasterization as the primary method of
-hardware accelerated rendering.
-Use the tabs above to see what publications and projects I
-have been involved in.
+Systems, and Real-Time Systems. 
 
 Ph.D. from the [School of Computing][SoC] at the [University of
 Utah][UofU] and B.S. in Computer Engineering from the
@@ -25,23 +21,61 @@ Utah][UofU] and B.S. in Computer Engineering from the
    [UofU]: http://www.utah.edu
    [UCR]: http://ucr.edu
 
-## Links
+My CV is available in [pdf](files/cv.pdf) and [html](cv.html).
 
-* [Request a Letter of Recommendation]({{ BASE_PATH }}/recs.html)
-* My CV in [pdf](files/cv.pdf) and [html](cv.html)
-* [My Google Scholar Page](http://scholar.google.com/citations?user=WzhSQzkAAAAJ)
-* [My Erdos number of 4](http://academic.research.microsoft.com/VisualExplorer#3829195&1112639)
+## Teaching
 
-## Recent [Blog](/blog/) Posts
+Current: 
 
-<ul class="posts">
-  {% for post in site.posts limit:8 %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
+* [e85: Digital Design and Computer Architecture]()
+* [e155: Microprocessor Design]()
 
-## Interesting Links
+[Other classes](teaching.html) I've taught.
 
-* [Android OpenGL Test App](http://www3.hmc.edu/~jspjut/OpenGLTest-debug.apk)
-* [Procedural Jigsaw Puzzles](http://n-e-r-v-o-u-s.com/projects/puzzles/)
-* [site pages](pages.html)
+For students: [How to Request a Letter of Recommendation]({{ BASE_PATH }}/recs.html)
+
+## Research
+
+I advise the [Charlab](http://charlab.github.io/) research group.
+
+Selected Recent Publications:
+
+1. [Daniel Kopta][dk], [Konstantin Shkurko][ks], **[Josef Spjut][jbs]**,
+[Erik Brunvand][elb], and [Al Davis][ald];
+**An Energy and Bandwidth Efficient Ray Tracing Architecture**,
+*High-Performance Graphics (HPG 2013)*, Anaheim, July 10-21, 2013.
+[paper](http://www.cs.utah.edu/~dkopta/papers/hwrt_hpg13.pdf)
+1. [Daniel Kopta][dk], [Thiago Ize][ti], **[Josef Spjut][jbs]**, [Erik
+  Brunvand][elb], [Al Davis][ald] and [Andrew Kensler][aek];
+**Fast, Effective BVH Updates for Animated Scenes**,
+*ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games (I3D 2012)*, Irvine, March 2012.
+[paper](http://www.cs.utah.edu/~thiago/papers/rotations.pdf)
+1. **[Josef Spjut][jbs]**, [Daniel Kopta][dk], [Erik Brunvand][elb] and [Al Davis][ald];
+**A Mobile Accelerator Architecture for Ray Tracing**,
+*3rd Workshop on SoCs, Heterogeneous Architectures and Workloads (SHAW-3)*, New Orleans, February 2012. 
+[paper](http://www.cs.utah.edu/~sjosef/papers/spjut-shaw12-final.pdf)
+[slides](http://www.cs.utah.edu/~sjosef/slides/spjut-shaw12-slides.pdf)
+1. [Daniel Kopta][dk], **[Josef Spjut][jbs]**, [Al Davis][ald] and [Erik Brunvand][elb];
+**Efficient MIMD Architectures for High-Performance Ray Tracing**,
+*IEEE International Conference on Computer Design (ICCD 2010)*, Amsterdam, October 2010.
+[paper](http://www.cs.utah.edu/~dkopta/papers/hwrt_iccd10.pdf)
+1. [Seth Pugsley][shp], **[Josef Spjut][jbs]**, [David Nellans][dn] and [Rajeev Balasubramonian][rb];
+**SWEL: Hardware Cache Coherence Protocols to Map Shared Data onto Shared Caches**,
+*19th International Conference on Parallel Architectures and Compilation Techniques (PACT-19)*, Vienna, September 2010.
+
+   [dk]: http://www.cs.utah.edu/~dkopta
+   [ks]: http://www.cs.utah.edu/~kshkurko
+   [jbs]: http://www3.hmc.edu/~jspjut
+   [elb]: http://www.cs.utah.edu/~elb
+   [ald]: http://www.cs.utah.edu/~ald
+   [ti]: http://www.cs.utah.edu/~thiago
+   [aek]: http://www.cs.utah.edu/~aek
+   [dn]: http://david.nellans.org
+   [shp]: http://www.cs.utah.edu/~pugsley
+   [rb]: http://www.cs.utah.edu/~rajeev
+   [sk]: http://vis.caltech.edu/~skellis
+   [nc]: http://www.cs.utah.edu/~nil
+   [sb]: http://graphics.stanford.edu/~boulos/research.htm
+   [sp]: http://www.cs.utah.edu/~sparker
+
+[Full publication list](research.html).

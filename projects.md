@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Projects
+title: Games
 tagline: Other things I've done
 group: navigation
 ---

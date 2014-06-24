@@ -10,8 +10,6 @@ My Research interests include Ray Tracing, Computer Graphics, Computer
 Architecture, Parallel Computing, Real Time Systems, Application
 Specific Processing, and Human Computer Interaction.
 
-[Charlab](http://charlab.github.io/)
-
 ## Refereed Publications
 
 1. [Daniel Kopta][dk], [Konstantin Shkurko][ks], **[Josef Spjut][jbs]**,
@@ -82,6 +80,12 @@ senior level students paid for by companies. The following is a list
 of those projects and the people involved. Those before my name are
 students, after are liaisons from the company.
 
+* Antoine Billig, Chanel Chang, Austin Chen, Obosa Obazuaye, Jeffrey
+  Steele, Sean Velazquez, **Josef Spjut**, Pradeep Batra, Adrian
+  Torres, Julia Cline;
+**USB 3.0 to Multi-Protocol Interface Adapter**,
+*Clinic Report for Rambus Incorporate*, Harvey Mudd College, 183
+  pages, May 2014.
 * Dylan Stow, Carl Pearson, Jeffrey Steele,
   Shreyasha Paudel, Adam Parower, Gurchetan Singh, Dong-hyeon Park,
   **Josef Spjut**, Warren Furguson;
@@ -99,25 +103,24 @@ students, after are liaisons from the company.
 
 I've been fortunate to work with a large number of talented
 people. The ones I've worked with on research are listed below. Email
-me if you think you should be on this list and I forgot.
-
+me if you think you should be on this list and you aren't.
 
 ### Current Research Students
-{{ year = 2014 }}Eric Storm '15, Dong-hyeon Park '14, Fabiha Hannan
-'16, Akhil Bagaria '16, Paul Jolly '16, Sami Mourad '14
+{{ year = 2015 }}Eric Storm '15, Fabiha Hannan '16, Paul Jolly '16
 
 ### Past Research Students
+{{ year = 2014 }}Dong-hyeon Park '14, Sami Mourad '14, Akhil Bagaria '16
 {{ year = 2013 }}Andrew Carter '13, Paula Ning '13, Max Korbel '13, Katherine Yang '15
 
 ### Current and Recent (within 3 years) Collaborators
-{{ year = 2014 }}Timo Aila, David Luebke, Erik Brunvand,
-  Konstantin Shkurko, Danny Kopta, Al Davis, 
+{{ year = 2014 }}Timo Aila, Tero Karras, Samuli Laine, David Luebke,
+ Erik Brunvand, Konstantin Shkurko, Danny Kopta, Al Davis, 
 {{ year = 2013 }}Mike Parker, Seth Pugsley,
 {{ year = 2012 }}Thiago Ize, Andrew Kensler, 
-{{ year = 2011 }}Rajeev Balasubramonian, 
-{{ year = 2010 }}David Nellans
+{{ year = 2011 }}Rajeev Balasubramonian
 
 ### Past Collaborators
+{{ year = 2010 }}David Nellans,
 {{ year = 2009 }}Niladrish Chatterjee, Pete Shirley, Steve Parker,
 {{ year = 2008 }}Solomon Boulos, Spencer Kellis, 
 {{ year = 2005 }}Frank Vahid, David Sheldon, Scott Sirowy, Roman Lysecky
