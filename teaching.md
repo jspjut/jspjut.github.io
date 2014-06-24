@@ -8,6 +8,7 @@ group: navigation
 
 ## Current Classes
 F2014
+
 * [e85: Digital Design and Computer Architecture]()
 * [e155: Microprocessor Design]()
 
