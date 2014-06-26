@@ -42,6 +42,10 @@ Selected Recent Publications:
 
 1. [Daniel Kopta][dk], [Konstantin Shkurko][ks], **[Josef Spjut][jbs]**,
 [Erik Brunvand][elb], and [Al Davis][ald];
+**Memory Considerations for Low Energy Ray Tracing**,
+*Computer Graphics Forum*, To Appear, 2014.
+1. [Daniel Kopta][dk], [Konstantin Shkurko][ks], **[Josef Spjut][jbs]**,
+[Erik Brunvand][elb], and [Al Davis][ald];
 **An Energy and Bandwidth Efficient Ray Tracing Architecture**,
 *High-Performance Graphics (HPG 2013)*, Anaheim, July 10-21, 2013.
 [paper](http://www.cs.utah.edu/~dkopta/papers/hwrt_hpg13.pdf)
@@ -59,9 +63,6 @@ Selected Recent Publications:
 **Efficient MIMD Architectures for High-Performance Ray Tracing**,
 *IEEE International Conference on Computer Design (ICCD 2010)*, Amsterdam, October 2010.
 [paper](http://www.cs.utah.edu/~dkopta/papers/hwrt_iccd10.pdf)
-1. [Seth Pugsley][shp], **[Josef Spjut][jbs]**, [David Nellans][dn] and [Rajeev Balasubramonian][rb];
-**SWEL: Hardware Cache Coherence Protocols to Map Shared Data onto Shared Caches**,
-*19th International Conference on Parallel Architectures and Compilation Techniques (PACT-19)*, Vienna, September 2010.
 
    [dk]: http://www.cs.utah.edu/~dkopta
    [ks]: http://www.cs.utah.edu/~kshkurko
