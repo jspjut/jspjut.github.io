@@ -13,6 +13,7 @@ group: navigation
 
 ## Other links
 
+* [Web-based diff tool](diff.html)
 * [Android OpenGL Test App](http://www3.hmc.edu/~jspjut/OpenGLTest-debug.apk)
 * [Procedural Jigsaw Puzzles](http://n-e-r-v-o-u-s.com/projects/puzzles/)
 * [site pages](pages.html)
