@@ -10,7 +10,7 @@ group: navigation
 F2014
 
 * [e85: Digital Design and Computer Architecture](http://www3.hmc.edu/~jspjut/class/f2014/e85)
-* [e155: Microprocessor Design](http://www3.hmc.edu/~jspjut/class/f2014/e155)
+* [e155: Microprocessor Design](http://www3.hmc.edu/~jspjut/class/f2014/e155) - Taught with [Matthew Spencer][ms]
 
 ## Past Classes
 ### At Harvey Mudd
@@ -37,7 +37,7 @@ F2014
    [ps]: http://www.cs.utah.edu/~shirley
    [paulstout]: http://faculty.utah.edu/u0300671-PAUL_L_STOUT/teaching/index.hml
    [jc]: http://researcher.watson.ibm.com/researcher/view.php?person=us-retrac
-
+   [ms]: http://www.eecs.berkeley.edu/~mespence/
 
 
 
