@@ -9,19 +9,19 @@ group: navigation
 ## Current Classes
 F2014
 
-* [e85: Digital Design and Computer Architecture]()
-* [e155: Microprocessor Design]()
+* [e85: Digital Design and Computer Architecture](http://www3.hmc.edu/~jspjut/class/f2014/e85)
+* [e155: Microprocessor Design](http://www3.hmc.edu/~jspjut/class/f2014/e155)
 
 ## Past Classes
 ### At Harvey Mudd
-* S2014: [e85: Digital Design and Computer Architecture](http://fourier.eng.hmc.edu/e85)
-* S2014: [e190p: Advanced Embedded Systems](http://www3.hmc.edu/~jspjut/class/e190p)
+* S2014: [e85: Digital Design and Computer Architecture](http://www3.hmc.edu/~jspjut/class/s2014/e85) - Taught with Ruye Wang
+* S2014: [e190p: Advanced Embedded Systems](http://www3.hmc.edu/~jspjut/class/s2014/e190p)
 * F2013: [e85: Digital Design and Computer Architecture](http://www3.hmc.edu/~jspjut/class/f2013/e85)
 * F2013: [e155: Microprocessor Design](http://www3.hmc.edu/~jspjut/class/f2013/e155)
-* S2013: [e85: Digital Design and Computer Architecture](http://www3.hmc.edu/~jspjut/class/s2013/e85)
+* S2013: [e85: Digital Design and Computer Architecture](http://www3.hmc.edu/~jspjut/class/s2013/e85) - Taught with Ruye Wang
 * S2013: [e190o: Parallel Computer Architecture](http://www3.hmc.edu/~jspjut/class/s2013/e190o)
-* F2012: [e85: Digital Design and Computer Architecture](https://sites.google.com/a/g.hmc.edu/e85f2012)
-* F2012: [e155: Microprocessor Design](https://sites.google.com/a/g.hmc.edu/e155f2012)
+* F2012: [e85: Digital Design and Computer Architecture](https://sites.google.com/a/g.hmc.edu/e85f2012) - Taught with Karl Wang
+* F2012: [e155: Microprocessor Design](https://sites.google.com/a/g.hmc.edu/e155f2012) - Taught with Karl Wang
 
 ### At Utah
 * F2011: [CS6965: Parallel Hardware Ray Tracing](http://www.eng.utah.edu/~cs6965/) - Taught with [Erik Brunvand][elb] and [Danny Kopta][dk]
