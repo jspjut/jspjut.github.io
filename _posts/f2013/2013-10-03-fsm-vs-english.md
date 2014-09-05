@@ -9,7 +9,7 @@ tags: [lecture, class, verilog]
 {% include JB/setup %}
 
 Yesterday, I managed to put together the in-class demo 
-[I discussed previously]({% post_url 2013-10-01-interactive-lecture %}).
+[I discussed previously]({% post_url f2013/2013-10-01-interactive-lecture %}).
 In this post I'd like to give a brief explanation of what I showed and
 how it demonstrates the proper use of SystemVerilog to describe a
 finite state machine (FSM).
