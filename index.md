@@ -27,8 +27,8 @@ My CV is available in [pdf](files/cv.pdf) and [html](cv.html).
 
 Current: 
 
-* [e85: Digital Design and Computer Architecture](http://www3.hmc.edu/~jspjut/class/f2014/e85)
-* [e155: Microprocessor Design](http://www3.hmc.edu/~jspjut/class/f2014/e155)
+* [e85: Digital Design and Computer Architecture](http://pages.hmc.edu/jspjut/class/f2014/e85)
+* [e155: Microprocessor Design](http://pages.hmc.edu/jspjut/class/f2014/e155)
 
 [Other classes](teaching.html) I've taught.
 
