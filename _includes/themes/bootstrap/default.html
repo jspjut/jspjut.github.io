@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+     <title>
+      {% if page.title %}
+        {{ page.title }} - 
+      {% endif %}
+      {{ site.title }}
+    </title>
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <meta name="author" content="{{ site.author.name }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="{{ ASSET_PATH }}/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/resources/bootstrap/css/pygments.css" rel="stylesheet">
+  
+    <!--[if lt IE 9]>
+      <script src="{{ ASSET_PATH }}/resources/respond/Respond.min.js"></script>
+    <![endif]-->
+
+    <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+    <!-- fav and touch icons -->
+  <!-- Update these with your own images -->
+  <link rel="shortcut icon" type="image/ico" href="{{ site.baseurl }}images/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144"
+	href="{{ site.baseurl }}images/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114"
+	href="{{ site.baseurl }}images/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72"
+	href="{{ site.baseurl }}images/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed"
+	href="{{ site.baseurl }}images/apple-touch-icon-57-precomposed.png"/>
+  <link rel="apple-touch-icon"
+	href="{{ site.baseurl }}images/apple-touch-icon.png"/>
+  <!-- -->
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+            {% assign pages_list = site.pages %}
+            {% assign group = 'navigation' %}
+            {% include JB/pages_list %}
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      {{ content }}
+      <hr>
+      <footer>
+        <p>
+          &copy; 2013-{{ site.time | date: '%Y' }} {{ site.author.name }}
+          <span class="pull-right text-muted">
+            powered by
+            <a href="http://dbtek.github.io/jekyll-bootstrap-3" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll-Bootstrap-3</a>
+            and <a href="http://getbootstrap.com" target="_blank">Twitter Bootstrap 3.0.3</a>
+          </span>
+        </p>
+      </footer>
+    </div> <!-- /container -->
+
+    {% include JB/analytics %}
+    <script src="{{ ASSET_PATH }}/resources/jquery/jquery.min.js"></script>
+    <script src="{{ ASSET_PATH }}/resources/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- youtube responsive switch -->
+    <script src="{{ ASSET_PATH }}/js/fluidvids.js"> </script>
+    <!-- end youtube responsive -->
+
+    <!-- twitter stuff -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    <!-- end twitter stuff -->
+
+  </body>
+</html>

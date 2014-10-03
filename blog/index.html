@@ -25,7 +25,7 @@ tagline: Thoughts and Experiences
 
 <!-- Pagination links -->
 <div class="pagination pagination-centered pagination-large">
-  <ul>
+  <ul class="pagination">
 <!-- first page link -->
 {% if paginator.previous_page %}
 <li>
@@ -50,7 +50,7 @@ tagline: Thoughts and Experiences
 
 <!-- current page -->
 <li class="active">
-  <a href="#" style="color:grey">Page: {{paginator.page}} of
+  <a href="#">Page: {{paginator.page}} of
 	{{paginator.total_pages}}</a>
 </li>
 
