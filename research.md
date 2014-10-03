@@ -61,6 +61,8 @@ Systems (TCAD)*, December 2009.
 
 ## Tech Reports
 
+1. Two tech reports in progress with co-authors at Harvey Mudd
+College.
 1. [Daniel Kopta][dk], [Andrew Kensler][aek], [Thiago Ize][ti],
 **[Josef Spjut][jbs]**, [Erik Brunvand][elb], [Al Davis][ald];
 **Fast, Effective BVH Updates for Dynamic Ray-Traced Scenes Using Tree
@@ -79,12 +81,19 @@ Systems (TCAD)*, December 2009.
 
 ## HMC Clinic Projects
 
-At Harvey Mudd College I advised a couple [clinic
+At Harvey Mudd College I advised a few [clinic
 projects](http://newwww.hmc.edu/clinic/index.php) with junior and
-senior level students paid for by companies. The following is a list
-of those projects and the people involved. Those before my name are
-students, after are liaisons from the company.
+senior level students paid for by companies. 
+The following is a list of those projects and the people involved. 
+Those before my name are students, after are liaisons from the
+company.
 
+* Fabiha Hannan, Guillaume Legrain, Maggie Rabasca, Zachary Vickland,
+Tiancheng Yang, **Josef Spjut**, Philip Cheung, John McNeil.
+*Clinic for Dart Neuroscience*, 2014-2015.
+* Olivier Cheng, Stephen Ibanez, Amy Ngai, Joshua Sanz, Avi Thaker,
+**Josef Spjut**, Alon Regev;
+*Clinic for Ixia*, 2014-2015.
 * Antoine Billig, Chanel Chang, Austin Chen, Obosa Obazuaye, Jeffrey
   Steele, Sean Velazquez, **Josef Spjut**, Pradeep Batra, Adrian
   Torres, Julia Cline;
@@ -117,8 +126,8 @@ me if you think you should be on this list and you aren't.
  Andrew Fishberg '16, Da Eun Shim '16
 
 ### Past Research Students
-{{ year = 2015 }}Fabiha Hannan '16, Paul Jolly '16
-{{ year = 2014 }}Dong-hyeon Park '14, Sami Mourad '14, Akhil Bagaria '16
+{{ year = 2014 }}Fabiha Hannan '16, Paul Jolly '16,
+{{ year = 2014 }}Dong-hyeon Park '14, Sami Mourad '14, Akhil Bagaria '16,
 {{ year = 2013 }}Andrew Carter '13, Paula Ning '13, Max Korbel '13, Katherine Yang '15
 
 ### Current and Recent (within 3 years) Collaborators
@@ -126,9 +135,9 @@ me if you think you should be on this list and you aren't.
  Erik Brunvand, Konstantin Shkurko, Danny Kopta, Al Davis, 
 {{ year = 2013 }}Mike Parker, Seth Pugsley,
 {{ year = 2012 }}Thiago Ize, Andrew Kensler, 
-{{ year = 2011 }}Rajeev Balasubramonian
 
 ### Past Collaborators
+{{ year = 2011 }}Rajeev Balasubramonian
 {{ year = 2010 }}David Nellans,
 {{ year = 2009 }}Niladrish Chatterjee, Pete Shirley, Steve Parker,
 {{ year = 2008 }}Solomon Boulos, Spencer Kellis, 
