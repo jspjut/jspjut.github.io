@@ -14,17 +14,20 @@ and a rough idea of when the deadline(s) will be.
 
 If I have agreed to write a recommendation for you, and the
 application requires snail mail, please give me a folder containing 
+
 * all necessary forms, and
 * addressed HMC Math Dept envelopes (see Jocelyn Olds-McSpadden)
 without stamps.
 
 Additionally please send me an electronic copy of the following:
+
 * an unofficial copy of your transcript
 * a copy of your personal statement (if applicable)
 
 Furthermore, at least two weeks before the first letter is due, e-mail
 me your answers to the following questions
 (the more details the better):
+
 1. What is your name, year, and major?
 1. For what are you applying (e.g., scholarship, graduate school, summer
 research experience)? List the programs to which you are applying,
