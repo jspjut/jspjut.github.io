@@ -22,6 +22,7 @@ Systems, and Real-Time Systems.
    [UCR]: http://ucr.edu
 
 My CV is available in [pdf](files/cv.pdf) and [html](cv.html).
+[linkedin](https://www.linkedin.com/in/josefspjut).
 
 ## Teaching
 
