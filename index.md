@@ -11,9 +11,9 @@ Mudd College][HMC] and consulting researcher for [NVIDIA][].
 My research interests include Graphics, Architecture, Embedded
 Systems, and Real-Time Systems. 
 
-Ph.D. from the [School of Computing][SoC] at the [University of
-Utah][UofU] and B.S. in Computer Engineering from the
-[University of California, Riverside][UCR].
+{{ Ph.D. from the [School of Computing][SoC] at the [University of }}
+{{ Utah][UofU] and B.S. in Computer Engineering from the }}
+{{ [University of California, Riverside][UCR]. }}
 
    [HMC]: http://hmc.edu
    [NVIDIA]: http://research.nvidia.com
