@@ -15,7 +15,8 @@ Specific Processing, and Human Computer Interaction.
 1. [Daniel Kopta][dk], [Konstantin Shkurko][ks], **[Josef Spjut][jbs]**,
 [Erik Brunvand][elb], and [Al Davis][ald];
 **Memory Considerations for Low Energy Ray Tracing**,
-*Computer Graphics Forum*, To Appear, 2014.
+*Computer Graphics Forum*, August 7, 2014.
+[paper](http://onlinelibrary.wiley.com/doi/10.1111/cgf.12458/abstract?systemMessage=Wiley+Online+Library+will+be+disrupted+9th+Aug+from+10-2+BST+for+essential+maintenance.+Pay+Per+View+will+be+unavailable+from+10-6+BST.)
 1. [Daniel Kopta][dk], [Konstantin Shkurko][ks], **[Josef Spjut][jbs]**,
 [Erik Brunvand][elb], and [Al Davis][ald];
 **An Energy and Bandwidth Efficient Ray Tracing Architecture**,
@@ -110,9 +111,13 @@ people. The ones I've worked with on research are listed below. Email
 me if you think you should be on this list and you aren't.
 
 ### Current Research Students
-{{ year = 2015 }}Eric Storm '15, Fabiha Hannan '16, Paul Jolly '16
+{{ year = 2015 }}Eric Storm '15, Ivan Wong '15, 
+{{ year = 2015 }}Skyler Williams '16, Ramy Elminyawi '16, 
+ Amy Ngai '16, Richard Piersall '16, Kirklann Lau '16, 
+ Andrew Fishberg '16, Da Eun Shim '16
 
 ### Past Research Students
+{{ year = 2015 }}Fabiha Hannan '16, Paul Jolly '16
 {{ year = 2014 }}Dong-hyeon Park '14, Sami Mourad '14, Akhil Bagaria '16
 {{ year = 2013 }}Andrew Carter '13, Paula Ning '13, Max Korbel '13, Katherine Yang '15
 
