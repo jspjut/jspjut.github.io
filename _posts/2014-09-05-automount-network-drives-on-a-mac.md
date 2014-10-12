@@ -3,7 +3,7 @@ layout: post
 title: "Automount network drives on a Mac"
 description: ""
 category: osx
-tags: [file sharing,osx,automation]
+tags: [file sharing, osx, automation]
 ---
 {% include JB/setup %}
 
