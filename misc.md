@@ -20,6 +20,12 @@ group: navigation
 * [Procedural Jigsaw Puzzles](http://n-e-r-v-o-u-s.com/projects/puzzles/)
 * [site pages](pages.html)
 
+## My NCAA College Football Rankings
+
+I decided I didn't like the rankings made by the tournament committee
+or the voters in the polls so I made [my own rankings](ncaaf.html)
+driven by a simple python script. 
+
 ## Recent [Blog](/blog/) Posts
 
 <ul class="posts">
