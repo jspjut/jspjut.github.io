@@ -13,6 +13,7 @@ group: navigation
 
 ## Other links
 
+* [Indie Game Share](http://itch.io/)
 * [Web-based equation tool](http://www.sciweavers.org/free-online-latex-equation-editor)
 * [Web-based FSM tool](http://madebyevan.com/fsm/)
 * [Web-based diff tool](diff.html)
