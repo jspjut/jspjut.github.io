@@ -19,6 +19,9 @@ the project](https://sites.google.com/site/72hourgame), [download the
 game](https://sites.google.com/site/72hourgame/download), or even
 [play it using a web
 plugin](https://sites.google.com/site/72hourgame/download/current-build).
+
+Note: The following links haven't been fixed since CIS broke my old web space...
+
 There is also a mostly working [Chrome version](http://www3.hmc.edu/~jspjut/WFR72_Chrome) to try. You
   probably want to right click and choose full screen to be able to
   use right click for abilities in the game.
