@@ -2,7 +2,7 @@
 layout: page
 title: Research
 tagline: Publications and Interests
-group: navigation
+group: 
 ---
 {% include JB/setup %}
 
