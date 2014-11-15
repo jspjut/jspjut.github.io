@@ -20,6 +20,10 @@ group: navigation
 * [Android OpenGL Test App](http://www3.hmc.edu/~jspjut/OpenGLTest-debug.apk) - broken link...
 * [Procedural Jigsaw Puzzles](http://n-e-r-v-o-u-s.com/projects/puzzles/)
 * [site pages](pages.html)
+* VLC stuff
+  * [VLC command lines](https://www.videolan.org/doc/streaming-howto/en/ch04.html)
+  * [VLC GUI stuff](http://www.videolan.org/doc/streaming-howto/en/ch02.html)
+  * [webcam testing](https://help.ubuntu.com/community/Webcam)
 
 ## My NCAA College Football Rankings
 
