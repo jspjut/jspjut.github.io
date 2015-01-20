@@ -16,12 +16,12 @@ S2015
 ### At Harvey Mudd
 * F2014: [e85: Digital Design and Computer Architecture](http://pages.hmc.edu/jspjut/class/f2014/e85)
 * F2014: [e155: Microprocessor Design](http://pages.hmc.edu/jspjut/class/f2014/e155) - Taught with [Matthew Spencer][ms]
-* S2014: [e85: Digital Design and Computer Architecture](http://www3.hmc.edu/~jspjut/class/s2014/e85) - Taught with Ruye Wang
-* S2014: [e190p: Advanced Embedded Systems](http://www3.hmc.edu/~jspjut/class/s2014/e190p)
-* F2013: [e85: Digital Design and Computer Architecture](http://www3.hmc.edu/~jspjut/class/f2013/e85)
-* F2013: [e155: Microprocessor Design](http://www3.hmc.edu/~jspjut/class/f2013/e155)
-* S2013: [e85: Digital Design and Computer Architecture](http://www3.hmc.edu/~jspjut/class/s2013/e85) - Taught with Ruye Wang
-* S2013: [e190o: Parallel Computer Architecture](http://www3.hmc.edu/~jspjut/class/s2013/e190o)
+* S2014: [e85: Digital Design and Computer Architecture](http://pages.hmc.edu/jspjut/class/s2014/e85) - Taught with Ruye Wang
+* S2014: [e190p: Advanced Embedded Systems](http://pages.hmc.edu/jspjut/class/s2014/e190p)
+* F2013: [e85: Digital Design and Computer Architecture](http://pages.hmc.edu/jspjut/class/f2013/e85)
+* F2013: [e155: Microprocessor Design](http://pages.hmc.edu/jspjut/class/f2013/e155)
+* S2013: [e85: Digital Design and Computer Architecture](http://pages.hmc.edu/jspjut/class/s2013/e85) - Taught with Ruye Wang
+* S2013: [e190o: Parallel Computer Architecture](http://pages.hmc.edu/jspjut/class/s2013/e190o)
 * F2012: [e85: Digital Design and Computer Architecture](https://sites.google.com/a/g.hmc.edu/e85f2012) - Taught with Karl Wang
 * F2012: [e155: Microprocessor Design](https://sites.google.com/a/g.hmc.edu/e155f2012) - Taught with Karl Wang
 
