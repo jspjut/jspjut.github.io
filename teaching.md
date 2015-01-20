@@ -7,13 +7,15 @@ group: navigation
 {% include JB/setup %}
 
 ## Current Classes
-F2014
+S2015
 
-* [e85: Digital Design and Computer Architecture](http://pages.hmc.edu/jspjut/class/f2014/e85)
-* [e155: Microprocessor Design](http://pages.hmc.edu/jspjut/class/f2014/e155) - Taught with [Matthew Spencer][ms]
+* [e85: Digital Design and Computer Architecture](http://pages.hmc.edu/jspjut/class/s2015/e85) - Taught with [Matthew Spencer][ms]
+* [e190u: Video Game Console Design](http://pages.hmc.edu/jspjut/class/s2015/e190u) 
 
 ## Past Classes
 ### At Harvey Mudd
+* F2014: [e85: Digital Design and Computer Architecture](http://pages.hmc.edu/jspjut/class/f2014/e85)
+* F2014: [e155: Microprocessor Design](http://pages.hmc.edu/jspjut/class/f2014/e155) - Taught with [Matthew Spencer][ms]
 * S2014: [e85: Digital Design and Computer Architecture](http://www3.hmc.edu/~jspjut/class/s2014/e85) - Taught with Ruye Wang
 * S2014: [e190p: Advanced Embedded Systems](http://www3.hmc.edu/~jspjut/class/s2014/e190p)
 * F2013: [e85: Digital Design and Computer Architecture](http://www3.hmc.edu/~jspjut/class/f2013/e85)
