@@ -39,7 +39,7 @@ S2015
    [ps]: http://www.cs.utah.edu/~shirley
    [paulstout]: http://faculty.utah.edu/u0300671-PAUL_L_STOUT/teaching/index.hml
    [jc]: http://researcher.watson.ibm.com/researcher/view.php?person=us-retrac
-   [ms]: http://www.eecs.berkeley.edu/~mespence/
+   [ms]: http://pages.hmc.edu/mspencer/
 
 
 
