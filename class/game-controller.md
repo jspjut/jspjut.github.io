@@ -28,5 +28,39 @@ and microcontrollers for the uninitiated and allows more advanced
 students the chance to tune the hardware and software to customize the
 user experience.
 
+#Prerequisites
+
+This course is intended for people with little to no experience with
+programming or electronic circuits.
+If you have some C programming experience or understand resistor
+circuits you will more quickly be able to complete the tasks in the
+course.
+
+#Materials
+
+You will need the following materials to complete the construction of
+your own game controller.
+
+* Arduino Micro (or any arduino capable of USB keyboard+mouse control)
+* A computer with the Arduino software development environment installed
+* Mini breadboards
+* 2 Joystick Potentiometers with breakout boards
+* 8 Push-buttons
+* 1-2 Switches
+* Wires
+* Soldering Material (only if you don't have appropriate wires)
+* Something to mount these on (this could be wood, metal, tooled plastic, or even 3d printed!)
+
+For best results, you should have your mount moulded or tooled to be
+ergonomic and comfortable to hold in your hand.
+
+#Steps
+
+1. Mount everything, don't conceal the electrical connections
+2. Connect wires to your arduino on the breadboard
+3. Program a sketch to read in the joystick and switch state
+4. Use current device state to send USB mouse and keyboard commands
+5. ???
+6. Profit!
 
 ... More to come ...
