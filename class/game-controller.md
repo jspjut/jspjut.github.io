@@ -10,6 +10,10 @@ scratch capable of providing input to a variety of PC games. The
 course includes instruction on resistors, switches and using Arduino
 to behave as a USB keyboard and mouse.
 
+This is based on labs [1](http://pages.hmc.edu/jspjut/class/s2015/e190u/lab/lab1.html) and 
+[2](http://pages.hmc.edu/jspjut/class/s2015/e190u/lab/lab2.html) 
+from E190U offered in Spring 2015 at [Harvey Mudd College](http://www.hmc.edu).
+
 #Overview
 
 This course introduces some concepts of basic resistor circuits and
