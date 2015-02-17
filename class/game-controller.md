@@ -63,4 +63,17 @@ ergonomic and comfortable to hold in your hand.
 5. ???
 6. Profit!
 
+#Proposed schedule
+
+* 5 Minutes: Intro to course objectives
+* 10 Minutes: Arduino blink example
+* 10 Minutes: Arduino button example
+* 20 Minutes: Arduino Joystick mouse example
+* 10 Minutes: Place buttons and joysticks on controller base
+* 10 Minutes: Wiring
+* 10 Minutes: Bring it all together (integrate software and hardware)
+* 15 Minutes: Wrap up and gameplay testing
+
+Total: 1 hour 30 minutes
+
 ... More to come ...
