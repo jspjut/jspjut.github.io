@@ -18,7 +18,7 @@ hack-and-slash game using the Unity3D game engine. You can [read about
 the project](https://sites.google.com/site/72hourgame), [download the
 game](https://sites.google.com/site/72hourgame/download), or even
 [play it using a web
-plugin](https://sites.google.com/site/72hourgame/download/current-build).
+plugin](/games/WFR7II_Web/WFR7II_Web.html).
 
 Note: The following links haven't been fixed since CIS broke my old web space...
 
