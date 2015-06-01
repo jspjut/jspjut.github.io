@@ -6,14 +6,13 @@ group: navigation
 ---
 {% include JB/setup %}
 
-## Current Classes
-S2015
-
-* [e85: Digital Design and Computer Architecture](http://pages.hmc.edu/jspjut/class/s2015/e85) - Taught with [Matthew Spencer][ms]
-* [e190u: Video Game Console Design](http://pages.hmc.edu/jspjut/class/s2015/e190u) 
+I previously taught classes as a visiting professor at Harvey Mudd College. 
+I also was involved in a few classes at the University of Utah as a graduate student.
 
 ## Past Classes
 ### At Harvey Mudd
+* S2015: [e85: Digital Design and Computer Architecture](http://pages.hmc.edu/jspjut/class/s2015/e85) - Taught with [Matthew Spencer][ms]
+* S2015: [e190u: Video Game Console Design](http://pages.hmc.edu/jspjut/class/s2015/e190u) 
 * F2014: [e85: Digital Design and Computer Architecture](http://pages.hmc.edu/jspjut/class/f2014/e85)
 * F2014: [e155: Microprocessor Design](http://pages.hmc.edu/jspjut/class/f2014/e155) - Taught with [Matthew Spencer][ms]
 * S2014: [e85: Digital Design and Computer Architecture](http://pages.hmc.edu/jspjut/class/s2014/e85) - Taught with Ruye Wang
