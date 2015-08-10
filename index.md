@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Josef Spjut
-tagline: Researcher and Professor of Computing
+tagline: Research Scientist
 ---
 {% include JB/setup %}
 
