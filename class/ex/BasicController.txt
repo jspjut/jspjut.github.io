@@ -1,0 +1,158 @@
+// Josef Spjut
+// August 2015
+
+// A simple twin stick joypad for mouse+keyboard inputs to control FPS games
+// For Siggraph 2015 BYU Game Controller course
+
+// Based on the JoystickMouseControl code by Tom Igoe
+// Also inspired by Tom's KeyboardAndMouseControl
+
+const char movemap[2][4] = {
+  {'w', 'a', 's', 'd'},                                             // 0 (default)
+  {KEY_UP_ARROW, KEY_LEFT_ARROW, KEY_DOWN_ARROW, KEY_RIGHT_ARROW},  // 1
+};
+
+#define PINCOUNT 7 
+// keymap (-1 means ignore pins)
+const char keymap[PINCOUNT] =
+  {-1, -1, 'q', ' ', KEY_ESC, KEY_LEFT_ARROW, KEY_RIGHT_ARROW };
+  // R2, R1, L2, L1, Sel
+// pinmap (order of pins to read)
+// change these to match your pins
+const int pinmap[PINCOUNT] = 
+  {11, 10,   9,  8,  7,      6,              5};
+
+// set pin numbers for switch, joystick axes, and LED:
+const int leftButton = 11;   // input pin for mouse click
+const int rightButton = 10;  // input pin for right click
+const int xAxisRight = A2;   // right stick X axis  
+const int yAxisRight = A4;   // right stick Y axis
+const int xAxisLeft = A1;    // left stick x
+const int yAxisLeft = A3;    // left stick y
+const int invertY = 0;       // set invertY to 1 to invert
+
+// parameters
+int range = 18;               // max output of X or Y movement (12 default)
+int responseDelay = 5;        // response delay of the mouse, in ms
+int threshold = range/4;      // resting threshold
+int center = range/2;         // resting position value
+
+void setup() {
+  pinMode(leftButton, INPUT_PULLUP);      // the mouse pin
+  pinMode(rightButton, INPUT_PULLUP);     // the mouse pin
+  Mouse.begin();    // be a mouse
+  Keyboard.begin(); // be a keyboard!
+  // configure pinmap as inputs
+  for (int i = 0; i < 6; ++i) {
+    pinMode(pinmap[i], INPUT_PULLUP);
+  }
+}
+
+void loop() {
+  // loop through pinmap/keymap
+  for (int i = 0; i < 6; ++i) {
+    if (digitalRead(pinmap[i]) == LOW && keymap[i] != -1) {
+      Keyboard.press(keymap[i]);
+    } else if (keymap[i] != -1) {
+      Keyboard.release(keymap[i]);
+    }
+  }
+  
+  // read joystick state
+  int xReading = readAxis(xAxisRight, 1)*2;     // doubled to make x movement twice as fast
+  int yReading = readAxis(yAxisRight, invertY);
+  int leftx = readAxis(xAxisLeft, 1);
+  int lefty = readAxis(yAxisLeft, 0);
+
+  // Keyboard map for left stick
+  pressLeftStick(leftx, lefty);
+  
+  // Move the mouse
+  Mouse.move(xReading, yReading, 0);
+
+  // Process mouse clicks from buttons
+  mouseClicks(leftButton, rightButton);
+
+  // wait to allow computer to respond
+  delay(responseDelay);
+}
+
+void mouseClicks(int leftButton, int rightButton) {
+  // read the mouse button and click 
+  if (digitalRead(leftButton) == LOW) {
+    // A single click
+    if (!Mouse.isPressed(MOUSE_LEFT)) {
+      Mouse.press(MOUSE_LEFT);
+    }
+  } else {
+    if (Mouse.isPressed(MOUSE_LEFT)) {
+      Mouse.release(MOUSE_LEFT);
+    }
+  }
+  if (digitalRead(rightButton) == LOW) {
+    // A single click
+    if (!Mouse.isPressed(MOUSE_RIGHT)) {
+      Mouse.press(MOUSE_RIGHT);
+    }
+  } else {
+    if (Mouse.isPressed(MOUSE_RIGHT)) {
+      Mouse.release(MOUSE_RIGHT);
+    }
+  }
+}
+
+// does movemap
+void pressLeftStick(int x, int y) {
+  const int i = 0; // choose which movemap to use
+  if (x > 0) { 
+    Keyboard.press(movemap[i][3]);
+    Keyboard.release(movemap[i][1]);
+  }
+  if (x < 0) {
+    Keyboard.release(movemap[i][3]);
+    Keyboard.press(movemap[i][1]);
+  }
+  if (x == 0) {
+    Keyboard.release(movemap[i][3]);
+    Keyboard.release(movemap[i][1]);
+  }
+  if (y > 0) {
+    Keyboard.press(movemap[i][2]);
+    Keyboard.release(movemap[i][0]);
+  }
+  if (y < 0) {
+    Keyboard.release(movemap[i][2]);
+    Keyboard.press(movemap[i][0]);
+  }
+  if (y == 0) {
+    Keyboard.release(movemap[i][2]);
+    Keyboard.release(movemap[i][0]);
+  }
+}
+
+/*
+  reads an axis (0 or 1 for x or y) and scales the 
+ analog input range to a range from 0 to <range>
+ */
+
+int readAxis(int thisAxis, int isY) { 
+  // read the analog input:
+  int reading = analogRead(thisAxis);
+
+  // map the reading from the analog input range to the output range:
+  reading = map(reading, 0, 1023, 0, range);
+
+  if (isY) reading = range-reading; // invert y axis
+
+  // if the output reading is outside from the
+  // rest position threshold,  use it:
+  int distance = reading - center;
+
+  if (abs(distance) < threshold) {
+    distance = 0;
+  } 
+
+  // return the distance for this axis:
+  return distance;
+}
+

@@ -5,6 +5,22 @@ tagline: for PC games
 ---
 {% include JB/setup %}
 
+#Course Examples
+
+* [Simple Button](ex/SimpleButton.txt)
+* [Button Keyboard](ex/ButtonKeyboard.txt)
+* [Button Mouse](ex/ButtonMouse.txt)
+* [Simple Analog](ex/SimpleAnalog.txt)
+* [Joystick Mouse](ex/JoystickMouse.txt)
+* [Full Controller](ex/BasicController.txt)
+
+#Arduino Micro Pinout
+![Arduino Micro Pinout](https://www.arduino.cc/en/uploads/Main/ArduinoMicro_Pinout3.png)
+
+#Summary
+
+[Course Notes](controllerCourseNotes.pdf)
+
 Students in this course will build the own game controller from
 scratch capable of providing input to a variety of PC games. The
 course includes instruction on resistors, switches and using Arduino

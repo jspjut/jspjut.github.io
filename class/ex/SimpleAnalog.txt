@@ -1,0 +1,27 @@
+// Josef Spjut
+// August 2015
+
+// Global variables
+const int xAxis = A2;
+const int yAxis = A4;
+
+// parameter
+int responseDelay = 5;
+
+void setup() {
+  // LED pin
+  pinMode(13, OUTPUT);
+}
+
+void loop() {
+  // analogRead reads a value between 0 and 1023
+  int xReading = analogRead(xAxis);
+  // map xReading from 0-1023 to 0-255
+  int reading = map(xReading, 0, 1023, 0, 255);
+  // analogWrite wants a value between 0 and 255
+  analogWrite(13, reading);
+  delay(responseDelay);
+}
+
+
+

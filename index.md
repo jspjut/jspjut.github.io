@@ -5,6 +5,12 @@ tagline: Researcher and Professor of Computing
 ---
 {% include JB/setup %}
 
+# SIGGRAPH
+
+[My siggraph course web-page](class/game-controller.html).
+
+# Main Content
+
 Research Scientist at [NVIDIA][]. Formerly a Visiting Assistant Professor in the department of Engineering at [Harvey Mudd College][HMC].
 
 My research interests include New Human Computer Experiences, Graphics, Architecture, and Embedded Systems. 
