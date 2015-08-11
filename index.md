@@ -5,12 +5,6 @@ tagline: Research Scientist
 ---
 {% include JB/setup %}
 
-# SIGGRAPH
-
-[My siggraph course web-page](class/game-controller.html).
-
-# Main Content
-
 Research Scientist at [NVIDIA][]. Formerly a Visiting Assistant Professor in the department of Engineering at [Harvey Mudd College][HMC].
 
 My research interests include New Human Computer Experiences, Graphics, Architecture, and Embedded Systems. 
@@ -30,14 +24,16 @@ My CV is available in [pdf](files/cv.pdf) and [html](cv.html).
 
 ## Research
 
-I advise the [Charlab](http://charlab.github.io/) research group.
+I advised the [Charlab](http://charlab.github.io/) research group.
 
 Selected Recent Publications:
 
 1.  **[Josef Spjut][jspjut]**, [Richard Piersall][rpiersall], [Kirklann Lau][klau];
 **Build your own Game Controller**,
 *SIGGRAPH*,
-Los Angeles, August, 2015. **(to appear)**
+Los Angeles, August 10, 2015. **(Studio Course)**
+[slides](http://josef.spjut.me/class/controllerCourseNotes.pdf)
+[webpage](http://josef.spjut.me/class/game-controller.html)
 1. [Daniel Kopta][dk], [Konstantin Shkurko][ks], **[Josef Spjut][jbs]**,
 [Erik Brunvand][elb], and [Al Davis][ald];
 **Memory Considerations for Low Energy Ray Tracing**,
@@ -102,12 +98,9 @@ Los Angeles, August, 2015. **(to appear)**
 
 ## Teaching
 
-Spring 2015: 
-
-* [e85: Digital Design and Computer Architecture](http://pages.hmc.edu/jspjut/class/s2015/e85)
-* [e190u: Video Game Console Design](http://pages.hmc.edu/jspjut/class/s2015/e190u)
+Summer 2015: [Siggraph Build Your own Game Controller](class/game-controller.html).
 
 [Other classes](teaching.html) I've taught.
 
-For students: [How to Request a Letter of Recommendation]({{ BASE_PATH }}/recs.html)
+For (former) students: [How to Request a Letter of Recommendation]({{ BASE_PATH }}/recs.html)
 

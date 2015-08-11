@@ -61,6 +61,8 @@ course.
 You will need the following materials to complete the construction of
 your own game controller.
 
+**I will add links to where I bought the materials for these kits. If you need them now, please email me.**
+
 * Arduino Micro (or any arduino capable of USB keyboard+mouse control)
 * A computer with the Arduino software development environment installed
 * Mini breadboards
@@ -74,26 +76,3 @@ your own game controller.
 For best results, you should have your mount moulded or tooled to be
 ergonomic and comfortable to hold in your hand.
 
-#Steps
-
-1. Mount everything, don't conceal the electrical connections
-2. Connect wires to your arduino on the breadboard
-3. Program a sketch to read in the joystick and switch state
-4. Use current device state to send USB mouse and keyboard commands
-5. ???
-6. Profit!
-
-#Proposed schedule
-
-* 5 Minutes: Intro to course objectives
-* 10 Minutes: Arduino blink example
-* 10 Minutes: Arduino button example
-* 20 Minutes: Arduino Joystick mouse example
-* 10 Minutes: Place buttons and joysticks on controller base
-* 10 Minutes: Wiring
-* 10 Minutes: Bring it all together (integrate software and hardware)
-* 15 Minutes: Wrap up and gameplay testing
-
-Total: 1 hour 30 minutes
-
-... More to come ...
