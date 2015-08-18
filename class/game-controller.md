@@ -79,10 +79,10 @@ your own game controller.
 |Arduino Micro w/ USB cable | $8.00 | [Banggood](http://www.banggood.com/Micro-R3-ATmega32u4-Microcontroller-Board-With-USB-Cable-For-Arduino-p-911099.html) | 1 | $8.00 |
 |5 piece 170-hole mini breadboards | $5.68 | [Banggood](http://www.banggood.com/5Pcs-White-170-Holes-Mini-Solderless-Prototype-Breadboard-For-Arduino-p-950716.html) | 1 | $5.68 |
 |1 Piece Joystick w/ breakout | $1.66 | [Banggood](http://www.banggood.com/PS2-Game-Joystick-Module-For-Arduino-p-76465.html) | 2 | $3.32 |
-| Tactile Switches | ??? | [Sparkfun](https://www.sparkfun.com/products/9190) | 10 | ??? |
+| Tactile Switches | $0.50 | [Sparkfun](https://www.sparkfun.com/products/9190) | 10 | $5.00 |
 |40 piece female to male cables | $2.10 | [Banggood](http://www.banggood.com/40pcs-20cm-Male-to-Female-Jumper-Jump-Cable-Wire-For-Arduino-p-75613.html) | 1 | $2.10 |
 |3M Outdoor Mounting Tape | $4.00 | Amazon | 1 | $4.00 |
-|Total | ---- | ---- | 1 | $23.10 |
+|Total | ---- | ---- | 1 | $28.10 |
 
 ## Parts for multiple (20) controllers
 
@@ -91,10 +91,10 @@ your own game controller.
 |Arduino Micro w/ USB cable | $8.00 | [Banggood](http://www.banggood.com/Micro-R3-ATmega32u4-Microcontroller-Board-With-USB-Cable-For-Arduino-p-911099.html) | 20 | $160.00 |
 |10 piece 170-hole mini breadboards | $10.20 | [Banggood](http://www.banggood.com/10Pcs-White-170-Holes-Mini-Solderless-Prototype-Breadboard-For-Arduino-p-950771.html) | 4 | $40.80 |
 |20 Piece Joystick w/ breakout | $16.99 | [Banggood](http://www.banggood.com/20Pcs-PS2-Game-Joystick-Module-For-Arduino-p-951191.html) | 2 | $33.98 |
-| Tactile Switches | ??? | [Sparkfun](https://www.sparkfun.com/products/9190) | 200 | ??? |
+| Tactile Switches | $0.50 | [Sparkfun](https://www.sparkfun.com/products/9190) | 200 | $100.00 |
 |40 piece female to male cables | $2.10 | [Banggood](http://www.banggood.com/40pcs-20cm-Male-to-Female-Jumper-Jump-Cable-Wire-For-Arduino-p-75613.html) | 20 | $42.00 |
 |3M Outdoor Mounting Tape | $4.00 | Amazon | 5 | $20.00 |
-|Total | $14.84 | ---- | 20 | $296.78 |
+|Total | $19.84 | ---- | 20 | $396.78 |
 
 For best results, you should have your mount moulded or tooled to be
 ergonomic and comfortable to hold in your hand.
