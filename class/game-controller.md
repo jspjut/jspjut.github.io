@@ -68,11 +68,36 @@ your own game controller.
 * Mini breadboards
 * 2 Joystick Potentiometers with breakout boards
 * 8 Push-buttons
-* 1-2 Switches
 * Wires
 * Soldering Material (only if you don't have appropriate wires)
 * Something to mount these on (this could be wood, metal, tooled plastic, or even 3d printed!)
 
+## Parts for approximately 1 Controller
+
+| Part | Price | Vendor Link | Quantity | Total Price |
+|------|-------|-------------|----------|-------------|
+|Arduino Micro w/ USB cable | $8.00 | [Banggood](http://www.banggood.com/Micro-R3-ATmega32u4-Microcontroller-Board-With-USB-Cable-For-Arduino-p-911099.html) | 1 | $8.00 |
+|5 piece 170-hole mini breadboards | $5.68 | [Banggood](http://www.banggood.com/5Pcs-White-170-Holes-Mini-Solderless-Prototype-Breadboard-For-Arduino-p-950716.html) | 1 | $5.68 |
+|1 Piece Joystick w/ breakout | $1.66 | [Banggood](http://www.banggood.com/PS2-Game-Joystick-Module-For-Arduino-p-76465.html) | 2 | $3.32 |
+| Tactile Switches | ??? | [Sparkfun](https://www.sparkfun.com/products/9190) | 10 | ??? |
+|40 piece female to male cables | $2.10 | [Banggood](http://www.banggood.com/40pcs-20cm-Male-to-Female-Jumper-Jump-Cable-Wire-For-Arduino-p-75613.html) | 1 | $2.10 |
+|3M Outdoor Mounting Tape | $4.00 | Amazon | 1 | $4.00 |
+|Total | ---- | ---- | 1 | $23.10 |
+
+## Parts for multiple (20) controllers
+
+| Part | Price | Vendor Link | Quantity | Total Price |
+|------|-------|-------------|----------|-------------|
+|Arduino Micro w/ USB cable | $8.00 | [Banggood](http://www.banggood.com/Micro-R3-ATmega32u4-Microcontroller-Board-With-USB-Cable-For-Arduino-p-911099.html) | 20 | $160.00 |
+|10 piece 170-hole mini breadboards | $10.20 | [Banggood](http://www.banggood.com/10Pcs-White-170-Holes-Mini-Solderless-Prototype-Breadboard-For-Arduino-p-950771.html) | 4 | $40.80 |
+|20 Piece Joystick w/ breakout | $16.99 | [Banggood](http://www.banggood.com/20Pcs-PS2-Game-Joystick-Module-For-Arduino-p-951191.html) | 2 | $33.98 |
+| Tactile Switches | ??? | [Sparkfun](https://www.sparkfun.com/products/9190) | 200 | ??? |
+|40 piece female to male cables | $2.10 | [Banggood](http://www.banggood.com/40pcs-20cm-Male-to-Female-Jumper-Jump-Cable-Wire-For-Arduino-p-75613.html) | 20 | $42.00 |
+|3M Outdoor Mounting Tape | $4.00 | Amazon | 5 | $20.00 |
+|Total | $14.84 | ---- | 20 | $296.78 |
+
 For best results, you should have your mount moulded or tooled to be
 ergonomic and comfortable to hold in your hand.
+It should be possible to 3D print a design, or you could purchase the 
+design I distributed at SIGGRAPH from pokono. (link to be added).
 
