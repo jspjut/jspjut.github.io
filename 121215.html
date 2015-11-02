@@ -24,7 +24,8 @@ header: Countdown to getting married!
   // Turn on Bootstrap
   $('[data-toggle="tooltip"]').tooltip();
   // Hopefully this UTC thing will compensate for different local time zones
-  var $returntime = new Date(Date.UTC(2015, 11, 12, 15, 0, 0))
+  // Because it's EST, it's actually 4pm UTC, not 3pm like it would be for EDT
+  var $returntime = new Date(Date.UTC(2015, 11, 12, 16, 0, 0))
   // var $returntime = "2015/9/12/22:45"
   var $clock = $('#clock');
   $clock.countdown($returntime, function(event) {
