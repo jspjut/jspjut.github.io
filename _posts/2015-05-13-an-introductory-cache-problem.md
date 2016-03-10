@@ -279,6 +279,7 @@ Since the cache is 16B and each instruction is 4B, the only block sizes that mak
 The access patterns for each are as follows:
 
 ### 4B blocks
+
 | Address  | 1st time | In Cache (1st time)                         | 2-4  | In Cache (2-4 times)                | Accesses | Hits | Misses |
 | -------- | -------- | :-----------------------------------------: | ---- | :---------------------------------: | :------: | :--: | :----: |
 | start    |          |  `??????`   `??????`   `??????`   `??????`  |      | `??????` `??????` `??????` `??????` |          |      |        |
@@ -298,6 +299,7 @@ The access patterns for each are as follows:
 hit rate = 23/32 = **71.88%**
 
 ### 16B block
+
 | Address  | 1st time | In Cache (1st time)                   | 2-4  | In Cache (2-4 times)                  | Accesses | Hits | Misses |
 | -------- | -------- | :-----------------------------------: | ---- | :-----------------------------------: | :------: | :--: | :----: |
 | start    |          |  `??????` `??????` `??????` `??????`  |      |  `??????` `??????` `??????` `??????`  |          |      |        |
