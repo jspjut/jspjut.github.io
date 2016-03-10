@@ -19,7 +19,7 @@ My research interests include New Human Computer Experiences, Graphics, Architec
    [UofU]: http://www.utah.edu
    [UCR]: http://ucr.edu
 
-My CV is available in [pdf](files/cv.pdf) and [html](cv.html).
+My CV is available in [pdf](files/cv.pdf) and [html](cv).
 [linkedin](https://www.linkedin.com/in/josefspjut).
 
 ## Research
@@ -36,7 +36,7 @@ May 24-27, 2016.
 *SIGGRAPH Studio*,
 Los Angeles, August 10, 2015. **(Studio Course)**
 [slides](http://josef.spjut.me/class/controllerCourseNotes.pdf)
-[webpage](http://josef.spjut.me/class/game-controller.html)
+[webpage](http://josef.spjut.me/class/game-controller)
 1.  [Daniel Kopta][dkopta], [Konstantin Shkurko][kshkurko], **[Josef Spjut][jspjut]**, [Erik Brunvand][elb], [Al Davis][ald];
 **Memory Considerations for Low Energy Ray Tracing**,
 *Computer Graphics Forum*,
@@ -81,15 +81,15 @@ Irvine, March, 2012.
    [dhpark]: http://web.eecs.umich.edu/~dohypark/
 
 
-[Full publication list](research.html).
+[Full publication list](research).
 
 I used to advise the [Charlab](http://charlab.github.io/) research group.
 
 ## Teaching
 
-Summer 2015: [Siggraph Build Your own Game Controller](class/game-controller.html).
+Summer 2015: [Siggraph Build Your own Game Controller](class/game-controller).
 
-[Other classes](teaching.html) I've taught.
+[Other classes](teaching) I've taught.
 
-For (former) students: [How to Request a Letter of Recommendation]({{ BASE_PATH }}/recs.html)
+For (former) students: [How to Request a Letter of Recommendation](recs)
 
