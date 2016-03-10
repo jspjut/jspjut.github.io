@@ -8,7 +8,7 @@ tags: [jekyll, javascript]
 ---
 {% include JB/setup %}
 
-For my [other blog post]({% post_url f2013/2013-10-15-musical-projects %})
+For my [other blog post]({% post_url 2013-10-15-musical-projects %})
 today, I decided I wanted to embed the youtube videos I recorded
 earlier.
 Since the rest of my website is fully responsive now, I thought it
