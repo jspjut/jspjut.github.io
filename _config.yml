@@ -1,19 +1,25 @@
 # This is the default format. 
 # For more see: http://jekyllrb.com/docs/permalinks/
-permalink: /:categories/:year/:month/:day/:title 
+permalink: /:categories/:year/:month/:day/:title/ 
 
 # Trying to fix paginate error
 gems: [jekyll-paginate]
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-highlighter: pygments
+# highlighter: pygments
+highlighter: rouge
 paginate: 8
 paginate_path: "blog/page:num"
 
 # redcarpet allows ``` to work better
-markdown: redcarpet
-redcarpet:
-  extensions: ["tables", "fenced_code_blocks"]
+# markdown: redcarpet
+# redcarpet:
+#   extensions: ["tables", "fenced_code_blocks"]
+# github doesn't allow redcarpet any more (Feb 2016)
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
