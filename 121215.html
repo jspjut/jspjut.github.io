@@ -1,0 +1,39 @@
+---
+layout: page
+title: Wedding Countdown
+header: Countdown to getting married!
+---
+{% include JB/setup %}
+
+    <div class="lead" title="Best day ever!">
+        We get married in <span class="lead" id="clock"></span>!
+    </div>
+
+    <div class="lead" title="We can't wait!!">
+    	That's <span class="lead" id="clock-hours"></span>
+    </div>
+
+
+<!-- Include Countdown Functions -->
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="http://cdn.rawgit.com/hilios/jQuery.countdown/2.1.0/dist/jquery.countdown.min.js"></script>
+
+<script type="text/javascript">
+  // Turn on Bootstrap
+  $('[data-toggle="tooltip"]').tooltip();
+  // Hopefully this UTC thing will compensate for different local time zones
+  // Because it's EST, it's actually 4pm UTC, not 3pm like it would be for EDT
+  var $returntime = new Date(Date.UTC(2015, 11, 12, 16, 0, 0))
+  // var $returntime = "2015/9/12/22:45"
+  var $clock = $('#clock');
+  $clock.countdown($returntime, function(event) {
+    $(this).html(event.strftime('%D days %H hours %M minutes and %S seconds'));
+  });
+  var $clock2 = $('#clock-hours');
+  $clock2.countdown($returntime, function(event) {
+  	var $totalHours = event.offset.totalDays * 24 + event.offset.hours;
+    $(this).html(event.strftime($totalHours+' hours %M minutes and %S seconds'));
+  });
+</script>
