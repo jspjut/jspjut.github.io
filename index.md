@@ -24,10 +24,13 @@ My CV is available in [pdf](files/cv.pdf) and [html](cv.html).
 
 ## Research
 
-I advised the [Charlab](http://charlab.github.io/) research group.
+Selected Recent and Upcoming Publications:
 
-Selected Recent Publications:
-
+1.  [Trey Greer][tgreer], **[Josef Spjut][jspjut]**, [David Luebke][dluebke], [Turner Whitted][jtw];
+**Hybrid Modulation for Near Zero Display Latency**,
+*Society of Information Display*,
+May 24-27, 2016.
+[paper](None)
 1.  **[Josef Spjut][jspjut]**, [Richard Piersall][rpiersall], [Kirklann Lau][klau];
 **Build your own game controller**,
 *SIGGRAPH Studio*,
@@ -49,12 +52,6 @@ Anaheim, July 10-21, 2013.
 *ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games (I3D 2012)*,
 Irvine, March, 2012.
 [paper](http://www.cs.utah.edu/~thiago/papers/rotations.pdf)
-1.  **[Josef Spjut][jspjut]**, [Daniel Kopta][dkopta], [Erik Brunvand][elb], [Al Davis][ald];
-**A Mobile Accelerator Architecture for Ray Tracing**,
-*3rd Workshop on SoCs, Heterogeneous Architectures and Workloads (SHAW-3)*,
-New Orleans, February, 2012.
-[paper](http://www.cs.utah.edu/~sjosef/papers/spjut-shaw12-final.pdf)
-[slides](http://www.cs.utah.edu/~sjosef/slides/spjut-shaw12-slides.pdf)
 
    [klau]: None
    [skrupa]: None
@@ -62,12 +59,15 @@ New Orleans, February, 2012.
    [rajeev]: http://www.cs.utah.edu/~rajeev
    [ald]: http://www.cs.utah.edu/~ald/
    [tize]: http://www.cs.utah.edu/~thiago
+   [dluebke]: http://luebke.us/
    [sboulos]: http://graphics.stanford.edu/~boulos/research.htm
    [spugsley]: http://www.cs.utah.edu/~pugsley
    [abagaria]: None
+   [tgreer]: https://research.nvidia.com/users/trey-greer
    [dnellans]: http://david.nellans.org
    [jspjut]: http://josef.spjut.me
    [sparker]: http://www.cs.utah.edu/~sparker
+   [jtw]: https://research.nvidia.com/users/turner-whitted
    [skellis]: http://vis.caltech.edu/~skellis
    [nil]: http://www.cs.utah.edu/~nil
    [elb]: http://www.cs.utah.edu/~elb/
@@ -82,6 +82,8 @@ New Orleans, February, 2012.
 
 
 [Full publication list](research.html).
+
+I used to advise the [Charlab](http://charlab.github.io/) research group.
 
 ## Teaching
 
