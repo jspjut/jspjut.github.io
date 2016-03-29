@@ -5,19 +5,19 @@ tagline: for PC games
 ---
 {% include JB/setup %}
 
-#Course Examples
+# Course Examples
 
-* [Simple Button](ex/SimpleButton.txt)
-* [Button Keyboard](ex/ButtonKeyboard.txt)
-* [Button Mouse](ex/ButtonMouse.txt)
-* [Simple Analog](ex/SimpleAnalog.txt)
-* [Joystick Mouse](ex/JoystickMouse.txt)
-* [Full Controller](ex/BasicController.txt)
+* [Simple Button](/class/ex/SimpleButton.txt)
+* [Button Keyboard](/class/ex/ButtonKeyboard.txt)
+* [Button Mouse](/class/ex/ButtonMouse.txt)
+* [Simple Analog](/class/ex/SimpleAnalog.txt)
+* [Joystick Mouse](/class/ex/JoystickMouse.txt)
+* [Full Controller](/class/ex/BasicController.txt)
 
-#Arduino Micro Pinout
+# Arduino Micro Pinout
 ![Arduino Micro Pinout](https://www.arduino.cc/en/uploads/Main/ArduinoMicro_Pinout3.png)
 
-#Summary
+# Summary
 
 [Course Notes](controllerCourseNotes.pdf)
 
@@ -30,7 +30,7 @@ This is based on labs [1](http://pages.hmc.edu/jspjut/class/s2015/e190u/lab/lab1
 [2](http://pages.hmc.edu/jspjut/class/s2015/e190u/lab/lab2.html) 
 from E190U offered in Spring 2015 at [Harvey Mudd College](http://www.hmc.edu).
 
-#Overview
+# Overview
 
 This course introduces some concepts of basic resistor circuits and
 how they can be read by a microcontroller using an analog to digital
@@ -48,7 +48,7 @@ and microcontrollers for the uninitiated and allows more advanced
 students the chance to tune the hardware and software to customize the
 user experience.
 
-#Prerequisites
+# Prerequisites
 
 This course is intended for people with little to no experience with
 programming or electronic circuits.
@@ -56,7 +56,7 @@ If you have some C programming experience or understand resistor
 circuits you will more quickly be able to complete the tasks in the
 course.
 
-#Materials
+# Materials
 
 You will need the following materials to complete the construction of
 your own game controller.
