@@ -19,7 +19,7 @@ tagline: for PC games
 
 # Summary
 
-[Course Notes](controllerCourseNotes.pdf)
+[Course Notes](/class/controllerCourseNotes.pdf)
 
 Students in this course will build the own game controller from
 scratch capable of providing input to a variety of PC games. The
