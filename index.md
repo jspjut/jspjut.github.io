@@ -12,8 +12,8 @@ My research interests include New Human Computer Experiences, Graphics, Architec
 My CV is available in [pdf](files/cv.pdf) and [html](cv).
 [linkedin](https://www.linkedin.com/in/josefspjut).
 
-    [HMC]: http://hmc.edu
-    [NVIDIA]: http://research.nvidia.com
+   [HMC]: http://hmc.edu
+   [NVIDIA]: http://research.nvidia.com
 
 ## Research
 
