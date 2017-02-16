@@ -9,16 +9,6 @@ Research Scientist at [NVIDIA][]. Formerly a Visiting Assistant Professor in the
 
 My research interests include New Human Computer Experiences, Graphics, Architecture, and Embedded Systems. 
 
-{{ Ph.D. from the [School of Computing][SoC] at the [University of }}
-{{ Utah][UofU] and B.S. in Computer Engineering from the }}
-{{ [University of California, Riverside][UCR]. }}
-
-   [HMC]: http://hmc.edu
-   [NVIDIA]: http://research.nvidia.com
-   [SoC]: http://www.cs.utah.edu
-   [UofU]: http://www.utah.edu
-   [UCR]: http://ucr.edu
-
 My CV is available in [pdf](files/cv.pdf) and [html](cv).
 [linkedin](https://www.linkedin.com/in/josefspjut).
 
