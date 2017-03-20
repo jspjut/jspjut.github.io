@@ -23,7 +23,7 @@ Selected Recent and Upcoming Publications:
 **Hybrid Modulation for Near Zero Display Latency**,
 *Society of Information Display*,
 May 24-27, 2016.
-[paper](None)
+[paper](http://josef.spjut.me/greer16.pdf)
 1.  **[Josef Spjut][jspjut]**, [Richard Piersall][rpiersall], [Kirklann Lau][klau];
 **Build your own game controller**,
 *SIGGRAPH Studio*,
