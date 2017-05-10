@@ -78,6 +78,10 @@ Irvine, March, 2012.
 
 I used to advise the [Charlab](http://charlab.github.io/) research group.
 
+## Media
+
+* [This Pulsating 'Haptic Skin' is Somewhat Creepy, Mostly Awesome](http://www.roadtovr.com/omnipulse-haptic-skin-organic-robotics-lab-virtual-reality/)
+
 ## Teaching
 
 Summer 2015: [Siggraph Build Your own Game Controller](class/game-controller).
