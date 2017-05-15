@@ -80,10 +80,11 @@ I used to advise the [Charlab](http://charlab.github.io/) research group.
 
 ## In the Media
 
-* [This Pulsating 'Haptic Skin' is Somewhat Creepy, Mostly Awesome](http://www.roadtovr.com/omnipulse-haptic-skin-organic-robotics-lab-virtual-reality/), Road to VR - May 9, 2017
-* [This haptic skin prototype could make VR experiences more realistic](http://www.techradar.com/news/this-haptic-skin-prototype-could-make-vr-experiences-more-realistic), TechRadar - May 10, 2017
-* [Textures In Haptics For VR With Omnipulse](https://www.vrfocus.com/2017/05/textures-in-haptics-for-vr-with-omnipulse/), VR Focus - May 11, 2017
-* [Haptic Skin Created By Cornell Research Lab Makes VR Feel More Human](https://uploadvr.com/haptic-skin-created-cornell-research-lab-makes/), Upload VR - May 12, 2017
+* Road to VR - May 9, 2017, [This Pulsating 'Haptic Skin' is Somewhat Creepy, Mostly Awesome](http://www.roadtovr.com/omnipulse-haptic-skin-organic-robotics-lab-virtual-reality/)
+* TechRadar - May 10, 2017, [This haptic skin prototype could make VR experiences more realistic](http://www.techradar.com/news/this-haptic-skin-prototype-could-make-vr-experiences-more-realistic)
+* VR Focus - May 11, 2017, [Textures In Haptics For VR With Omnipulse](https://www.vrfocus.com/2017/05/textures-in-haptics-for-vr-with-omnipulse/)
+* Upload VR - May 12, 2017, [Haptic Skin Created By Cornell Research Lab Makes VR Feel More Human](https://uploadvr.com/haptic-skin-created-cornell-research-lab-makes/)
+* InAVate - May 15, 2017, [Research lab creates haptic skin material for realistic feedback](http://www.inavateonthenet.net/news/article/research-lab-creates-haptic-skin-material-for-realistic-feedback)
 
 ## Teaching
 
