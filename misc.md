@@ -11,6 +11,16 @@ group: navigation
 * [My Google Scholar Page](http://scholar.google.com/citations?user=WzhSQzkAAAAJ)
 * [My Erdos number of 4](http://academic.research.microsoft.com/VisualExplorer#3829195&1112639)
 
+## Teaching
+
+Summer 2015: [Siggraph Build Your own Game Controller](class/game-controller).
+
+I used to advise the [Charlab](http://charlab.github.io/) research group.
+
+[Other classes](teaching) I've taught.
+
+For (former) students: [How to Request a Letter of Recommendation](recs)
+
 ## Other links
 
 * [Indie Game Share](http://itch.io/)
@@ -18,6 +28,7 @@ group: navigation
 * [Web-based FSM tool](http://madebyevan.com/fsm/)
 * [Web-based diff tool](diff.html)
 * [Procedural Jigsaw Puzzles](http://n-e-r-v-o-u-s.com/projects/puzzles/)
+* [Python strftime formats](http://strftime.org/)
 * [site pages](pages.html)
 * VLC stuff
   * [VLC command lines](https://www.videolan.org/doc/streaming-howto/en/ch04.html)
