@@ -2,6 +2,7 @@
 layout: page
 title: Media Coverage
 tagline: In the Media
+group: navigation
 ---
 {% include JB/setup %}
 
