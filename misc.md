@@ -35,6 +35,7 @@ For (former) students: [How to Request a Letter of Recommendation](recs)
   * [VLC command lines](https://www.videolan.org/doc/streaming-howto/en/ch04.html)
   * [VLC GUI stuff](http://www.videolan.org/doc/streaming-howto/en/ch02.html)
   * [webcam testing](https://help.ubuntu.com/community/Webcam)
+* [Some guy's blog about SIGGRAPH 2015](http://www.postmagazine.com/Post-Blog/2015/August/SIGGRAPH-2015-Day-1-VR-keynote-parallax-mapping-.aspx)
 
 ## My NCAA College Football Rankings
 
