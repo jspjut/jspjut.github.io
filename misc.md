@@ -11,6 +11,7 @@ group: navigation
 * [My Google Scholar Page](http://scholar.google.com/citations?user=WzhSQzkAAAAJ)
 * [My Erdos number of 4](http://academic.research.microsoft.com/VisualExplorer#3829195&1112639)
 * [In the Media](http://josef.spjut.me/media/)
+* [NVIDIA Research Profile](http://research.nvidia.com/person/josef-spjut)
 
 ## Teaching
 
