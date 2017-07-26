@@ -1,13 +1,10 @@
----
-layout: page
-title: Media Coverage
-tagline: In the Media
-group: navigation
----
-{% include JB/setup %}
++++
+title = "Media Coverage"
++++
 
 ## Kinesthetic Haptics for Virtual Reality
 Collaboration between Cornell Organic Robotics Lab and NVIDIA.
+
 * InAVate - May 15 2017,
 [Research lab creates haptic skin material for realistic feedback](http://www.inavateonthenet.net/news/article/research-lab-creates-haptic-skin-material-for-realistic-feedback)
 * Upload VR - May 12 2017,
