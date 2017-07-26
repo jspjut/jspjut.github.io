@@ -1,10 +1,6 @@
----
-layout: page
-title: Teaching
-tagline: Past and Present Courses
-group: navigation
----
-{% include JB/setup %}
++++
+title = "Teaching"
++++
 
 I previously taught classes as a visiting professor at Harvey Mudd College. 
 I also was involved in a few classes at the University of Utah as a graduate student.
@@ -30,7 +26,6 @@ I also was involved in a few classes at the University of Utah as a graduate stu
 * S2007: TA CS59XX: Network Game Design - Taught by [John Carter][jc]
 * F2006: TA CS5460/6460: Operating Systems - Taught by [John Carter][jc]
 
-.
 
    [elb]: http://www.cs.utah.edu/~elb
    [dk]: http://www.cs.utah.edu/~dkopta

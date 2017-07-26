@@ -1,9 +1,6 @@
----
-layout: page
-title: "Letters of Recommendation"
-description: "What to send me to help me write a letter of recommendation"
----
-{% include JB/setup %}
++++
+title = "Letters of Recommendation"
++++
 
 If you would like for me to write you a letter of recommendation, and
 are not able to find me in person to request it, please send me an
