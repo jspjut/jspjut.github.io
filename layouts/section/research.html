@@ -1,0 +1,37 @@
+{{ partial "header.html" . }}
+{{ partial "navbar.html" . }}
+
+{{ partial "header_image.html" . }}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>{{ .Title | default (i18n "publications") }}</h1>
+
+      {{ with .Content }}
+      <div class="article-style" itemprop="articleBody">{{ . }}</div>
+      {{ end }}
+
+      <div class="row" id="container-publicationss">
+        {{ range .Params.pubtype_list }}
+          {{ $pubtype := . }}
+          <ul class="fa-ul">
+          <!--{{ printf "%#v" . }}-->
+          <h2>{{ index $.Site.Params.publication_types (int $pubtype) }}</h2>
+          {{ range (where (where $.Site.Pages.ByDate.Reverse "Type" "publication") "Type" "publication") }}
+            {{ $pub := . }}
+              {{ range .Params.publication_types }}
+                {{ if eq . $pubtype }}
+                  {{ partial "publication_li_simple" $pub }}
+                {{ end }}
+              {{ end }}
+          {{ end }}
+          </ul>
+        {{ end }}
+      </div>
+
+    </div>
+  </div>
+</div>
+{{ partial "footer_container.html" . }}
+{{ partial "footer.html" . }}
