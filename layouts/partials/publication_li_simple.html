@@ -1,0 +1,42 @@
+<li itemscope itemtype="http://schema.org/CreativeWork">
+  <!--<i class="fa-li fa fa-file-text-o pub-icon" aria-hidden="true"></i>-->
+  <div class="row pub-list-item">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
+      <img src="{{ "/img/" | relURL }}{{ .Params.image_preview }}" class="pub-banner" itemprop="image">
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
+      <span itemprop="name">{{ .Title }}</span>
+      <span class="pub-venue text-muted" itemprop="publication">
+        {{ if .Params.publication_short }}
+        {{ .Params.publication_short | markdownify }},
+        {{ else }}
+        {{ .Params.publication | markdownify }},
+        {{ end }}
+        {{ dateFormat "2006" .Params.date }}
+      </span><br />
+      <span class="pub-authors" itemprop="author">
+        {{ with .Params.authors }}
+        {{ delimit . ", " | markdownify }}
+        {{ end }}
+      </span>
+    <p>{{ partial "publication_links" (dict "content" . "is_list" 1) }}
+
+    {{ if .Params.unique_id }}
+      <a class="btn btn-primary btn-outline btn-xs" href="javascript:" onclick="e=document.getElementById('bib{{ .Params.unique_id }}').style;e.display=(e.display=='block'?'none':'block')">Bibtex</a>
+    </p>
+    <span id="bib{{ .Params.unique_id }}" class="b" style="display: none;"><pre>
+@inproceedings{ {{ .Params.unique_id }},
+  author = { {{ with .Params.authors_flat }}{{ delimit . ", " | markdownify }}{{ end }} },
+  title = { {{ .Title }} },
+  year = { {{ dateFormat "2006" .Params.date }} },
+  booktitle = { {{ .Params.publication | markdownify }} }
+}</pre></span>
+    {{ else }}
+    <!--{{ .Params.unique_id }}
+    FAIL, not sure why-->
+    </p>
+    {{ end }}
+
+    </div>
+  </div>
+</li>
