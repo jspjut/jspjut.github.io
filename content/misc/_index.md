@@ -1,10 +1,12 @@
----
-layout: page
-title: Miscellaneous
-tagline: Stuff I couldn't find a better place for
-group: navigation
----
-{% include JB/setup %}
++++
+title = "Miscellaneous"
+subtitle = "Stuff I couldn't find a better place for"
+
+# Optional featured image (relative to `static/img/` folder).
+[header]
+image = ""
+caption = ""
++++
 
 ## Vanity Links
 
@@ -41,13 +43,6 @@ For (former) students: [How to Request a Letter of Recommendation](recs)
 ## My NCAA College Football Rankings
 
 I decided I didn't like the rankings made by the tournament committee
-or the voters in the polls so I made [my own rankings](ncaaf.html)
+or the voters in the polls so I made [my own rankings](/ncaaf)
 driven by a simple python script. 
 
-## Recent [Blog](/blog/) Posts
-
-<ul class="posts">
-  {% for post in site.posts limit:8 %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
