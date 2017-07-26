@@ -1,15 +1,19 @@
 ---
-layout: post
-title: "FSM vs. English"
-tagline: "from class demo"
+categories:
+- teaching
+date: 2013-10-03T00:00:00Z
 description: ""
-category: teaching
-tags: [lecture, class, verilog]
+tagline: from class demo
+tags:
+- lecture
+- class
+- verilog
+title: FSM vs. English
+url: /teaching/2013/10/03/fsm-vs-english/
 ---
-{% include JB/setup %}
 
 Yesterday, I managed to put together the in-class demo 
-[I discussed previously]({% post_url 2013-10-01-interactive-lecture %}).
+[I discussed previously](/post/2013-10-01-interactive-lecture).
 In this post I'd like to give a brief explanation of what I showed and
 how it demonstrates the proper use of SystemVerilog to describe a
 finite state machine (FSM).
@@ -35,7 +39,7 @@ The following examples are implementations of this description.
 The first thing I showed in my demo is the following behavioral
 description based on the English description:
 
-{% highlight systemverilog %}
+{{< highlight systemverilog "linenos=inline" >}}
 module student_beh (input logic sleep, clk, output logic smile);
 
 logic [1:0] happiness;
@@ -56,16 +60,16 @@ always_ff @(posedge clk) begin
 	else  begin smile <= 0; end
 end
 endmodule
-{% endhighlight %}
+{{< / highlight >}}
 
 This module synthesized into the following RTL circuit diagram:
 
-![Failed FSM]({{ site.url }}/blog/images/2013/10/BEH.png)
+![Failed FSM](/img/blog/images/2013/10/BEH.png)
 
 The next implementation I displayed uses a traditional FSM description
 in SystemVerilog:
 
-{% highlight systemverilog %}
+{{< highlight systemverilog >}}
 module student_fsm (input logic sleep, clk, output logic smile);
 typedef enum logic [1:0] {VU, UU, HH, VH} statetype;
 statetype state, nextstate;
@@ -85,11 +89,11 @@ always_comb // next state logic
 assign smile = (state == HH | state == VH); // output logic
 
 endmodule
-{% endhighlight %}
+{{< / highlight >}}
 
 This module syntheizes into a much nicer looking FSM as shown:
 
-![Good FSM]({{ site.url }}/blog/images/2013/10/FSM.png)
+![Good FSM](/img/blog/images/2013/10/FSM.png)
 
 The first synthesis results sorta resemble an FSM, but are prone to
 bugs and inconsistent behavior, and led many students to spend much

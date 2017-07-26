@@ -1,11 +1,16 @@
 ---
-layout: post
-title: "Jetson TK1 First Steps"
+categories:
+- programming
+date: 2014-05-20T00:00:00Z
 description: ""
-category: programming
-tags: [graphics, blog, embedded systems, technology]
+tags:
+- graphics
+- blog
+- embedded systems
+- technology
+title: Jetson TK1 First Steps
+url: /programming/2014/05/20/jetson-tk1-first-steps/
 ---
-{% include JB/setup %}
 
 I recently received my [Jetson TK1 Development
 Board](https://developer.nvidia.com/jetson-tk1), which I'm evaluating

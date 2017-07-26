@@ -1,11 +1,16 @@
 ---
-layout: post
-title: "Animated GIFs from Movies"
+categories:
+- programming
+date: 2014-01-25T00:00:00Z
 description: ""
-category: programming
-tags: [programming, python, gif, animation]
+tags:
+- programming
+- python
+- gif
+- animation
+title: Animated GIFs from Movies
+url: /programming/2014/01/25/animated-gifs-from-movies/
 ---
-{% include JB/setup %}
 
 I've often wanted to be able to make animated gifs of things. 
 I have also been interested in simple programmatic video editing from

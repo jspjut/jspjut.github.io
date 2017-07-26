@@ -1,10 +1,15 @@
 ---
-layout: post
-category : teaching
-tagline: "Only one full week"
-tags : [lecture, systemverilog, class]
+categories:
+- teaching
+date: 2013-09-12T00:00:00Z
+tagline: Only one full week
+tags:
+- lecture
+- systemverilog
+- class
+title: Two Weeks In
+url: /teaching/2013/09/12/two-weeks-in/
 ---
-{% include JB/setup %}
 
 In my [embedded systems class][e155], I decided it would be helpful to start
 with a review of SystemVerilog to hopefully keep the students from

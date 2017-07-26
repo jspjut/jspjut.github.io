@@ -1,12 +1,16 @@
 ---
-layout: post
-title: "Musical Projects"
-tagline: "a whole new world"
+categories:
+- teaching
+date: 2013-10-15T00:00:00Z
 description: ""
-category: teaching
-tags: [lab, class, assembly]
+tagline: a whole new world
+tags:
+- lab
+- class
+- assembly
+title: Musical Projects
+url: /teaching/2013/10/15/musical-projects/
 ---
-{% include JB/setup %}
 
 Today I had the fortunate presence of mind to record videos for a
 couple of my students' lab projects that I found particularly

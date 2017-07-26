@@ -1,12 +1,15 @@
 ---
-layout: post
-title: "iPhone 5S Release"
-tagline: "I don't wanna wait"
+categories:
+- technology
+date: 2013-09-20T00:00:00Z
 description: ""
-category: technology
-tags: [iPhone, technology]
+tagline: I don't wanna wait
+tags:
+- iPhone
+- technology
+title: iPhone 5S Release
+url: /technology/2013/09/20/iphone-5s-release/
 ---
-{% include JB/setup %}
 
 I bought my first iPhone 2 years ago in October of 2011. 
 I got the 5th iPhone then, the one called the iPhone 4S (or *force*

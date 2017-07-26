@@ -1,11 +1,15 @@
 ---
-layout: post
-title: "Submitting my first article to arXiv"
+categories:
+- research
+date: 2014-12-02T00:00:00Z
 description: ""
-category: research
-tags: [blog, research, latex]
+tags:
+- blog
+- research
+- latex
+title: Submitting my first article to arXiv
+url: /research/2014/12/02/submitting-my-first-article-to-arxiv/
 ---
-{% include JB/setup %}
 
 Today I submitted a technical report done by my students over the last academic year. 
 It took a while to get the write-up to the level of quality that I felt good about submitting it,
@@ -26,19 +30,19 @@ only care about the `.bbl`.
 
 Next, my particular document used a style sheet called `jpaper.cls` that
 had a strange error with how it includes the `hyperref` package.
-The relevant lines that I had to comment out are below (comments added - removed ending `%` because of jekyll):
+The relevant lines that I had to comment out are below (comments added):
 
 ```latex
 % Link and URL formatting.
 %\iftoggle{jp@hyperref}{
 %  \RequirePackage{hyperref}
 %  \hypersetup{
-%    unicode=true,%
-%    pdfstartview={FitH},%
-%    colorlinks=true,%
-%    %citecolor=black,%
-%    %filecolor=black,%
-%    %linkcolor=black,%
+%    unicode=true,
+%    pdfstartview={FitH},
+%    colorlinks=true,
+%    %citecolor=black,
+%    %filecolor=black,
+%    %linkcolor=black,
 %    %urlcolor=black
 % }}{}
 %\RequirePackage{url}

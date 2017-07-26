@@ -1,11 +1,16 @@
 ---
-layout: post
-title: "Multiple Author Affiliations in LaTeX"
+categories:
+- latex
+date: 2014-01-03T00:00:00Z
 description: ""
-category: latex
-tags: [latex, journal, article, paper]
+tags:
+- latex
+- journal
+- article
+- paper
+title: Multiple Author Affiliations in LaTeX
+url: /latex/2014/01/03/multiple-author-affiliations-in-latex/
 ---
-{% include JB/setup %}
 
 I've recently had the pleasure of updating a recent journal article
 submission with my list of affiliations. 
@@ -54,7 +59,7 @@ following set of lines:
 
 This code generates into the following on the pdf.
 
-![Author Affiliations]({{ site.url }}/blog/images/2014/01/authors.png)
+![Author Affiliations](/blog/images/2014/01/authors.png)
 
 It's not as graceful as the `authblk` code, but it works and it's a
 simple hack that you only have to do once per article.

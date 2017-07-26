@@ -1,11 +1,13 @@
 ---
-layout: post
-title: "Some Thoughts"
-description: "a weekend of thinking"
-category: personal
-tags: [thoughts]
+categories:
+- personal
+date: 2013-10-07T00:00:00Z
+description: a weekend of thinking
+tags:
+- thoughts
+title: Some Thoughts
+url: /personal/2013/10/07/some-thoughts/
 ---
-{% include JB/setup %}
 
 This weekend I got a chance to spend some time thinking about life and
 a variety of concerns.

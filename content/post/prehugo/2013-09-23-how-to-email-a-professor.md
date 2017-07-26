@@ -1,12 +1,15 @@
 ---
-layout: post
-title: "How to Email a Professor"
-tagline: "plan ahead"
+categories:
+- teaching
+date: 2013-09-23T00:00:00Z
 description: ""
-category: teaching
-tags: [class, email]
+tagline: plan ahead
+tags:
+- class
+- email
+title: How to Email a Professor
+url: /teaching/2013/09/23/how-to-email-a-professor/
 ---
-{% include JB/setup %}
 
 Just a quick note on emailing professors.
 If you are asking for help or corrections on an assignment, you should

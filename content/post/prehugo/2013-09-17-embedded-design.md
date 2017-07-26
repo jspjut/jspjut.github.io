@@ -1,12 +1,16 @@
 ---
-layout: post
-title: "Embedded Design"
-tagline: "answer, don't ask"
+categories:
+- teaching
+date: 2013-09-17T00:00:00Z
 description: ""
-category: teaching
-tags: [lab, class, confidence]
+tagline: answer, don't ask
+tags:
+- lab
+- class
+- confidence
+title: Embedded Design
+url: /teaching/2013/09/17/embedded-design/
 ---
-{% include JB/setup %}
 
 This week I met with each of the students in my [MicroPs][e155] class
 and discussed their lab assignment.

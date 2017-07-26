@@ -1,10 +1,17 @@
 ---
-layout: post
-category : website
-tagline: "Starting Fresh"
-tags : [intro, jekyll, jekyll-bootstrap, website, blog]
+categories:
+- website
+date: 2013-09-01T00:00:00Z
+tagline: Starting Fresh
+tags:
+- intro
+- jekyll
+- jekyll-bootstrap
+- website
+- blog
+title: New Year, New Website
+url: /website/2013/09/01/new-year,-new-website/
 ---
-{% include JB/setup %}
 
 I happened across [jekyll-bootstrap][] the other day, and I decided I
 should move my website to [github.io](http://github.io) after seeing
@@ -14,7 +21,7 @@ pages, which allows a reasonably good citation syntax for adding links
 to my co-authors.
 As an example, the following is the syntax for one paper along with
 the citations to my co-authors:
-<!-- more -->
+<!--more-->
 
    [jekyllbootstrap]: http://jekyllbootstrap.com
    [jekyll]: http://jekyllrb.com

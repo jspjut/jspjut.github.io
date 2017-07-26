@@ -1,12 +1,15 @@
 ---
-layout: post
-title: "NVIDIA GameWorks"
-tagline: "a step in the right direction"
+categories:
+- graphics
+date: 2013-10-18T00:00:00Z
 description: ""
-category: graphics
-tags: [graphics, gaming]
+tagline: a step in the right direction
+tags:
+- graphics
+- gaming
+title: NVIDIA GameWorks
+url: /graphics/2013/10/18/nvidia-gameworks/
 ---
-{% include JB/setup %}
 
 Today, [NVIDIA announced](http://gearnuke.com/nvidia-announces-gameworks-program-montreal-2013-supports-steamos/)
 a new program to help game developers

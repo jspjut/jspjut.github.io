@@ -1,11 +1,17 @@
 ---
-layout: post
-title: "A Busy Semester"
+categories:
+- teaching
+date: 2014-04-16T00:00:00Z
 description: ""
-category: teaching
-tags: [class, lecture, blog, ARM, ARMv7]
+tags:
+- class
+- lecture
+- blog
+- ARM
+- ARMv7
+title: A Busy Semester
+url: /teaching/2014/04/16/a-busy-semester/
 ---
-{% include JB/setup %}
 
 This semester has been extremely exciting. In particular, E85 has been
 updated from MIPS to use the ARM v7 instructions set.
@@ -22,7 +28,7 @@ enough.
 An example of the niceness can be seen by the following code for stack
 manipulation:
 
-```
+```arm
 ADD SP, SP, #-12
 STR R0, [SP, #8]
 STR R1, [SP, #4]
@@ -37,7 +43,7 @@ ADD SP, SP, #12
 This code can be effectively replaced by the following which updates
 the stack pointer as the values are written or read from the stack:
 
-```
+```arm
 STR R0, [SP, #-4]!
 STR R1, [SP, #-4]!
 STR R2, [SP, #-4]!

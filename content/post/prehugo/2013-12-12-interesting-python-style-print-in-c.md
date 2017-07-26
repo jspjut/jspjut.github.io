@@ -1,11 +1,16 @@
 ---
-layout: post
-title: "Interesting python style print in C++"
+categories:
+- programming
+date: 2013-12-12T00:00:00Z
 description: ""
-category: programming
-tags: [c++, python, print, hacks]
+tags:
+- c++
+- python
+- print
+- hacks
+title: Interesting python style print in C++
+url: /programming/2013/12/12/interesting-python-style-print-in-c/
 ---
-{% include JB/setup %}
 
 I came across a really interesting piece of C++ code today hidden in
 this [list of obscure C++
@@ -14,7 +19,7 @@ It includes an implementation of some of the `print` syntax
 functionality of python 2 implemented in C++.
 Here's the code (copied here, but I'm not the original author):
 
-<!-- more -->
+<!--more-->
 
 ```c++
 #include <iostream>

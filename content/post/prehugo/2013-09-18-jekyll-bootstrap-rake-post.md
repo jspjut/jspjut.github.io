@@ -1,12 +1,19 @@
 ---
-layout: post
-title: "Jekyll Bootstrap: rake post"
-tagline: "making new posts"
+categories:
+- website
+date: 2013-09-18T00:00:00Z
 description: ""
-category: website
-tags: [jekyll, jekyll-bootstrap, website, blog, post, rake]
+tagline: making new posts
+tags:
+- jekyll
+- jekyll-bootstrap
+- website
+- blog
+- post
+- rake
+title: 'Jekyll Bootstrap: rake post'
+url: /website/2013/09/18/jekyll-bootstrap-rake-post/
 ---
-{% include JB/setup %}
 
 I recently discovered a new feature that comes with Jekyll bootstrap,
 but I'm unsure whether it is only in JB, or if it comes by default

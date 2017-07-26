@@ -1,10 +1,15 @@
 ---
-layout: post
-category : teaching
-tagline: "When to say no"
-tags : [busy, life, class]
+categories:
+- teaching
+date: 2013-09-02T00:00:00Z
+tagline: When to say no
+tags:
+- busy
+- life
+- class
+title: How to Not Have a Life
+url: /teaching/2013/09/02/how-to-not-have-a-life/
 ---
-{% include JB/setup %}
 
 A couple weeks ago, I received a call asking me to teach an extra
 class this semester (Fall 2013).

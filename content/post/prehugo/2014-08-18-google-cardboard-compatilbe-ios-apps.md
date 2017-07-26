@@ -1,11 +1,17 @@
 ---
-layout: post
-title: "Google Cardboard compatilbe iOS apps"
+categories:
+- virtual reality
+date: 2014-08-18T00:00:00Z
 description: ""
-category: virtual reality
-tags: [google, cardboard, iOS, virtual reality, iPhone]
+tags:
+- google
+- cardboard
+- iOS
+- virtual reality
+- iPhone
+title: Google Cardboard compatilbe iOS apps
+url: /virtual reality/2014/08/18/google-cardboard-compatilbe-ios-apps/
 ---
-{% include JB/setup %}
 
 I got a [Google Cardboard](https://developers.google.com/cardboard/)
 last week at

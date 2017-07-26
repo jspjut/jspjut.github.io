@@ -1,12 +1,14 @@
 ---
-layout: post
-title: "Easiest Development Job Ever"
-tagline: "1-800-555-1234"
+categories:
+- programming
+date: 2013-09-25T00:00:00Z
 description: ""
-category: programming
-tags: [programming]
+tagline: 1-800-555-1234
+tags:
+- programming
+title: Easiest Development Job Ever
+url: /programming/2013/09/25/easiest-development-job-ever/
 ---
-{% include JB/setup %}
 
 Today I came across [a blog
 post](http://blog.plover.com/tech/prudential.html) from a developer

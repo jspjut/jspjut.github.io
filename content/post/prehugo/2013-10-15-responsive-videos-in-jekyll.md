@@ -1,14 +1,17 @@
 ---
-layout: post
-title: "Responsive Videos in Jekyll"
-tagline: "thanks Todd"
+categories:
+- website
+date: 2013-10-15T00:00:00Z
 description: ""
-category: website
-tags: [jekyll, javascript]
+tagline: thanks Todd
+tags:
+- jekyll
+- javascript
+title: Responsive Videos in Jekyll
+url: /website/2013/10/15/responsive-videos-in-jekyll/
 ---
-{% include JB/setup %}
 
-For my [other blog post]({% post_url 2013-10-15-musical-projects %})
+For my [other blog post](/post/prehugo/2013-10-15-musical-projects)
 today, I decided I wanted to embed the youtube videos I recorded
 earlier.
 Since the rest of my website is fully responsive now, I thought it

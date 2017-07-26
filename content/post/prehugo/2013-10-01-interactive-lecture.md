@@ -1,11 +1,15 @@
 ---
-layout: post
-title: "Interactive Lecture"
+categories:
+- teaching
+date: 2013-10-01T00:00:00Z
 description: ""
-category: teaching
-tags: [lecture, class, verilog]
+tags:
+- lecture
+- class
+- verilog
+title: Interactive Lecture
+url: /teaching/2013/10/01/interactive-lecture/
 ---
-{% include JB/setup %}
 
 In grading some labs this week, I noticed a trend among my students to
 create something that was essentially a finite state machine (FSM)

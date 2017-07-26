@@ -1,12 +1,16 @@
 ---
-layout: post
-title: "Student-run Class Sessions"
+categories:
+- teaching
+date: 2014-02-07T00:00:00Z
 description: ""
-tagline: "learning by teaching"
-category: teaching
-tags: [class, learning, students]
+tagline: learning by teaching
+tags:
+- class
+- learning
+- students
+title: Student-run Class Sessions
+url: /teaching/2014/02/07/student-run-class-sessions/
 ---
-{% include JB/setup %}
 
 This semester I am teaching a project-based class that has almost no
 formal instruction by the professor. Instead of providing close

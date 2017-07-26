@@ -1,11 +1,15 @@
 ---
-layout: post
-title: "Game Design Thoughts"
+categories:
+- game design
+date: 2014-01-14T00:00:00Z
 description: ""
-category: game design
-tags: [game design, research, games]
+tags:
+- game design
+- research
+- games
+title: Game Design Thoughts
+url: /game design/2014/01/14/game-design-thoughts/
 ---
-{% include JB/setup %}
 
 I've been thinking recently about the kinds of things I'd like to work
 on most during the break from teaching, and I've decided that I really

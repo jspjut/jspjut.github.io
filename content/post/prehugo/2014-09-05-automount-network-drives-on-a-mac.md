@@ -1,11 +1,15 @@
 ---
-layout: post
-title: "Automount network drives on a Mac"
+categories:
+- osx
+date: 2014-09-05T00:00:00Z
 description: ""
-category: osx
-tags: [file sharing, osx, automation]
+tags:
+- file sharing
+- osx
+- automation
+title: Automount network drives on a Mac
+url: /osx/2014/09/05/automount-network-drives-on-a-mac/
 ---
-{% include JB/setup %}
 
 I recently added a network storage device to my home network and
 decided I didn't want to have to keep reconnecting to the device every

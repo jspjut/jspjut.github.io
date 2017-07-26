@@ -1,12 +1,15 @@
 ---
-layout: post
-title: "Undergraduate Research"
-tagline: "More like graduated research"
+categories:
+- research
+date: 2013-09-19T00:00:00Z
 description: ""
-category: research
-tags: [research, writing]
+tagline: More like graduated research
+tags:
+- research
+- writing
+title: Undergraduate Research
+url: /research/2013/09/19/undergraduated-research/
 ---
-{% include JB/setup %}
 
 Over the last year, I advised 5 undergraduate students on a couple
 research projects. One of them included the development of tutorials

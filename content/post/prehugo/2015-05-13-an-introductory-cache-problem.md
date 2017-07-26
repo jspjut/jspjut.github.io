@@ -1,11 +1,16 @@
 ---
-layout: post
-title: "An Introductory Cache Problem"
-description: "first semester computer architecture"
-category: teaching
-tags: [lecture, class, cache, memory]
+categories:
+- teaching
+date: 2015-05-13T00:00:00Z
+description: first semester computer architecture
+tags:
+- lecture
+- class
+- cache
+- memory
+title: An Introductory Cache Problem
+url: /teaching/2015/05/13/an-introductory-cache-problem/
 ---
-{% include JB/setup %}
 
 I recently gave a problem on the final in [E85](http://pages.hmc.edu/jspjut/class/s2015/e85/).
 The students didn't do too well on it overall, so I wanted to post the problem and solution in an effort to 
