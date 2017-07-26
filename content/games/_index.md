@@ -1,10 +1,6 @@
----
-layout: page
-title: Games
-tagline: Other things I've done
-group: navigation
----
-{% include JB/setup %}
++++
+title = "Games"
++++
 
 My hobbies include music, composition, reading, writing, gaming, and game design. If I ever get
 enough time, I'll spend some of it trying out new ways to design games
