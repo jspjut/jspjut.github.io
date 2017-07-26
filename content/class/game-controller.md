@@ -1,9 +1,7 @@
----
-layout: page
-title: Build your own Game Controller
-tagline: for PC games
----
-{% include JB/setup %}
++++
+title = "Build your own Game Controller"
+date = 2015-08-03
++++
 
 # Course Examples
 
