@@ -33,6 +33,4 @@ weight = 1
 
 # Biography
 
-Research Scientist at NVIDIA. Formerly a Visiting Assistant Professor in the department of Engineering at Harvey Mudd College.
-
-<!--My research interests include New Human Computer Experiences, Graphics, Architecture, and Embedded Systems.-->
+Josef Spjut is a Research Scientist at NVIDIA working on new human experiences, such as virtual and augmented reality. Prior to joining NVIDIA full time, he was a Visiting Assistant Professor in the department of Engineering at Harvey Mudd College. He received a Ph.D. from the University of Utah and a B.S. from University of California, Riverside, both in Computer Engineering.
