@@ -8,10 +8,6 @@
     <div class="col-md-12">
       <h1>{{ .Title | default (i18n "publications") }}</h1>
 
-      {{ with .Content }}
-      <div class="article-style" itemprop="articleBody">{{ . }}</div>
-      {{ end }}
-
       <div class="row" id="container-publicationss">
         {{ range .Params.pubtype_list }}
           {{ $pubtype := . }}
@@ -29,6 +25,11 @@
           </ul>
         {{ end }}
       </div>
+
+      {{ with .Content }}
+      <div class="article-style" itemprop="articleBody">{{ . }}</div>
+      {{ end }}
+
 
     </div>
   </div>
