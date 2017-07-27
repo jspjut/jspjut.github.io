@@ -13,6 +13,7 @@ caption = ""
 <!-- * [My Google Scholar Page](http://scholar.google.com/citations?user=WzhSQzkAAAAJ) -->
 <!-- * [My Erdos number of 4](http://academic.research.microsoft.com/VisualExplorer#3829195&1112639) -->
 * [In the Media](/media/)
+* [NVIDIA Blog SIGGRAPH 2017](https://blogs.nvidia.com/blog/2017/07/27/nvidia-research-augmented-reality-vr/)
 * [NVIDIA Research Profile](http://research.nvidia.com/person/josef-spjut)
 
 ## Teaching
