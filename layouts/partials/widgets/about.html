@@ -48,7 +48,7 @@
     <div class="row">
 
       {{ with $page.Params.interests }}
-      <div class="col-sm-12">
+      <div class="col-sm-8">
       <!--<div class="col-sm-5">-->
         <h3>{{ i18n "interests" | markdownify }}</h3>
         <ul class="ul-interests">
@@ -56,6 +56,17 @@
           <li>{{ . }}</li>
           {{ end }}
         </ul>
+      </div>
+      {{ end }}
+
+      {{ with $page.Params.cv }}
+      <div class="col-sm-4">
+        <h3>Curriculum Vitae</h3>
+        {{ range .link }}
+        <a class="btn btn-primary btn-outline" href="{{ .url | absURL }}">
+          {{ .name }}
+        </a>
+        {{ end }}
       </div>
       {{ end }}
 

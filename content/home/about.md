@@ -28,6 +28,15 @@ weight = 1
   course = "BS in Computer Engineering"
   institution = "University of California at Riverside"
   year = 2006
+
+# List CV links
+[[cv.link]]
+  name = "html"
+  url = "/cv/"
+
+[[cv.link]]
+  name = "pdf"
+  url = "/files/cv.pdf"
  
 +++
 
