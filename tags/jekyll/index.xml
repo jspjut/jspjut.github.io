@@ -23,6 +23,8 @@
 &lt;p&gt;The most useful thing for developing my site was when I found the &lt;a href=&#34;https://sourcethemes.com/academic/&#34; target=&#34;_blank&#34;&gt;academic theme&lt;/a&gt;. It turns out that in Hugo, themes contain a lot of the functionality of a site, and they make it easy to add on functionality either by modifying the theme, or your site in particular. The academic theme is widely used so there a good &lt;a href=&#34;https://sourcethemes.com/academic/post/getting-started/&#34; target=&#34;_blank&#34;&gt;reference page&lt;/a&gt; to help you get started.&lt;/p&gt;
 
 &lt;p&gt;The creator of the academic theme also has a &lt;a href=&#34;https://georgecushen.com/create-your-website-with-hugo/&#34; target=&#34;_blank&#34;&gt;good tutorial&lt;/a&gt; on his blog for how to set up a new hugo site from scratch.&lt;/p&gt;
+
+&lt;p&gt;I ended up testing a lot of my design on a separate repository so I could test out pushing to github sites. It turns out that github user pages need to push to the &lt;code&gt;master&lt;/code&gt; branch in order to publish to the web, so my original script to push to a &lt;code&gt;gh-pages&lt;/code&gt; branch had to be modified. It seems to be working as of July 26, 2017, but there are probably a ton of bugs remaining. If you happen to find any bugs, please leave a comment or sent me a message on twitter to let me know and I&amp;rsquo;ll fix it.&lt;/p&gt;
 </description>
     </item>
     
