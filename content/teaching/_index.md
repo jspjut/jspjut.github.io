@@ -2,8 +2,8 @@
 title = "Teaching"
 +++
 
-I previously taught classes as a visiting professor at Harvey Mudd College. 
-I also was involved in a few classes at the University of Utah as a graduate student.
+### SIGGRAPH 2015
+* [Siggraph Build Your own Game Controller](/class/game-controller).
 
 ### At Harvey Mudd
 * S2015: [e85: Digital Design and Computer Architecture](http://pages.hmc.edu/jspjut/class/s2015/e85) - Taught with [Matthew Spencer][ms]
