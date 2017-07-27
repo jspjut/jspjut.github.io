@@ -188,11 +188,12 @@ blockquote p:last-child {
   margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px;
+  padding-top: 1px;  
   width: 100%;
 }
-@media only screen and (min-width: 1001px) {
+@media only screen and (min-width: 1101px) {
   .universal-wrapper {
-    width: 1000px;
+    width: 1100px;
   }
 }
 
@@ -217,7 +218,7 @@ blockquote p:last-child {
 }
 
 .home-section:first-of-type {
-  padding-top: 50px;
+  padding-top: 0px;
 }
 
 .home-section:nth-of-type(even) {
@@ -390,6 +391,7 @@ article {
 
 .article-container {
   max-width: 760px;
+  max-width: 1100px;
   padding: 1rem 20px 0 20px;
   margin: 0 auto 0 auto;
 }
