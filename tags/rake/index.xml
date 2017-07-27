@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rake on Josef Spjut</title>
+    <link>http://josef.spjut.me/tags/rake/</link>
+    <description>Recent content in Rake on Josef Spjut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Josef Spjut</copyright>
+    <lastBuildDate>Wed, 18 Sep 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/rake/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Jekyll Bootstrap: rake post</title>
+      <link>http://josef.spjut.me/website/2013/09/18/jekyll-bootstrap-rake-post/</link>
+      <pubDate>Wed, 18 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/website/2013/09/18/jekyll-bootstrap-rake-post/</guid>
+      <description>&lt;p&gt;I recently discovered a new feature that comes with Jekyll bootstrap,
+but I&amp;rsquo;m unsure whether it is only in JB, or if it comes by default
+with Jekyll.
+There is a Rakefile (which is sort of like a Makefile, but written in
+Ruby) that includes a few nice functions.
+The one I discovered most recently allows you to create a new blog
+post complete with the YAML frontmatter and the proper file name for
+Jekyll to do the right thing with.
+The usage is as follows:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# Usage: rake post title=&amp;quot;A Title&amp;quot; [date=&amp;quot;2012-02-09&amp;quot;] [tags=[tag1, tag2]]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you omit all of the optional arguments, then &lt;code&gt;rake post&lt;/code&gt; will
+create a new post on today&amp;rsquo;s date titled &amp;ldquo;New Post&amp;rdquo; with the default
+values for everything else.
+I personally prefer to include a title in my rake command to get the
+correct file name from the beginning.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

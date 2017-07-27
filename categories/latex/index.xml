@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Latex on Josef Spjut</title>
+    <link>http://josef.spjut.me/categories/latex/</link>
+    <description>Recent content in Latex on Josef Spjut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Josef Spjut</copyright>
+    <lastBuildDate>Fri, 03 Jan 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/categories/latex/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Multiple Author Affiliations in LaTeX</title>
+      <link>http://josef.spjut.me/latex/2014/01/03/multiple-author-affiliations-in-latex/</link>
+      <pubDate>Fri, 03 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/latex/2014/01/03/multiple-author-affiliations-in-latex/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve recently had the pleasure of updating a recent journal article
+submission with my list of affiliations.
+On the article, there are 5 authors, and among them, I am the only one
+with different affiliations, though I share the other affiliation with
+the rest of the authors.
+After some quick googling on how I should perform this, I came up with
+the following snippet of code that should have worked.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\usepackage{authblk}
+
+\author[1]{Daniel Kopta}
+\author[1]{Konstantin Shkurko}
+\author[1,2,3]{Josef Spjut}
+\author[1]{Erik Brunvand}
+\author[1]{Al Davis}
+\affil[1]{School of Computing, University of Utah, Salt Lake City, UT, USA\\
+       \{redacted\}@email.edu}
+\affil[2]{NVIDIA Research}
+\affil[3]{Department of Engineering, Harvey Mudd College, Claremont, CA, USA}
+\renewcommand\Authands{ and }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;code&gt;authblk&lt;/code&gt; package seems to be beautiful for performing this
+function, however it has one problem when used with the other styles
+for this particular article. It causes &lt;code&gt;\maketitle&lt;/code&gt; to fail
+complaining about some spacing error, and I couldn&amp;rsquo;t figure out how to
+fix it.
+Instead, I opted for the poor man&amp;rsquo;s solution to the problem with the
+following set of lines:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\author[D. Kopta et al.]
+       {D. Kopta$^1$, K. Shkurko$^1$, J. Spjut$^{1,2,3}$,
+       E. Brunvand$^1$, and A. Davis$^1$
+       \\
+       $^1$School of Computing, University of Utah, Salt Lake City,
+       UT, USA\\
+       \{redacted\}@email.edu\\ 
+       $^2$NVIDIA Research\\
+       $^3$Department of Engineering, Harvey Mudd College, Claremont,
+       CA, USA\\
+       }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This code generates into the following on the pdf.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://josef.spjut.me/blog/images/2014/01/authors.png&#34; alt=&#34;Author Affiliations&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s not as graceful as the &lt;code&gt;authblk&lt;/code&gt; code, but it works and it&amp;rsquo;s a
+simple hack that you only have to do once per article.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hacks on Josef Spjut</title>
+    <link>http://josef.spjut.me/tags/hacks/</link>
+    <description>Recent content in Hacks on Josef Spjut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Josef Spjut</copyright>
+    <lastBuildDate>Thu, 12 Dec 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/hacks/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Interesting python style print in C&#43;&#43;</title>
+      <link>http://josef.spjut.me/programming/2013/12/12/interesting-python-style-print-in-c/</link>
+      <pubDate>Thu, 12 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/programming/2013/12/12/interesting-python-style-print-in-c/</guid>
+      <description>&lt;p&gt;I came across a really interesting piece of C++ code today hidden in
+this &lt;a href=&#34;http://madebyevan.com/obscure-cpp-features/?viksra&#34; target=&#34;_blank&#34;&gt;list of obscure C++
+features&lt;/a&gt;.
+It includes an implementation of some of the &lt;code&gt;print&lt;/code&gt; syntax
+functionality of python 2 implemented in C++.
+Here&amp;rsquo;s the code (copied here, but I&amp;rsquo;m not the original author):&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;#include &amp;lt;iostream&amp;gt;
+
+namespace __hidden__ {
+  struct print {
+    bool space;
+    print() : space(false) {}
+    ~print() { std::cout &amp;lt;&amp;lt; std::endl; }
+
+    template &amp;lt;typename T&amp;gt;
+    print &amp;amp;operator , (const T &amp;amp;t) {
+      if (space) std::cout &amp;lt;&amp;lt; &#39; &#39;;
+      else space = true;
+      std::cout &amp;lt;&amp;lt; t;
+      return *this;
+    }
+  };
+}
+
+#define print __hidden__::print(),
+
+int main() {
+  int a = 1, b = 2;
+  print &amp;quot;this is a test&amp;quot;;
+  print &amp;quot;the sum of&amp;quot;, a, &amp;quot;and&amp;quot;, b, &amp;quot;is&amp;quot;, a + b;
+  return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;While this implementation is interesting, it is missing what I think
+is the best feature of python &lt;code&gt;print&lt;/code&gt; and that is the ability to use
+&lt;code&gt;%&lt;/code&gt; to do C &lt;code&gt;printf&lt;/code&gt; style printing.
+If I end up with a bundle of extra time, I might actually try adding
+that functionality, though it&amp;rsquo;s not immediately apparent to me how to
+overload an operator to take an arbitrarily sized list as input&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

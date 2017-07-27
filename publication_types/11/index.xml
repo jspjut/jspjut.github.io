@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>11 on Josef Spjut</title>
+    <link>http://josef.spjut.me/publication_types/11/</link>
+    <description>Recent content in 11 on Josef Spjut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Josef Spjut</copyright>
+    <lastBuildDate>Sat, 01 Aug 2009 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/publication_types/11/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Grid-Based Ray Tracing for a Parallel Computing Architecture</title>
+      <link>http://josef.spjut.me/publication/pos/p2/</link>
+      <pubDate>Sat, 01 Aug 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/pos/p2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Comparing Incoherent Ray Performance of TRaX vs. Manta</title>
+      <link>http://josef.spjut.me/publication/pos/p1/</link>
+      <pubDate>Sat, 09 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/pos/p1/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

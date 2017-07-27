@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Armv7 on Josef Spjut</title>
+    <link>http://josef.spjut.me/tags/armv7/</link>
+    <description>Recent content in Armv7 on Josef Spjut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Josef Spjut</copyright>
+    <lastBuildDate>Wed, 16 Apr 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/armv7/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>A Busy Semester</title>
+      <link>http://josef.spjut.me/teaching/2014/04/16/a-busy-semester/</link>
+      <pubDate>Wed, 16 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/teaching/2014/04/16/a-busy-semester/</guid>
+      <description>&lt;p&gt;This semester has been extremely exciting. In particular, E85 has been
+updated from MIPS to use the ARM v7 instructions set.
+This has been a good experience for me despite some difficulties and a
+few moments of intensity where I wasn&amp;rsquo;t sure things would come
+together in time.
+In doing this, I&amp;rsquo;ve come to learn a lot about the ARM ISA, and I&amp;rsquo;ve
+decided I like it a lot.
+In particular, I think it strikes a reasonably good balance between
+RISC and CISC instructions where there are a couple nice addressing
+modes for stack manipulation that aren&amp;rsquo;t quite RISC, but are close
+enough.&lt;/p&gt;
+
+&lt;p&gt;An example of the niceness can be seen by the following code for stack
+manipulation:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-arm&#34;&gt;ADD SP, SP, #-12
+STR R0, [SP, #8]
+STR R1, [SP, #4]
+STR R2, [SP, #0]
+...
+LDR R0, [SP, #8]
+LDR R1, [SP, #4]
+LDR R2, [SP, #0]
+ADD SP, SP, #12
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This code can be effectively replaced by the following which updates
+the stack pointer as the values are written or read from the stack:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-arm&#34;&gt;STR R0, [SP, #-4]!
+STR R1, [SP, #-4]!
+STR R2, [SP, #-4]!
+...
+LDR R2, [SP], #4
+LDR R1, [SP], #4
+LDR R0, [SP], #4
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;MIPS did not have the option to manipulate the stack pointer while
+changing it from a single instruction.
+I think this additional understanding will be useful for many of the
+students in the class in their future careers.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lab on Josef Spjut</title>
+    <link>http://josef.spjut.me/tags/lab/</link>
+    <description>Recent content in Lab on Josef Spjut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Josef Spjut</copyright>
+    <lastBuildDate>Tue, 15 Oct 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/lab/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Musical Projects</title>
+      <link>http://josef.spjut.me/teaching/2013/10/15/musical-projects/</link>
+      <pubDate>Tue, 15 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/teaching/2013/10/15/musical-projects/</guid>
+      <description>&lt;p&gt;Today I had the fortunate presence of mind to record videos for a
+couple of my students&amp;rsquo; lab projects that I found particularly
+interesting.
+In this post I&amp;rsquo;ll go ahead and embed these videos for anyone
+interested in watching them.
+To explain briefly, the assignment was to use assembly programming for
+the PIC 32 microcontroller to have a speaker produce a song.
+Optionally, students were allowed to play a song of their choosing
+after putting that song in the program memory.
+The following are two of these custom songs chosen by the students.&lt;/p&gt;
+
+&lt;p&gt;First up is the video inspiring the tagline, &amp;ldquo;A Whole New World&amp;rdquo; which
+is impressive because these two students created a duet from their
+projects.&lt;/p&gt;
+
+&lt;iframe width=&#34;420&#34; height=&#34;315&#34;
+src=&#34;//www.youtube.com/embed/YtRUuayHCLg&#34; frameborder=&#34;0&#34;
+allowfullscreen=&#34;1&#34;&gt; &lt;/iframe&gt;
+
+&lt;p&gt;Finally another student recreated a famous internet song.&lt;/p&gt;
+
+&lt;iframe width=&#34;420&#34; height=&#34;315&#34;
+src=&#34;//www.youtube.com/embed/XZ6qLQ16RqQ&#34; frameborder=&#34;0&#34;
+allowfullscreen=&#34;1&#34;&gt; &lt;/iframe&gt;
+
+&lt;p&gt;One last personal note: 10 years ago today I flew home from spending 2
+years in Spain.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Embedded Design</title>
+      <link>http://josef.spjut.me/teaching/2013/09/17/embedded-design/</link>
+      <pubDate>Tue, 17 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/teaching/2013/09/17/embedded-design/</guid>
+      <description>&lt;p&gt;This week I met with each of the students in my &lt;a href=&#34;http://www3.hmc.edu/~jspjut/class/e155&#34; target=&#34;_blank&#34;&gt;MicroPs&lt;/a&gt; class
+and discussed their lab assignment.
+The first lab assignment was primarily soldering components onto their
+PCB and verifying that all of the components worked.
+As part of these lab interviews, I get to ask each student a question
+about their project to try to test their knowledge.
+One thing I noticed is that many of the students didn&amp;rsquo;t &lt;em&gt;own&lt;/em&gt; their
+project as fully as I would like.
+What I mean by that is that when I would ask what a button on their
+board does, then would respond by asking me if it does what they think
+it does.
+This is a very student sort of behavior, and I&amp;rsquo;d really like to teach
+them to be more confident and assertive in what they turn in.
+Today, I&amp;rsquo;m going to tell the class that they should not answer my lab
+interview questions with another question, but instead respond with
+confidence according to their best knowledge.
+Of course if you don&amp;rsquo;t know the answer, you really shouldn&amp;rsquo;t say
+something as if it&amp;rsquo;s true, but the right way to respond in that case
+is with full honesty that you don&amp;rsquo;t know the answer, but you suspect
+or believe it works this way.&lt;/p&gt;
+
+&lt;p&gt;When you design something, you should &lt;em&gt;own that design&lt;/em&gt;. That is all.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

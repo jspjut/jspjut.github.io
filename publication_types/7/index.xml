@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>7 on Josef Spjut</title>
+    <link>http://josef.spjut.me/publication_types/7/</link>
+    <description>Recent content in 7 on Josef Spjut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Josef Spjut</copyright>
+    <lastBuildDate>Tue, 24 May 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/publication_types/7/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hybrid Modulation for Near Zero Display Latency</title>
+      <link>http://josef.spjut.me/publication/ref/c10/</link>
+      <pubDate>Tue, 24 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ref/c10/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Memory Considerations for Low Energy Ray Tracing</title>
+      <link>http://josef.spjut.me/publication/ref/c9/</link>
+      <pubDate>Thu, 07 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ref/c9/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An Energy and Bandwidth Efficient Ray Tracing Architecture</title>
+      <link>http://josef.spjut.me/publication/ref/c8/</link>
+      <pubDate>Wed, 10 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ref/c8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fast, Effective BVH Updates for Animated Scenes</title>
+      <link>http://josef.spjut.me/publication/ref/c7/</link>
+      <pubDate>Thu, 01 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ref/c7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Mobile Accelerator Architecture for Ray Tracing</title>
+      <link>http://josef.spjut.me/publication/ref/c6/</link>
+      <pubDate>Wed, 01 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ref/c6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Efficient MIMD Architectures for High-Performance Ray Tracing</title>
+      <link>http://josef.spjut.me/publication/ref/c5/</link>
+      <pubDate>Fri, 01 Oct 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ref/c5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SWEL: Hardware Cache Coherence Protocols to Map Shared Data onto Shared Caches</title>
+      <link>http://josef.spjut.me/publication/ref/c4/</link>
+      <pubDate>Wed, 01 Sep 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ref/c4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TRaX: A Multicore Architecture for Real-Time Ray Tracing</title>
+      <link>http://josef.spjut.me/publication/ref/c3/</link>
+      <pubDate>Tue, 01 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ref/c3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hardware-accelerated gradient noise for graphics</title>
+      <link>http://josef.spjut.me/publication/ref/c2/</link>
+      <pubDate>Sun, 10 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ref/c2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Optimizing a Multi-Core Processor for Message-Passing Workloads</title>
+      <link>http://josef.spjut.me/publication/ref/c1/</link>
+      <pubDate>Wed, 01 Apr 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ref/c1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TRaX: A Multi-Threaded Architecture for Real-Time Ray Tracing</title>
+      <link>http://josef.spjut.me/publication/ref/c0/</link>
+      <pubDate>Sun, 08 Jun 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ref/c0/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

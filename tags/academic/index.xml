@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Academic on Josef Spjut</title>
+    <link>http://josef.spjut.me/tags/academic/</link>
+    <description>Recent content in Academic on Josef Spjut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Josef Spjut</copyright>
+    <lastBuildDate>Thu, 06 Jul 2017 09:49:57 -0400</lastBuildDate>
+    <atom:link href="/tags/academic/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hugo Notes</title>
+      <link>http://josef.spjut.me/post/2017/hugo-notes/</link>
+      <pubDate>Thu, 06 Jul 2017 09:49:57 -0400</pubDate>
+      
+      <guid>http://josef.spjut.me/post/2017/hugo-notes/</guid>
+      <description>&lt;p&gt;I recently undertook the effort of moving my website from jekyll using jekyll-bootstrap to Hugo and I wanted to record some notes from my efforts. In particular I want to collect a set of useful links that helped me in making the switch.&lt;/p&gt;
+
+&lt;p&gt;For what it&amp;rsquo;s worth, I greatly prefer Hugo now that I&amp;rsquo;ve gotten used to it, though there wasn&amp;rsquo;t too much broken about Jekyll.&lt;/p&gt;
+
+&lt;p&gt;The most useful thing for developing my site was when I found the &lt;a href=&#34;https://sourcethemes.com/academic/&#34; target=&#34;_blank&#34;&gt;academic theme&lt;/a&gt;. It turns out that in Hugo, themes contain a lot of the functionality of a site, and they make it easy to add on functionality either by modifying the theme, or your site in particular. The academic theme is widely used so there a good &lt;a href=&#34;https://sourcethemes.com/academic/post/getting-started/&#34; target=&#34;_blank&#34;&gt;reference page&lt;/a&gt; to help you get started.&lt;/p&gt;
+
+&lt;p&gt;The creator of the academic theme also has a &lt;a href=&#34;https://georgecushen.com/create-your-website-with-hugo/&#34; target=&#34;_blank&#34;&gt;good tutorial&lt;/a&gt; on his blog for how to set up a new hugo site from scratch.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

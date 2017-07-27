@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications on Josef Spjut</title>
+    <link>http://josef.spjut.me/publication/</link>
+    <description>Recent content in Publications on Josef Spjut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Josef Spjut</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/publication/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Stretchable Transducers for Kinesthetic Interactions in Virtual Reality</title>
+      <link>http://josef.spjut.me/publication/ct/ct1/</link>
+      <pubDate>Thu, 03 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ct/ct1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stretchable Transducers for Kinesthetic Interactions in Virtual Reality</title>
+      <link>http://josef.spjut.me/publication/td/td1/</link>
+      <pubDate>Sun, 30 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/td/td1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Varifocal Virtuality: A Novel Optical Layout for Near-Eye Display</title>
+      <link>http://josef.spjut.me/publication/td/td2/</link>
+      <pubDate>Sun, 30 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/td/td2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stretchable Transducers for Haptic Interactions in Virtual and Augmented Reality</title>
+      <link>http://josef.spjut.me/publication/td/td0/</link>
+      <pubDate>Tue, 09 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/td/td0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hybrid Modulation for Near Zero Display Latency</title>
+      <link>http://josef.spjut.me/publication/ref/c10/</link>
+      <pubDate>Tue, 24 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ref/c10/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Build your own game controller</title>
+      <link>http://josef.spjut.me/publication/ct/ct0/</link>
+      <pubDate>Mon, 10 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ct/ct0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An Approach to Data Prefetching Using 2-Dimensional Selection Criteria</title>
+      <link>http://josef.spjut.me/publication/tr/tr6/</link>
+      <pubDate>Fri, 01 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/tr/tr6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Efficient Ray Tracing Architectures</title>
+      <link>http://josef.spjut.me/publication/dis/d0/</link>
+      <pubDate>Fri, 01 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/dis/d0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sphynx: A Shared Instruction Cache Exporatory Study</title>
+      <link>http://josef.spjut.me/publication/tr/tr5/</link>
+      <pubDate>Wed, 03 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/tr/tr5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Memory Considerations for Low Energy Ray Tracing</title>
+      <link>http://josef.spjut.me/publication/ref/c9/</link>
+      <pubDate>Thu, 07 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ref/c9/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Time-to-Recache Case Study</title>
+      <link>http://josef.spjut.me/publication/tr/tr4/</link>
+      <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/tr/tr4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Qualitative Cache Performance Analysis</title>
+      <link>http://josef.spjut.me/publication/tr/tr3/</link>
+      <pubDate>Sun, 01 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/tr/tr3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An Energy and Bandwidth Efficient Ray Tracing Architecture</title>
+      <link>http://josef.spjut.me/publication/ref/c8/</link>
+      <pubDate>Wed, 10 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ref/c8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fast, Effective BVH Updates for Animated Scenes</title>
+      <link>http://josef.spjut.me/publication/ref/c7/</link>
+      <pubDate>Thu, 01 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ref/c7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Mobile Accelerator Architecture for Ray Tracing</title>
+      <link>http://josef.spjut.me/publication/ref/c6/</link>
+      <pubDate>Wed, 01 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ref/c6/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

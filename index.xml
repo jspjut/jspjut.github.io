@@ -1,0 +1,2027 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Josef Spjut on Josef Spjut</title>
+    <link>http://josef.spjut.me/</link>
+    <description>Recent content in Josef Spjut on Josef Spjut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Josef Spjut</copyright>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Stretchable Transducers for Kinesthetic Interactions in Virtual Reality</title>
+      <link>http://josef.spjut.me/publication/ct/ct1/</link>
+      <pubDate>Thu, 03 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ct/ct1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stretchable Transducers for Kinesthetic Interactions in Virtual Reality</title>
+      <link>http://josef.spjut.me/publication/td/td1/</link>
+      <pubDate>Sun, 30 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/td/td1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Varifocal Virtuality: A Novel Optical Layout for Near-Eye Display</title>
+      <link>http://josef.spjut.me/publication/td/td2/</link>
+      <pubDate>Sun, 30 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/td/td2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Research</title>
+      <link>http://josef.spjut.me/research/research/</link>
+      <pubDate>Wed, 26 Jul 2017 00:00:00 -0400</pubDate>
+      
+      <guid>http://josef.spjut.me/research/research/</guid>
+      <description>&lt;style&gt;
+a.author{
+	color: grey;
+}
+a.primary{
+	font-weight: bold;
+}
+&lt;/style&gt;
+
+&lt;p&gt;
+My Research interests include Ray Tracing, Computer Graphics, Computer
+Architecture, Computer Displays, Virtual Reality, Augmented Reality,
+Parallel Computing, Real Time Systems, Application
+Specific Processing, and Human Computer Interaction.
+&lt;/p&gt;
+
+&lt;h2&gt;Refereed Publications&lt;/h2&gt;
+&lt;ol&gt;&lt;li&gt;&lt;a href=&#34;https://research.nvidia.com/users/trey-greer&#34; class=&#34;author&#34;&gt;Trey Greer&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://luebke.us/&#34; class=&#34;author&#34;&gt;David Luebke&lt;/a&gt;, &lt;a href=&#34;https://research.nvidia.com/users/turner-whitted&#34; class=&#34;author&#34;&gt;Turner Whitted&lt;/a&gt;;
+&lt;strong&gt;Hybrid Modulation for Near Zero Display Latency&lt;/strong&gt;,
+&lt;em&gt;Society of Information Display&lt;/em&gt;,
+May 24-27, 2016.
+&lt;a href=&#34;http://josef.spjut.me/pubs/greer16.pdf&#34;&gt;paper&lt;/a&gt;
+&lt;a href=&#34;http://onlinelibrary.wiley.com/doi/10.1002/sdtp.10614/full&#34;&gt;alternate&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibc10&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibc10&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{greerspjut16,
+ author = { Trey Greer and Josef Spjut and David Luebke and Turner Whitted },
+ title = { {Hybrid Modulation for Near Zero Display Latency} },
+ year = {2016},
+ booktitle = {Society of Information Display}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.cs.utah.edu/~dkopta/&#34; class=&#34;author&#34;&gt;Daniel Kopta&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~kshkurko/&#34; class=&#34;author&#34;&gt;Konstantin Shkurko&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~elb/&#34; class=&#34;author&#34;&gt;Erik Brunvand&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~ald/&#34; class=&#34;author&#34;&gt;Al Davis&lt;/a&gt;;
+&lt;strong&gt;Memory Considerations for Low Energy Ray Tracing&lt;/strong&gt;,
+&lt;em&gt;Computer Graphics Forum&lt;/em&gt;,
+August 7, 2014.
+&lt;a href=&#34;http://onlinelibrary.wiley.com/doi/10.1111/cgf.12458/abstract?systemMessage=Wiley+Online+Library+will+be+disrupted+9th+Aug+from+10-2+BST+for+essential+maintenance.+Pay+Per+View+will+be+unavailable+from+10-6+BST.&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibc9&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibc9&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{koptashkurko14,
+ author = { Daniel Kopta and Konstantin Shkurko and Josef Spjut and Erik Brunvand and Al Davis },
+ title = { {Memory Considerations for Low Energy Ray Tracing} },
+ year = {2014},
+ booktitle = {Computer Graphics Forum}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.cs.utah.edu/~dkopta/&#34; class=&#34;author&#34;&gt;Daniel Kopta&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~kshkurko/&#34; class=&#34;author&#34;&gt;Konstantin Shkurko&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~elb/&#34; class=&#34;author&#34;&gt;Erik Brunvand&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~ald/&#34; class=&#34;author&#34;&gt;Al Davis&lt;/a&gt;;
+&lt;strong&gt;An Energy and Bandwidth Efficient Ray Tracing Architecture&lt;/strong&gt;,
+&lt;em&gt;High-Performance Graphics (HPG 2013)&lt;/em&gt;,
+Anaheim, July 10-21, 2013.
+&lt;a href=&#34;http://www.cs.utah.edu/~dkopta/papers/hwrt_hpg13.pdf&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibc8&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibc8&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{koptashkurko13,
+ author = { Daniel Kopta and Konstantin Shkurko and Josef Spjut and Erik Brunvand and Al Davis },
+ title = { {An Energy and Bandwidth Efficient Ray Tracing Architecture} },
+ year = {2013},
+ booktitle = {High-Performance Graphics (HPG 2013)}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.cs.utah.edu/~dkopta/&#34; class=&#34;author&#34;&gt;Daniel Kopta&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~thiago&#34; class=&#34;author&#34;&gt;Thiago Ize&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~elb/&#34; class=&#34;author&#34;&gt;Erik Brunvand&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~ald/&#34; class=&#34;author&#34;&gt;Al Davis&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~aek&#34; class=&#34;author&#34;&gt;Andrew Kensler&lt;/a&gt;;
+&lt;strong&gt;Fast, Effective BVH Updates for Animated Scenes&lt;/strong&gt;,
+&lt;em&gt;ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games (I3D 2012)&lt;/em&gt;,
+Irvine, March, 2012.
+&lt;a href=&#34;http://www.cs.utah.edu/~thiago/papers/rotations.pdf&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibc7&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibc7&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{koptaize12,
+ author = { Daniel Kopta and Thiago Ize and Josef Spjut and Erik Brunvand and Al Davis and Andrew Kensler },
+ title = { {Fast, Effective BVH Updates for Animated Scenes} },
+ year = {2012},
+ booktitle = {ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games (I3D 2012)}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~dkopta/&#34; class=&#34;author&#34;&gt;Daniel Kopta&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~elb/&#34; class=&#34;author&#34;&gt;Erik Brunvand&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~ald/&#34; class=&#34;author&#34;&gt;Al Davis&lt;/a&gt;;
+&lt;strong&gt;A Mobile Accelerator Architecture for Ray Tracing&lt;/strong&gt;,
+&lt;em&gt;3rd Workshop on SoCs, Heterogeneous Architectures and Workloads (SHAW-3)&lt;/em&gt;,
+New Orleans, February, 2012.
+&lt;a href=&#34;http://www.cs.utah.edu/~sjosef/papers/spjut-shaw12-final.pdf&#34;&gt;paper&lt;/a&gt;
+&lt;a href=&#34;http://www.cs.utah.edu/~sjosef/slides/spjut-shaw12-slides.pdf&#34;&gt;slides&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibc6&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibc6&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{spjutkopta12,
+ author = { Josef Spjut and Daniel Kopta and Erik Brunvand and Al Davis },
+ title = { {A Mobile Accelerator Architecture for Ray Tracing} },
+ year = {2012},
+ booktitle = {3rd Workshop on SoCs, Heterogeneous Architectures and Workloads (SHAW-3)}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.cs.utah.edu/~dkopta/&#34; class=&#34;author&#34;&gt;Daniel Kopta&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~ald/&#34; class=&#34;author&#34;&gt;Al Davis&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~elb/&#34; class=&#34;author&#34;&gt;Erik Brunvand&lt;/a&gt;;
+&lt;strong&gt;Efficient MIMD Architectures for High-Performance Ray Tracing&lt;/strong&gt;,
+&lt;em&gt;IEEE International Conference on Computer Design (ICCD 2010)&lt;/em&gt;,
+Amsterdam, October, 2010.
+&lt;a href=&#34;http://www.cs.utah.edu/~dkopta/papers/hwrt_iccd10.pdf&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibc5&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibc5&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{koptaspjut10,
+ author = { Daniel Kopta and Josef Spjut and Al Davis and Erik Brunvand },
+ title = { {Efficient MIMD Architectures for High-Performance Ray Tracing} },
+ year = {2010},
+ booktitle = {IEEE International Conference on Computer Design (ICCD 2010)}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.cs.utah.edu/~pugsley&#34; class=&#34;author&#34;&gt;Seth Pugsley&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://david.nellans.org&#34; class=&#34;author&#34;&gt;David Nellans&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~rajeev&#34; class=&#34;author&#34;&gt;Rajeev Balasubramonian&lt;/a&gt;;
+&lt;strong&gt;SWEL: Hardware Cache Coherence Protocols to Map Shared Data onto Shared Caches&lt;/strong&gt;,
+&lt;em&gt;19th International Conference on Parallel Architectures and Compilation Techniques (PACT-19)&lt;/em&gt;,
+Vienna, September, 2010. &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibc4&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibc4&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{pugsleyspjut10,
+ author = { Seth Pugsley and Josef Spjut and David Nellans and Rajeev Balasubramonian },
+ title = { {SWEL: Hardware Cache Coherence Protocols to Map Shared Data onto Shared Caches} },
+ year = {2010},
+ booktitle = {19th International Conference on Parallel Architectures and Compilation Techniques (PACT-19)}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~aek&#34; class=&#34;author&#34;&gt;Andrew Kensler&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~dkopta/&#34; class=&#34;author&#34;&gt;Daniel Kopta&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~elb/&#34; class=&#34;author&#34;&gt;Erik Brunvand&lt;/a&gt;;
+&lt;strong&gt;TRaX: A Multicore Architecture for Real-Time Ray Tracing&lt;/strong&gt;,
+&lt;em&gt;IEEE Transactions on Computer Aided Design of Integrated Circuits and Systems (TCAD)&lt;/em&gt;,
+December, 2009.
+&lt;a href=&#34;http://www.cs.utah.edu/~dkopta/papers/hwrt_tcad09.pdf&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibc3&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibc3&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{spjutkensler09,
+ author = { Josef Spjut and Andrew Kensler and Daniel Kopta and Erik Brunvand },
+ title = { {TRaX: A Multicore Architecture for Real-Time Ray Tracing} },
+ year = {2009},
+ booktitle = {IEEE Transactions on Computer Aided Design of Integrated Circuits and Systems (TCAD)}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~aek&#34; class=&#34;author&#34;&gt;Andrew Kensler&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~elb/&#34; class=&#34;author&#34;&gt;Erik Brunvand&lt;/a&gt;;
+&lt;strong&gt;Hardware-accelerated gradient noise for graphics&lt;/strong&gt;,
+&lt;em&gt;Proceedings of the 19th ACM Great Lakes Symposium on VLSI (GLSVLSI&#39;09)&lt;/em&gt;,
+Boston, May 10-12, 2009. &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibc2&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibc2&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{spjutkensler09a,
+ author = { Josef Spjut and Andrew Kensler and Erik Brunvand },
+ title = { {Hardware-accelerated gradient noise for graphics} },
+ year = {2009},
+ booktitle = {Proceedings of the 19th ACM Great Lakes Symposium on VLSI (GLSVLSI&#39;09)}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.cs.utah.edu/~nil&#34; class=&#34;author&#34;&gt;Niladrish Chatterjee&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~pugsley&#34; class=&#34;author&#34;&gt;Seth Pugsley&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~rajeev&#34; class=&#34;author&#34;&gt;Rajeev Balasubramonian&lt;/a&gt;;
+&lt;strong&gt;Optimizing a Multi-Core Processor for Message-Passing Workloads&lt;/strong&gt;,
+&lt;em&gt;5th Workshop on Unique Chips and Systems (UCAS-5)&lt;/em&gt;,
+Boston, April, 2009. &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibc1&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibc1&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{chatterjeepugsley09,
+ author = { Niladrish Chatterjee and Seth Pugsley and Josef Spjut and Rajeev Balasubramonian },
+ title = { {Optimizing a Multi-Core Processor for Message-Passing Workloads} },
+ year = {2009},
+ booktitle = {5th Workshop on Unique Chips and Systems (UCAS-5)}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://graphics.stanford.edu/~boulos/research.htm&#34; class=&#34;author&#34;&gt;Solomon Boulos&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~dkopta/&#34; class=&#34;author&#34;&gt;Daniel Kopta&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~elb/&#34; class=&#34;author&#34;&gt;Erik Brunvand&lt;/a&gt;, &lt;a href=&#34;http://vis.caltech.edu/~skellis&#34; class=&#34;author&#34;&gt;Spencer Kellis&lt;/a&gt;;
+&lt;strong&gt;TRaX: A Multi-Threaded Architecture for Real-Time Ray Tracing&lt;/strong&gt;,
+&lt;em&gt;Symposium on Application Specific Processors (SASP)&lt;/em&gt;,
+Anaheim, June 8-9, 2008.&lt;strong&gt;(Best paper award)&lt;/strong&gt;
+&lt;a href=&#34;http://www.cs.utah.edu/~dkopta/papers/hwrt_sasp08.pdf&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibc0&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibc0&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{spjutboulos08,
+ author = { Josef Spjut and Solomon Boulos and Daniel Kopta and Erik Brunvand and Spencer Kellis },
+ title = { {TRaX: A Multi-Threaded Architecture for Real-Time Ray Tracing} },
+ year = {2008},
+ booktitle = {Symposium on Application Specific Processors (SASP)}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;Technical Demos&lt;/h2&gt;
+&lt;ol&gt;&lt;li&gt;&lt;a href=&#34;https://kaanaksit.com/&#34; class=&#34;author&#34;&gt;Kaan Aksit&lt;/a&gt;, &lt;a href=&#34;https://research.nvidia.com/users/ward-lopes&#34; class=&#34;author&#34;&gt;Ward Lopes&lt;/a&gt;, &lt;a href=&#34;None&#34; class=&#34;author&#34;&gt;Jonghyun Kim&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://idav.ucdavis.edu/~anjul/&#34; class=&#34;author&#34;&gt;Anjul Patney&lt;/a&gt;, &lt;a href=&#34;https://www.cs.utah.edu/~shirley/&#34; class=&#34;author&#34;&gt;Peter Shirley&lt;/a&gt;, &lt;a href=&#34;http://luebke.us/&#34; class=&#34;author&#34;&gt;David Luebke&lt;/a&gt;, &lt;a href=&#34;http://steven.cholewiak.com/&#34; class=&#34;author&#34;&gt;Steven A. Cholewiak&lt;/a&gt;, &lt;a href=&#34;https://people.eecs.berkeley.edu/~pratul/&#34; class=&#34;author&#34;&gt;Pratul Srinivasan&lt;/a&gt;, &lt;a href=&#34;https://www2.eecs.berkeley.edu/Faculty/Homepages/yirenng.html/&#34; class=&#34;author&#34;&gt;Ren Ng&lt;/a&gt;, &lt;a href=&#34;http://bankslab.berkeley.edu/&#34; class=&#34;author&#34;&gt;Martin S. Banks&lt;/a&gt;, &lt;a href=&#34;https://www.dur.ac.uk/physics/staff/profiles/?id=246&#34; class=&#34;author&#34;&gt;Gordon D. Love&lt;/a&gt;;
+&lt;strong&gt;Varifocal Virtuality: A Novel Optical Layout for Near-Eye Display&lt;/strong&gt;,
+&lt;em&gt;SIGGRAPH Emerging Technologies&lt;/em&gt;,
+Los Angeles, July 30 - August 3, 2017.
+&lt;a href=&#34;http://research.nvidia.com/sites/default/files/publications/final%281%29.pdf&#34;&gt;paper&lt;/a&gt;
+&lt;a href=&#34;http://research.nvidia.com/publication/2017-07_Varifocal-Virtuality%3A-A&#34;&gt;alternate&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibtd2&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibtd2&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{aksitlopes17,
+ author = { Kaan Aksit and Ward Lopes and Jonghyun Kim and Josef Spjut and Anjul Patney and Peter Shirley and David Luebke and Steven A. Cholewiak and Pratul Srinivasan and Ren Ng and Martin S. Banks and Gordon D. Love },
+ title = { {Varifocal Virtuality: A Novel Optical Layout for Near-Eye Display} },
+ year = {2017},
+ booktitle = {SIGGRAPH Emerging Technologies}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://orl.mae.cornell.edu/#people&#34; class=&#34;author&#34;&gt;Robert Shepherd&lt;/a&gt;, &lt;a href=&#34;http://www.gnarlydesign.io/&#34; class=&#34;author&#34;&gt;Bryan Peele&lt;/a&gt;, &lt;a href=&#34;https://orl.mae.cornell.edu/#people&#34; class=&#34;author&#34;&gt;Benjamin Mac Murray&lt;/a&gt;, &lt;a href=&#34;None&#34; class=&#34;author&#34;&gt;Jose Barreiros&lt;/a&gt;, &lt;a href=&#34;http://omershapira.com/#all&#34; class=&#34;author&#34;&gt;Omer Shapira&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://luebke.us/&#34; class=&#34;author&#34;&gt;David Luebke&lt;/a&gt;;
+&lt;strong&gt;Stretchable Transducers for Kinesthetic Interactions in Virtual Reality&lt;/strong&gt;,
+&lt;em&gt;SIGGRAPH Emerging Technologies&lt;/em&gt;,
+Los Angeles, July 30 - August 3, 2017.
+&lt;a href=&#34;http://research.nvidia.com/sites/default/files/publications/peele_siggraph_etech17.pdf&#34;&gt;paper&lt;/a&gt;
+&lt;a href=&#34;http://research.nvidia.com/publication/2017-06_Stretchable-Transducers-for&#34;&gt;alternate&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibtd1&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibtd1&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{shepherdpeele17,
+ author = { Robert Shepherd and Bryan Peele and Benjamin Mac Murray and Jose Barreiros and Omer Shapira and Josef Spjut and David Luebke },
+ title = { {Stretchable Transducers for Kinesthetic Interactions in Virtual Reality} },
+ year = {2017},
+ booktitle = {SIGGRAPH Emerging Technologies}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.gnarlydesign.io/&#34; class=&#34;author&#34;&gt;Bryan Peele&lt;/a&gt;, &lt;a href=&#34;https://orl.mae.cornell.edu/#people&#34; class=&#34;author&#34;&gt;Benjamin Mac Murray&lt;/a&gt;, &lt;a href=&#34;None&#34; class=&#34;author&#34;&gt;Jose Barreiros&lt;/a&gt;, &lt;a href=&#34;https://orl.mae.cornell.edu/#people&#34; class=&#34;author&#34;&gt;Robert Shepherd&lt;/a&gt;, &lt;a href=&#34;http://omershapira.com/#all&#34; class=&#34;author&#34;&gt;Omer Shapira&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://luebke.us/&#34; class=&#34;author&#34;&gt;David Luebke&lt;/a&gt;;
+&lt;strong&gt;Stretchable Transducers for Haptic Interactions in Virtual and Augmented Reality&lt;/strong&gt;,
+&lt;em&gt;GTC VR Village&lt;/em&gt;,
+San Jose, May 9 - 11, 2017. &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibtd0&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibtd0&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{peelemurray17,
+ author = { Bryan Peele and Benjamin Mac Murray and Jose Barreiros and Robert Shepherd and Omer Shapira and Josef Spjut and David Luebke },
+ title = { {Stretchable Transducers for Haptic Interactions in Virtual and Augmented Reality} },
+ year = {2017},
+ booktitle = {GTC VR Village}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;Conference Talks and Courses&lt;/h2&gt;
+&lt;ol&gt;&lt;li&gt;&lt;a href=&#34;http://www.gnarlydesign.io/&#34; class=&#34;author&#34;&gt;Bryan Peele&lt;/a&gt;, &lt;a href=&#34;https://orl.mae.cornell.edu/#people&#34; class=&#34;author&#34;&gt;Benjamin Mac Murray&lt;/a&gt;, &lt;a href=&#34;https://orl.mae.cornell.edu/#people&#34; class=&#34;author&#34;&gt;Robert Shepherd&lt;/a&gt;, &lt;a href=&#34;None&#34; class=&#34;author&#34;&gt;Jose Barreiros&lt;/a&gt;, &lt;a href=&#34;http://omershapira.com/#all&#34; class=&#34;author&#34;&gt;Omer Shapira&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://luebke.us/&#34; class=&#34;author&#34;&gt;David Luebke&lt;/a&gt;;
+&lt;strong&gt;Stretchable Transducers for Kinesthetic Interactions in Virtual Reality&lt;/strong&gt;,
+&lt;em&gt;SIGGRAPH Experience Presentations&lt;/em&gt;,
+Los Angeles, August 3, 2017.
+&lt;a href=&#34;http://research.nvidia.com/sites/default/files/publications/peele_siggraph_etech17.pdf&#34;&gt;paper&lt;/a&gt;
+&lt;a href=&#34;http://research.nvidia.com/publication/2017-06_Stretchable-Transducers-for&#34;&gt;alternate&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibct1&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibct1&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{peelemurray17a,
+ author = { Bryan Peele and Benjamin Mac Murray and Robert Shepherd and Jose Barreiros and Omer Shapira and Josef Spjut and David Luebke },
+ title = { {Stretchable Transducers for Kinesthetic Interactions in Virtual Reality} },
+ year = {2017},
+ booktitle = {SIGGRAPH Experience Presentations}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;None&#34; class=&#34;author&#34;&gt;Richard Piersall&lt;/a&gt;, &lt;a href=&#34;None&#34; class=&#34;author&#34;&gt;Kirklann Lau&lt;/a&gt;;
+&lt;strong&gt;Build your own game controller&lt;/strong&gt;,
+&lt;em&gt;SIGGRAPH Studio&lt;/em&gt;,
+Los Angeles, August 10, 2015.&lt;strong&gt;(Studio Course)&lt;/strong&gt;
+&lt;a href=&#34;http://josef.spjut.me/class/controllerCourseNotes.pdf&#34;&gt;slides&lt;/a&gt;
+&lt;a href=&#34;http://josef.spjut.me/class/game-controller&#34;&gt;webpage&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibct0&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibct0&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{spjutpiersall15,
+ author = { Josef Spjut and Richard Piersall and Kirklann Lau },
+ title = { {Build your own game controller} },
+ year = {2015},
+ booktitle = {SIGGRAPH Studio}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;Dissertation&lt;/h2&gt;
+&lt;ol&gt;&lt;li&gt;&lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;;
+&lt;strong&gt;Efficient Ray Tracing Architectures&lt;/strong&gt;,
+&lt;em&gt;University of Utah Dissertation&lt;/em&gt;,
+2015.
+&lt;a href=&#34;http://josef.spjut.me/pubs/thesis.pdf&#34;&gt;paper&lt;/a&gt;
+&lt;a href=&#34;http://gradworks.umi.com/3727095.pdf&#34;&gt;alternate&lt;/a&gt;
+&lt;a href=&#34;http://content.lib.utah.edu/cdm/ref/collection/etd3/id/3732&#34;&gt;alternate 2&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibd0&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibd0&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{spjut15,
+ author = { Josef Spjut },
+ title = { {Efficient Ray Tracing Architectures} },
+ year = {2015},
+ booktitle = {University of Utah Dissertation}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;Technical Reports&lt;/h2&gt;
+&lt;ol&gt;&lt;li&gt;&lt;a href=&#34;None&#34; class=&#34;author&#34;&gt;Jean Sung&lt;/a&gt;, &lt;a href=&#34;None&#34; class=&#34;author&#34;&gt;Sebastian Krupa&lt;/a&gt;, &lt;a href=&#34;None&#34; class=&#34;author&#34;&gt;Andrew Fishberg&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;;
+&lt;strong&gt;An Approach to Data Prefetching Using 2-Dimensional Selection Criteria&lt;/strong&gt;,
+&lt;em&gt;Tech Report, arXiv:1505.03899&lt;/em&gt;,
+May, 2015.
+&lt;a href=&#34;http://arxiv.org/abs/1505.03899&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibtr6&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibtr6&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{sungkrupa15,
+ author = { Jean Sung and Sebastian Krupa and Andrew Fishberg and Josef Spjut },
+ title = { {An Approach to Data Prefetching Using 2-Dimensional Selection Criteria} },
+ year = {2015},
+ booktitle = {Tech Report, arXiv:1505.03899}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://web.eecs.umich.edu/~dohypark/&#34; class=&#34;author&#34;&gt;Dong-hyeon Park&lt;/a&gt;, &lt;a href=&#34;None&#34; class=&#34;author&#34;&gt;Akhil Bagaria&lt;/a&gt;, &lt;a href=&#34;None&#34; class=&#34;author&#34;&gt;Fabiha Hannan&lt;/a&gt;, &lt;a href=&#34;None&#34; class=&#34;author&#34;&gt;Eric Storm&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;;
+&lt;strong&gt;Sphynx: A Shared Instruction Cache Exporatory Study&lt;/strong&gt;,
+&lt;em&gt;Tech Report, arXiv:1412.1140&lt;/em&gt;,
+December 3, 2014.
+&lt;a href=&#34;http://arxiv.org/abs/1412.1140&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibtr5&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibtr5&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{parkbagaria14,
+ author = { Dong-hyeon Park and Akhil Bagaria and Fabiha Hannan and Eric Storm and Josef Spjut },
+ title = { {Sphynx: A Shared Instruction Cache Exporatory Study} },
+ year = {2014},
+ booktitle = {Tech Report, arXiv:1412.1140}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;None&#34; class=&#34;author&#34;&gt;Eric Storm&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;;
+&lt;strong&gt;A Time-to-Recache Case Study&lt;/strong&gt;,
+&lt;em&gt;Tech Report&lt;/em&gt;,
+March, 2014.
+&lt;a href=&#34;http://josef.spjut.me/pubs/stormttr14.pdf&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibtr4&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibtr4&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{stormspjut14,
+ author = { Eric Storm and Josef Spjut },
+ title = { {A Time-to-Recache Case Study} },
+ year = {2014},
+ booktitle = {Tech Report}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;None&#34; class=&#34;author&#34;&gt;Andrew Carter&lt;/a&gt;, &lt;a href=&#34;None&#34; class=&#34;author&#34;&gt;Max Korbel&lt;/a&gt;, &lt;a href=&#34;None&#34; class=&#34;author&#34;&gt;Paula Ning&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;;
+&lt;strong&gt;Qualitative Cache Performance Analysis&lt;/strong&gt;,
+&lt;em&gt;Tech Report&lt;/em&gt;,
+September, 2013.
+&lt;a href=&#34;http://josef.spjut.me/pubs/carterttr13.pdf&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibtr3&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibtr3&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{carterkorbel13,
+ author = { Andrew Carter and Max Korbel and Paula Ning and Josef Spjut },
+ title = { {Qualitative Cache Performance Analysis} },
+ year = {2013},
+ booktitle = {Tech Report}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~pugsley&#34; class=&#34;author&#34;&gt;Seth Pugsley&lt;/a&gt;;
+&lt;strong&gt;Time to Recache: Measuring Memory Miss Behavior&lt;/strong&gt;,
+&lt;em&gt;Tech Report&lt;/em&gt;,
+September, 2011.
+&lt;a href=&#34;http://josef.spjut.me/pubs/ttr11.pdf&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibtr2&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibtr2&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{spjutpugsley11,
+ author = { Josef Spjut and Seth Pugsley },
+ title = { {Time to Recache: Measuring Memory Miss Behavior} },
+ year = {2011},
+ booktitle = {Tech Report}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.cs.utah.edu/~dkopta/&#34; class=&#34;author&#34;&gt;Daniel Kopta&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~aek&#34; class=&#34;author&#34;&gt;Andrew Kensler&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~thiago&#34; class=&#34;author&#34;&gt;Thiago Ize&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~elb/&#34; class=&#34;author&#34;&gt;Erik Brunvand&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~ald/&#34; class=&#34;author&#34;&gt;Al Davis&lt;/a&gt;;
+&lt;strong&gt;Fast, Effective BVH Updates for Dynamic Ray-Traced Scenes Using Tree Rotations&lt;/strong&gt;,
+&lt;em&gt;Tech Report, UUCS 11-002, University of Utah&lt;/em&gt;,
+July, 2011.
+&lt;a href=&#34;http://www.cs.utah.edu/research/techreports/2011/pdf/UUCS-11-002.pdf&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibtr1&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibtr1&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{koptakensler11,
+ author = { Daniel Kopta and Andrew Kensler and Thiago Ize and Josef Spjut and Erik Brunvand and Al Davis },
+ title = { {Fast, Effective BVH Updates for Dynamic Ray-Traced Scenes Using Tree Rotations} },
+ year = {2011},
+ booktitle = {Tech Report, UUCS 11-002, University of Utah}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;Refereed Posters&lt;/h2&gt;
+&lt;ol&gt;&lt;li&gt;&lt;a href=&#34;http://www.cs.utah.edu/~dkopta/&#34; class=&#34;author&#34;&gt;Daniel Kopta&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~elb/&#34; class=&#34;author&#34;&gt;Erik Brunvand&lt;/a&gt;;
+&lt;strong&gt;Grid-Based Ray Tracing for a Parallel Computing Architecture&lt;/strong&gt;,
+&lt;em&gt;High Performance Graphics (HPG&#39;09)&lt;/em&gt;,
+New Orleans, August 1-3, 2009. &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibp2&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibp2&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{koptaspjut09,
+ author = { Daniel Kopta and Josef Spjut and Erik Brunvand },
+ title = { {Grid-Based Ray Tracing for a Parallel Computing Architecture} },
+ year = {2009},
+ booktitle = {High Performance Graphics (HPG&#39;09)}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.cs.utah.edu/~dkopta/&#34; class=&#34;author&#34;&gt;Daniel Kopta&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~elb/&#34; class=&#34;author&#34;&gt;Erik Brunvand&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~sparker&#34; class=&#34;author&#34;&gt;Steven Parker&lt;/a&gt;;
+&lt;strong&gt;Comparing Incoherent Ray Performance of TRaX vs. Manta&lt;/strong&gt;,
+&lt;em&gt;IEEE Symposium on Interactive Ray Tracing (RT08)&lt;/em&gt;,
+August 9-10, 2008. &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibp1&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibp1&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{koptaspjut08,
+ author = { Daniel Kopta and Josef Spjut and Erik Brunvand and Steven Parker },
+ title = { {Comparing Incoherent Ray Performance of TRaX vs. Manta} },
+ year = {2008},
+ booktitle = {IEEE Symposium on Interactive Ray Tracing (RT08)}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;HMC Clinic Projects&lt;/h2&gt;
+
+&lt;p&gt;At Harvey Mudd College I advised a few &lt;a href=&#34;https://www.hmc.edu/clinic/&#34;&gt;clinic
+projects&lt;/a&gt; with junior and
+senior level students paid for by companies. 
+The following is a list of those projects and the people involved. 
+Those before my name are students, after are liaisons from the
+company.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fabiha Hannan, Cyrus Huang, Sebastian Krupa, Guillaume Legrain, 
+Minh Triet Nguyen, Maggie Rabasca, Zachary Vickland, Tiancheng Yang, 
+&lt;strong&gt;Josef Spjut&lt;/strong&gt;, Philip Cheung, John McNeil, Jef Vivian.
+&lt;strong&gt;Design and Implementation of a Memory Testing Apparatus&lt;/strong&gt;, 
+&lt;em&gt;Clinic Report for Dart Neuroscience&lt;/em&gt;, Harvey Mudd College, 116 pages, May 2015.&lt;/li&gt;
+
+&lt;li&gt;Olivier Cheng, Stephen Ibanez, Amy Ngai, Joshua Sanz, Avi Thaker,
+&lt;strong&gt;Josef Spjut&lt;/strong&gt;, Alon Regev;
+&lt;strong&gt;Computer Network Testing&lt;/strong&gt;,
+&lt;em&gt;Clinic Report for Ixia&lt;/em&gt;, Harvey Mudd College, 48 pages, May 2015.&lt;/li&gt;
+
+&lt;li&gt;Antoine Billig, Chanel Chang, Austin Chen, Obosa Obazuaye, Jeffrey
+Steele, Sean Velazquez, &lt;strong&gt;Josef Spjut&lt;/strong&gt;, Pradeep Batra, Adrian
+Torres, Julia Cline;
+&lt;strong&gt;USB 3.0 to Multi-Protocol Interface Adapter&lt;/strong&gt;,
+&lt;em&gt;Clinic Report for Rambus Incorporate&lt;/em&gt;, Harvey Mudd College, 183
+pages, May 2014.&lt;/li&gt;
+
+&lt;li&gt;Dylan Stow, Carl Pearson, Jeffrey Steele,
+Shreyasha Paudel, Adam Parower, Gurchetan Singh, Dong-hyeon Park,
+&lt;strong&gt;Josef Spjut&lt;/strong&gt;, Warren Furguson;
+&lt;strong&gt;Multiplicative Based Division&lt;/strong&gt;,
+&lt;em&gt;Clinic Report for Intel Corp&lt;/em&gt;, Harvey Mudd College, 117 pages, May
+2013.&lt;/li&gt;
+
+&lt;li&gt;Allison Card, Kacyn Fujii, Hannah
+Kastein, Paula Ning, Matthew Tambara, Stephanie Fawaz, &lt;strong&gt;Josef Spjut&lt;/strong&gt;,
+Sourabh Ravindran, Nitish Murthy,
+&lt;strong&gt;Immersive Audio Game Development Kit&lt;/strong&gt;
+&lt;em&gt;Clinic Report for Texas Instruments&lt;/em&gt;, Harvey Mudd College, 110 pages,
+May 2013.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;People&lt;/h2&gt;
+
+&lt;p&gt;I&amp;#39;ve been fortunate to work with a large number of talented
+people. The ones I&amp;#39;ve worked with on research are listed below. Email
+me if you think you should be on this list and you aren&amp;#39;t.&lt;/p&gt;
+
+
+&lt;h3&gt;Past Research Students&lt;/h3&gt;
+
+&lt;p&gt;Eric Storm &amp;#39;15, Ivan Wong &amp;#39;15, 
+Skyler Williams &amp;#39;16, Ramy Elminyawi &amp;#39;16, 
+ Amy Ngai &amp;#39;16, Richard Piersall &amp;#39;16, Kirklann Lau &amp;#39;16, 
+ Andrew Fishberg &amp;#39;16, Da Eun Shim &amp;#39;16,
+Fabiha Hannan &amp;#39;16, Paul Jolly &amp;#39;16,
+Dong-hyeon Park &amp;#39;14, Sami Mourad &amp;#39;14, Akhil Bagaria &amp;#39;16,
+Andrew Carter &amp;#39;13, Paula Ning &amp;#39;13, Max Korbel &amp;#39;13, Katherine Yang &amp;#39;15&lt;/p&gt;
+
+&lt;h3&gt;Current and Recent (within 3 years) Collaborators&lt;/h3&gt;
+
+&lt;p&gt;Trey Greer, Turner Whitted, David Luebke,
+Timo Aila, Tero Karras, Samuli Laine, 
+ Erik Brunvand, Konstantin Shkurko, Daniel Kopta, Al Davis, 
+Seth Pugsley,
+&lt;/p&gt;
+
+&lt;h3&gt;Past Collaborators&lt;/h3&gt;
+
+&lt;p&gt;Mike Parker, 
+Thiago Ize, Andrew Kensler, 
+Rajeev Balasubramonian
+David Nellans,
+Niladrish Chatterjee, Pete Shirley, Steve Parker,
+Solomon Boulos, Spencer Kellis, 
+Frank Vahid, David Sheldon, Scott Sirowy, Roman Lysecky&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hugo Notes</title>
+      <link>http://josef.spjut.me/post/2017/hugo-notes/</link>
+      <pubDate>Thu, 06 Jul 2017 09:49:57 -0400</pubDate>
+      
+      <guid>http://josef.spjut.me/post/2017/hugo-notes/</guid>
+      <description>&lt;p&gt;I recently undertook the effort of moving my website from jekyll using jekyll-bootstrap to Hugo and I wanted to record some notes from my efforts. In particular I want to collect a set of useful links that helped me in making the switch.&lt;/p&gt;
+
+&lt;p&gt;For what it&amp;rsquo;s worth, I greatly prefer Hugo now that I&amp;rsquo;ve gotten used to it, though there wasn&amp;rsquo;t too much broken about Jekyll.&lt;/p&gt;
+
+&lt;p&gt;The most useful thing for developing my site was when I found the &lt;a href=&#34;https://sourcethemes.com/academic/&#34; target=&#34;_blank&#34;&gt;academic theme&lt;/a&gt;. It turns out that in Hugo, themes contain a lot of the functionality of a site, and they make it easy to add on functionality either by modifying the theme, or your site in particular. The academic theme is widely used so there a good &lt;a href=&#34;https://sourcethemes.com/academic/post/getting-started/&#34; target=&#34;_blank&#34;&gt;reference page&lt;/a&gt; to help you get started.&lt;/p&gt;
+
+&lt;p&gt;The creator of the academic theme also has a &lt;a href=&#34;https://georgecushen.com/create-your-website-with-hugo/&#34; target=&#34;_blank&#34;&gt;good tutorial&lt;/a&gt; on his blog for how to set up a new hugo site from scratch.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Stretchable Transducers for Haptic Interactions in Virtual and Augmented Reality</title>
+      <link>http://josef.spjut.me/publication/td/td0/</link>
+      <pubDate>Tue, 09 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/td/td0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hybrid Modulation for Near Zero Display Latency</title>
+      <link>http://josef.spjut.me/publication/ref/c10/</link>
+      <pubDate>Tue, 24 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ref/c10/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wedding Countdown</title>
+      <link>http://josef.spjut.me/countdown/121215/</link>
+      <pubDate>Sat, 12 Dec 2015 00:00:00 -0500</pubDate>
+      
+      <guid>http://josef.spjut.me/countdown/121215/</guid>
+      <description>&lt;div class=&#34;lead&#34; title=&#34;Best day ever!&#34;&gt;
+        We get married in &lt;span class=&#34;lead&#34; id=&#34;clock&#34;&gt;&lt;/span&gt;!
+    &lt;/div&gt;
+
+    &lt;div class=&#34;lead&#34; title=&#34;We can&#39;t wait!!&#34;&gt;
+    	That&#39;s &lt;span class=&#34;lead&#34; id=&#34;clock-hours&#34;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+
+
+&lt;!-- Include Countdown Functions --&gt;
+
+  &lt;script src=&#34;http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js&#34;&gt;&lt;/script&gt;
+  &lt;script src=&#34;http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js&#34;&gt;&lt;/script&gt;
+  &lt;script src=&#34;http://cdn.rawgit.com/hilios/jQuery.countdown/2.1.0/dist/jquery.countdown.min.js&#34;&gt;&lt;/script&gt;
+
+&lt;script type=&#34;text/javascript&#34;&gt;
+  // Turn on Bootstrap
+  $(&#39;[data-toggle=&#34;tooltip&#34;]&#39;).tooltip();
+  // Hopefully this UTC thing will compensate for different local time zones
+  // Because it&#39;s EST, it&#39;s actually 4pm UTC, not 3pm like it would be for EDT
+  var $returntime = new Date(Date.UTC(2015, 11, 12, 16, 0, 0))
+  // var $returntime = &#34;2015/9/12/22:45&#34;
+  var $clock = $(&#39;#clock&#39;);
+  $clock.countdown($returntime, function(event) {
+    $(this).html(event.strftime(&#39;%D days %H hours %M minutes and %S seconds&#39;));
+  });
+  var $clock2 = $(&#39;#clock-hours&#39;);
+  $clock2.countdown($returntime, function(event) {
+  	var $totalHours = event.offset.totalDays * 24 + event.offset.hours;
+    $(this).html(event.strftime($totalHours+&#39; hours %M minutes and %S seconds&#39;));
+  });
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Audrey Countdown</title>
+      <link>http://josef.spjut.me/countdown/audrey/</link>
+      <pubDate>Sun, 13 Sep 2015 00:00:00 -0400</pubDate>
+      
+      <guid>http://josef.spjut.me/countdown/audrey/</guid>
+      <description>&lt;div class=&#34;lead&#34; title=&#34;Beautiful, insn&#39;t she?&#34;&gt;
+        Audrey returns from her trip in &lt;span class=&#34;lead&#34; id=&#34;clock&#34;&gt;&lt;/span&gt;!
+    &lt;/div&gt;
+
+    &lt;div class=&#34;lead&#34; title=&#34;We can&#39;t wait!!&#34;&gt;
+    	That&#39;s &lt;span class=&#34;lead&#34; id=&#34;clock-hours&#34;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+
+
+&lt;!-- Include Countdown Functions --&gt;
+
+  &lt;script src=&#34;http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js&#34;&gt;&lt;/script&gt;
+  &lt;script src=&#34;http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js&#34;&gt;&lt;/script&gt;
+  &lt;script src=&#34;http://cdn.rawgit.com/hilios/jQuery.countdown/2.1.0/dist/jquery.countdown.min.js&#34;&gt;&lt;/script&gt;
+
+&lt;script type=&#34;text/javascript&#34;&gt;
+  // Turn on Bootstrap
+  $(&#39;[data-toggle=&#34;tooltip&#34;]&#39;).tooltip();
+
+  // Hopefully this UTC thing will compensate for different local time zones
+  var $returntime = new Date(Date.UTC(2015, 8, 13, 2, 45, 0))
+  // var $returntime = &#34;2015/9/12/22:45&#34;
+
+  var $clock = $(&#39;#clock&#39;);
+
+  $clock.countdown($returntime, function(event) {
+    $(this).html(event.strftime(&#39;%D days %H hours %M minutes and %S seconds&#39;));
+  });
+
+  var $clock2 = $(&#39;#clock-hours&#39;);
+
+  $clock2.countdown($returntime, function(event) {
+  	var $totalHours = event.offset.totalDays * 24 + event.offset.hours;
+    $(this).html(event.strftime($totalHours+&#39; hours %M minutes and %S seconds&#39;));
+  });
+
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Build your own game controller</title>
+      <link>http://josef.spjut.me/publication/ct/ct0/</link>
+      <pubDate>Mon, 10 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ct/ct0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Build your own Game Controller</title>
+      <link>http://josef.spjut.me/class/game-controller/</link>
+      <pubDate>Mon, 03 Aug 2015 00:00:00 -0400</pubDate>
+      
+      <guid>http://josef.spjut.me/class/game-controller/</guid>
+      <description>
+
+&lt;h1 id=&#34;course-examples&#34;&gt;Course Examples&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://josef.spjut.me/class/ex/SimpleButton.txt&#34;&gt;Simple Button&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://josef.spjut.me/class/ex/ButtonKeyboard.txt&#34;&gt;Button Keyboard&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://josef.spjut.me/class/ex/ButtonMouse.txt&#34;&gt;Button Mouse&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://josef.spjut.me/class/ex/SimpleAnalog.txt&#34;&gt;Simple Analog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://josef.spjut.me/class/ex/JoystickMouse.txt&#34;&gt;Joystick Mouse&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://josef.spjut.me/class/ex/BasicController.txt&#34;&gt;Full Controller&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;arduino-micro-pinout&#34;&gt;Arduino Micro Pinout&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.arduino.cc/en/uploads/Main/ArduinoMicro_Pinout3.png&#34; alt=&#34;Arduino Micro Pinout&#34; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://josef.spjut.me/class/controllerCourseNotes.pdf&#34;&gt;Course Notes&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Students in this course will build the own game controller from
+scratch capable of providing input to a variety of PC games. The
+course includes instruction on resistors, switches and using Arduino
+to behave as a USB keyboard and mouse.&lt;/p&gt;
+
+&lt;p&gt;This is based on labs &lt;a href=&#34;http://pages.hmc.edu/jspjut/class/s2015/e190u/lab/lab1.html&#34; target=&#34;_blank&#34;&gt;1&lt;/a&gt; and
+&lt;a href=&#34;http://pages.hmc.edu/jspjut/class/s2015/e190u/lab/lab2.html&#34; target=&#34;_blank&#34;&gt;2&lt;/a&gt;
+from E190U offered in Spring 2015 at &lt;a href=&#34;http://www.hmc.edu&#34; target=&#34;_blank&#34;&gt;Harvey Mudd College&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
+
+&lt;p&gt;This course introduces some concepts of basic resistor circuits and
+how they can be read by a microcontroller using an analog to digital
+converter.
+In particular, we will look at the use of joystick potentiometers as a
+standard sensor element for game controllers as well as tactile
+buttons combined with pull-up or pull-down resistors to provide
+digital inputs.
+Additionally, Arduino software will be developed to treat the
+joysticks, buttons and switches as standard USB keyboard and mouse
+input that can be used for PC games.
+With the rapid increase of maker culture and do-it-yourself projects
+in recent years, this course provides an easy introduction to circuits
+and microcontrollers for the uninitiated and allows more advanced
+students the chance to tune the hardware and software to customize the
+user experience.&lt;/p&gt;
+
+&lt;h1 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h1&gt;
+
+&lt;p&gt;This course is intended for people with little to no experience with
+programming or electronic circuits.
+If you have some C programming experience or understand resistor
+circuits you will more quickly be able to complete the tasks in the
+course.&lt;/p&gt;
+
+&lt;h1 id=&#34;materials&#34;&gt;Materials&lt;/h1&gt;
+
+&lt;p&gt;You will need the following materials to complete the construction of
+your own game controller.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I will add links to where I bought the materials for these kits. If you need them now, please email me.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Arduino Micro (or any arduino capable of USB keyboard+mouse control)&lt;/li&gt;
+&lt;li&gt;A computer with the Arduino software development environment installed&lt;/li&gt;
+&lt;li&gt;Mini breadboards&lt;/li&gt;
+&lt;li&gt;2 Joystick Potentiometers with breakout boards&lt;/li&gt;
+&lt;li&gt;8 Push-buttons&lt;/li&gt;
+&lt;li&gt;Wires&lt;/li&gt;
+&lt;li&gt;Soldering Material (only if you don&amp;rsquo;t have appropriate wires)&lt;/li&gt;
+&lt;li&gt;Something to mount these on (this could be wood, metal, tooled plastic, or even 3d printed!)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;parts-for-approximately-1-controller&#34;&gt;Parts for approximately 1 Controller&lt;/h2&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Part&lt;/th&gt;
+&lt;th&gt;Price&lt;/th&gt;
+&lt;th&gt;Vendor Link&lt;/th&gt;
+&lt;th&gt;Quantity&lt;/th&gt;
+&lt;th&gt;Total Price&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Arduino Micro w/ USB cable&lt;/td&gt;
+&lt;td&gt;$8.00&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://www.banggood.com/Micro-R3-ATmega32u4-Microcontroller-Board-With-USB-Cable-For-Arduino-p-911099.html&#34; target=&#34;_blank&#34;&gt;Banggood&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;$8.00&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;5 piece 170-hole mini breadboards&lt;/td&gt;
+&lt;td&gt;$5.68&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://www.banggood.com/5Pcs-White-170-Holes-Mini-Solderless-Prototype-Breadboard-For-Arduino-p-950716.html&#34; target=&#34;_blank&#34;&gt;Banggood&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;$5.68&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;1 Piece Joystick w/ breakout&lt;/td&gt;
+&lt;td&gt;$1.66&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://www.banggood.com/PS2-Game-Joystick-Module-For-Arduino-p-76465.html&#34; target=&#34;_blank&#34;&gt;Banggood&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;$3.32&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Tactile Switches&lt;/td&gt;
+&lt;td&gt;$0.50&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.sparkfun.com/products/9190&#34; target=&#34;_blank&#34;&gt;Sparkfun&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;td&gt;$5.00&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;40 piece female to male cables&lt;/td&gt;
+&lt;td&gt;$2.10&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://www.banggood.com/40pcs-20cm-Male-to-Female-Jumper-Jump-Cable-Wire-For-Arduino-p-75613.html&#34; target=&#34;_blank&#34;&gt;Banggood&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;$2.10&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;3M Outdoor Mounting Tape&lt;/td&gt;
+&lt;td&gt;$4.00&lt;/td&gt;
+&lt;td&gt;Amazon&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;$4.00&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Total&lt;/td&gt;
+&lt;td&gt;&amp;mdash;-&lt;/td&gt;
+&lt;td&gt;&amp;mdash;-&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;$28.10&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;parts-for-multiple-20-controllers&#34;&gt;Parts for multiple (20) controllers&lt;/h2&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Part&lt;/th&gt;
+&lt;th&gt;Price&lt;/th&gt;
+&lt;th&gt;Vendor Link&lt;/th&gt;
+&lt;th&gt;Quantity&lt;/th&gt;
+&lt;th&gt;Total Price&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Arduino Micro w/ USB cable&lt;/td&gt;
+&lt;td&gt;$8.00&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://www.banggood.com/Micro-R3-ATmega32u4-Microcontroller-Board-With-USB-Cable-For-Arduino-p-911099.html&#34; target=&#34;_blank&#34;&gt;Banggood&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;20&lt;/td&gt;
+&lt;td&gt;$160.00&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;10 piece 170-hole mini breadboards&lt;/td&gt;
+&lt;td&gt;$10.20&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://www.banggood.com/10Pcs-White-170-Holes-Mini-Solderless-Prototype-Breadboard-For-Arduino-p-950771.html&#34; target=&#34;_blank&#34;&gt;Banggood&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;$40.80&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;20 Piece Joystick w/ breakout&lt;/td&gt;
+&lt;td&gt;$16.99&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://www.banggood.com/20Pcs-PS2-Game-Joystick-Module-For-Arduino-p-951191.html&#34; target=&#34;_blank&#34;&gt;Banggood&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;$33.98&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Tactile Switches&lt;/td&gt;
+&lt;td&gt;$0.50&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.sparkfun.com/products/9190&#34; target=&#34;_blank&#34;&gt;Sparkfun&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;200&lt;/td&gt;
+&lt;td&gt;$100.00&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;40 piece female to male cables&lt;/td&gt;
+&lt;td&gt;$2.10&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://www.banggood.com/40pcs-20cm-Male-to-Female-Jumper-Jump-Cable-Wire-For-Arduino-p-75613.html&#34; target=&#34;_blank&#34;&gt;Banggood&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;20&lt;/td&gt;
+&lt;td&gt;$42.00&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;3M Outdoor Mounting Tape&lt;/td&gt;
+&lt;td&gt;$4.00&lt;/td&gt;
+&lt;td&gt;Amazon&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;$20.00&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Total&lt;/td&gt;
+&lt;td&gt;$19.84&lt;/td&gt;
+&lt;td&gt;&amp;mdash;-&lt;/td&gt;
+&lt;td&gt;20&lt;/td&gt;
+&lt;td&gt;$396.78&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;For best results, you should have your mount moulded or tooled to be
+ergonomic and comfortable to hold in your hand.
+It should be possible to 3D print a design, or you could purchase the
+design I distributed at SIGGRAPH from pokono. (link to be added).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An Introductory Cache Problem</title>
+      <link>http://josef.spjut.me/teaching/2015/05/13/an-introductory-cache-problem/</link>
+      <pubDate>Wed, 13 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/teaching/2015/05/13/an-introductory-cache-problem/</guid>
+      <description>
+
+&lt;p&gt;I recently gave a problem on the final in &lt;a href=&#34;http://pages.hmc.edu/jspjut/class/s2015/e85/&#34; target=&#34;_blank&#34;&gt;E85&lt;/a&gt;.
+The students didn&amp;rsquo;t do too well on it overall, so I wanted to post the problem and solution in an effort to
+make more resources available for people learning basic cache behaviors.
+First of all, I need to introduce the piece of ARM assembly being used since
+it is the basis for a number of questions.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;		FUNC:
+0x0044	SUBS R0, R0, #3
+0x0048	BLT DONE
+0x004C	STR LR, [SP, #-4]!
+0x0050	BL FUNC
+0x0054	ADD R0, R0, #1
+0x0058	LDR LR, [SP], #4
+0x005C	MOV PC, LR
+		DONE:
+0x0060	MOV R0, #0
+0x0064	MOV PC, LR
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;program-analysis&#34;&gt;Program analysis&lt;/h2&gt;
+
+&lt;p&gt;The first question is the following: Translate &lt;code&gt;FUNC&lt;/code&gt; to C code. My C version is:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;int func(int x)
+{
+	if (x &amp;lt; 3)
+		return 0;
+	else
+		return func(x-3) + 1;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is a simple recursive function that computes the integer value of dividing the input number by 3.&lt;/p&gt;
+
+&lt;p&gt;The next part asked for a stack trace including register values for &lt;code&gt;func(12)&lt;/code&gt;.
+The &lt;code&gt;SP&lt;/code&gt; starts at &lt;code&gt;0xFFE0&lt;/code&gt; and the function is first called from a &lt;code&gt;BL&lt;/code&gt; at &lt;code&gt;0x0020&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;func-12&#34;&gt;&lt;code&gt;func(12)&lt;/code&gt;&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;R0 = 12
+SP = 0xFFE0
+LR = 0x0024
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Address&lt;/th&gt;
+&lt;th&gt;Data&lt;/th&gt;
+&lt;th&gt;SP&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFE0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;?&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;start/end&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFDC&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0x0024&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;func(9)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;?&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;?&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;?&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;func-9&#34;&gt;&lt;code&gt;func(9)&lt;/code&gt;&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;R0 = 9
+SP = 0xFFDC
+LR = 0x0054
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Address&lt;/th&gt;
+&lt;th&gt;Data&lt;/th&gt;
+&lt;th&gt;SP&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFE0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;?&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFDC&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0x0024&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;start/end&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD8&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0x0054&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;func(6)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD4&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;?&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;?&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;func-6&#34;&gt;&lt;code&gt;func(6)&lt;/code&gt;&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;R0 = 9
+SP = 0xFFDC
+LR = 0x0054
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Address&lt;/th&gt;
+&lt;th&gt;Data&lt;/th&gt;
+&lt;th&gt;SP&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFE0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;?&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFDC&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0x0024&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD8&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0x0054&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;start/end&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD4&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0x0054&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;func(3)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;?&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;func-3&#34;&gt;&lt;code&gt;func(3)&lt;/code&gt;&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;R0 = 9
+SP = 0xFFDC
+LR = 0x0054
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Address&lt;/th&gt;
+&lt;th&gt;Data&lt;/th&gt;
+&lt;th&gt;SP&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFE0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;?&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFDC&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0x0024&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD8&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0x0054&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD4&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0x0054&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;start/end&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0x0054&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;func(0)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;func-0&#34;&gt;&lt;code&gt;func(0)&lt;/code&gt;&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;R0 = 9
+SP = 0xFFDC
+LR = 0x0054
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Address&lt;/th&gt;
+&lt;th&gt;Data&lt;/th&gt;
+&lt;th&gt;SP&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFE0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;?&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFDC&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0x0024&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD8&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0x0054&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD4&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0x0054&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0x0054&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;start/end&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;return-and-move-up-stack&#34;&gt;Return and move up stack&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;R0 &amp;lt; 0&lt;/code&gt; so &lt;code&gt;func(0)&lt;/code&gt; returns &lt;code&gt;0&lt;/code&gt; in &lt;code&gt;R0&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;func(3)&lt;/code&gt; returns &lt;code&gt;R0 + 1&lt;/code&gt; in &lt;code&gt;R0&lt;/code&gt; which is now &lt;code&gt;1&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;func(6)&lt;/code&gt; returns &lt;code&gt;R0 + 1&lt;/code&gt; in &lt;code&gt;R0&lt;/code&gt; which is now &lt;code&gt;2&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;func(9)&lt;/code&gt; returns &lt;code&gt;R0 + 1&lt;/code&gt; in &lt;code&gt;R0&lt;/code&gt; which is now &lt;code&gt;3&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;func(12)&lt;/code&gt; returns &lt;code&gt;R0 + 1&lt;/code&gt; in &lt;code&gt;R0&lt;/code&gt; which is now &lt;code&gt;4&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The return value is therefore &lt;code&gt;4&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;data-cache&#34;&gt;Data cache&lt;/h2&gt;
+
+&lt;p&gt;The next question asks for the miss rate in the &lt;strong&gt;data&lt;/strong&gt; cache for the same program.
+The first step in solving this question is to write down the data access pattern for the program.
+The only data memory accessed is in the stack operations, which were written above, but I&amp;rsquo;ll repeat just the loads and stores here with the addresses computed.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;STR LR 0xFFDC
+STR LR 0xFFD8
+STR LR 0xFFD4
+STR LR 0xFFD0
+LDR LR 0xFFD0
+LDR LR 0xFFD4
+LDR LR 0xFFD8
+LDR LR 0xFFDC
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;For the rest of this part, I will refer to each of these memory accesses only by its memory address since loads and stores are treated the same in the memory system.
+The data cache configuration for the first question is given as a 16B cache with 8B blocks that is direct mapped.
+This means that there are 2 sets, each of which has 1 block that stores 2 memory addresses.
+These 2 addresses will be adjacent words in memory.
+The initial state of the cache would likely store two data values that are irrelevant to the program, so I&amp;rsquo;ll model that as both blocks being invalid at the start resulting in compulsory (or cold) misses. Here is the initial cache state:&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Set&lt;/th&gt;
+&lt;th&gt;Valid&lt;/th&gt;
+&lt;th&gt;Addresses stored&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;????&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;????&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;As the program executes, the following behavior will occur:&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Address&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Set&lt;/th&gt;
+&lt;th&gt;Hit/Miss&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Cache State&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Start&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt;   &lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFDC&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt; &lt;strong&gt;&lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD8&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt;   &lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD4&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0xFFD0&lt;/code&gt; &lt;code&gt;0xFFD4&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD0&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0xFFD0&lt;/code&gt; &lt;code&gt;0xFFD4&lt;/code&gt;   &lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD0&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0xFFD0&lt;/code&gt; &lt;code&gt;0xFFD4&lt;/code&gt;   &lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD4&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0xFFD0&lt;/code&gt; &lt;code&gt;0xFFD4&lt;/code&gt;   &lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD8&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0xFFD0&lt;/code&gt; &lt;code&gt;0xFFD4&lt;/code&gt;   &lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFDC&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0xFFD0&lt;/code&gt; &lt;code&gt;0xFFD4&lt;/code&gt;   &lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;If we count up the misses and look at the total number of accesses we see that we have &lt;strong&gt;8&lt;/strong&gt; accesses and &lt;strong&gt;2&lt;/strong&gt; misses giving us a miss rate of &lt;sup&gt;2&lt;/sup&gt;&amp;frasl;&lt;sub&gt;8&lt;/sub&gt; = 25%.&lt;/p&gt;
+
+&lt;p&gt;The next part asks about what happens when the same &lt;strong&gt;data&lt;/strong&gt; cache is reorganized to be fully associative instead of direct mapped.
+This means that either block could be placed in either way within a single set.
+The result will be the same because we only ever access 2 different blocks of memory, but to show the full trace, I&amp;rsquo;ve included the work below.
+Note that the way on the left is the least recently used and will be replaced next.&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Address&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Set&lt;/th&gt;
+&lt;th&gt;Hit/Miss&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Cache State&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Start&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt;   &lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFDC&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt; &lt;strong&gt;&lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD8&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt;   &lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD4&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt; &lt;strong&gt;&lt;code&gt;0xFFD0&lt;/code&gt; &lt;code&gt;0xFFD4&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD0&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;   &lt;code&gt;0xFFD0&lt;/code&gt; &lt;code&gt;0xFFD4&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD0&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;   &lt;code&gt;0xFFD0&lt;/code&gt; &lt;code&gt;0xFFD4&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD4&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;   &lt;code&gt;0xFFD0&lt;/code&gt; &lt;code&gt;0xFFD4&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD8&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0xFFD0&lt;/code&gt; &lt;code&gt;0xFFD4&lt;/code&gt;   &lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFDC&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0xFFD0&lt;/code&gt; &lt;code&gt;0xFFD4&lt;/code&gt;   &lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Again, there are &lt;strong&gt;8&lt;/strong&gt; accesses and &lt;strong&gt;2&lt;/strong&gt; misses for a miss rate of &lt;sup&gt;2&lt;/sup&gt;&amp;frasl;&lt;sub&gt;8&lt;/sub&gt; = 25%.&lt;/p&gt;
+
+&lt;h2 id=&#34;instruction-cache&#34;&gt;Instruction Cache&lt;/h2&gt;
+
+&lt;p&gt;The next question deals with an instruction cache. This means we need to know what the cache access pattern is.
+From the first part, we know that the function is called a total of 5 times, the first 4 with the same behavior and the 5th time with the return 0 case.
+This access pattern is as follows:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;0x0044 // func(12)
+0x0048
+0x004C
+0x0050
+0x0044 // func(9)
+0x0048
+0x004C
+0x0050
+0x0044 // func(6)
+0x0048
+0x004C
+0x0050
+0x0044 // func(3)
+0x0048
+0x004C
+0x0050
+0x0044 // func(0) 
+0x0048
+0x0060
+0x0064 // return 0
+0x0054 // func(3)
+0x0058
+0x005C // return 1
+0x0054 // func(6)
+0x0058
+0x005C // return 2
+0x0054 // func(9)
+0x0058
+0x005C // return 3
+0x0054 // func(12)
+0x0058
+0x005C // return 4
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In order to make this response more compact than the previous problem, I&amp;rsquo;m going to exploit the fact that there is a repeated access pattern here.
+The sequence &lt;code&gt;0x0044&lt;/code&gt;, &lt;code&gt;0x0048&lt;/code&gt;, &lt;code&gt;0x004C&lt;/code&gt;, &lt;code&gt;0x0050&lt;/code&gt; repeats 4 times followed by the sequence &lt;code&gt;0x0044&lt;/code&gt;, &lt;code&gt;0x0048&lt;/code&gt;, &lt;code&gt;0x0060&lt;/code&gt;, &lt;code&gt;0x0064&lt;/code&gt;.
+After those finish, the sequence &lt;code&gt;0x0054&lt;/code&gt;, &lt;code&gt;0x0058&lt;/code&gt;, &lt;code&gt;0x005C&lt;/code&gt; repeats 4 times.
+The total number of memory accesses is therefore &lt;code&gt;4 x 4 + 4 + 3 x 4 = 32&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;For each repeated pattern, the access is has compulsory misses the first time, but on subsequent loops repeats the accesses.
+We are first given a 16B cache with 8B blocks that is direct mapped.
+Here is the hit miss pattern based on what the contents of the cache are through the trace:&lt;/p&gt;
+
+&lt;h3 id=&#34;8b-blocks&#34;&gt;8B blocks&lt;/h3&gt;
+
+&lt;p&gt;Filled blocks in bold&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Address&lt;/th&gt;
+&lt;th&gt;1st time&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;In Cache (1st time)&lt;/th&gt;
+&lt;th&gt;2-4&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;In Cache (2-4 times)&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Accesses&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Hits&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Misses&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;start&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt;   &lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt;   &lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0044&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0048&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt; &lt;strong&gt;&lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt;   &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt;   &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt;   &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0050&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0044&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0048&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt;   &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0060&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0060&lt;/code&gt; &lt;code&gt;0x0064&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0064&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0060&lt;/code&gt; &lt;code&gt;0x0064&lt;/code&gt;   &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0054&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt;   &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0058&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt; &lt;strong&gt;&lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt;   &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt;   &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt;   &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Sum&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;32&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;19&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;13&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;The hit rate for this cache configuration and instruction trace is &lt;sup&gt;19&lt;/sup&gt;&amp;frasl;&lt;sub&gt;32&lt;/sub&gt; which is about &lt;strong&gt;59.38%&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;The final question asks what change to the block size will improve the hit rate the most.
+Since the cache is 16B and each instruction is 4B, the only block sizes that make sense are 4B, 8B, and 16B which correspond to 4 sets, 2 sets, and 1 set respectively.
+The access patterns for each are as follows:&lt;/p&gt;
+
+&lt;h3 id=&#34;4b-blocks&#34;&gt;4B blocks&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Address&lt;/th&gt;
+&lt;th&gt;1st time&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;In Cache (1st time)&lt;/th&gt;
+&lt;th&gt;2-4&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;In Cache (2-4 times)&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Accesses&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Hits&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Misses&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;start&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt;   &lt;code&gt;??????&lt;/code&gt;   &lt;code&gt;??????&lt;/code&gt;   &lt;code&gt;??????&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0044&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt; &lt;strong&gt;&lt;code&gt;0x0044&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;??????&lt;/code&gt;   &lt;code&gt;??????&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0048&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt;   &lt;code&gt;0x0044&lt;/code&gt; &lt;strong&gt;&lt;code&gt;0x0048&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;??????&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt;   &lt;code&gt;0x0044&lt;/code&gt;   &lt;code&gt;0x0048&lt;/code&gt; &lt;strong&gt;&lt;code&gt;0x004C&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0050&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0050&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;0x0044&lt;/code&gt;   &lt;code&gt;0x0048&lt;/code&gt;   &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0044&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt;   &lt;code&gt;0x0044&lt;/code&gt;   &lt;code&gt;0x0048&lt;/code&gt;   &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0048&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt;   &lt;code&gt;0x0044&lt;/code&gt;   &lt;code&gt;0x0048&lt;/code&gt;   &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0060&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0060&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;0x0044&lt;/code&gt;   &lt;code&gt;0x0048&lt;/code&gt;   &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0064&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0060&lt;/code&gt; &lt;strong&gt;&lt;code&gt;0x0064&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;0x0048&lt;/code&gt;   &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0054&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0060&lt;/code&gt; &lt;strong&gt;&lt;code&gt;0x0054&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;0x0048&lt;/code&gt;   &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0060&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt; &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0058&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0060&lt;/code&gt;   &lt;code&gt;0x0054&lt;/code&gt; &lt;strong&gt;&lt;code&gt;0x0058&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0060&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt; &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0060&lt;/code&gt;   &lt;code&gt;0x0054&lt;/code&gt;   &lt;code&gt;0x0058&lt;/code&gt; &lt;strong&gt;&lt;code&gt;0x005C&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0060&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt; &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Sum&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;32&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;23&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;9&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;hit rate = &lt;sup&gt;23&lt;/sup&gt;&amp;frasl;&lt;sub&gt;32&lt;/sub&gt; = &lt;strong&gt;71.88%&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;16b-block&#34;&gt;16B block&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Address&lt;/th&gt;
+&lt;th&gt;1st time&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;In Cache (1st time)&lt;/th&gt;
+&lt;th&gt;2-4&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;In Cache (2-4 times)&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Accesses&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Hits&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Misses&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;start&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0044&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0048&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0050&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt; &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt; &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0044&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0048&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0060&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0060&lt;/code&gt; &lt;code&gt;0x0064&lt;/code&gt; &lt;code&gt;0x0068&lt;/code&gt; &lt;code&gt;0x006C&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0064&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0060&lt;/code&gt; &lt;code&gt;0x0064&lt;/code&gt; &lt;code&gt;0x0068&lt;/code&gt; &lt;code&gt;0x006C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0054&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt; &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt; &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0058&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt; &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt; &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt; &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt; &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Sum&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;32&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;21&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;11&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;hit rate = &lt;sup&gt;21&lt;/sup&gt;&amp;frasl;&lt;sub&gt;32&lt;/sub&gt; = &lt;strong&gt;65.63%&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Since the 4B access pattern results in a higher hit rate, reducing the block size for 8B to 4B would increase the hit rate the most.
+This is an interesting example because both 16B and 4B block sizes resulted in a higher hit rate than the 8B block size for this particular example.
+The 16B trace does better because it reduces the number of compulsory misses, but it still suffers from the conflicts in the first loop.
+The 8B trace does best because, while there are more compulsory misses, it reduces conflicts in each of these loops with 4 or less instructions in it and exploits temporal locality in the instruction access pattern.
+This does not indicate that a 4B block size is better in all circumstances, but it is true in this case.&lt;/p&gt;
+
+&lt;p&gt;In today&amp;rsquo;s production caches, there are many more blocks in the cache, and they are also typically associative reducing the number of conflict misses.
+As a point of comparison, this is the access pattern for a 8B block size with a fully associative cache and LRU replacement policy.&lt;/p&gt;
+
+&lt;h3 id=&#34;8b-block-2-way-associative&#34;&gt;8B block, 2-way associative&lt;/h3&gt;
+
+&lt;p&gt;I didn&amp;rsquo;t include the cache state here because it wasn&amp;rsquo;t a part of the problem and I wanted to save a little time writing this.&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Address&lt;/th&gt;
+&lt;th&gt;1st time&lt;/th&gt;
+&lt;th&gt;2-4&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Accesses&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Hits&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Misses&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0044&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0048&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0050&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0044&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0048&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0060&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0064&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0054&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0058&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Sum&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;32&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;15&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;17&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;It turns out that making the cache associative is worse because the LRU replacement policy does the wrong thing repeatedly.
+The hit rate is under 50%.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An Approach to Data Prefetching Using 2-Dimensional Selection Criteria</title>
+      <link>http://josef.spjut.me/publication/tr/tr6/</link>
+      <pubDate>Fri, 01 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/tr/tr6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Efficient Ray Tracing Architectures</title>
+      <link>http://josef.spjut.me/publication/dis/d0/</link>
+      <pubDate>Fri, 01 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/dis/d0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sphynx: A Shared Instruction Cache Exporatory Study</title>
+      <link>http://josef.spjut.me/publication/tr/tr5/</link>
+      <pubDate>Wed, 03 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/tr/tr5/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publication_types on Josef Spjut</title>
+    <link>http://josef.spjut.me/publication_types/</link>
+    <description>Recent content in Publication_types on Josef Spjut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Josef Spjut</copyright>
+    <lastBuildDate>Fri, 01 May 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/publication_types/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>10</title>
+      <link>http://josef.spjut.me/publication_types/10/</link>
+      <pubDate>Fri, 01 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication_types/10/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>11</title>
+      <link>http://josef.spjut.me/publication_types/11/</link>
+      <pubDate>Sat, 01 Aug 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication_types/11/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>4</title>
+      <link>http://josef.spjut.me/publication_types/4/</link>
+      <pubDate>Fri, 01 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication_types/4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>7</title>
+      <link>http://josef.spjut.me/publication_types/7/</link>
+      <pubDate>Tue, 24 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication_types/7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>8</title>
+      <link>http://josef.spjut.me/publication_types/8/</link>
+      <pubDate>Sun, 30 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication_types/8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>9</title>
+      <link>http://josef.spjut.me/publication_types/9/</link>
+      <pubDate>Thu, 03 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication_types/9/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

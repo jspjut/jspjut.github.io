@@ -1,0 +1,1543 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.24.1" />
+  <meta name="author" content="Josef Spjut">
+  <meta name="description" content="Research Scientist">
+
+  
+  
+  
+    
+  
+  
+    
+    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/github.min.css">
+    
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.0/css/academicons.min.css" integrity="sha512-GGGNUPDhnG8LEAEDsjqYIQns+Gu8RBs4j5XGlxl7UfRaZBhCCm5jenJkeJL8uPuOXGqgl8/H1gjlWQDRjd3cUQ==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather%7CRoboto+Mono">
+  <link rel="stylesheet" href="/css/hugo-academic.css">
+  
+
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-43681956-1', 'auto');
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+
+  <link rel="alternate" href="http://josef.spjut.me/index.xml" type="application/rss+xml" title="Josef Spjut">
+  <link rel="feed" href="http://josef.spjut.me/index.xml" type="application/rss+xml" title="Josef Spjut">
+
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
+
+  <link rel="canonical" href="http://josef.spjut.me/teaching/2015/05/13/an-introductory-cache-problem/">
+
+  
+
+  <title>An Introductory Cache Problem | Josef Spjut</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Josef Spjut</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/research/">
+            
+            <span>Research</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/media/">
+            
+            <span>Media</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/teaching/">
+            
+            <span>Teaching</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/games/">
+            
+            <span>Games</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/misc/">
+            
+            <span>Miscellaneous</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+  <div class="article-container">
+    <h1 itemprop="name">An Introductory Cache Problem</h1>
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    <time datetime="2015-05-13 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+      Wed, May 13, 2015
+    </time>
+  </span>
+
+  
+  
+  
+  <span class="article-categories">
+    <i class="fa fa-folder"></i>
+    
+    <a href="/categories/teaching">teaching</a
+    >
+    
+  </span>
+  
+  
+
+  
+  
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a href="/tags/lecture">lecture</a
+    >, 
+    
+    <a href="/tags/class">class</a
+    >, 
+    
+    <a href="/tags/cache">cache</a
+    >, 
+    
+    <a href="/tags/memory">memory</a
+    >
+    
+  </span>
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fjosef.spjut.me%2fteaching%2f2015%2f05%2f13%2fan-introductory-cache-problem%2f"
+         target="_blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=An%20Introductory%20Cache%20Problem&amp;url=http%3a%2f%2fjosef.spjut.me%2fteaching%2f2015%2f05%2f13%2fan-introductory-cache-problem%2f"
+         target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fjosef.spjut.me%2fteaching%2f2015%2f05%2f13%2fan-introductory-cache-problem%2f&amp;title=An%20Introductory%20Cache%20Problem"
+         target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fjosef.spjut.me%2fteaching%2f2015%2f05%2f13%2fan-introductory-cache-problem%2f&amp;title=An%20Introductory%20Cache%20Problem"
+         target="_blank">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=An%20Introductory%20Cache%20Problem&amp;body=http%3a%2f%2fjosef.spjut.me%2fteaching%2f2015%2f05%2f13%2fan-introductory-cache-problem%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<p>I recently gave a problem on the final in <a href="http://pages.hmc.edu/jspjut/class/s2015/e85/" target="_blank">E85</a>.
+The students didn&rsquo;t do too well on it overall, so I wanted to post the problem and solution in an effort to
+make more resources available for people learning basic cache behaviors.
+First of all, I need to introduce the piece of ARM assembly being used since
+it is the basis for a number of questions.</p>
+
+<pre><code>		FUNC:
+0x0044	SUBS R0, R0, #3
+0x0048	BLT DONE
+0x004C	STR LR, [SP, #-4]!
+0x0050	BL FUNC
+0x0054	ADD R0, R0, #1
+0x0058	LDR LR, [SP], #4
+0x005C	MOV PC, LR
+		DONE:
+0x0060	MOV R0, #0
+0x0064	MOV PC, LR
+</code></pre>
+
+<h2 id="program-analysis">Program analysis</h2>
+
+<p>The first question is the following: Translate <code>FUNC</code> to C code. My C version is:</p>
+
+<pre><code class="language-c">int func(int x)
+{
+	if (x &lt; 3)
+		return 0;
+	else
+		return func(x-3) + 1;
+}
+</code></pre>
+
+<p>This is a simple recursive function that computes the integer value of dividing the input number by 3.</p>
+
+<p>The next part asked for a stack trace including register values for <code>func(12)</code>.
+The <code>SP</code> starts at <code>0xFFE0</code> and the function is first called from a <code>BL</code> at <code>0x0020</code>.</p>
+
+<h3 id="func-12"><code>func(12)</code></h3>
+
+<pre><code>R0 = 12
+SP = 0xFFE0
+LR = 0x0024
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th>Address</th>
+<th>Data</th>
+<th>SP</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>0xFFE0</code></td>
+<td><code>?</code></td>
+<td>start/end</td>
+</tr>
+
+<tr>
+<td><code>0xFFDC</code></td>
+<td><code>0x0024</code></td>
+<td><code>func(9)</code></td>
+</tr>
+
+<tr>
+<td><code>0xFFD0</code></td>
+<td><code>?</code></td>
+<td></td>
+</tr>
+
+<tr>
+<td><code>0xFFD0</code></td>
+<td><code>?</code></td>
+<td></td>
+</tr>
+
+<tr>
+<td><code>0xFFD0</code></td>
+<td><code>?</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="func-9"><code>func(9)</code></h3>
+
+<pre><code>R0 = 9
+SP = 0xFFDC
+LR = 0x0054
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th>Address</th>
+<th>Data</th>
+<th>SP</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>0xFFE0</code></td>
+<td><code>?</code></td>
+<td></td>
+</tr>
+
+<tr>
+<td><code>0xFFDC</code></td>
+<td><code>0x0024</code></td>
+<td>start/end</td>
+</tr>
+
+<tr>
+<td><code>0xFFD8</code></td>
+<td><code>0x0054</code></td>
+<td><code>func(6)</code></td>
+</tr>
+
+<tr>
+<td><code>0xFFD4</code></td>
+<td><code>?</code></td>
+<td></td>
+</tr>
+
+<tr>
+<td><code>0xFFD0</code></td>
+<td><code>?</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="func-6"><code>func(6)</code></h3>
+
+<pre><code>R0 = 9
+SP = 0xFFDC
+LR = 0x0054
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th>Address</th>
+<th>Data</th>
+<th>SP</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>0xFFE0</code></td>
+<td><code>?</code></td>
+<td></td>
+</tr>
+
+<tr>
+<td><code>0xFFDC</code></td>
+<td><code>0x0024</code></td>
+<td></td>
+</tr>
+
+<tr>
+<td><code>0xFFD8</code></td>
+<td><code>0x0054</code></td>
+<td>start/end</td>
+</tr>
+
+<tr>
+<td><code>0xFFD4</code></td>
+<td><code>0x0054</code></td>
+<td><code>func(3)</code></td>
+</tr>
+
+<tr>
+<td><code>0xFFD0</code></td>
+<td><code>?</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="func-3"><code>func(3)</code></h3>
+
+<pre><code>R0 = 9
+SP = 0xFFDC
+LR = 0x0054
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th>Address</th>
+<th>Data</th>
+<th>SP</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>0xFFE0</code></td>
+<td><code>?</code></td>
+<td></td>
+</tr>
+
+<tr>
+<td><code>0xFFDC</code></td>
+<td><code>0x0024</code></td>
+<td></td>
+</tr>
+
+<tr>
+<td><code>0xFFD8</code></td>
+<td><code>0x0054</code></td>
+<td></td>
+</tr>
+
+<tr>
+<td><code>0xFFD4</code></td>
+<td><code>0x0054</code></td>
+<td>start/end</td>
+</tr>
+
+<tr>
+<td><code>0xFFD0</code></td>
+<td><code>0x0054</code></td>
+<td><code>func(0)</code></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="func-0"><code>func(0)</code></h3>
+
+<pre><code>R0 = 9
+SP = 0xFFDC
+LR = 0x0054
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th>Address</th>
+<th>Data</th>
+<th>SP</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>0xFFE0</code></td>
+<td><code>?</code></td>
+<td></td>
+</tr>
+
+<tr>
+<td><code>0xFFDC</code></td>
+<td><code>0x0024</code></td>
+<td></td>
+</tr>
+
+<tr>
+<td><code>0xFFD8</code></td>
+<td><code>0x0054</code></td>
+<td></td>
+</tr>
+
+<tr>
+<td><code>0xFFD4</code></td>
+<td><code>0x0054</code></td>
+<td></td>
+</tr>
+
+<tr>
+<td><code>0xFFD0</code></td>
+<td><code>0x0054</code></td>
+<td>start/end</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="return-and-move-up-stack">Return and move up stack</h3>
+
+<p><code>R0 &lt; 0</code> so <code>func(0)</code> returns <code>0</code> in <code>R0</code>.</p>
+
+<p><code>func(3)</code> returns <code>R0 + 1</code> in <code>R0</code> which is now <code>1</code>.</p>
+
+<p><code>func(6)</code> returns <code>R0 + 1</code> in <code>R0</code> which is now <code>2</code>.</p>
+
+<p><code>func(9)</code> returns <code>R0 + 1</code> in <code>R0</code> which is now <code>3</code>.</p>
+
+<p><code>func(12)</code> returns <code>R0 + 1</code> in <code>R0</code> which is now <code>4</code>.</p>
+
+<p>The return value is therefore <code>4</code>.</p>
+
+<h2 id="data-cache">Data cache</h2>
+
+<p>The next question asks for the miss rate in the <strong>data</strong> cache for the same program.
+The first step in solving this question is to write down the data access pattern for the program.
+The only data memory accessed is in the stack operations, which were written above, but I&rsquo;ll repeat just the loads and stores here with the addresses computed.</p>
+
+<pre><code>STR LR 0xFFDC
+STR LR 0xFFD8
+STR LR 0xFFD4
+STR LR 0xFFD0
+LDR LR 0xFFD0
+LDR LR 0xFFD4
+LDR LR 0xFFD8
+LDR LR 0xFFDC
+</code></pre>
+
+<p>For the rest of this part, I will refer to each of these memory accesses only by its memory address since loads and stores are treated the same in the memory system.
+The data cache configuration for the first question is given as a 16B cache with 8B blocks that is direct mapped.
+This means that there are 2 sets, each of which has 1 block that stores 2 memory addresses.
+These 2 addresses will be adjacent words in memory.
+The initial state of the cache would likely store two data values that are irrelevant to the program, so I&rsquo;ll model that as both blocks being invalid at the start resulting in compulsory (or cold) misses. Here is the initial cache state:</p>
+
+<table>
+<thead>
+<tr>
+<th>Set</th>
+<th>Valid</th>
+<th>Addresses stored</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1</td>
+<td>0</td>
+<td><code>????</code></td>
+</tr>
+
+<tr>
+<td>0</td>
+<td>0</td>
+<td><code>????</code></td>
+</tr>
+</tbody>
+</table>
+
+<p>As the program executes, the following behavior will occur:</p>
+
+<table>
+<thead>
+<tr>
+<th>Address</th>
+<th align="center">Set</th>
+<th>Hit/Miss</th>
+<th align="center">Cache State</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Start</td>
+<td align="center"></td>
+<td></td>
+<td align="center"><code>??????</code> <code>??????</code>   <code>??????</code> <code>??????</code></td>
+</tr>
+
+<tr>
+<td><code>0xFFDC</code></td>
+<td align="center">1</td>
+<td>miss</td>
+<td align="center"><code>??????</code> <code>??????</code> <strong><code>0xFFD8</code> <code>0xFFDF</code></strong></td>
+</tr>
+
+<tr>
+<td><code>0xFFD8</code></td>
+<td align="center">1</td>
+<td>hit</td>
+<td align="center"><code>??????</code> <code>??????</code>   <code>0xFFD8</code> <code>0xFFDF</code></td>
+</tr>
+
+<tr>
+<td><code>0xFFD4</code></td>
+<td align="center">0</td>
+<td>miss</td>
+<td align="center"><strong><code>0xFFD0</code> <code>0xFFD4</code></strong> <code>0xFFD8</code> <code>0xFFDF</code></td>
+</tr>
+
+<tr>
+<td><code>0xFFD0</code></td>
+<td align="center">0</td>
+<td>hit</td>
+<td align="center"><code>0xFFD0</code> <code>0xFFD4</code>   <code>0xFFD8</code> <code>0xFFDF</code></td>
+</tr>
+
+<tr>
+<td><code>0xFFD0</code></td>
+<td align="center">0</td>
+<td>hit</td>
+<td align="center"><code>0xFFD0</code> <code>0xFFD4</code>   <code>0xFFD8</code> <code>0xFFDF</code></td>
+</tr>
+
+<tr>
+<td><code>0xFFD4</code></td>
+<td align="center">0</td>
+<td>hit</td>
+<td align="center"><code>0xFFD0</code> <code>0xFFD4</code>   <code>0xFFD8</code> <code>0xFFDF</code></td>
+</tr>
+
+<tr>
+<td><code>0xFFD8</code></td>
+<td align="center">1</td>
+<td>hit</td>
+<td align="center"><code>0xFFD0</code> <code>0xFFD4</code>   <code>0xFFD8</code> <code>0xFFDF</code></td>
+</tr>
+
+<tr>
+<td><code>0xFFDC</code></td>
+<td align="center">1</td>
+<td>hit</td>
+<td align="center"><code>0xFFD0</code> <code>0xFFD4</code>   <code>0xFFD8</code> <code>0xFFDF</code></td>
+</tr>
+</tbody>
+</table>
+
+<p>If we count up the misses and look at the total number of accesses we see that we have <strong>8</strong> accesses and <strong>2</strong> misses giving us a miss rate of <sup>2</sup>&frasl;<sub>8</sub> = 25%.</p>
+
+<p>The next part asks about what happens when the same <strong>data</strong> cache is reorganized to be fully associative instead of direct mapped.
+This means that either block could be placed in either way within a single set.
+The result will be the same because we only ever access 2 different blocks of memory, but to show the full trace, I&rsquo;ve included the work below.
+Note that the way on the left is the least recently used and will be replaced next.</p>
+
+<table>
+<thead>
+<tr>
+<th>Address</th>
+<th align="center">Set</th>
+<th>Hit/Miss</th>
+<th align="center">Cache State</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Start</td>
+<td align="center"></td>
+<td></td>
+<td align="center"><code>??????</code> <code>??????</code>   <code>??????</code> <code>??????</code></td>
+</tr>
+
+<tr>
+<td><code>0xFFDC</code></td>
+<td align="center">0</td>
+<td>miss</td>
+<td align="center"><code>??????</code> <code>??????</code> <strong><code>0xFFD8</code> <code>0xFFDF</code></strong></td>
+</tr>
+
+<tr>
+<td><code>0xFFD8</code></td>
+<td align="center">0</td>
+<td>hit</td>
+<td align="center"><code>??????</code> <code>??????</code>   <code>0xFFD8</code> <code>0xFFDF</code></td>
+</tr>
+
+<tr>
+<td><code>0xFFD4</code></td>
+<td align="center">0</td>
+<td>miss</td>
+<td align="center"><code>0xFFD8</code> <code>0xFFDF</code> <strong><code>0xFFD0</code> <code>0xFFD4</code></strong></td>
+</tr>
+
+<tr>
+<td><code>0xFFD0</code></td>
+<td align="center">0</td>
+<td>hit</td>
+<td align="center"><code>0xFFD8</code> <code>0xFFDF</code>   <code>0xFFD0</code> <code>0xFFD4</code></td>
+</tr>
+
+<tr>
+<td><code>0xFFD0</code></td>
+<td align="center">0</td>
+<td>hit</td>
+<td align="center"><code>0xFFD8</code> <code>0xFFDF</code>   <code>0xFFD0</code> <code>0xFFD4</code></td>
+</tr>
+
+<tr>
+<td><code>0xFFD4</code></td>
+<td align="center">0</td>
+<td>hit</td>
+<td align="center"><code>0xFFD8</code> <code>0xFFDF</code>   <code>0xFFD0</code> <code>0xFFD4</code></td>
+</tr>
+
+<tr>
+<td><code>0xFFD8</code></td>
+<td align="center">0</td>
+<td>hit</td>
+<td align="center"><code>0xFFD0</code> <code>0xFFD4</code>   <code>0xFFD8</code> <code>0xFFDF</code></td>
+</tr>
+
+<tr>
+<td><code>0xFFDC</code></td>
+<td align="center">0</td>
+<td>hit</td>
+<td align="center"><code>0xFFD0</code> <code>0xFFD4</code>   <code>0xFFD8</code> <code>0xFFDF</code></td>
+</tr>
+</tbody>
+</table>
+
+<p>Again, there are <strong>8</strong> accesses and <strong>2</strong> misses for a miss rate of <sup>2</sup>&frasl;<sub>8</sub> = 25%.</p>
+
+<h2 id="instruction-cache">Instruction Cache</h2>
+
+<p>The next question deals with an instruction cache. This means we need to know what the cache access pattern is.
+From the first part, we know that the function is called a total of 5 times, the first 4 with the same behavior and the 5th time with the return 0 case.
+This access pattern is as follows:</p>
+
+<pre><code>0x0044 // func(12)
+0x0048
+0x004C
+0x0050
+0x0044 // func(9)
+0x0048
+0x004C
+0x0050
+0x0044 // func(6)
+0x0048
+0x004C
+0x0050
+0x0044 // func(3)
+0x0048
+0x004C
+0x0050
+0x0044 // func(0) 
+0x0048
+0x0060
+0x0064 // return 0
+0x0054 // func(3)
+0x0058
+0x005C // return 1
+0x0054 // func(6)
+0x0058
+0x005C // return 2
+0x0054 // func(9)
+0x0058
+0x005C // return 3
+0x0054 // func(12)
+0x0058
+0x005C // return 4
+</code></pre>
+
+<p>In order to make this response more compact than the previous problem, I&rsquo;m going to exploit the fact that there is a repeated access pattern here.
+The sequence <code>0x0044</code>, <code>0x0048</code>, <code>0x004C</code>, <code>0x0050</code> repeats 4 times followed by the sequence <code>0x0044</code>, <code>0x0048</code>, <code>0x0060</code>, <code>0x0064</code>.
+After those finish, the sequence <code>0x0054</code>, <code>0x0058</code>, <code>0x005C</code> repeats 4 times.
+The total number of memory accesses is therefore <code>4 x 4 + 4 + 3 x 4 = 32</code>.</p>
+
+<p>For each repeated pattern, the access is has compulsory misses the first time, but on subsequent loops repeats the accesses.
+We are first given a 16B cache with 8B blocks that is direct mapped.
+Here is the hit miss pattern based on what the contents of the cache are through the trace:</p>
+
+<h3 id="8b-blocks">8B blocks</h3>
+
+<p>Filled blocks in bold</p>
+
+<table>
+<thead>
+<tr>
+<th>Address</th>
+<th>1st time</th>
+<th align="center">In Cache (1st time)</th>
+<th>2-4</th>
+<th align="center">In Cache (2-4 times)</th>
+<th align="center">Accesses</th>
+<th align="center">Hits</th>
+<th align="center">Misses</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>start</td>
+<td></td>
+<td align="center"><code>??????</code> <code>??????</code>   <code>??????</code> <code>??????</code></td>
+<td></td>
+<td align="center"><code>??????</code> <code>??????</code>   <code>??????</code> <code>??????</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+
+<tr>
+<td><code>0x0044</code></td>
+<td>miss</td>
+<td align="center"><strong><code>0x0040</code> <code>0x0044</code></strong> <code>??????</code> <code>??????</code></td>
+<td>miss</td>
+<td align="center"><strong><code>0x0040</code> <code>0x0044</code></strong> <code>0x0048</code> <code>0x004C</code></td>
+<td align="center">4</td>
+<td align="center">0</td>
+<td align="center">4</td>
+</tr>
+
+<tr>
+<td><code>0x0048</code></td>
+<td>miss</td>
+<td align="center"><code>0x0040</code> <code>0x0044</code> <strong><code>0x0048</code> <code>0x004C</code></strong></td>
+<td>hit</td>
+<td align="center"><code>0x0040</code> <code>0x0044</code>   <code>0x0048</code> <code>0x004C</code></td>
+<td align="center">4</td>
+<td align="center">3</td>
+<td align="center">1</td>
+</tr>
+
+<tr>
+<td><code>0x004C</code></td>
+<td>hit</td>
+<td align="center"><code>0x0040</code> <code>0x0044</code>   <code>0x0048</code> <code>0x004C</code></td>
+<td>hit</td>
+<td align="center"><code>0x0040</code> <code>0x0044</code>   <code>0x0048</code> <code>0x004C</code></td>
+<td align="center">4</td>
+<td align="center">4</td>
+<td align="center">0</td>
+</tr>
+
+<tr>
+<td><code>0x0050</code></td>
+<td>miss</td>
+<td align="center"><strong><code>0x0050</code> <code>0x0054</code></strong> <code>0x0048</code> <code>0x004C</code></td>
+<td>miss</td>
+<td align="center"><strong><code>0x0050</code> <code>0x0054</code></strong> <code>0x0048</code> <code>0x004C</code></td>
+<td align="center">4</td>
+<td align="center">0</td>
+<td align="center">4</td>
+</tr>
+
+<tr>
+<td><code>0x0044</code></td>
+<td>miss</td>
+<td align="center"><strong><code>0x0040</code> <code>0x0044</code></strong> <code>0x0048</code> <code>0x004C</code></td>
+<td>n/a</td>
+<td align="center">n/a</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">1</td>
+</tr>
+
+<tr>
+<td><code>0x0048</code></td>
+<td>hit</td>
+<td align="center"><code>0x0040</code> <code>0x0044</code>   <code>0x0048</code> <code>0x004C</code></td>
+<td>n/a</td>
+<td align="center">n/a</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">0</td>
+</tr>
+
+<tr>
+<td><code>0x0060</code></td>
+<td>miss</td>
+<td align="center"><strong><code>0x0060</code> <code>0x0064</code></strong> <code>0x0048</code> <code>0x004C</code></td>
+<td>n/a</td>
+<td align="center">n/a</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">1</td>
+</tr>
+
+<tr>
+<td><code>0x0064</code></td>
+<td>hit</td>
+<td align="center"><code>0x0060</code> <code>0x0064</code>   <code>0x0048</code> <code>0x004C</code></td>
+<td>n/a</td>
+<td align="center">n/a</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">0</td>
+</tr>
+
+<tr>
+<td><code>0x0054</code></td>
+<td>miss</td>
+<td align="center"><strong><code>0x0050</code> <code>0x0054</code></strong> <code>0x0048</code> <code>0x004C</code></td>
+<td>hit</td>
+<td align="center"><code>0x0050</code> <code>0x0054</code>   <code>0x0058</code> <code>0x005C</code></td>
+<td align="center">4</td>
+<td align="center">3</td>
+<td align="center">1</td>
+</tr>
+
+<tr>
+<td><code>0x0058</code></td>
+<td>miss</td>
+<td align="center"><code>0x0050</code> <code>0x0054</code> <strong><code>0x0058</code> <code>0x005C</code></strong></td>
+<td>hit</td>
+<td align="center"><code>0x0050</code> <code>0x0054</code>   <code>0x0058</code> <code>0x005C</code></td>
+<td align="center">4</td>
+<td align="center">3</td>
+<td align="center">1</td>
+</tr>
+
+<tr>
+<td><code>0x005C</code></td>
+<td>hit</td>
+<td align="center"><code>0x0050</code> <code>0x0054</code>   <code>0x0058</code> <code>0x005C</code></td>
+<td>hit</td>
+<td align="center"><code>0x0050</code> <code>0x0054</code>   <code>0x0058</code> <code>0x005C</code></td>
+<td align="center">4</td>
+<td align="center">4</td>
+<td align="center">0</td>
+</tr>
+
+<tr>
+<td>Sum</td>
+<td></td>
+<td align="center"></td>
+<td></td>
+<td align="center"></td>
+<td align="center">32</td>
+<td align="center">19</td>
+<td align="center">13</td>
+</tr>
+</tbody>
+</table>
+
+<p>The hit rate for this cache configuration and instruction trace is <sup>19</sup>&frasl;<sub>32</sub> which is about <strong>59.38%</strong>.</p>
+
+<p>The final question asks what change to the block size will improve the hit rate the most.
+Since the cache is 16B and each instruction is 4B, the only block sizes that make sense are 4B, 8B, and 16B which correspond to 4 sets, 2 sets, and 1 set respectively.
+The access patterns for each are as follows:</p>
+
+<h3 id="4b-blocks">4B blocks</h3>
+
+<table>
+<thead>
+<tr>
+<th>Address</th>
+<th>1st time</th>
+<th align="center">In Cache (1st time)</th>
+<th>2-4</th>
+<th align="center">In Cache (2-4 times)</th>
+<th align="center">Accesses</th>
+<th align="center">Hits</th>
+<th align="center">Misses</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>start</td>
+<td></td>
+<td align="center"><code>??????</code>   <code>??????</code>   <code>??????</code>   <code>??????</code></td>
+<td></td>
+<td align="center"><code>??????</code> <code>??????</code> <code>??????</code> <code>??????</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+
+<tr>
+<td><code>0x0044</code></td>
+<td>miss</td>
+<td align="center"><code>??????</code> <strong><code>0x0044</code></strong> <code>??????</code>   <code>??????</code></td>
+<td>hit</td>
+<td align="center"><code>0x0050</code> <code>0x0044</code> <code>0x0048</code> <code>0x004C</code></td>
+<td align="center">4</td>
+<td align="center">3</td>
+<td align="center">1</td>
+</tr>
+
+<tr>
+<td><code>0x0048</code></td>
+<td>miss</td>
+<td align="center"><code>??????</code>   <code>0x0044</code> <strong><code>0x0048</code></strong> <code>??????</code></td>
+<td>hit</td>
+<td align="center"><code>0x0050</code> <code>0x0044</code> <code>0x0048</code> <code>0x004C</code></td>
+<td align="center">4</td>
+<td align="center">3</td>
+<td align="center">1</td>
+</tr>
+
+<tr>
+<td><code>0x004C</code></td>
+<td>miss</td>
+<td align="center"><code>??????</code>   <code>0x0044</code>   <code>0x0048</code> <strong><code>0x004C</code></strong></td>
+<td>hit</td>
+<td align="center"><code>0x0050</code> <code>0x0044</code> <code>0x0048</code> <code>0x004C</code></td>
+<td align="center">4</td>
+<td align="center">3</td>
+<td align="center">1</td>
+</tr>
+
+<tr>
+<td><code>0x0050</code></td>
+<td>miss</td>
+<td align="center"><strong><code>0x0050</code></strong> <code>0x0044</code>   <code>0x0048</code>   <code>0x004C</code></td>
+<td>hit</td>
+<td align="center"><code>0x0050</code> <code>0x0044</code> <code>0x0048</code> <code>0x004C</code></td>
+<td align="center">4</td>
+<td align="center">3</td>
+<td align="center">1</td>
+</tr>
+
+<tr>
+<td><code>0x0044</code></td>
+<td>hit</td>
+<td align="center"><code>0x0050</code>   <code>0x0044</code>   <code>0x0048</code>   <code>0x004C</code></td>
+<td>n/a</td>
+<td align="center">n/a</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">0</td>
+</tr>
+
+<tr>
+<td><code>0x0048</code></td>
+<td>hit</td>
+<td align="center"><code>0x0050</code>   <code>0x0044</code>   <code>0x0048</code>   <code>0x004C</code></td>
+<td>n/a</td>
+<td align="center">n/a</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">0</td>
+</tr>
+
+<tr>
+<td><code>0x0060</code></td>
+<td>miss</td>
+<td align="center"><strong><code>0x0060</code></strong> <code>0x0044</code>   <code>0x0048</code>   <code>0x004C</code></td>
+<td>n/a</td>
+<td align="center">n/a</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">1</td>
+</tr>
+
+<tr>
+<td><code>0x0064</code></td>
+<td>miss</td>
+<td align="center"><code>0x0060</code> <strong><code>0x0064</code></strong> <code>0x0048</code>   <code>0x004C</code></td>
+<td>n/a</td>
+<td align="center">n/a</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">1</td>
+</tr>
+
+<tr>
+<td><code>0x0054</code></td>
+<td>miss</td>
+<td align="center"><code>0x0060</code> <strong><code>0x0054</code></strong> <code>0x0048</code>   <code>0x004C</code></td>
+<td>hit</td>
+<td align="center"><code>0x0060</code> <code>0x0054</code> <code>0x0058</code> <code>0x005C</code></td>
+<td align="center">4</td>
+<td align="center">3</td>
+<td align="center">1</td>
+</tr>
+
+<tr>
+<td><code>0x0058</code></td>
+<td>miss</td>
+<td align="center"><code>0x0060</code>   <code>0x0054</code> <strong><code>0x0058</code></strong> <code>0x004C</code></td>
+<td>hit</td>
+<td align="center"><code>0x0060</code> <code>0x0054</code> <code>0x0058</code> <code>0x005C</code></td>
+<td align="center">4</td>
+<td align="center">3</td>
+<td align="center">1</td>
+</tr>
+
+<tr>
+<td><code>0x005C</code></td>
+<td>miss</td>
+<td align="center"><code>0x0060</code>   <code>0x0054</code>   <code>0x0058</code> <strong><code>0x005C</code></strong></td>
+<td>hit</td>
+<td align="center"><code>0x0060</code> <code>0x0054</code> <code>0x0058</code> <code>0x005C</code></td>
+<td align="center">4</td>
+<td align="center">3</td>
+<td align="center">1</td>
+</tr>
+
+<tr>
+<td>Sum</td>
+<td></td>
+<td align="center"></td>
+<td></td>
+<td align="center"></td>
+<td align="center">32</td>
+<td align="center">23</td>
+<td align="center">9</td>
+</tr>
+</tbody>
+</table>
+
+<p>hit rate = <sup>23</sup>&frasl;<sub>32</sub> = <strong>71.88%</strong></p>
+
+<h3 id="16b-block">16B block</h3>
+
+<table>
+<thead>
+<tr>
+<th>Address</th>
+<th>1st time</th>
+<th align="center">In Cache (1st time)</th>
+<th>2-4</th>
+<th align="center">In Cache (2-4 times)</th>
+<th align="center">Accesses</th>
+<th align="center">Hits</th>
+<th align="center">Misses</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>start</td>
+<td></td>
+<td align="center"><code>??????</code> <code>??????</code> <code>??????</code> <code>??????</code></td>
+<td></td>
+<td align="center"><code>??????</code> <code>??????</code> <code>??????</code> <code>??????</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+
+<tr>
+<td><code>0x0044</code></td>
+<td>miss</td>
+<td align="center"><strong><code>0x0040</code> <code>0x0044</code> <code>0x0048</code> <code>0x004C</code></strong></td>
+<td>miss</td>
+<td align="center"><strong><code>0x0040</code> <code>0x0044</code> <code>0x0048</code> <code>0x004C</code></strong></td>
+<td align="center">4</td>
+<td align="center">0</td>
+<td align="center">4</td>
+</tr>
+
+<tr>
+<td><code>0x0048</code></td>
+<td>hit</td>
+<td align="center"><code>0x0040</code> <code>0x0044</code> <code>0x0048</code> <code>0x004C</code></td>
+<td>hit</td>
+<td align="center"><code>0x0040</code> <code>0x0044</code> <code>0x0048</code> <code>0x004C</code></td>
+<td align="center">4</td>
+<td align="center">4</td>
+<td align="center">0</td>
+</tr>
+
+<tr>
+<td><code>0x004C</code></td>
+<td>hit</td>
+<td align="center"><code>0x0040</code> <code>0x0044</code> <code>0x0048</code> <code>0x004C</code></td>
+<td>hit</td>
+<td align="center"><code>0x0040</code> <code>0x0044</code> <code>0x0048</code> <code>0x004C</code></td>
+<td align="center">4</td>
+<td align="center">4</td>
+<td align="center">0</td>
+</tr>
+
+<tr>
+<td><code>0x0050</code></td>
+<td>miss</td>
+<td align="center"><strong><code>0x0050</code> <code>0x0054</code> <code>0x0058</code> <code>0x005C</code></strong></td>
+<td>miss</td>
+<td align="center"><strong><code>0x0050</code> <code>0x0054</code> <code>0x0058</code> <code>0x005C</code></strong></td>
+<td align="center">4</td>
+<td align="center">0</td>
+<td align="center">4</td>
+</tr>
+
+<tr>
+<td><code>0x0044</code></td>
+<td>miss</td>
+<td align="center"><strong><code>0x0040</code> <code>0x0044</code> <code>0x0048</code> <code>0x004C</code></strong></td>
+<td>n/a</td>
+<td align="center">n/a</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">1</td>
+</tr>
+
+<tr>
+<td><code>0x0048</code></td>
+<td>hit</td>
+<td align="center"><code>0x0040</code> <code>0x0044</code> <code>0x0048</code> <code>0x004C</code></td>
+<td>n/a</td>
+<td align="center">n/a</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">0</td>
+</tr>
+
+<tr>
+<td><code>0x0060</code></td>
+<td>miss</td>
+<td align="center"><strong><code>0x0060</code> <code>0x0064</code> <code>0x0068</code> <code>0x006C</code></strong></td>
+<td>n/a</td>
+<td align="center">n/a</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">1</td>
+</tr>
+
+<tr>
+<td><code>0x0064</code></td>
+<td>hit</td>
+<td align="center"><code>0x0060</code> <code>0x0064</code> <code>0x0068</code> <code>0x006C</code></td>
+<td>n/a</td>
+<td align="center">n/a</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">0</td>
+</tr>
+
+<tr>
+<td><code>0x0054</code></td>
+<td>miss</td>
+<td align="center"><strong><code>0x0050</code> <code>0x0054</code> <code>0x0058</code> <code>0x005C</code></strong></td>
+<td>hit</td>
+<td align="center"><code>0x0050</code> <code>0x0054</code> <code>0x0058</code> <code>0x005C</code></td>
+<td align="center">4</td>
+<td align="center">3</td>
+<td align="center">1</td>
+</tr>
+
+<tr>
+<td><code>0x0058</code></td>
+<td>hit</td>
+<td align="center"><code>0x0050</code> <code>0x0054</code> <code>0x0058</code> <code>0x005C</code></td>
+<td>hit</td>
+<td align="center"><code>0x0050</code> <code>0x0054</code> <code>0x0058</code> <code>0x005C</code></td>
+<td align="center">4</td>
+<td align="center">4</td>
+<td align="center">0</td>
+</tr>
+
+<tr>
+<td><code>0x005C</code></td>
+<td>hit</td>
+<td align="center"><code>0x0050</code> <code>0x0054</code> <code>0x0058</code> <code>0x005C</code></td>
+<td>hit</td>
+<td align="center"><code>0x0050</code> <code>0x0054</code> <code>0x0058</code> <code>0x005C</code></td>
+<td align="center">4</td>
+<td align="center">4</td>
+<td align="center">0</td>
+</tr>
+
+<tr>
+<td>Sum</td>
+<td></td>
+<td align="center"></td>
+<td></td>
+<td align="center"></td>
+<td align="center">32</td>
+<td align="center">21</td>
+<td align="center">11</td>
+</tr>
+</tbody>
+</table>
+
+<p>hit rate = <sup>21</sup>&frasl;<sub>32</sub> = <strong>65.63%</strong></p>
+
+<p>Since the 4B access pattern results in a higher hit rate, reducing the block size for 8B to 4B would increase the hit rate the most.
+This is an interesting example because both 16B and 4B block sizes resulted in a higher hit rate than the 8B block size for this particular example.
+The 16B trace does better because it reduces the number of compulsory misses, but it still suffers from the conflicts in the first loop.
+The 8B trace does best because, while there are more compulsory misses, it reduces conflicts in each of these loops with 4 or less instructions in it and exploits temporal locality in the instruction access pattern.
+This does not indicate that a 4B block size is better in all circumstances, but it is true in this case.</p>
+
+<p>In today&rsquo;s production caches, there are many more blocks in the cache, and they are also typically associative reducing the number of conflict misses.
+As a point of comparison, this is the access pattern for a 8B block size with a fully associative cache and LRU replacement policy.</p>
+
+<h3 id="8b-block-2-way-associative">8B block, 2-way associative</h3>
+
+<p>I didn&rsquo;t include the cache state here because it wasn&rsquo;t a part of the problem and I wanted to save a little time writing this.</p>
+
+<table>
+<thead>
+<tr>
+<th>Address</th>
+<th>1st time</th>
+<th>2-4</th>
+<th align="center">Accesses</th>
+<th align="center">Hits</th>
+<th align="center">Misses</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>0x0044</code></td>
+<td>miss</td>
+<td>miss</td>
+<td align="center">4</td>
+<td align="center">0</td>
+<td align="center">4</td>
+</tr>
+
+<tr>
+<td><code>0x0048</code></td>
+<td>miss</td>
+<td>miss</td>
+<td align="center">4</td>
+<td align="center">0</td>
+<td align="center">4</td>
+</tr>
+
+<tr>
+<td><code>0x004C</code></td>
+<td>hit</td>
+<td>hit</td>
+<td align="center">4</td>
+<td align="center">4</td>
+<td align="center">0</td>
+</tr>
+
+<tr>
+<td><code>0x0050</code></td>
+<td>miss</td>
+<td>miss</td>
+<td align="center">4</td>
+<td align="center">0</td>
+<td align="center">4</td>
+</tr>
+
+<tr>
+<td><code>0x0044</code></td>
+<td>miss</td>
+<td>n/a</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">1</td>
+</tr>
+
+<tr>
+<td><code>0x0048</code></td>
+<td>miss</td>
+<td>n/a</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">1</td>
+</tr>
+
+<tr>
+<td><code>0x0060</code></td>
+<td>miss</td>
+<td>n/a</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">1</td>
+</tr>
+
+<tr>
+<td><code>0x0064</code></td>
+<td>hit</td>
+<td>n/a</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">0</td>
+</tr>
+
+<tr>
+<td><code>0x0054</code></td>
+<td>miss</td>
+<td>hit</td>
+<td align="center">4</td>
+<td align="center">3</td>
+<td align="center">1</td>
+</tr>
+
+<tr>
+<td><code>0x0058</code></td>
+<td>miss</td>
+<td>hit</td>
+<td align="center">4</td>
+<td align="center">3</td>
+<td align="center">1</td>
+</tr>
+
+<tr>
+<td><code>0x005C</code></td>
+<td>hit</td>
+<td>hit</td>
+<td align="center">4</td>
+<td align="center">4</td>
+<td align="center">0</td>
+</tr>
+
+<tr>
+<td>Sum</td>
+<td></td>
+<td></td>
+<td align="center">32</td>
+<td align="center">15</td>
+<td align="center">17</td>
+</tr>
+</tbody>
+</table>
+
+<p>It turns out that making the cache associative is worse because the LRU replacement policy does the wrong thing repeatedly.
+The hit rate is under 50%.</p>
+
+    </div>
+  </div>
+
+</article>
+
+<div class="container">
+  <nav>
+  <ul class="pager">
+    
+    <li class="previous"><a href="http://josef.spjut.me/research/2014/12/02/submitting-my-first-article-to-arxiv/"><span
+      aria-hidden="true">&larr;</span> Submitting my first article to arXiv</a></li>
+    
+
+    
+    <li class="next"><a href="http://josef.spjut.me/post/2017/hugo-notes/">Hugo Notes <span
+      aria-hidden="true">&rarr;</span></a></li>
+    
+  </ul>
+</nav>
+
+</div>
+
+<div class="article-container">
+  
+<section id="comments">
+  <div id="disqus_thread">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'josefspjut';
+    var disqus_identifier = 'http:\/\/josef.spjut.me\/teaching\/2015\/05\/13\/an-introductory-cache-problem\/';
+    var disqus_title = 'An Introductory Cache Problem';
+    var disqus_url = 'http:\/\/josef.spjut.me\/teaching\/2015\/05\/13\/an-introductory-cache-problem\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+</section>
+
+
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2013 - 2017 
+      Josef Spjut &middot; 
+
+      Powered by the <a href="https://github.com/gcushen/hugo-academic" target="_blank">Academic
+      theme</a> for <a href="http://gohugo.io" target="_blank">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.2/imagesloaded.pkgd.min.js" integrity="sha512-iHzEu7GbSc705hE2skyH6/AlTpOfBmkx7nUqTLGzPYR+C1tRaItbRlJ7hT/D3YQ9SV0fqLKzp4XY9wKulTBGTw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js" integrity="sha512-Z5heTz36xTemt1TbtbfXtTq5lMfYnOkXM2/eWcTTiLU01+Sw4ku1i7vScDc8fWhrP2abz9GQzgKH5NGBLoYlAw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/ScrollToPlugin.min.js" integrity="sha512-CDeU7pRtkPX6XJtF/gcFWlEwyaX7mcAp5sO3VIu/ylsdR74wEw4wmBpD5yYTrmMAiAboi9thyBUr1vXRPA7t0Q==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+
+  </body>
+</html>
+

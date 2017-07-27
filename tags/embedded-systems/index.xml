@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Embedded Systems on Josef Spjut</title>
+    <link>http://josef.spjut.me/tags/embedded-systems/</link>
+    <description>Recent content in Embedded Systems on Josef Spjut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Josef Spjut</copyright>
+    <lastBuildDate>Tue, 20 May 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/embedded-systems/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Jetson TK1 First Steps</title>
+      <link>http://josef.spjut.me/programming/2014/05/20/jetson-tk1-first-steps/</link>
+      <pubDate>Tue, 20 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/programming/2014/05/20/jetson-tk1-first-steps/</guid>
+      <description>&lt;p&gt;I recently received my &lt;a href=&#34;https://developer.nvidia.com/jetson-tk1&#34; target=&#34;_blank&#34;&gt;Jetson TK1 Development
+Board&lt;/a&gt;, which I&amp;rsquo;m evaluating
+for potential use in an embedded systems course next Spring.
+This board is attractive to me because it has a high-end quad core ARM
+A15 processor as well as a high-end mobile GPU with support for the
+latest OpenGL and CUDA development environments.
+This post is going to serve as a way for me to record the things
+needed to set up the device in the first place, and hopefully more
+posts will follow as I manage to develop some examples on the board
+that will hopefully turn into lab assignments for the class.&lt;/p&gt;
+
+&lt;p&gt;The first thing you notice when you plug in the board and turn it on,
+is that it boots to an OS without any setup because the built-in flash
+has linux on it from the factory.
+However, there is no x11 support out of the box.
+Well that&amp;rsquo;s not quite true&amp;hellip;
+The support is available, but you must &lt;a href=&#34;http://developer.download.nvidia.com/embedded/jetson/TK1/README.txt&#34; target=&#34;_blank&#34;&gt;run a script to install the
+driver&lt;/a&gt;.
+The instructions from the README are copied and inline here:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;This README file lists instructions on how to install the NVIDIA
+Linux driver binary release on your target located in:
+${HOME}/NVIDIA-INSTALLER
+
+Step 1)
+Change directories into the NVIDIA installation directory:
+    cd ${HOME}/NVIDIA-INSTALLER
+
+Step 2)
+Run the installer script to extract and install the Linux driver
+binary release:
+    sudo ./installer.sh
+
+Step 3)
+Reboot the system to have the graphical desktop UI come up.
+
+NOTES:
+- The installer.sh should only be run once.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;More to come&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

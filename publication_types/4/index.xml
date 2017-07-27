@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>4 on Josef Spjut</title>
+    <link>http://josef.spjut.me/publication_types/4/</link>
+    <description>Recent content in 4 on Josef Spjut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Josef Spjut</copyright>
+    <lastBuildDate>Fri, 01 May 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/publication_types/4/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>An Approach to Data Prefetching Using 2-Dimensional Selection Criteria</title>
+      <link>http://josef.spjut.me/publication/tr/tr6/</link>
+      <pubDate>Fri, 01 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/tr/tr6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sphynx: A Shared Instruction Cache Exporatory Study</title>
+      <link>http://josef.spjut.me/publication/tr/tr5/</link>
+      <pubDate>Wed, 03 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/tr/tr5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Time-to-Recache Case Study</title>
+      <link>http://josef.spjut.me/publication/tr/tr4/</link>
+      <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/tr/tr4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Qualitative Cache Performance Analysis</title>
+      <link>http://josef.spjut.me/publication/tr/tr3/</link>
+      <pubDate>Sun, 01 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/tr/tr3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Time to Recache: Measuring Memory Miss Behavior</title>
+      <link>http://josef.spjut.me/publication/tr/tr2/</link>
+      <pubDate>Thu, 01 Sep 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/tr/tr2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fast, Effective BVH Updates for Dynamic Ray-Traced Scenes Using Tree Rotations</title>
+      <link>http://josef.spjut.me/publication/tr/tr1/</link>
+      <pubDate>Fri, 01 Jul 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/tr/tr1/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

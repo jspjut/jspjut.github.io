@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Assembly on Josef Spjut</title>
+    <link>http://josef.spjut.me/tags/assembly/</link>
+    <description>Recent content in Assembly on Josef Spjut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Josef Spjut</copyright>
+    <lastBuildDate>Tue, 15 Oct 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/assembly/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Musical Projects</title>
+      <link>http://josef.spjut.me/teaching/2013/10/15/musical-projects/</link>
+      <pubDate>Tue, 15 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/teaching/2013/10/15/musical-projects/</guid>
+      <description>&lt;p&gt;Today I had the fortunate presence of mind to record videos for a
+couple of my students&amp;rsquo; lab projects that I found particularly
+interesting.
+In this post I&amp;rsquo;ll go ahead and embed these videos for anyone
+interested in watching them.
+To explain briefly, the assignment was to use assembly programming for
+the PIC 32 microcontroller to have a speaker produce a song.
+Optionally, students were allowed to play a song of their choosing
+after putting that song in the program memory.
+The following are two of these custom songs chosen by the students.&lt;/p&gt;
+
+&lt;p&gt;First up is the video inspiring the tagline, &amp;ldquo;A Whole New World&amp;rdquo; which
+is impressive because these two students created a duet from their
+projects.&lt;/p&gt;
+
+&lt;iframe width=&#34;420&#34; height=&#34;315&#34;
+src=&#34;//www.youtube.com/embed/YtRUuayHCLg&#34; frameborder=&#34;0&#34;
+allowfullscreen=&#34;1&#34;&gt; &lt;/iframe&gt;
+
+&lt;p&gt;Finally another student recreated a famous internet song.&lt;/p&gt;
+
+&lt;iframe width=&#34;420&#34; height=&#34;315&#34;
+src=&#34;//www.youtube.com/embed/XZ6qLQ16RqQ&#34; frameborder=&#34;0&#34;
+allowfullscreen=&#34;1&#34;&gt; &lt;/iframe&gt;
+
+&lt;p&gt;One last personal note: 10 years ago today I flew home from spending 2
+years in Spain.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Intro on Josef Spjut</title>
+    <link>http://josef.spjut.me/tags/intro/</link>
+    <description>Recent content in Intro on Josef Spjut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Josef Spjut</copyright>
+    <lastBuildDate>Sun, 01 Sep 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/intro/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>New Year, New Website</title>
+      <link>http://josef.spjut.me/website/2013/09/01/new-year-new-website/</link>
+      <pubDate>Sun, 01 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/website/2013/09/01/new-year-new-website/</guid>
+      <description>&lt;p&gt;I happened across [jekyll-bootstrap][] the other day, and I decided I
+should move my website to &lt;a href=&#34;http://github.io&#34; target=&#34;_blank&#34;&gt;github.io&lt;/a&gt; after seeing
+what &lt;a href=&#34;http://jekyllrb.com&#34; target=&#34;_blank&#34;&gt;jekyll&lt;/a&gt; can do.
+Among my favorite features are the ability to use markdown for web
+pages, which allows a reasonably good citation syntax for adding links
+to my co-authors.
+As an example, the following is the syntax for one paper along with
+the citations to my co-authors:
+&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;1. [Daniel Kopta][dk], **[Josef Spjut][jbs]**, [Erik Brunvand][elb];
+**Grid-Based Ray Tracing for a Parallel Computing Architecture**,
+*High Performance Graphics (HPG&#39;09)*, New Orleans, August 1-3, 2009.
+   [dk]: http://www.cs.utah.edu/~dkopta
+   [ks]: http://www.cs.utah.edu/~kshkurko
+   [jbs]: http://www3.hmc.edu/~jspjut
+   [elb]: http://www.cs.utah.edu/~elb
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The beauty of this is I now only need to update one spot if anyone
+changes their affiliation or home page. Awesome.&lt;/p&gt;
+
+&lt;p&gt;Conveniently, jekyll-bootstrap also gives all the niceness of &lt;a href=&#34;http://getbootstrap.com&#34; target=&#34;_blank&#34;&gt;twitter
+bootstrap&lt;/a&gt;, such as the decent template you now see (I hope to improve
+it to my liking more in the future).
+The main reason I chose the hooligan template is that it came with
+easy-to-use social media integration that you can see in the top right
+if you are looking at this webpage on a non-mobile browser.&lt;/p&gt;
+
+&lt;p&gt;As an added benefit, I can now easily post blog entries, and hook into
+Disqus for comments. Nice.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

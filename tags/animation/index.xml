@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Animation on Josef Spjut</title>
+    <link>http://josef.spjut.me/tags/animation/</link>
+    <description>Recent content in Animation on Josef Spjut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Josef Spjut</copyright>
+    <lastBuildDate>Sat, 25 Jan 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/animation/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Animated GIFs from Movies</title>
+      <link>http://josef.spjut.me/programming/2014/01/25/animated-gifs-from-movies/</link>
+      <pubDate>Sat, 25 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/programming/2014/01/25/animated-gifs-from-movies/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve often wanted to be able to make animated gifs of things.
+I have also been interested in simple programmatic video editing from
+time to time, particularly for animating a series of still frames from
+images rendered by my graphics architecture simulations.
+Today on reddit, I came across &lt;a href=&#34;http://zulko.github.io/blog/2014/01/23/making-animated-gifs-from-video-files-with-python/&#34; target=&#34;_blank&#34;&gt;this blog
+post&lt;/a&gt;
+that describes a sequence of ways to use the
+&lt;a href=&#34;http://zulko.github.io/moviepy/&#34; target=&#34;_blank&#34;&gt;MoviePy&lt;/a&gt; library to generate
+animated gifs.
+It looks like exactly the kind of solution I want since I like to use
+python whenever possible for simple things.
+I don&amp;rsquo;t have anything profound to say about this, and mostly just
+wanted to record the links for my future reference.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

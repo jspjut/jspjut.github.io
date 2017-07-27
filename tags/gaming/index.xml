@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gaming on Josef Spjut</title>
+    <link>http://josef.spjut.me/tags/gaming/</link>
+    <description>Recent content in Gaming on Josef Spjut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Josef Spjut</copyright>
+    <lastBuildDate>Fri, 18 Oct 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/gaming/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>NVIDIA GameWorks</title>
+      <link>http://josef.spjut.me/graphics/2013/10/18/nvidia-gameworks/</link>
+      <pubDate>Fri, 18 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/graphics/2013/10/18/nvidia-gameworks/</guid>
+      <description>&lt;p&gt;Today, &lt;a href=&#34;http://gearnuke.com/nvidia-announces-gameworks-program-montreal-2013-supports-steamos/&#34; target=&#34;_blank&#34;&gt;NVIDIA announced&lt;/a&gt;
+a new program to help game developers
+effectively use NVIDIA hardware called GameWorks.
+The thing that excites me the most about GameWorks is the inclusion of
+&lt;a href=&#34;http://www.nvidia.com/object/optix.html&#34; target=&#34;_blank&#34;&gt;Optix&lt;/a&gt; in a program that
+directly targets game developers.
+Optix is a ray tracing environment developed by people I know from my
+studies at Utah that has previously been used to help develop
+rendering engines for design and production environments.
+This recent announcement means that the important global illumination
+features that work more naturally in ray tracing will be more readily
+available for game developers.
+I expect it will still be a couple of years before any top games are
+released using ray tracing in the real time rendering engine, but this
+represents a clear step in the right direction.&lt;/p&gt;
+
+&lt;p&gt;Also today, &lt;a href=&#34;http://blogs.nvidia.com/blog/2013/10/17/twimtbp/&#34; target=&#34;_blank&#34;&gt;NVIDIA announced game bundles&lt;/a&gt;
+and $50-$100 discounts to the SHIELD handheld game system for people
+who also purchase a Geforce GTX graphics card.
+Finally, a new technology called
+&lt;a href=&#34;http://blogs.nvidia.com/blog/2013/10/18/g-sync/&#34; target=&#34;_blank&#34;&gt;G-SYNC&lt;/a&gt; was
+announced that allows the GPU to refresh the monitor at a variable
+refresh rate, more closely tying the visuals coming from your display
+to the underlying game engine.
+Oh, and one more interesting note, NVIDIA also expressed direct
+interest in supporting SteamOS when it launches, indicating that Linux
+graphics drivers should continue to be a priority for the company.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Research on Josef Spjut</title>
+    <link>http://josef.spjut.me/tags/research/</link>
+    <description>Recent content in Research on Josef Spjut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Josef Spjut</copyright>
+    <lastBuildDate>Tue, 02 Dec 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/research/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Submitting my first article to arXiv</title>
+      <link>http://josef.spjut.me/research/2014/12/02/submitting-my-first-article-to-arxiv/</link>
+      <pubDate>Tue, 02 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/research/2014/12/02/submitting-my-first-article-to-arxiv/</guid>
+      <description>&lt;p&gt;Today I submitted a technical report done by my students over the last academic year.
+It took a while to get the write-up to the level of quality that I felt good about submitting it,
+but now that it&amp;rsquo;s there, I figured I should push it out.
+I used &lt;a href=&#34;http://arxiv.org/&#34; target=&#34;_blank&#34;&gt;arXiv&lt;/a&gt; to post it since they make it easy to publish a technical report
+while not preventing you from submitting the work to another venue such as a conference or journal
+at a later date.
+I used Latex to write the paper, and in preparing the submission, there were a
+couple modifications I had to make to get it accepted by the system.&lt;/p&gt;
+
+&lt;p&gt;First, I had to include a line that says &lt;code&gt;\pdfoutput=1&lt;/code&gt; somewhere
+in the first 5 lines of the main tex file I submitted.&lt;/p&gt;
+
+&lt;p&gt;Second, I had to include the &lt;code&gt;main.bbl&lt;/code&gt; file that was generated
+locally as part of my build process.
+It appears that they don&amp;rsquo;t actually need the &lt;code&gt;.bib&lt;/code&gt; file and
+only care about the &lt;code&gt;.bbl&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Next, my particular document used a style sheet called &lt;code&gt;jpaper.cls&lt;/code&gt; that
+had a strange error with how it includes the &lt;code&gt;hyperref&lt;/code&gt; package.
+The relevant lines that I had to comment out are below (comments added):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;% Link and URL formatting.
+%\iftoggle{jp@hyperref}{
+%  \RequirePackage{hyperref}
+%  \hypersetup{
+%    unicode=true,
+%    pdfstartview={FitH},
+%    colorlinks=true,
+%    %citecolor=black,
+%    %filecolor=black,
+%    %linkcolor=black,
+%    %urlcolor=black
+% }}{}
+%\RequirePackage{url}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Finally, I had an issue with figures I included that I think had to do with how
+I uploaded all of the source material.
+Since I submitted each file separately instead of part of a compressed folder,
+the graphics I was trying to include were now a part of the root directory instead
+of being present in the &lt;code&gt;graphics&lt;/code&gt; subdirectory that I use locally.
+Luckily, there was a straightforward fix that I think I&amp;rsquo;ll include in my future
+documents by default because it&amp;rsquo;s much cleaner than what I&amp;rsquo;ve done traditionally.
+In the main &lt;code&gt;.tex&lt;/code&gt; file include a line like the following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;% graphics path
+\graphicspath{ {./graphics/} }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then, instead of including the relative path to everything in the graphics path,
+just include the graphics directly as in this example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{figure}
+\centering
+\includegraphics[width=\columnwidth]{PairedCaches}
+\caption{Partly shared instruction caches}
+\label{fig:paired}
+\end{figure}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Game Design Thoughts</title>
+      <link>http://josef.spjut.me/game-design/2014/01/14/game-design-thoughts/</link>
+      <pubDate>Tue, 14 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/game-design/2014/01/14/game-design-thoughts/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been thinking recently about the kinds of things I&amp;rsquo;d like to work
+on most during the break from teaching, and I&amp;rsquo;ve decided that I really
+want to take a deep look at game design from a theoretical and
+practical standpoint.
+It seems to me that there could be some need for a more formal and
+methodological approach to the design of games than currently exists.
+In my experience, game designers (the ones that put the fun into the
+game) are hard to find and extremely hard to train.
+Smallish tasks like level design can be learned, but even these are
+typically only learned by spending a large amount of time practicing
+and depend on the intuition of the individuals to be successful.
+Coming from my background in computer architecture, and in particular
+thinking about the standard text, &amp;ldquo;Computer Architecture: A
+Quantitative Approach&amp;rdquo; by Hennessey and Patterson, it occurred to me
+that there could exist a game design text with a similar approach and
+title.
+Quantitative design would not necessarily solve everything that needs
+to be done in game design given that so much of the design is itself
+artistic expression, but the existence of such a text could greatly
+assist in training game designers initially.
+My quick search on google for research and writing on this subject has
+not turned up much, but there is this
+&lt;a href=&#34;https://www.academia.edu/2988547/Game_Design_by_Numbers_Instrumental_Play_and_the_Quantitative_Shift_in_the_Digital_Game_Industry&#34; target=&#34;_blank&#34;&gt;Recent PhD Thesis&lt;/a&gt;
+that I think is probably the most recent related work in this area,
+though it is written by a sociologist (not necessarily a bad thing).&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m going to use my blog posts in the category of &amp;ldquo;game design&amp;rdquo; to
+brainstorm a bit about how this theoretical book might be organized.
+The biggest challenge will be finding a way to quantify the clearly
+artistic and qualitative experience that the player enjoys when
+playing a game.
+The question I need to ask is how to quantify each of the following
+essential (or at least helpful) game design features:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;fun&lt;/li&gt;
+&lt;li&gt;happiness&lt;/li&gt;
+&lt;li&gt;time&lt;/li&gt;
+&lt;li&gt;human experience&lt;/li&gt;
+&lt;li&gt;social interaction&lt;/li&gt;
+&lt;li&gt;addiction&lt;/li&gt;
+&lt;li&gt;monetary impact (both to the player and the developer)&lt;/li&gt;
+&lt;li&gt;others?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Really understanding a lot of these concepts requires a huge amount of
+cross-disciplinary work and depends on a better understanding of
+social sciences than I currently have.
+The question of monetary impact is directly related to business and
+economic concerns.
+Perhaps the easiest thing to quantify is the amount of time spent on a
+particular activity.
+However, answering the question of how much time is spent on something
+is not entirely useful unless you are aware of the impact that
+activity has on the player in terms of most of the other concepts.
+If you only take into account time and money when you design a game,
+you can easily create a game that will use as much time as a player
+has available and deliver the maximum amount of money to the pockets
+of the developer, but I do not believe that should be the goal in
+designing a game.
+A game should be designed to enhance the life experience of the
+individual playing that game.
+Sure money is necessary to cover the costs of developing, distributing
+and marketing a game, but money can also be used as an incentive to
+the player.
+For instance, I have found that games with a paid barrier to entry
+tend to invite a higher caliber of social interaction among players
+than those that are free to play.
+Higher quality social interaction is certainly beneficial to the life
+experience of each participant in that interaction.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m out of time for today, but I will be returning to these thoughts
+again soon. The next entry should be more focussed than these rambling
+thoughts.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Undergraduate Research</title>
+      <link>http://josef.spjut.me/research/2013/09/19/undergraduated-research/</link>
+      <pubDate>Thu, 19 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/research/2013/09/19/undergraduated-research/</guid>
+      <description>&lt;p&gt;Over the last year, I advised 5 undergraduate students on a couple
+research projects. One of them included the development of tutorials
+and lab assignments for a new class, but didn&amp;rsquo;t have a goal of
+publishing an academic paper. This student did a good job, and added
+on a persistance of vision display to a combat robot&amp;rsquo;s spinning arm
+that wouldn&amp;rsquo;t have otherwise been there.&lt;/p&gt;
+
+&lt;p&gt;The other main project involved the rest of my research students.
+Three of those students were seniors, and have since graduated and
+began working full-time jobs in industry.
+However, the research they performed was very good, and we are
+currently working on an academic paper that I believe to represent a
+significant contribution to the field of cache performance analysis.
+In fact one of these former students believes that our methods may be
+useful to his current employer where he&amp;rsquo;s involved in a dram caching
+layer for a large database.&lt;/p&gt;
+
+&lt;p&gt;The real difficulty I&amp;rsquo;ve discovered in finishing off this paper comes
+from the lack of availability from the authors, and the lack of
+accountability to me for performing work.
+The project took some time to get started last fall, and as a result
+we only finished about half of what I had planned for the year.
+It seems that student pay is a poor motivator for students that will
+be making significantly more based on their course grades.
+The students I had doing research for grades seemed much more likely
+to try to do what I asked, though one had some serious problems
+describing what was missing from that student&amp;rsquo;s knowledge.
+The end result was that I could not advise this student effectively.&lt;/p&gt;
+
+&lt;p&gt;Even after all of the challenges, the goal is to submit the paper in
+the next week. Right now it&amp;rsquo;s not even close to complete. Here&amp;rsquo;s
+hoping that the (former) students can find the time to complete the
+paper.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

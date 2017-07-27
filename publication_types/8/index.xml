@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>8 on Josef Spjut</title>
+    <link>http://josef.spjut.me/publication_types/8/</link>
+    <description>Recent content in 8 on Josef Spjut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Josef Spjut</copyright>
+    <lastBuildDate>Sun, 30 Jul 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/publication_types/8/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Stretchable Transducers for Kinesthetic Interactions in Virtual Reality</title>
+      <link>http://josef.spjut.me/publication/td/td1/</link>
+      <pubDate>Sun, 30 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/td/td1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Varifocal Virtuality: A Novel Optical Layout for Near-Eye Display</title>
+      <link>http://josef.spjut.me/publication/td/td2/</link>
+      <pubDate>Sun, 30 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/td/td2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stretchable Transducers for Haptic Interactions in Virtual and Augmented Reality</title>
+      <link>http://josef.spjut.me/publication/td/td0/</link>
+      <pubDate>Tue, 09 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/td/td0/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

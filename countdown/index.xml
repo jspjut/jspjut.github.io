@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Countdowns on Josef Spjut</title>
+    <link>http://josef.spjut.me/countdown/</link>
+    <description>Recent content in Countdowns on Josef Spjut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Josef Spjut</copyright>
+    <lastBuildDate>Sat, 12 Dec 2015 00:00:00 -0500</lastBuildDate>
+    <atom:link href="/countdown/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Wedding Countdown</title>
+      <link>http://josef.spjut.me/countdown/121215/</link>
+      <pubDate>Sat, 12 Dec 2015 00:00:00 -0500</pubDate>
+      
+      <guid>http://josef.spjut.me/countdown/121215/</guid>
+      <description>&lt;div class=&#34;lead&#34; title=&#34;Best day ever!&#34;&gt;
+        We get married in &lt;span class=&#34;lead&#34; id=&#34;clock&#34;&gt;&lt;/span&gt;!
+    &lt;/div&gt;
+
+    &lt;div class=&#34;lead&#34; title=&#34;We can&#39;t wait!!&#34;&gt;
+    	That&#39;s &lt;span class=&#34;lead&#34; id=&#34;clock-hours&#34;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+
+
+&lt;!-- Include Countdown Functions --&gt;
+
+  &lt;script src=&#34;http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js&#34;&gt;&lt;/script&gt;
+  &lt;script src=&#34;http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js&#34;&gt;&lt;/script&gt;
+  &lt;script src=&#34;http://cdn.rawgit.com/hilios/jQuery.countdown/2.1.0/dist/jquery.countdown.min.js&#34;&gt;&lt;/script&gt;
+
+&lt;script type=&#34;text/javascript&#34;&gt;
+  // Turn on Bootstrap
+  $(&#39;[data-toggle=&#34;tooltip&#34;]&#39;).tooltip();
+  // Hopefully this UTC thing will compensate for different local time zones
+  // Because it&#39;s EST, it&#39;s actually 4pm UTC, not 3pm like it would be for EDT
+  var $returntime = new Date(Date.UTC(2015, 11, 12, 16, 0, 0))
+  // var $returntime = &#34;2015/9/12/22:45&#34;
+  var $clock = $(&#39;#clock&#39;);
+  $clock.countdown($returntime, function(event) {
+    $(this).html(event.strftime(&#39;%D days %H hours %M minutes and %S seconds&#39;));
+  });
+  var $clock2 = $(&#39;#clock-hours&#39;);
+  $clock2.countdown($returntime, function(event) {
+  	var $totalHours = event.offset.totalDays * 24 + event.offset.hours;
+    $(this).html(event.strftime($totalHours+&#39; hours %M minutes and %S seconds&#39;));
+  });
+&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Audrey Countdown</title>
+      <link>http://josef.spjut.me/countdown/audrey/</link>
+      <pubDate>Sun, 13 Sep 2015 00:00:00 -0400</pubDate>
+      
+      <guid>http://josef.spjut.me/countdown/audrey/</guid>
+      <description>&lt;div class=&#34;lead&#34; title=&#34;Beautiful, insn&#39;t she?&#34;&gt;
+        Audrey returns from her trip in &lt;span class=&#34;lead&#34; id=&#34;clock&#34;&gt;&lt;/span&gt;!
+    &lt;/div&gt;
+
+    &lt;div class=&#34;lead&#34; title=&#34;We can&#39;t wait!!&#34;&gt;
+    	That&#39;s &lt;span class=&#34;lead&#34; id=&#34;clock-hours&#34;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+
+
+&lt;!-- Include Countdown Functions --&gt;
+
+  &lt;script src=&#34;http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js&#34;&gt;&lt;/script&gt;
+  &lt;script src=&#34;http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js&#34;&gt;&lt;/script&gt;
+  &lt;script src=&#34;http://cdn.rawgit.com/hilios/jQuery.countdown/2.1.0/dist/jquery.countdown.min.js&#34;&gt;&lt;/script&gt;
+
+&lt;script type=&#34;text/javascript&#34;&gt;
+  // Turn on Bootstrap
+  $(&#39;[data-toggle=&#34;tooltip&#34;]&#39;).tooltip();
+
+  // Hopefully this UTC thing will compensate for different local time zones
+  var $returntime = new Date(Date.UTC(2015, 8, 13, 2, 45, 0))
+  // var $returntime = &#34;2015/9/12/22:45&#34;
+
+  var $clock = $(&#39;#clock&#39;);
+
+  $clock.countdown($returntime, function(event) {
+    $(this).html(event.strftime(&#39;%D days %H hours %M minutes and %S seconds&#39;));
+  });
+
+  var $clock2 = $(&#39;#clock-hours&#39;);
+
+  $clock2.countdown($returntime, function(event) {
+  	var $totalHours = event.offset.totalDays * 24 + event.offset.hours;
+    $(this).html(event.strftime($totalHours+&#39; hours %M minutes and %S seconds&#39;));
+  });
+
+&lt;/script&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

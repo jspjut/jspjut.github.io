@@ -1,0 +1,1626 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Class on Josef Spjut</title>
+    <link>http://josef.spjut.me/tags/class/</link>
+    <description>Recent content in Class on Josef Spjut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Josef Spjut</copyright>
+    <lastBuildDate>Wed, 13 May 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/class/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>An Introductory Cache Problem</title>
+      <link>http://josef.spjut.me/teaching/2015/05/13/an-introductory-cache-problem/</link>
+      <pubDate>Wed, 13 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/teaching/2015/05/13/an-introductory-cache-problem/</guid>
+      <description>
+
+&lt;p&gt;I recently gave a problem on the final in &lt;a href=&#34;http://pages.hmc.edu/jspjut/class/s2015/e85/&#34; target=&#34;_blank&#34;&gt;E85&lt;/a&gt;.
+The students didn&amp;rsquo;t do too well on it overall, so I wanted to post the problem and solution in an effort to
+make more resources available for people learning basic cache behaviors.
+First of all, I need to introduce the piece of ARM assembly being used since
+it is the basis for a number of questions.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;		FUNC:
+0x0044	SUBS R0, R0, #3
+0x0048	BLT DONE
+0x004C	STR LR, [SP, #-4]!
+0x0050	BL FUNC
+0x0054	ADD R0, R0, #1
+0x0058	LDR LR, [SP], #4
+0x005C	MOV PC, LR
+		DONE:
+0x0060	MOV R0, #0
+0x0064	MOV PC, LR
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;program-analysis&#34;&gt;Program analysis&lt;/h2&gt;
+
+&lt;p&gt;The first question is the following: Translate &lt;code&gt;FUNC&lt;/code&gt; to C code. My C version is:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;int func(int x)
+{
+	if (x &amp;lt; 3)
+		return 0;
+	else
+		return func(x-3) + 1;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is a simple recursive function that computes the integer value of dividing the input number by 3.&lt;/p&gt;
+
+&lt;p&gt;The next part asked for a stack trace including register values for &lt;code&gt;func(12)&lt;/code&gt;.
+The &lt;code&gt;SP&lt;/code&gt; starts at &lt;code&gt;0xFFE0&lt;/code&gt; and the function is first called from a &lt;code&gt;BL&lt;/code&gt; at &lt;code&gt;0x0020&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;func-12&#34;&gt;&lt;code&gt;func(12)&lt;/code&gt;&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;R0 = 12
+SP = 0xFFE0
+LR = 0x0024
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Address&lt;/th&gt;
+&lt;th&gt;Data&lt;/th&gt;
+&lt;th&gt;SP&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFE0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;?&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;start/end&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFDC&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0x0024&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;func(9)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;?&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;?&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;?&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;func-9&#34;&gt;&lt;code&gt;func(9)&lt;/code&gt;&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;R0 = 9
+SP = 0xFFDC
+LR = 0x0054
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Address&lt;/th&gt;
+&lt;th&gt;Data&lt;/th&gt;
+&lt;th&gt;SP&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFE0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;?&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFDC&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0x0024&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;start/end&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD8&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0x0054&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;func(6)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD4&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;?&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;?&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;func-6&#34;&gt;&lt;code&gt;func(6)&lt;/code&gt;&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;R0 = 9
+SP = 0xFFDC
+LR = 0x0054
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Address&lt;/th&gt;
+&lt;th&gt;Data&lt;/th&gt;
+&lt;th&gt;SP&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFE0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;?&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFDC&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0x0024&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD8&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0x0054&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;start/end&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD4&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0x0054&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;func(3)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;?&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;func-3&#34;&gt;&lt;code&gt;func(3)&lt;/code&gt;&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;R0 = 9
+SP = 0xFFDC
+LR = 0x0054
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Address&lt;/th&gt;
+&lt;th&gt;Data&lt;/th&gt;
+&lt;th&gt;SP&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFE0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;?&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFDC&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0x0024&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD8&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0x0054&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD4&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0x0054&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;start/end&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0x0054&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;func(0)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;func-0&#34;&gt;&lt;code&gt;func(0)&lt;/code&gt;&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;R0 = 9
+SP = 0xFFDC
+LR = 0x0054
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Address&lt;/th&gt;
+&lt;th&gt;Data&lt;/th&gt;
+&lt;th&gt;SP&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFE0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;?&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFDC&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0x0024&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD8&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0x0054&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD4&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0x0054&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0x0054&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;start/end&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;return-and-move-up-stack&#34;&gt;Return and move up stack&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;R0 &amp;lt; 0&lt;/code&gt; so &lt;code&gt;func(0)&lt;/code&gt; returns &lt;code&gt;0&lt;/code&gt; in &lt;code&gt;R0&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;func(3)&lt;/code&gt; returns &lt;code&gt;R0 + 1&lt;/code&gt; in &lt;code&gt;R0&lt;/code&gt; which is now &lt;code&gt;1&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;func(6)&lt;/code&gt; returns &lt;code&gt;R0 + 1&lt;/code&gt; in &lt;code&gt;R0&lt;/code&gt; which is now &lt;code&gt;2&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;func(9)&lt;/code&gt; returns &lt;code&gt;R0 + 1&lt;/code&gt; in &lt;code&gt;R0&lt;/code&gt; which is now &lt;code&gt;3&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;func(12)&lt;/code&gt; returns &lt;code&gt;R0 + 1&lt;/code&gt; in &lt;code&gt;R0&lt;/code&gt; which is now &lt;code&gt;4&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The return value is therefore &lt;code&gt;4&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;data-cache&#34;&gt;Data cache&lt;/h2&gt;
+
+&lt;p&gt;The next question asks for the miss rate in the &lt;strong&gt;data&lt;/strong&gt; cache for the same program.
+The first step in solving this question is to write down the data access pattern for the program.
+The only data memory accessed is in the stack operations, which were written above, but I&amp;rsquo;ll repeat just the loads and stores here with the addresses computed.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;STR LR 0xFFDC
+STR LR 0xFFD8
+STR LR 0xFFD4
+STR LR 0xFFD0
+LDR LR 0xFFD0
+LDR LR 0xFFD4
+LDR LR 0xFFD8
+LDR LR 0xFFDC
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;For the rest of this part, I will refer to each of these memory accesses only by its memory address since loads and stores are treated the same in the memory system.
+The data cache configuration for the first question is given as a 16B cache with 8B blocks that is direct mapped.
+This means that there are 2 sets, each of which has 1 block that stores 2 memory addresses.
+These 2 addresses will be adjacent words in memory.
+The initial state of the cache would likely store two data values that are irrelevant to the program, so I&amp;rsquo;ll model that as both blocks being invalid at the start resulting in compulsory (or cold) misses. Here is the initial cache state:&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Set&lt;/th&gt;
+&lt;th&gt;Valid&lt;/th&gt;
+&lt;th&gt;Addresses stored&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;????&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;????&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;As the program executes, the following behavior will occur:&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Address&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Set&lt;/th&gt;
+&lt;th&gt;Hit/Miss&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Cache State&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Start&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt;   &lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFDC&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt; &lt;strong&gt;&lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD8&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt;   &lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD4&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0xFFD0&lt;/code&gt; &lt;code&gt;0xFFD4&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD0&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0xFFD0&lt;/code&gt; &lt;code&gt;0xFFD4&lt;/code&gt;   &lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD0&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0xFFD0&lt;/code&gt; &lt;code&gt;0xFFD4&lt;/code&gt;   &lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD4&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0xFFD0&lt;/code&gt; &lt;code&gt;0xFFD4&lt;/code&gt;   &lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD8&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0xFFD0&lt;/code&gt; &lt;code&gt;0xFFD4&lt;/code&gt;   &lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFDC&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0xFFD0&lt;/code&gt; &lt;code&gt;0xFFD4&lt;/code&gt;   &lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;If we count up the misses and look at the total number of accesses we see that we have &lt;strong&gt;8&lt;/strong&gt; accesses and &lt;strong&gt;2&lt;/strong&gt; misses giving us a miss rate of &lt;sup&gt;2&lt;/sup&gt;&amp;frasl;&lt;sub&gt;8&lt;/sub&gt; = 25%.&lt;/p&gt;
+
+&lt;p&gt;The next part asks about what happens when the same &lt;strong&gt;data&lt;/strong&gt; cache is reorganized to be fully associative instead of direct mapped.
+This means that either block could be placed in either way within a single set.
+The result will be the same because we only ever access 2 different blocks of memory, but to show the full trace, I&amp;rsquo;ve included the work below.
+Note that the way on the left is the least recently used and will be replaced next.&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Address&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Set&lt;/th&gt;
+&lt;th&gt;Hit/Miss&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Cache State&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Start&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt;   &lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFDC&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt; &lt;strong&gt;&lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD8&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt;   &lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD4&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt; &lt;strong&gt;&lt;code&gt;0xFFD0&lt;/code&gt; &lt;code&gt;0xFFD4&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD0&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;   &lt;code&gt;0xFFD0&lt;/code&gt; &lt;code&gt;0xFFD4&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD0&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;   &lt;code&gt;0xFFD0&lt;/code&gt; &lt;code&gt;0xFFD4&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD4&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;   &lt;code&gt;0xFFD0&lt;/code&gt; &lt;code&gt;0xFFD4&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD8&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0xFFD0&lt;/code&gt; &lt;code&gt;0xFFD4&lt;/code&gt;   &lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFDC&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0xFFD0&lt;/code&gt; &lt;code&gt;0xFFD4&lt;/code&gt;   &lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Again, there are &lt;strong&gt;8&lt;/strong&gt; accesses and &lt;strong&gt;2&lt;/strong&gt; misses for a miss rate of &lt;sup&gt;2&lt;/sup&gt;&amp;frasl;&lt;sub&gt;8&lt;/sub&gt; = 25%.&lt;/p&gt;
+
+&lt;h2 id=&#34;instruction-cache&#34;&gt;Instruction Cache&lt;/h2&gt;
+
+&lt;p&gt;The next question deals with an instruction cache. This means we need to know what the cache access pattern is.
+From the first part, we know that the function is called a total of 5 times, the first 4 with the same behavior and the 5th time with the return 0 case.
+This access pattern is as follows:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;0x0044 // func(12)
+0x0048
+0x004C
+0x0050
+0x0044 // func(9)
+0x0048
+0x004C
+0x0050
+0x0044 // func(6)
+0x0048
+0x004C
+0x0050
+0x0044 // func(3)
+0x0048
+0x004C
+0x0050
+0x0044 // func(0) 
+0x0048
+0x0060
+0x0064 // return 0
+0x0054 // func(3)
+0x0058
+0x005C // return 1
+0x0054 // func(6)
+0x0058
+0x005C // return 2
+0x0054 // func(9)
+0x0058
+0x005C // return 3
+0x0054 // func(12)
+0x0058
+0x005C // return 4
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In order to make this response more compact than the previous problem, I&amp;rsquo;m going to exploit the fact that there is a repeated access pattern here.
+The sequence &lt;code&gt;0x0044&lt;/code&gt;, &lt;code&gt;0x0048&lt;/code&gt;, &lt;code&gt;0x004C&lt;/code&gt;, &lt;code&gt;0x0050&lt;/code&gt; repeats 4 times followed by the sequence &lt;code&gt;0x0044&lt;/code&gt;, &lt;code&gt;0x0048&lt;/code&gt;, &lt;code&gt;0x0060&lt;/code&gt;, &lt;code&gt;0x0064&lt;/code&gt;.
+After those finish, the sequence &lt;code&gt;0x0054&lt;/code&gt;, &lt;code&gt;0x0058&lt;/code&gt;, &lt;code&gt;0x005C&lt;/code&gt; repeats 4 times.
+The total number of memory accesses is therefore &lt;code&gt;4 x 4 + 4 + 3 x 4 = 32&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;For each repeated pattern, the access is has compulsory misses the first time, but on subsequent loops repeats the accesses.
+We are first given a 16B cache with 8B blocks that is direct mapped.
+Here is the hit miss pattern based on what the contents of the cache are through the trace:&lt;/p&gt;
+
+&lt;h3 id=&#34;8b-blocks&#34;&gt;8B blocks&lt;/h3&gt;
+
+&lt;p&gt;Filled blocks in bold&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Address&lt;/th&gt;
+&lt;th&gt;1st time&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;In Cache (1st time)&lt;/th&gt;
+&lt;th&gt;2-4&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;In Cache (2-4 times)&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Accesses&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Hits&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Misses&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;start&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt;   &lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt;   &lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0044&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0048&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt; &lt;strong&gt;&lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt;   &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt;   &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt;   &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0050&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0044&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0048&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt;   &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0060&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0060&lt;/code&gt; &lt;code&gt;0x0064&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0064&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0060&lt;/code&gt; &lt;code&gt;0x0064&lt;/code&gt;   &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0054&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt;   &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0058&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt; &lt;strong&gt;&lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt;   &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt;   &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt;   &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Sum&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;32&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;19&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;13&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;The hit rate for this cache configuration and instruction trace is &lt;sup&gt;19&lt;/sup&gt;&amp;frasl;&lt;sub&gt;32&lt;/sub&gt; which is about &lt;strong&gt;59.38%&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;The final question asks what change to the block size will improve the hit rate the most.
+Since the cache is 16B and each instruction is 4B, the only block sizes that make sense are 4B, 8B, and 16B which correspond to 4 sets, 2 sets, and 1 set respectively.
+The access patterns for each are as follows:&lt;/p&gt;
+
+&lt;h3 id=&#34;4b-blocks&#34;&gt;4B blocks&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Address&lt;/th&gt;
+&lt;th&gt;1st time&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;In Cache (1st time)&lt;/th&gt;
+&lt;th&gt;2-4&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;In Cache (2-4 times)&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Accesses&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Hits&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Misses&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;start&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt;   &lt;code&gt;??????&lt;/code&gt;   &lt;code&gt;??????&lt;/code&gt;   &lt;code&gt;??????&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0044&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt; &lt;strong&gt;&lt;code&gt;0x0044&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;??????&lt;/code&gt;   &lt;code&gt;??????&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0048&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt;   &lt;code&gt;0x0044&lt;/code&gt; &lt;strong&gt;&lt;code&gt;0x0048&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;??????&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt;   &lt;code&gt;0x0044&lt;/code&gt;   &lt;code&gt;0x0048&lt;/code&gt; &lt;strong&gt;&lt;code&gt;0x004C&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0050&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0050&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;0x0044&lt;/code&gt;   &lt;code&gt;0x0048&lt;/code&gt;   &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0044&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt;   &lt;code&gt;0x0044&lt;/code&gt;   &lt;code&gt;0x0048&lt;/code&gt;   &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0048&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt;   &lt;code&gt;0x0044&lt;/code&gt;   &lt;code&gt;0x0048&lt;/code&gt;   &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0060&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0060&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;0x0044&lt;/code&gt;   &lt;code&gt;0x0048&lt;/code&gt;   &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0064&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0060&lt;/code&gt; &lt;strong&gt;&lt;code&gt;0x0064&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;0x0048&lt;/code&gt;   &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0054&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0060&lt;/code&gt; &lt;strong&gt;&lt;code&gt;0x0054&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;0x0048&lt;/code&gt;   &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0060&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt; &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0058&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0060&lt;/code&gt;   &lt;code&gt;0x0054&lt;/code&gt; &lt;strong&gt;&lt;code&gt;0x0058&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0060&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt; &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0060&lt;/code&gt;   &lt;code&gt;0x0054&lt;/code&gt;   &lt;code&gt;0x0058&lt;/code&gt; &lt;strong&gt;&lt;code&gt;0x005C&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0060&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt; &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Sum&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;32&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;23&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;9&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;hit rate = &lt;sup&gt;23&lt;/sup&gt;&amp;frasl;&lt;sub&gt;32&lt;/sub&gt; = &lt;strong&gt;71.88%&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;16b-block&#34;&gt;16B block&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Address&lt;/th&gt;
+&lt;th&gt;1st time&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;In Cache (1st time)&lt;/th&gt;
+&lt;th&gt;2-4&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;In Cache (2-4 times)&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Accesses&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Hits&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Misses&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;start&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0044&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0048&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0050&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt; &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt; &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0044&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0048&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0060&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0060&lt;/code&gt; &lt;code&gt;0x0064&lt;/code&gt; &lt;code&gt;0x0068&lt;/code&gt; &lt;code&gt;0x006C&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0064&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0060&lt;/code&gt; &lt;code&gt;0x0064&lt;/code&gt; &lt;code&gt;0x0068&lt;/code&gt; &lt;code&gt;0x006C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0054&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt; &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt; &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0058&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt; &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt; &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt; &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt; &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Sum&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;32&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;21&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;11&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;hit rate = &lt;sup&gt;21&lt;/sup&gt;&amp;frasl;&lt;sub&gt;32&lt;/sub&gt; = &lt;strong&gt;65.63%&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Since the 4B access pattern results in a higher hit rate, reducing the block size for 8B to 4B would increase the hit rate the most.
+This is an interesting example because both 16B and 4B block sizes resulted in a higher hit rate than the 8B block size for this particular example.
+The 16B trace does better because it reduces the number of compulsory misses, but it still suffers from the conflicts in the first loop.
+The 8B trace does best because, while there are more compulsory misses, it reduces conflicts in each of these loops with 4 or less instructions in it and exploits temporal locality in the instruction access pattern.
+This does not indicate that a 4B block size is better in all circumstances, but it is true in this case.&lt;/p&gt;
+
+&lt;p&gt;In today&amp;rsquo;s production caches, there are many more blocks in the cache, and they are also typically associative reducing the number of conflict misses.
+As a point of comparison, this is the access pattern for a 8B block size with a fully associative cache and LRU replacement policy.&lt;/p&gt;
+
+&lt;h3 id=&#34;8b-block-2-way-associative&#34;&gt;8B block, 2-way associative&lt;/h3&gt;
+
+&lt;p&gt;I didn&amp;rsquo;t include the cache state here because it wasn&amp;rsquo;t a part of the problem and I wanted to save a little time writing this.&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Address&lt;/th&gt;
+&lt;th&gt;1st time&lt;/th&gt;
+&lt;th&gt;2-4&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Accesses&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Hits&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Misses&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0044&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0048&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0050&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0044&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0048&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0060&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0064&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0054&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0058&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Sum&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;32&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;15&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;17&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;It turns out that making the cache associative is worse because the LRU replacement policy does the wrong thing repeatedly.
+The hit rate is under 50%.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Busy Semester</title>
+      <link>http://josef.spjut.me/teaching/2014/04/16/a-busy-semester/</link>
+      <pubDate>Wed, 16 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/teaching/2014/04/16/a-busy-semester/</guid>
+      <description>&lt;p&gt;This semester has been extremely exciting. In particular, E85 has been
+updated from MIPS to use the ARM v7 instructions set.
+This has been a good experience for me despite some difficulties and a
+few moments of intensity where I wasn&amp;rsquo;t sure things would come
+together in time.
+In doing this, I&amp;rsquo;ve come to learn a lot about the ARM ISA, and I&amp;rsquo;ve
+decided I like it a lot.
+In particular, I think it strikes a reasonably good balance between
+RISC and CISC instructions where there are a couple nice addressing
+modes for stack manipulation that aren&amp;rsquo;t quite RISC, but are close
+enough.&lt;/p&gt;
+
+&lt;p&gt;An example of the niceness can be seen by the following code for stack
+manipulation:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-arm&#34;&gt;ADD SP, SP, #-12
+STR R0, [SP, #8]
+STR R1, [SP, #4]
+STR R2, [SP, #0]
+...
+LDR R0, [SP, #8]
+LDR R1, [SP, #4]
+LDR R2, [SP, #0]
+ADD SP, SP, #12
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This code can be effectively replaced by the following which updates
+the stack pointer as the values are written or read from the stack:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-arm&#34;&gt;STR R0, [SP, #-4]!
+STR R1, [SP, #-4]!
+STR R2, [SP, #-4]!
+...
+LDR R2, [SP], #4
+LDR R1, [SP], #4
+LDR R0, [SP], #4
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;MIPS did not have the option to manipulate the stack pointer while
+changing it from a single instruction.
+I think this additional understanding will be useful for many of the
+students in the class in their future careers.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Student-run Class Sessions</title>
+      <link>http://josef.spjut.me/teaching/2014/02/07/student-run-class-sessions/</link>
+      <pubDate>Fri, 07 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/teaching/2014/02/07/student-run-class-sessions/</guid>
+      <description>&lt;p&gt;This semester I am teaching a project-based class that has almost no
+formal instruction by the professor. Instead of providing close
+direction, I am attempting to give the students more autonomy and
+control over their learning and the things they will get out of the
+class.
+This presents a number of difficulties, and I plan to discuss them as
+the semester proceeds.
+Today, I&amp;rsquo;d like to say something about student-run class sessions,
+which will happen for the first time in my class next week.&lt;/p&gt;
+
+&lt;p&gt;In planning for these class sessions, I&amp;rsquo;ve attempted to make it easy
+for students to provide good objectives and learning opportunities for
+each other.
+Students have about 8 minutes for their presentations, and they are
+required to introduce some technical component, and then provide at
+least one good example of how that component might be used for their
+project or another project within the scope of the class.
+8 minutes is a very short time to get through so much technical
+detail, but my hope is that they will learn how to distill the
+valuable information they gain into bite-sized chunks that are easy
+for others to digest and reuse.
+During these student-run presentations, I plan to keep things on track
+by recommending they continue on topic and get through both the
+introduction to the component and a concrete example.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Musical Projects</title>
+      <link>http://josef.spjut.me/teaching/2013/10/15/musical-projects/</link>
+      <pubDate>Tue, 15 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/teaching/2013/10/15/musical-projects/</guid>
+      <description>&lt;p&gt;Today I had the fortunate presence of mind to record videos for a
+couple of my students&amp;rsquo; lab projects that I found particularly
+interesting.
+In this post I&amp;rsquo;ll go ahead and embed these videos for anyone
+interested in watching them.
+To explain briefly, the assignment was to use assembly programming for
+the PIC 32 microcontroller to have a speaker produce a song.
+Optionally, students were allowed to play a song of their choosing
+after putting that song in the program memory.
+The following are two of these custom songs chosen by the students.&lt;/p&gt;
+
+&lt;p&gt;First up is the video inspiring the tagline, &amp;ldquo;A Whole New World&amp;rdquo; which
+is impressive because these two students created a duet from their
+projects.&lt;/p&gt;
+
+&lt;iframe width=&#34;420&#34; height=&#34;315&#34;
+src=&#34;//www.youtube.com/embed/YtRUuayHCLg&#34; frameborder=&#34;0&#34;
+allowfullscreen=&#34;1&#34;&gt; &lt;/iframe&gt;
+
+&lt;p&gt;Finally another student recreated a famous internet song.&lt;/p&gt;
+
+&lt;iframe width=&#34;420&#34; height=&#34;315&#34;
+src=&#34;//www.youtube.com/embed/XZ6qLQ16RqQ&#34; frameborder=&#34;0&#34;
+allowfullscreen=&#34;1&#34;&gt; &lt;/iframe&gt;
+
+&lt;p&gt;One last personal note: 10 years ago today I flew home from spending 2
+years in Spain.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>FSM vs. English</title>
+      <link>http://josef.spjut.me/teaching/2013/10/03/fsm-vs-english/</link>
+      <pubDate>Thu, 03 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/teaching/2013/10/03/fsm-vs-english/</guid>
+      <description>&lt;p&gt;Yesterday, I managed to put together the in-class demo
+&lt;a href=&#34;http://josef.spjut.me/post/2013-10-01-interactive-lecture&#34;&gt;I discussed previously&lt;/a&gt;.
+In this post I&amp;rsquo;d like to give a brief explanation of what I showed and
+how it demonstrates the proper use of SystemVerilog to describe a
+finite state machine (FSM).&lt;/p&gt;
+
+&lt;p&gt;What I saw many students doing in their 3rd lab, was to use an English
+language description of the behavior they wanted that they translated
+directly to behavioral SystemVerilog.
+This is a fundamentally different procedure than I had intented to
+teach in the class, which was to take the English description of the
+behavior they want, and translate it to a FSM.
+The next step is to use that FSM and describe it using a standard
+SystemVerilog implementation.
+This includes 2 pieces of combinational logic, and a single sequential
+state register.&lt;/p&gt;
+
+&lt;p&gt;For this finite state machine, I describe what happens to a student when he or she sleeps.
+First, let&amp;rsquo;s say that a student can be happy, very happy, unhappy, or very unhappy.
+Whenever that student sleeps, happiness increases until it saturates at very happy.
+If a student doesn&amp;rsquo;t sleep, then happiness decreases until it is empty at very unhappy.
+When the student is happy, or very happy, the student will smile.
+The following examples are implementations of this description.&lt;/p&gt;
+
+&lt;p&gt;The first thing I showed in my demo is the following behavioral
+description based on the English description:&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;background-color: #f0f0f0; padding: 0 5px 0 5px&#34;&gt; 1 &lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;module&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;student_beh&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;logic&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;sleep,&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;clk,&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;output&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;logic&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;smile);&lt;/span&gt;
+&lt;span style=&#34;background-color: #f0f0f0; padding: 0 5px 0 5px&#34;&gt; 2 &lt;/span&gt;
+&lt;span style=&#34;background-color: #f0f0f0; padding: 0 5px 0 5px&#34;&gt; 3 &lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;logic&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;happiness;&lt;/span&gt;
+&lt;span style=&#34;background-color: #f0f0f0; padding: 0 5px 0 5px&#34;&gt; 4 &lt;/span&gt;
+&lt;span style=&#34;background-color: #f0f0f0; padding: 0 5px 0 5px&#34;&gt; 5 &lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;initial&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;happiness&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;2&amp;#39;b10&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;background-color: #f0f0f0; padding: 0 5px 0 5px&#34;&gt; 6 &lt;/span&gt;
+&lt;span style=&#34;background-color: #f0f0f0; padding: 0 5px 0 5px&#34;&gt; 7 &lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;always_ff&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;@(&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;posedge&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;clk)&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;begin&lt;/span&gt;
+&lt;span style=&#34;background-color: #f0f0f0; padding: 0 5px 0 5px&#34;&gt; 8 &lt;/span&gt;	&lt;span style=&#34;color: #66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(sleep)&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;begin&lt;/span&gt;
+&lt;span style=&#34;background-color: #f0f0f0; padding: 0 5px 0 5px&#34;&gt; 9 &lt;/span&gt;		&lt;span style=&#34;color: #66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(happiness&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;2&amp;#39;b11&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;// if sleeping not fully happy, increase happiness&lt;/span&gt;
+&lt;span style=&#34;background-color: #f0f0f0; padding: 0 5px 0 5px&#34;&gt;10 &lt;/span&gt;			&lt;span style=&#34;color: #f8f8f2&#34;&gt;happiness&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;happiness&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;2&amp;#39;b01&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;background-color: #f0f0f0; padding: 0 5px 0 5px&#34;&gt;11 &lt;/span&gt;	&lt;span style=&#34;color: #66d9ef&#34;&gt;end&lt;/span&gt;
+&lt;span style=&#34;background-color: #f0f0f0; padding: 0 5px 0 5px&#34;&gt;12 &lt;/span&gt;	&lt;span style=&#34;color: #66d9ef&#34;&gt;else&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;begin&lt;/span&gt;
+&lt;span style=&#34;background-color: #f0f0f0; padding: 0 5px 0 5px&#34;&gt;13 &lt;/span&gt;		&lt;span style=&#34;color: #66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(happiness&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;2&amp;#39;b00&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;// if not sleeping decrease happiness&lt;/span&gt;
+&lt;span style=&#34;background-color: #f0f0f0; padding: 0 5px 0 5px&#34;&gt;14 &lt;/span&gt;			&lt;span style=&#34;color: #f8f8f2&#34;&gt;happiness&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;happiness&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;2&amp;#39;b01&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;background-color: #f0f0f0; padding: 0 5px 0 5px&#34;&gt;15 &lt;/span&gt;	&lt;span style=&#34;color: #66d9ef&#34;&gt;end&lt;/span&gt;
+&lt;span style=&#34;background-color: #f0f0f0; padding: 0 5px 0 5px&#34;&gt;16 &lt;/span&gt;	
+&lt;span style=&#34;background-color: #f0f0f0; padding: 0 5px 0 5px&#34;&gt;17 &lt;/span&gt;	&lt;span style=&#34;color: #66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(happiness&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;gt;=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;2&amp;#39;b10&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;begin&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;smile&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;// when happy, smile&lt;/span&gt;
+&lt;span style=&#34;background-color: #f0f0f0; padding: 0 5px 0 5px&#34;&gt;18 &lt;/span&gt;	&lt;span style=&#34;color: #66d9ef&#34;&gt;else&lt;/span&gt;  &lt;span style=&#34;color: #66d9ef&#34;&gt;begin&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;smile&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;end&lt;/span&gt;
+&lt;span style=&#34;background-color: #f0f0f0; padding: 0 5px 0 5px&#34;&gt;19 &lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;end&lt;/span&gt;
+&lt;span style=&#34;background-color: #f0f0f0; padding: 0 5px 0 5px&#34;&gt;20 &lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;endmodule&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;This module synthesized into the following RTL circuit diagram:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://josef.spjut.me/img/blog/images/2013/10/BEH.png&#34; alt=&#34;Failed FSM&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The next implementation I displayed uses a traditional FSM description
+in SystemVerilog:&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;module&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;student_fsm&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;logic&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;sleep,&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;clk,&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;output&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;logic&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;smile);&lt;/span&gt;
+&lt;span style=&#34;color: #66d9ef&#34;&gt;typedef&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;enum&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;logic&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;VU&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;UU&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;HH&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;VH&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;statetype;&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;statetype&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;state,&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;nextstate;&lt;/span&gt;
+
+&lt;span style=&#34;color: #66d9ef&#34;&gt;always_ff&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;@(&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;posedge&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;clk)&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;// State register&lt;/span&gt;
+	&lt;span style=&#34;color: #f8f8f2&#34;&gt;state&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;nextstate;&lt;/span&gt;
+
+&lt;span style=&#34;color: #66d9ef&#34;&gt;always_comb&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;// next state logic&lt;/span&gt;
+	&lt;span style=&#34;color: #66d9ef&#34;&gt;case&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(state)&lt;/span&gt;
+		&lt;span style=&#34;color: #f8f8f2&#34;&gt;VU:&lt;/span&gt;	&lt;span style=&#34;color: #f8f8f2&#34;&gt;nextstate&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;sleep&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;?&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;UU&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;VU&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
+		&lt;span style=&#34;color: #f8f8f2&#34;&gt;UU:&lt;/span&gt;	&lt;span style=&#34;color: #f8f8f2&#34;&gt;nextstate&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;sleep&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;?&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;HH&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;VU&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
+		&lt;span style=&#34;color: #f8f8f2&#34;&gt;HH:&lt;/span&gt;	&lt;span style=&#34;color: #f8f8f2&#34;&gt;nextstate&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;sleep&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;?&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;VH&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;UU&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
+		&lt;span style=&#34;color: #f8f8f2&#34;&gt;VH:&lt;/span&gt;	&lt;span style=&#34;color: #f8f8f2&#34;&gt;nextstate&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;sleep&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;?&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;VH&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;HH&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
+		&lt;span style=&#34;color: #66d9ef&#34;&gt;default&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;nextstate&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;HH&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
+	&lt;span style=&#34;color: #66d9ef&#34;&gt;endcase&lt;/span&gt;
+	
+&lt;span style=&#34;color: #66d9ef&#34;&gt;assign&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;smile&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(state&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;HH&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;state&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;VH&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;);&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;// output logic&lt;/span&gt;
+
+&lt;span style=&#34;color: #66d9ef&#34;&gt;endmodule&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;p&gt;This module syntheizes into a much nicer looking FSM as shown:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://josef.spjut.me/img/blog/images/2013/10/FSM.png&#34; alt=&#34;Good FSM&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The first synthesis results sorta resemble an FSM, but are prone to
+bugs and inconsistent behavior, and led many students to spend much
+more time than they should have on the first lab assignment.
+The second synthesis results show exactly an FSM, and if we translated
+our English to an FSM diagram before starting to code, then we will
+easily be able to match our FSM to the results.
+The second technique is very much preferred for any hardware design.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Interactive Lecture</title>
+      <link>http://josef.spjut.me/teaching/2013/10/01/interactive-lecture/</link>
+      <pubDate>Tue, 01 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/teaching/2013/10/01/interactive-lecture/</guid>
+      <description>&lt;p&gt;In grading some labs this week, I noticed a trend among my students to
+create something that was essentially a finite state machine (FSM)
+without actually explicitly making a finite state machine in their
+verilog description.
+Typically a FSM has 3 parts, a &lt;em&gt;state register&lt;/em&gt;, &lt;em&gt;next state logic&lt;/em&gt;,
+and &lt;em&gt;output logic&lt;/em&gt;.
+The only part of the FSM that should be sequential logic is the
+&lt;em&gt;state register&lt;/em&gt; while the other parts should be purely combinational logic.
+That means that the SystemVerilog should have a single
+&lt;code&gt;always_ff @(posedge clk)&lt;/code&gt; section that only assigns the state register.
+Everything else should be combination using &lt;code&gt;always_comb&lt;/code&gt; or &lt;code&gt;assign&lt;/code&gt;
+statements.&lt;/p&gt;
+
+&lt;p&gt;Since this confusion still seems to be prevalent among the students in
+the class, I&amp;rsquo;ve decided I need to take more action to deliver this
+understanding.
+As a result, I am working on an in-class demo showing the RTL
+(register transfer level) representation of a couple different
+implementations of the same thing in class.
+While I believe this live demo will be quite effective, I also run the
+risk of failing miserably and spending a significant part of class
+debugging the demo and trying to make it work.
+If only there were some way to ensure that live demos never have
+issues.
+My current plan is to just practice the demo 3-4 times before hand to
+hopefully work out any bugs.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to Email a Professor</title>
+      <link>http://josef.spjut.me/teaching/2013/09/23/how-to-email-a-professor/</link>
+      <pubDate>Mon, 23 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/teaching/2013/09/23/how-to-email-a-professor/</guid>
+      <description>&lt;p&gt;Just a quick note on emailing professors.
+If you are asking for help or corrections on an assignment, you should
+send those kinds of emails ahead of time.
+Also, if you expect the professor to have complete knowledge of the
+problems in the book on the weekend, then you&amp;rsquo;re going to have a bad
+time.
+Every semester, I&amp;rsquo;ve had questions about problems in the book, and the
+student will email me the problem number in question rather than
+describe what the problem is.
+It is much easier for me to provide a response to a questions like,
+&amp;ldquo;should the truth table be ordered &lt;code&gt;{00, 01, 10, 11}&lt;/code&gt; or
+&lt;code&gt;{00, 10, 01, 11}&lt;/code&gt;?&amp;rdquo; than it is to respond  to a question like, &amp;ldquo;I
+need help on problem 3.2.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Be clear and concise and provide context when you email a professor.
+This should be standard practice for any form of communication.
+It also doesn&amp;rsquo;t hurt to mention the particular class.
+I&amp;rsquo;m teaching two classes right now, and both of them are working on
+the same numbered lab assignment at the same time, so asking for help
+on Lab 3 might take a little while for me to figure out which class&amp;rsquo;s
+Lab 3 you are talking about.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Embedded Design</title>
+      <link>http://josef.spjut.me/teaching/2013/09/17/embedded-design/</link>
+      <pubDate>Tue, 17 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/teaching/2013/09/17/embedded-design/</guid>
+      <description>&lt;p&gt;This week I met with each of the students in my &lt;a href=&#34;http://www3.hmc.edu/~jspjut/class/e155&#34; target=&#34;_blank&#34;&gt;MicroPs&lt;/a&gt; class
+and discussed their lab assignment.
+The first lab assignment was primarily soldering components onto their
+PCB and verifying that all of the components worked.
+As part of these lab interviews, I get to ask each student a question
+about their project to try to test their knowledge.
+One thing I noticed is that many of the students didn&amp;rsquo;t &lt;em&gt;own&lt;/em&gt; their
+project as fully as I would like.
+What I mean by that is that when I would ask what a button on their
+board does, then would respond by asking me if it does what they think
+it does.
+This is a very student sort of behavior, and I&amp;rsquo;d really like to teach
+them to be more confident and assertive in what they turn in.
+Today, I&amp;rsquo;m going to tell the class that they should not answer my lab
+interview questions with another question, but instead respond with
+confidence according to their best knowledge.
+Of course if you don&amp;rsquo;t know the answer, you really shouldn&amp;rsquo;t say
+something as if it&amp;rsquo;s true, but the right way to respond in that case
+is with full honesty that you don&amp;rsquo;t know the answer, but you suspect
+or believe it works this way.&lt;/p&gt;
+
+&lt;p&gt;When you design something, you should &lt;em&gt;own that design&lt;/em&gt;. That is all.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Two Weeks In</title>
+      <link>http://josef.spjut.me/teaching/2013/09/12/two-weeks-in/</link>
+      <pubDate>Thu, 12 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/teaching/2013/09/12/two-weeks-in/</guid>
+      <description>&lt;p&gt;In my &lt;a href=&#34;http://www3.hmc.edu/~jspjut/class/e155&#34; target=&#34;_blank&#34;&gt;embedded systems class&lt;/a&gt;, I decided it would be helpful to start
+with a review of SystemVerilog to hopefully keep the students from
+falling into the common pitfalls that come with using hardware
+description languages to describe hardware.
+Some important topics I touched on include the &amp;ldquo;proper&amp;rdquo; way to
+describe a &lt;em&gt;Finite State Machine&lt;/em&gt; using SystemVerilog.
+As a part of that, I made sure to point out the kinds of things that
+you can do in SystemVerilog to accidentally describe sequential logic
+when you actually intended for the circuit to be combinational.
+The real secret is to always ensure every output variable within an
+&lt;code&gt;always&lt;/code&gt; block is assigned for every possible set of input values to
+something that does not imply that previous values must be
+remembered.
+The most common way to make this mistake is to list a set of cases,
+but forget to cover the &lt;code&gt;default&lt;/code&gt; case.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;http://www3.hmc.edu/~jspjut/class/e85&#34; target=&#34;_blank&#34;&gt;my other class&lt;/a&gt;, I began with what I feel was a decent
+introduction to computing and its usefulness and prolific penetration
+into a variety of markets.
+Then I discussed binary and hexadecimal numbers, including
+sign/magnitude and two&amp;rsquo;s complement interpretations of a binary
+string.
+My main concern in covering these topics is that some of the people in
+the class may have missed some of the point and might be struggling.
+It is a challenge to ensure that 40+ students all follow a lecture
+since the individual variations in learning preferences leave wholes
+in what I can cover in only ~80 minutes.
+I like to think my lectures are more engaging this year than they were
+last year, but, since I didn&amp;rsquo;t record them last year, and I&amp;rsquo;m not
+recording them this year, it will be very hard to determine whether I
+have actually improved.&lt;/p&gt;
+
+&lt;p&gt;One thing I hope to be able to do in both classes this year is to
+actually work through some problems on the board with the class.
+Last year I spent almost the entire time running through lecture
+slides to cover material and had no time left over to work through
+problems, so it will require a fair amount of agility from me to jump
+through the material and work out problems.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to Not Have a Life</title>
+      <link>http://josef.spjut.me/teaching/2013/09/02/how-to-not-have-a-life/</link>
+      <pubDate>Mon, 02 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/teaching/2013/09/02/how-to-not-have-a-life/</guid>
+      <description>&lt;p&gt;A couple weeks ago, I received a call asking me to teach an extra
+class this semester (Fall 2013).
+This was the result of a last minute change out of my control that
+required an extra instructor to come in on the class.
+I decided to say &amp;ldquo;yes&amp;rdquo; because I have taught the course before, and I
+was probably the most natural fit to fill in at the last minute.
+Unfortunately, this caused my other class to have to change lecture
+time, and subsequently caused a whole bunch of scheduling issues with
+many students in the class who were taking classes at the same time.
+To make a long story short, I will be giving lectures to about half of
+the people enrolled in the class, and the other students will need to
+make up the material on their own.&lt;/p&gt;
+
+&lt;p&gt;Now I haven&amp;rsquo;t had this many students scheduled to miss nearly all of
+my lectures before, so this will be a bit of an experiment for me.
+My primary concern is that the students get the best education they
+can from the class, and I believe the course is set up to give a lot
+of hands on knowledge and experience.
+That said, I don&amp;rsquo;t know how valuable the lecture material is in
+general to the students (in this particular class).
+I almost feel like the lectures should really just be a time to get
+together and talk about the projects the students are working on, and
+to address any problems and concerns they might have;
+sort of a group study session where I happen to be present to keep the
+discussion on track.
+The truth is, the content for the class is best learned by getting
+your hands dirty and doing the lab assignments.&lt;/p&gt;
+
+&lt;p&gt;To make matters worse (for my life), I had also previously asked to be
+able to continue my research project from the summer.
+I have felt like I&amp;rsquo;ve been able to accomplish some interesting and
+useful things, and that there is much more that I could contribute to
+the company, and by ways of its products, many areas of computing and
+human experience.
+I really want people to be able to get the most out of computers, and
+the opportunity to lend my expertise to this company at this time
+gives me a chance to work towards that goal.
+The real trick is going to be figuring out the best way to maintain a
+balance between these exciting and empowering work endeavors, and my
+personal life that I definitely want to keep active, and progressing.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

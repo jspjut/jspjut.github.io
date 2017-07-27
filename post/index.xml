@@ -1,0 +1,1811 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Josef Spjut</title>
+    <link>http://josef.spjut.me/post/</link>
+    <description>Recent content in Posts on Josef Spjut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Josef Spjut</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/post/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hugo Notes</title>
+      <link>http://josef.spjut.me/post/2017/hugo-notes/</link>
+      <pubDate>Thu, 06 Jul 2017 09:49:57 -0400</pubDate>
+      
+      <guid>http://josef.spjut.me/post/2017/hugo-notes/</guid>
+      <description>&lt;p&gt;I recently undertook the effort of moving my website from jekyll using jekyll-bootstrap to Hugo and I wanted to record some notes from my efforts. In particular I want to collect a set of useful links that helped me in making the switch.&lt;/p&gt;
+
+&lt;p&gt;For what it&amp;rsquo;s worth, I greatly prefer Hugo now that I&amp;rsquo;ve gotten used to it, though there wasn&amp;rsquo;t too much broken about Jekyll.&lt;/p&gt;
+
+&lt;p&gt;The most useful thing for developing my site was when I found the &lt;a href=&#34;https://sourcethemes.com/academic/&#34; target=&#34;_blank&#34;&gt;academic theme&lt;/a&gt;. It turns out that in Hugo, themes contain a lot of the functionality of a site, and they make it easy to add on functionality either by modifying the theme, or your site in particular. The academic theme is widely used so there a good &lt;a href=&#34;https://sourcethemes.com/academic/post/getting-started/&#34; target=&#34;_blank&#34;&gt;reference page&lt;/a&gt; to help you get started.&lt;/p&gt;
+
+&lt;p&gt;The creator of the academic theme also has a &lt;a href=&#34;https://georgecushen.com/create-your-website-with-hugo/&#34; target=&#34;_blank&#34;&gt;good tutorial&lt;/a&gt; on his blog for how to set up a new hugo site from scratch.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An Introductory Cache Problem</title>
+      <link>http://josef.spjut.me/teaching/2015/05/13/an-introductory-cache-problem/</link>
+      <pubDate>Wed, 13 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/teaching/2015/05/13/an-introductory-cache-problem/</guid>
+      <description>
+
+&lt;p&gt;I recently gave a problem on the final in &lt;a href=&#34;http://pages.hmc.edu/jspjut/class/s2015/e85/&#34; target=&#34;_blank&#34;&gt;E85&lt;/a&gt;.
+The students didn&amp;rsquo;t do too well on it overall, so I wanted to post the problem and solution in an effort to
+make more resources available for people learning basic cache behaviors.
+First of all, I need to introduce the piece of ARM assembly being used since
+it is the basis for a number of questions.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;		FUNC:
+0x0044	SUBS R0, R0, #3
+0x0048	BLT DONE
+0x004C	STR LR, [SP, #-4]!
+0x0050	BL FUNC
+0x0054	ADD R0, R0, #1
+0x0058	LDR LR, [SP], #4
+0x005C	MOV PC, LR
+		DONE:
+0x0060	MOV R0, #0
+0x0064	MOV PC, LR
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;program-analysis&#34;&gt;Program analysis&lt;/h2&gt;
+
+&lt;p&gt;The first question is the following: Translate &lt;code&gt;FUNC&lt;/code&gt; to C code. My C version is:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;int func(int x)
+{
+	if (x &amp;lt; 3)
+		return 0;
+	else
+		return func(x-3) + 1;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is a simple recursive function that computes the integer value of dividing the input number by 3.&lt;/p&gt;
+
+&lt;p&gt;The next part asked for a stack trace including register values for &lt;code&gt;func(12)&lt;/code&gt;.
+The &lt;code&gt;SP&lt;/code&gt; starts at &lt;code&gt;0xFFE0&lt;/code&gt; and the function is first called from a &lt;code&gt;BL&lt;/code&gt; at &lt;code&gt;0x0020&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;func-12&#34;&gt;&lt;code&gt;func(12)&lt;/code&gt;&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;R0 = 12
+SP = 0xFFE0
+LR = 0x0024
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Address&lt;/th&gt;
+&lt;th&gt;Data&lt;/th&gt;
+&lt;th&gt;SP&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFE0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;?&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;start/end&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFDC&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0x0024&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;func(9)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;?&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;?&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;?&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;func-9&#34;&gt;&lt;code&gt;func(9)&lt;/code&gt;&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;R0 = 9
+SP = 0xFFDC
+LR = 0x0054
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Address&lt;/th&gt;
+&lt;th&gt;Data&lt;/th&gt;
+&lt;th&gt;SP&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFE0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;?&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFDC&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0x0024&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;start/end&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD8&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0x0054&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;func(6)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD4&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;?&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;?&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;func-6&#34;&gt;&lt;code&gt;func(6)&lt;/code&gt;&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;R0 = 9
+SP = 0xFFDC
+LR = 0x0054
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Address&lt;/th&gt;
+&lt;th&gt;Data&lt;/th&gt;
+&lt;th&gt;SP&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFE0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;?&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFDC&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0x0024&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD8&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0x0054&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;start/end&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD4&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0x0054&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;func(3)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;?&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;func-3&#34;&gt;&lt;code&gt;func(3)&lt;/code&gt;&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;R0 = 9
+SP = 0xFFDC
+LR = 0x0054
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Address&lt;/th&gt;
+&lt;th&gt;Data&lt;/th&gt;
+&lt;th&gt;SP&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFE0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;?&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFDC&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0x0024&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD8&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0x0054&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD4&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0x0054&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;start/end&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0x0054&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;func(0)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;func-0&#34;&gt;&lt;code&gt;func(0)&lt;/code&gt;&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;R0 = 9
+SP = 0xFFDC
+LR = 0x0054
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Address&lt;/th&gt;
+&lt;th&gt;Data&lt;/th&gt;
+&lt;th&gt;SP&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFE0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;?&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFDC&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0x0024&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD8&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0x0054&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD4&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0x0054&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;0x0054&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;start/end&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;return-and-move-up-stack&#34;&gt;Return and move up stack&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;R0 &amp;lt; 0&lt;/code&gt; so &lt;code&gt;func(0)&lt;/code&gt; returns &lt;code&gt;0&lt;/code&gt; in &lt;code&gt;R0&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;func(3)&lt;/code&gt; returns &lt;code&gt;R0 + 1&lt;/code&gt; in &lt;code&gt;R0&lt;/code&gt; which is now &lt;code&gt;1&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;func(6)&lt;/code&gt; returns &lt;code&gt;R0 + 1&lt;/code&gt; in &lt;code&gt;R0&lt;/code&gt; which is now &lt;code&gt;2&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;func(9)&lt;/code&gt; returns &lt;code&gt;R0 + 1&lt;/code&gt; in &lt;code&gt;R0&lt;/code&gt; which is now &lt;code&gt;3&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;func(12)&lt;/code&gt; returns &lt;code&gt;R0 + 1&lt;/code&gt; in &lt;code&gt;R0&lt;/code&gt; which is now &lt;code&gt;4&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The return value is therefore &lt;code&gt;4&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;data-cache&#34;&gt;Data cache&lt;/h2&gt;
+
+&lt;p&gt;The next question asks for the miss rate in the &lt;strong&gt;data&lt;/strong&gt; cache for the same program.
+The first step in solving this question is to write down the data access pattern for the program.
+The only data memory accessed is in the stack operations, which were written above, but I&amp;rsquo;ll repeat just the loads and stores here with the addresses computed.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;STR LR 0xFFDC
+STR LR 0xFFD8
+STR LR 0xFFD4
+STR LR 0xFFD0
+LDR LR 0xFFD0
+LDR LR 0xFFD4
+LDR LR 0xFFD8
+LDR LR 0xFFDC
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;For the rest of this part, I will refer to each of these memory accesses only by its memory address since loads and stores are treated the same in the memory system.
+The data cache configuration for the first question is given as a 16B cache with 8B blocks that is direct mapped.
+This means that there are 2 sets, each of which has 1 block that stores 2 memory addresses.
+These 2 addresses will be adjacent words in memory.
+The initial state of the cache would likely store two data values that are irrelevant to the program, so I&amp;rsquo;ll model that as both blocks being invalid at the start resulting in compulsory (or cold) misses. Here is the initial cache state:&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Set&lt;/th&gt;
+&lt;th&gt;Valid&lt;/th&gt;
+&lt;th&gt;Addresses stored&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;????&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;????&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;As the program executes, the following behavior will occur:&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Address&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Set&lt;/th&gt;
+&lt;th&gt;Hit/Miss&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Cache State&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Start&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt;   &lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFDC&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt; &lt;strong&gt;&lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD8&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt;   &lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD4&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0xFFD0&lt;/code&gt; &lt;code&gt;0xFFD4&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD0&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0xFFD0&lt;/code&gt; &lt;code&gt;0xFFD4&lt;/code&gt;   &lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD0&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0xFFD0&lt;/code&gt; &lt;code&gt;0xFFD4&lt;/code&gt;   &lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD4&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0xFFD0&lt;/code&gt; &lt;code&gt;0xFFD4&lt;/code&gt;   &lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD8&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0xFFD0&lt;/code&gt; &lt;code&gt;0xFFD4&lt;/code&gt;   &lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFDC&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0xFFD0&lt;/code&gt; &lt;code&gt;0xFFD4&lt;/code&gt;   &lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;If we count up the misses and look at the total number of accesses we see that we have &lt;strong&gt;8&lt;/strong&gt; accesses and &lt;strong&gt;2&lt;/strong&gt; misses giving us a miss rate of &lt;sup&gt;2&lt;/sup&gt;&amp;frasl;&lt;sub&gt;8&lt;/sub&gt; = 25%.&lt;/p&gt;
+
+&lt;p&gt;The next part asks about what happens when the same &lt;strong&gt;data&lt;/strong&gt; cache is reorganized to be fully associative instead of direct mapped.
+This means that either block could be placed in either way within a single set.
+The result will be the same because we only ever access 2 different blocks of memory, but to show the full trace, I&amp;rsquo;ve included the work below.
+Note that the way on the left is the least recently used and will be replaced next.&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Address&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Set&lt;/th&gt;
+&lt;th&gt;Hit/Miss&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Cache State&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Start&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt;   &lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFDC&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt; &lt;strong&gt;&lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD8&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt;   &lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD4&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt; &lt;strong&gt;&lt;code&gt;0xFFD0&lt;/code&gt; &lt;code&gt;0xFFD4&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD0&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;   &lt;code&gt;0xFFD0&lt;/code&gt; &lt;code&gt;0xFFD4&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD0&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;   &lt;code&gt;0xFFD0&lt;/code&gt; &lt;code&gt;0xFFD4&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD4&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;   &lt;code&gt;0xFFD0&lt;/code&gt; &lt;code&gt;0xFFD4&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFD8&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0xFFD0&lt;/code&gt; &lt;code&gt;0xFFD4&lt;/code&gt;   &lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0xFFDC&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0xFFD0&lt;/code&gt; &lt;code&gt;0xFFD4&lt;/code&gt;   &lt;code&gt;0xFFD8&lt;/code&gt; &lt;code&gt;0xFFDF&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Again, there are &lt;strong&gt;8&lt;/strong&gt; accesses and &lt;strong&gt;2&lt;/strong&gt; misses for a miss rate of &lt;sup&gt;2&lt;/sup&gt;&amp;frasl;&lt;sub&gt;8&lt;/sub&gt; = 25%.&lt;/p&gt;
+
+&lt;h2 id=&#34;instruction-cache&#34;&gt;Instruction Cache&lt;/h2&gt;
+
+&lt;p&gt;The next question deals with an instruction cache. This means we need to know what the cache access pattern is.
+From the first part, we know that the function is called a total of 5 times, the first 4 with the same behavior and the 5th time with the return 0 case.
+This access pattern is as follows:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;0x0044 // func(12)
+0x0048
+0x004C
+0x0050
+0x0044 // func(9)
+0x0048
+0x004C
+0x0050
+0x0044 // func(6)
+0x0048
+0x004C
+0x0050
+0x0044 // func(3)
+0x0048
+0x004C
+0x0050
+0x0044 // func(0) 
+0x0048
+0x0060
+0x0064 // return 0
+0x0054 // func(3)
+0x0058
+0x005C // return 1
+0x0054 // func(6)
+0x0058
+0x005C // return 2
+0x0054 // func(9)
+0x0058
+0x005C // return 3
+0x0054 // func(12)
+0x0058
+0x005C // return 4
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In order to make this response more compact than the previous problem, I&amp;rsquo;m going to exploit the fact that there is a repeated access pattern here.
+The sequence &lt;code&gt;0x0044&lt;/code&gt;, &lt;code&gt;0x0048&lt;/code&gt;, &lt;code&gt;0x004C&lt;/code&gt;, &lt;code&gt;0x0050&lt;/code&gt; repeats 4 times followed by the sequence &lt;code&gt;0x0044&lt;/code&gt;, &lt;code&gt;0x0048&lt;/code&gt;, &lt;code&gt;0x0060&lt;/code&gt;, &lt;code&gt;0x0064&lt;/code&gt;.
+After those finish, the sequence &lt;code&gt;0x0054&lt;/code&gt;, &lt;code&gt;0x0058&lt;/code&gt;, &lt;code&gt;0x005C&lt;/code&gt; repeats 4 times.
+The total number of memory accesses is therefore &lt;code&gt;4 x 4 + 4 + 3 x 4 = 32&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;For each repeated pattern, the access is has compulsory misses the first time, but on subsequent loops repeats the accesses.
+We are first given a 16B cache with 8B blocks that is direct mapped.
+Here is the hit miss pattern based on what the contents of the cache are through the trace:&lt;/p&gt;
+
+&lt;h3 id=&#34;8b-blocks&#34;&gt;8B blocks&lt;/h3&gt;
+
+&lt;p&gt;Filled blocks in bold&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Address&lt;/th&gt;
+&lt;th&gt;1st time&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;In Cache (1st time)&lt;/th&gt;
+&lt;th&gt;2-4&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;In Cache (2-4 times)&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Accesses&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Hits&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Misses&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;start&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt;   &lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt;   &lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0044&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0048&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt; &lt;strong&gt;&lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt;   &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt;   &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt;   &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0050&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0044&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0048&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt;   &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0060&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0060&lt;/code&gt; &lt;code&gt;0x0064&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0064&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0060&lt;/code&gt; &lt;code&gt;0x0064&lt;/code&gt;   &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0054&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt;   &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0058&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt; &lt;strong&gt;&lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt;   &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt;   &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt;   &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Sum&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;32&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;19&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;13&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;The hit rate for this cache configuration and instruction trace is &lt;sup&gt;19&lt;/sup&gt;&amp;frasl;&lt;sub&gt;32&lt;/sub&gt; which is about &lt;strong&gt;59.38%&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;The final question asks what change to the block size will improve the hit rate the most.
+Since the cache is 16B and each instruction is 4B, the only block sizes that make sense are 4B, 8B, and 16B which correspond to 4 sets, 2 sets, and 1 set respectively.
+The access patterns for each are as follows:&lt;/p&gt;
+
+&lt;h3 id=&#34;4b-blocks&#34;&gt;4B blocks&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Address&lt;/th&gt;
+&lt;th&gt;1st time&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;In Cache (1st time)&lt;/th&gt;
+&lt;th&gt;2-4&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;In Cache (2-4 times)&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Accesses&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Hits&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Misses&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;start&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt;   &lt;code&gt;??????&lt;/code&gt;   &lt;code&gt;??????&lt;/code&gt;   &lt;code&gt;??????&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0044&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt; &lt;strong&gt;&lt;code&gt;0x0044&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;??????&lt;/code&gt;   &lt;code&gt;??????&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0048&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt;   &lt;code&gt;0x0044&lt;/code&gt; &lt;strong&gt;&lt;code&gt;0x0048&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;??????&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt;   &lt;code&gt;0x0044&lt;/code&gt;   &lt;code&gt;0x0048&lt;/code&gt; &lt;strong&gt;&lt;code&gt;0x004C&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0050&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0050&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;0x0044&lt;/code&gt;   &lt;code&gt;0x0048&lt;/code&gt;   &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0044&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt;   &lt;code&gt;0x0044&lt;/code&gt;   &lt;code&gt;0x0048&lt;/code&gt;   &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0048&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt;   &lt;code&gt;0x0044&lt;/code&gt;   &lt;code&gt;0x0048&lt;/code&gt;   &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0060&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0060&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;0x0044&lt;/code&gt;   &lt;code&gt;0x0048&lt;/code&gt;   &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0064&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0060&lt;/code&gt; &lt;strong&gt;&lt;code&gt;0x0064&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;0x0048&lt;/code&gt;   &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0054&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0060&lt;/code&gt; &lt;strong&gt;&lt;code&gt;0x0054&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;0x0048&lt;/code&gt;   &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0060&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt; &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0058&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0060&lt;/code&gt;   &lt;code&gt;0x0054&lt;/code&gt; &lt;strong&gt;&lt;code&gt;0x0058&lt;/code&gt;&lt;/strong&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0060&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt; &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0060&lt;/code&gt;   &lt;code&gt;0x0054&lt;/code&gt;   &lt;code&gt;0x0058&lt;/code&gt; &lt;strong&gt;&lt;code&gt;0x005C&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0060&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt; &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Sum&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;32&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;23&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;9&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;hit rate = &lt;sup&gt;23&lt;/sup&gt;&amp;frasl;&lt;sub&gt;32&lt;/sub&gt; = &lt;strong&gt;71.88%&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;16b-block&#34;&gt;16B block&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Address&lt;/th&gt;
+&lt;th&gt;1st time&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;In Cache (1st time)&lt;/th&gt;
+&lt;th&gt;2-4&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;In Cache (2-4 times)&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Accesses&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Hits&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Misses&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;start&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt; &lt;code&gt;??????&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0044&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0048&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0050&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt; &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt; &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0044&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0048&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0040&lt;/code&gt; &lt;code&gt;0x0044&lt;/code&gt; &lt;code&gt;0x0048&lt;/code&gt; &lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0060&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0060&lt;/code&gt; &lt;code&gt;0x0064&lt;/code&gt; &lt;code&gt;0x0068&lt;/code&gt; &lt;code&gt;0x006C&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0064&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0060&lt;/code&gt; &lt;code&gt;0x0064&lt;/code&gt; &lt;code&gt;0x0068&lt;/code&gt; &lt;code&gt;0x006C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0054&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt; &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt; &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0058&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt; &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt; &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt; &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;0x0050&lt;/code&gt; &lt;code&gt;0x0054&lt;/code&gt; &lt;code&gt;0x0058&lt;/code&gt; &lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Sum&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;32&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;21&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;11&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;hit rate = &lt;sup&gt;21&lt;/sup&gt;&amp;frasl;&lt;sub&gt;32&lt;/sub&gt; = &lt;strong&gt;65.63%&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Since the 4B access pattern results in a higher hit rate, reducing the block size for 8B to 4B would increase the hit rate the most.
+This is an interesting example because both 16B and 4B block sizes resulted in a higher hit rate than the 8B block size for this particular example.
+The 16B trace does better because it reduces the number of compulsory misses, but it still suffers from the conflicts in the first loop.
+The 8B trace does best because, while there are more compulsory misses, it reduces conflicts in each of these loops with 4 or less instructions in it and exploits temporal locality in the instruction access pattern.
+This does not indicate that a 4B block size is better in all circumstances, but it is true in this case.&lt;/p&gt;
+
+&lt;p&gt;In today&amp;rsquo;s production caches, there are many more blocks in the cache, and they are also typically associative reducing the number of conflict misses.
+As a point of comparison, this is the access pattern for a 8B block size with a fully associative cache and LRU replacement policy.&lt;/p&gt;
+
+&lt;h3 id=&#34;8b-block-2-way-associative&#34;&gt;8B block, 2-way associative&lt;/h3&gt;
+
+&lt;p&gt;I didn&amp;rsquo;t include the cache state here because it wasn&amp;rsquo;t a part of the problem and I wanted to save a little time writing this.&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Address&lt;/th&gt;
+&lt;th&gt;1st time&lt;/th&gt;
+&lt;th&gt;2-4&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Accesses&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Hits&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Misses&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0044&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0048&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x004C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0050&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0044&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0048&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0060&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0064&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0054&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x0058&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;miss&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0x005C&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td&gt;hit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Sum&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;32&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;15&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;17&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;It turns out that making the cache associative is worse because the LRU replacement policy does the wrong thing repeatedly.
+The hit rate is under 50%.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Submitting my first article to arXiv</title>
+      <link>http://josef.spjut.me/research/2014/12/02/submitting-my-first-article-to-arxiv/</link>
+      <pubDate>Tue, 02 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/research/2014/12/02/submitting-my-first-article-to-arxiv/</guid>
+      <description>&lt;p&gt;Today I submitted a technical report done by my students over the last academic year.
+It took a while to get the write-up to the level of quality that I felt good about submitting it,
+but now that it&amp;rsquo;s there, I figured I should push it out.
+I used &lt;a href=&#34;http://arxiv.org/&#34; target=&#34;_blank&#34;&gt;arXiv&lt;/a&gt; to post it since they make it easy to publish a technical report
+while not preventing you from submitting the work to another venue such as a conference or journal
+at a later date.
+I used Latex to write the paper, and in preparing the submission, there were a
+couple modifications I had to make to get it accepted by the system.&lt;/p&gt;
+
+&lt;p&gt;First, I had to include a line that says &lt;code&gt;\pdfoutput=1&lt;/code&gt; somewhere
+in the first 5 lines of the main tex file I submitted.&lt;/p&gt;
+
+&lt;p&gt;Second, I had to include the &lt;code&gt;main.bbl&lt;/code&gt; file that was generated
+locally as part of my build process.
+It appears that they don&amp;rsquo;t actually need the &lt;code&gt;.bib&lt;/code&gt; file and
+only care about the &lt;code&gt;.bbl&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Next, my particular document used a style sheet called &lt;code&gt;jpaper.cls&lt;/code&gt; that
+had a strange error with how it includes the &lt;code&gt;hyperref&lt;/code&gt; package.
+The relevant lines that I had to comment out are below (comments added):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;% Link and URL formatting.
+%\iftoggle{jp@hyperref}{
+%  \RequirePackage{hyperref}
+%  \hypersetup{
+%    unicode=true,
+%    pdfstartview={FitH},
+%    colorlinks=true,
+%    %citecolor=black,
+%    %filecolor=black,
+%    %linkcolor=black,
+%    %urlcolor=black
+% }}{}
+%\RequirePackage{url}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Finally, I had an issue with figures I included that I think had to do with how
+I uploaded all of the source material.
+Since I submitted each file separately instead of part of a compressed folder,
+the graphics I was trying to include were now a part of the root directory instead
+of being present in the &lt;code&gt;graphics&lt;/code&gt; subdirectory that I use locally.
+Luckily, there was a straightforward fix that I think I&amp;rsquo;ll include in my future
+documents by default because it&amp;rsquo;s much cleaner than what I&amp;rsquo;ve done traditionally.
+In the main &lt;code&gt;.tex&lt;/code&gt; file include a line like the following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;% graphics path
+\graphicspath{ {./graphics/} }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then, instead of including the relative path to everything in the graphics path,
+just include the graphics directly as in this example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{figure}
+\centering
+\includegraphics[width=\columnwidth]{PairedCaches}
+\caption{Partly shared instruction caches}
+\label{fig:paired}
+\end{figure}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Automount network drives on a Mac</title>
+      <link>http://josef.spjut.me/osx/2014/09/05/automount-network-drives-on-a-mac/</link>
+      <pubDate>Fri, 05 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/osx/2014/09/05/automount-network-drives-on-a-mac/</guid>
+      <description>&lt;p&gt;I recently added a network storage device to my home network and
+decided I didn&amp;rsquo;t want to have to keep reconnecting to the device every
+time I got home and wanted to use it.
+I did a little searching and found a tool called
+&lt;a href=&#34;http://www.controlplaneapp.com/&#34; target=&#34;_blank&#34;&gt;ControlPlane&lt;/a&gt; that seems ideally
+suited to solve my issue.
+ControlPlane is really a tool to detect where you are using things
+that are already available and allow for automated actions to be taken
+when you arrive or leave a place.
+The particular action that interested me was mounting my network
+storage device, but there are many other actions you can take, such as
+opening a web page, or even starting a Time Machine backup.
+Things like network SSIDs, time of day, light level and geographic
+location can be used to try to detect which location you are at.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Google Cardboard compatilbe iOS apps</title>
+      <link>http://josef.spjut.me/virtual-reality/2014/08/18/google-cardboard-compatilbe-ios-apps/</link>
+      <pubDate>Mon, 18 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/virtual-reality/2014/08/18/google-cardboard-compatilbe-ios-apps/</guid>
+      <description>&lt;p&gt;I got a &lt;a href=&#34;https://developers.google.com/cardboard/&#34; target=&#34;_blank&#34;&gt;Google Cardboard&lt;/a&gt;
+last week at
+&lt;a href=&#34;http://www.siggraph.org/&#34; target=&#34;_blank&#34;&gt;SIGGRAPH&lt;/a&gt; and since I don&amp;rsquo;t own
+an Android phone, I set out to find a way to use my iPhone to try it
+out.
+The first thing I noticed is that there were no web pages easily found
+that mentioned a list of apps that are compatible with it, even
+without including the magnetic switch for input.
+What follows is a short list of apps I discovered on my search:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://itunes.apple.com/us/app/di-360/id893235638?mt=8&#34; target=&#34;_blank&#34;&gt;DI 360&lt;/a&gt; lets you replay a 3d video captured while tracking your head
+movements so you can experience whatever part of the video you want
+just by looking around. You have to press a button on the touchscreen
+to switch it to VR mode, but it&amp;rsquo;s an interesting experience once you
+do.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://itunes.apple.com/us/app/dive-zombie/id903661452?mt=8&#34; target=&#34;_blank&#34;&gt;ZOMBIE dive&lt;/a&gt; is a simple empty world where zombies come at you from
+random directions and you have to shoot them. The shotgun is on
+autofire so you just have to look at the zombies to keep them from
+getting you.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://itunes.apple.com/us/app/refugio3d-spacestation/id827207586?mt=8&#34; target=&#34;_blank&#34;&gt;Refugio3D&lt;/a&gt; is a virtual walk through of a couple interesting places,
+including a spaceship interior. It allows walking forward by looking
+down to toggle walking or standing still.
+
+&lt;ul&gt;
+&lt;li&gt;Also on &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.Refugio3D.SpaceStation&amp;amp;hl=en&#34; target=&#34;_blank&#34;&gt;Android&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;After I found these, I CBS News posted &lt;a href=&#34;http://www.cbsnews.com/news/google-cardboard-works-on-the-iphone-too/&#34; target=&#34;_blank&#34;&gt;an
+article&lt;/a&gt;
+listing a few more options, but I have yet to try them.
+There may even be some overlap between our lists.&lt;/p&gt;
+
+&lt;p&gt;In case you want to buy one, &lt;a href=&#34;http://www.dodocase.com/products/google-cardboard-vr-goggle-toolkit&#34; target=&#34;_blank&#34;&gt;DODO Case is selling them for about
+$25&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Jetson TK1 First Steps</title>
+      <link>http://josef.spjut.me/programming/2014/05/20/jetson-tk1-first-steps/</link>
+      <pubDate>Tue, 20 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/programming/2014/05/20/jetson-tk1-first-steps/</guid>
+      <description>&lt;p&gt;I recently received my &lt;a href=&#34;https://developer.nvidia.com/jetson-tk1&#34; target=&#34;_blank&#34;&gt;Jetson TK1 Development
+Board&lt;/a&gt;, which I&amp;rsquo;m evaluating
+for potential use in an embedded systems course next Spring.
+This board is attractive to me because it has a high-end quad core ARM
+A15 processor as well as a high-end mobile GPU with support for the
+latest OpenGL and CUDA development environments.
+This post is going to serve as a way for me to record the things
+needed to set up the device in the first place, and hopefully more
+posts will follow as I manage to develop some examples on the board
+that will hopefully turn into lab assignments for the class.&lt;/p&gt;
+
+&lt;p&gt;The first thing you notice when you plug in the board and turn it on,
+is that it boots to an OS without any setup because the built-in flash
+has linux on it from the factory.
+However, there is no x11 support out of the box.
+Well that&amp;rsquo;s not quite true&amp;hellip;
+The support is available, but you must &lt;a href=&#34;http://developer.download.nvidia.com/embedded/jetson/TK1/README.txt&#34; target=&#34;_blank&#34;&gt;run a script to install the
+driver&lt;/a&gt;.
+The instructions from the README are copied and inline here:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;This README file lists instructions on how to install the NVIDIA
+Linux driver binary release on your target located in:
+${HOME}/NVIDIA-INSTALLER
+
+Step 1)
+Change directories into the NVIDIA installation directory:
+    cd ${HOME}/NVIDIA-INSTALLER
+
+Step 2)
+Run the installer script to extract and install the Linux driver
+binary release:
+    sudo ./installer.sh
+
+Step 3)
+Reboot the system to have the graphical desktop UI come up.
+
+NOTES:
+- The installer.sh should only be run once.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;More to come&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Busy Semester</title>
+      <link>http://josef.spjut.me/teaching/2014/04/16/a-busy-semester/</link>
+      <pubDate>Wed, 16 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/teaching/2014/04/16/a-busy-semester/</guid>
+      <description>&lt;p&gt;This semester has been extremely exciting. In particular, E85 has been
+updated from MIPS to use the ARM v7 instructions set.
+This has been a good experience for me despite some difficulties and a
+few moments of intensity where I wasn&amp;rsquo;t sure things would come
+together in time.
+In doing this, I&amp;rsquo;ve come to learn a lot about the ARM ISA, and I&amp;rsquo;ve
+decided I like it a lot.
+In particular, I think it strikes a reasonably good balance between
+RISC and CISC instructions where there are a couple nice addressing
+modes for stack manipulation that aren&amp;rsquo;t quite RISC, but are close
+enough.&lt;/p&gt;
+
+&lt;p&gt;An example of the niceness can be seen by the following code for stack
+manipulation:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-arm&#34;&gt;ADD SP, SP, #-12
+STR R0, [SP, #8]
+STR R1, [SP, #4]
+STR R2, [SP, #0]
+...
+LDR R0, [SP, #8]
+LDR R1, [SP, #4]
+LDR R2, [SP, #0]
+ADD SP, SP, #12
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This code can be effectively replaced by the following which updates
+the stack pointer as the values are written or read from the stack:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-arm&#34;&gt;STR R0, [SP, #-4]!
+STR R1, [SP, #-4]!
+STR R2, [SP, #-4]!
+...
+LDR R2, [SP], #4
+LDR R1, [SP], #4
+LDR R0, [SP], #4
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;MIPS did not have the option to manipulate the stack pointer while
+changing it from a single instruction.
+I think this additional understanding will be useful for many of the
+students in the class in their future careers.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Student-run Class Sessions</title>
+      <link>http://josef.spjut.me/teaching/2014/02/07/student-run-class-sessions/</link>
+      <pubDate>Fri, 07 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/teaching/2014/02/07/student-run-class-sessions/</guid>
+      <description>&lt;p&gt;This semester I am teaching a project-based class that has almost no
+formal instruction by the professor. Instead of providing close
+direction, I am attempting to give the students more autonomy and
+control over their learning and the things they will get out of the
+class.
+This presents a number of difficulties, and I plan to discuss them as
+the semester proceeds.
+Today, I&amp;rsquo;d like to say something about student-run class sessions,
+which will happen for the first time in my class next week.&lt;/p&gt;
+
+&lt;p&gt;In planning for these class sessions, I&amp;rsquo;ve attempted to make it easy
+for students to provide good objectives and learning opportunities for
+each other.
+Students have about 8 minutes for their presentations, and they are
+required to introduce some technical component, and then provide at
+least one good example of how that component might be used for their
+project or another project within the scope of the class.
+8 minutes is a very short time to get through so much technical
+detail, but my hope is that they will learn how to distill the
+valuable information they gain into bite-sized chunks that are easy
+for others to digest and reuse.
+During these student-run presentations, I plan to keep things on track
+by recommending they continue on topic and get through both the
+introduction to the component and a concrete example.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Animated GIFs from Movies</title>
+      <link>http://josef.spjut.me/programming/2014/01/25/animated-gifs-from-movies/</link>
+      <pubDate>Sat, 25 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/programming/2014/01/25/animated-gifs-from-movies/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve often wanted to be able to make animated gifs of things.
+I have also been interested in simple programmatic video editing from
+time to time, particularly for animating a series of still frames from
+images rendered by my graphics architecture simulations.
+Today on reddit, I came across &lt;a href=&#34;http://zulko.github.io/blog/2014/01/23/making-animated-gifs-from-video-files-with-python/&#34; target=&#34;_blank&#34;&gt;this blog
+post&lt;/a&gt;
+that describes a sequence of ways to use the
+&lt;a href=&#34;http://zulko.github.io/moviepy/&#34; target=&#34;_blank&#34;&gt;MoviePy&lt;/a&gt; library to generate
+animated gifs.
+It looks like exactly the kind of solution I want since I like to use
+python whenever possible for simple things.
+I don&amp;rsquo;t have anything profound to say about this, and mostly just
+wanted to record the links for my future reference.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Game Design Thoughts</title>
+      <link>http://josef.spjut.me/game-design/2014/01/14/game-design-thoughts/</link>
+      <pubDate>Tue, 14 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/game-design/2014/01/14/game-design-thoughts/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been thinking recently about the kinds of things I&amp;rsquo;d like to work
+on most during the break from teaching, and I&amp;rsquo;ve decided that I really
+want to take a deep look at game design from a theoretical and
+practical standpoint.
+It seems to me that there could be some need for a more formal and
+methodological approach to the design of games than currently exists.
+In my experience, game designers (the ones that put the fun into the
+game) are hard to find and extremely hard to train.
+Smallish tasks like level design can be learned, but even these are
+typically only learned by spending a large amount of time practicing
+and depend on the intuition of the individuals to be successful.
+Coming from my background in computer architecture, and in particular
+thinking about the standard text, &amp;ldquo;Computer Architecture: A
+Quantitative Approach&amp;rdquo; by Hennessey and Patterson, it occurred to me
+that there could exist a game design text with a similar approach and
+title.
+Quantitative design would not necessarily solve everything that needs
+to be done in game design given that so much of the design is itself
+artistic expression, but the existence of such a text could greatly
+assist in training game designers initially.
+My quick search on google for research and writing on this subject has
+not turned up much, but there is this
+&lt;a href=&#34;https://www.academia.edu/2988547/Game_Design_by_Numbers_Instrumental_Play_and_the_Quantitative_Shift_in_the_Digital_Game_Industry&#34; target=&#34;_blank&#34;&gt;Recent PhD Thesis&lt;/a&gt;
+that I think is probably the most recent related work in this area,
+though it is written by a sociologist (not necessarily a bad thing).&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m going to use my blog posts in the category of &amp;ldquo;game design&amp;rdquo; to
+brainstorm a bit about how this theoretical book might be organized.
+The biggest challenge will be finding a way to quantify the clearly
+artistic and qualitative experience that the player enjoys when
+playing a game.
+The question I need to ask is how to quantify each of the following
+essential (or at least helpful) game design features:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;fun&lt;/li&gt;
+&lt;li&gt;happiness&lt;/li&gt;
+&lt;li&gt;time&lt;/li&gt;
+&lt;li&gt;human experience&lt;/li&gt;
+&lt;li&gt;social interaction&lt;/li&gt;
+&lt;li&gt;addiction&lt;/li&gt;
+&lt;li&gt;monetary impact (both to the player and the developer)&lt;/li&gt;
+&lt;li&gt;others?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Really understanding a lot of these concepts requires a huge amount of
+cross-disciplinary work and depends on a better understanding of
+social sciences than I currently have.
+The question of monetary impact is directly related to business and
+economic concerns.
+Perhaps the easiest thing to quantify is the amount of time spent on a
+particular activity.
+However, answering the question of how much time is spent on something
+is not entirely useful unless you are aware of the impact that
+activity has on the player in terms of most of the other concepts.
+If you only take into account time and money when you design a game,
+you can easily create a game that will use as much time as a player
+has available and deliver the maximum amount of money to the pockets
+of the developer, but I do not believe that should be the goal in
+designing a game.
+A game should be designed to enhance the life experience of the
+individual playing that game.
+Sure money is necessary to cover the costs of developing, distributing
+and marketing a game, but money can also be used as an incentive to
+the player.
+For instance, I have found that games with a paid barrier to entry
+tend to invite a higher caliber of social interaction among players
+than those that are free to play.
+Higher quality social interaction is certainly beneficial to the life
+experience of each participant in that interaction.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m out of time for today, but I will be returning to these thoughts
+again soon. The next entry should be more focussed than these rambling
+thoughts.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Multiple Author Affiliations in LaTeX</title>
+      <link>http://josef.spjut.me/latex/2014/01/03/multiple-author-affiliations-in-latex/</link>
+      <pubDate>Fri, 03 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/latex/2014/01/03/multiple-author-affiliations-in-latex/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve recently had the pleasure of updating a recent journal article
+submission with my list of affiliations.
+On the article, there are 5 authors, and among them, I am the only one
+with different affiliations, though I share the other affiliation with
+the rest of the authors.
+After some quick googling on how I should perform this, I came up with
+the following snippet of code that should have worked.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\usepackage{authblk}
+
+\author[1]{Daniel Kopta}
+\author[1]{Konstantin Shkurko}
+\author[1,2,3]{Josef Spjut}
+\author[1]{Erik Brunvand}
+\author[1]{Al Davis}
+\affil[1]{School of Computing, University of Utah, Salt Lake City, UT, USA\\
+       \{redacted\}@email.edu}
+\affil[2]{NVIDIA Research}
+\affil[3]{Department of Engineering, Harvey Mudd College, Claremont, CA, USA}
+\renewcommand\Authands{ and }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;code&gt;authblk&lt;/code&gt; package seems to be beautiful for performing this
+function, however it has one problem when used with the other styles
+for this particular article. It causes &lt;code&gt;\maketitle&lt;/code&gt; to fail
+complaining about some spacing error, and I couldn&amp;rsquo;t figure out how to
+fix it.
+Instead, I opted for the poor man&amp;rsquo;s solution to the problem with the
+following set of lines:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\author[D. Kopta et al.]
+       {D. Kopta$^1$, K. Shkurko$^1$, J. Spjut$^{1,2,3}$,
+       E. Brunvand$^1$, and A. Davis$^1$
+       \\
+       $^1$School of Computing, University of Utah, Salt Lake City,
+       UT, USA\\
+       \{redacted\}@email.edu\\ 
+       $^2$NVIDIA Research\\
+       $^3$Department of Engineering, Harvey Mudd College, Claremont,
+       CA, USA\\
+       }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This code generates into the following on the pdf.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://josef.spjut.me/blog/images/2014/01/authors.png&#34; alt=&#34;Author Affiliations&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s not as graceful as the &lt;code&gt;authblk&lt;/code&gt; code, but it works and it&amp;rsquo;s a
+simple hack that you only have to do once per article.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Interesting python style print in C&#43;&#43;</title>
+      <link>http://josef.spjut.me/programming/2013/12/12/interesting-python-style-print-in-c/</link>
+      <pubDate>Thu, 12 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/programming/2013/12/12/interesting-python-style-print-in-c/</guid>
+      <description>&lt;p&gt;I came across a really interesting piece of C++ code today hidden in
+this &lt;a href=&#34;http://madebyevan.com/obscure-cpp-features/?viksra&#34; target=&#34;_blank&#34;&gt;list of obscure C++
+features&lt;/a&gt;.
+It includes an implementation of some of the &lt;code&gt;print&lt;/code&gt; syntax
+functionality of python 2 implemented in C++.
+Here&amp;rsquo;s the code (copied here, but I&amp;rsquo;m not the original author):&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;#include &amp;lt;iostream&amp;gt;
+
+namespace __hidden__ {
+  struct print {
+    bool space;
+    print() : space(false) {}
+    ~print() { std::cout &amp;lt;&amp;lt; std::endl; }
+
+    template &amp;lt;typename T&amp;gt;
+    print &amp;amp;operator , (const T &amp;amp;t) {
+      if (space) std::cout &amp;lt;&amp;lt; &#39; &#39;;
+      else space = true;
+      std::cout &amp;lt;&amp;lt; t;
+      return *this;
+    }
+  };
+}
+
+#define print __hidden__::print(),
+
+int main() {
+  int a = 1, b = 2;
+  print &amp;quot;this is a test&amp;quot;;
+  print &amp;quot;the sum of&amp;quot;, a, &amp;quot;and&amp;quot;, b, &amp;quot;is&amp;quot;, a + b;
+  return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;While this implementation is interesting, it is missing what I think
+is the best feature of python &lt;code&gt;print&lt;/code&gt; and that is the ability to use
+&lt;code&gt;%&lt;/code&gt; to do C &lt;code&gt;printf&lt;/code&gt; style printing.
+If I end up with a bundle of extra time, I might actually try adding
+that functionality, though it&amp;rsquo;s not immediately apparent to me how to
+overload an operator to take an arbitrarily sized list as input&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NVIDIA GameWorks</title>
+      <link>http://josef.spjut.me/graphics/2013/10/18/nvidia-gameworks/</link>
+      <pubDate>Fri, 18 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/graphics/2013/10/18/nvidia-gameworks/</guid>
+      <description>&lt;p&gt;Today, &lt;a href=&#34;http://gearnuke.com/nvidia-announces-gameworks-program-montreal-2013-supports-steamos/&#34; target=&#34;_blank&#34;&gt;NVIDIA announced&lt;/a&gt;
+a new program to help game developers
+effectively use NVIDIA hardware called GameWorks.
+The thing that excites me the most about GameWorks is the inclusion of
+&lt;a href=&#34;http://www.nvidia.com/object/optix.html&#34; target=&#34;_blank&#34;&gt;Optix&lt;/a&gt; in a program that
+directly targets game developers.
+Optix is a ray tracing environment developed by people I know from my
+studies at Utah that has previously been used to help develop
+rendering engines for design and production environments.
+This recent announcement means that the important global illumination
+features that work more naturally in ray tracing will be more readily
+available for game developers.
+I expect it will still be a couple of years before any top games are
+released using ray tracing in the real time rendering engine, but this
+represents a clear step in the right direction.&lt;/p&gt;
+
+&lt;p&gt;Also today, &lt;a href=&#34;http://blogs.nvidia.com/blog/2013/10/17/twimtbp/&#34; target=&#34;_blank&#34;&gt;NVIDIA announced game bundles&lt;/a&gt;
+and $50-$100 discounts to the SHIELD handheld game system for people
+who also purchase a Geforce GTX graphics card.
+Finally, a new technology called
+&lt;a href=&#34;http://blogs.nvidia.com/blog/2013/10/18/g-sync/&#34; target=&#34;_blank&#34;&gt;G-SYNC&lt;/a&gt; was
+announced that allows the GPU to refresh the monitor at a variable
+refresh rate, more closely tying the visuals coming from your display
+to the underlying game engine.
+Oh, and one more interesting note, NVIDIA also expressed direct
+interest in supporting SteamOS when it launches, indicating that Linux
+graphics drivers should continue to be a priority for the company.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Musical Projects</title>
+      <link>http://josef.spjut.me/teaching/2013/10/15/musical-projects/</link>
+      <pubDate>Tue, 15 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/teaching/2013/10/15/musical-projects/</guid>
+      <description>&lt;p&gt;Today I had the fortunate presence of mind to record videos for a
+couple of my students&amp;rsquo; lab projects that I found particularly
+interesting.
+In this post I&amp;rsquo;ll go ahead and embed these videos for anyone
+interested in watching them.
+To explain briefly, the assignment was to use assembly programming for
+the PIC 32 microcontroller to have a speaker produce a song.
+Optionally, students were allowed to play a song of their choosing
+after putting that song in the program memory.
+The following are two of these custom songs chosen by the students.&lt;/p&gt;
+
+&lt;p&gt;First up is the video inspiring the tagline, &amp;ldquo;A Whole New World&amp;rdquo; which
+is impressive because these two students created a duet from their
+projects.&lt;/p&gt;
+
+&lt;iframe width=&#34;420&#34; height=&#34;315&#34;
+src=&#34;//www.youtube.com/embed/YtRUuayHCLg&#34; frameborder=&#34;0&#34;
+allowfullscreen=&#34;1&#34;&gt; &lt;/iframe&gt;
+
+&lt;p&gt;Finally another student recreated a famous internet song.&lt;/p&gt;
+
+&lt;iframe width=&#34;420&#34; height=&#34;315&#34;
+src=&#34;//www.youtube.com/embed/XZ6qLQ16RqQ&#34; frameborder=&#34;0&#34;
+allowfullscreen=&#34;1&#34;&gt; &lt;/iframe&gt;
+
+&lt;p&gt;One last personal note: 10 years ago today I flew home from spending 2
+years in Spain.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Responsive Videos in Jekyll</title>
+      <link>http://josef.spjut.me/website/2013/10/15/responsive-videos-in-jekyll/</link>
+      <pubDate>Tue, 15 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/website/2013/10/15/responsive-videos-in-jekyll/</guid>
+      <description>&lt;p&gt;For my &lt;a href=&#34;http://josef.spjut.me/post/prehugo/2013-10-15-musical-projects&#34;&gt;other blog post&lt;/a&gt;
+today, I decided I wanted to embed the youtube videos I recorded
+earlier.
+Since the rest of my website is fully responsive now, I thought it
+would be best to find a way to allow embedded videos to also be
+responsive to the browser window.
+This is one of the main reasons I started using
+&lt;a href=&#34;http://getbootstrap.com/&#34; target=&#34;_blank&#34;&gt;bootstrap&lt;/a&gt; in the first place, and
+&lt;a href=&#34;http://jekyllbootstrap.com/&#34; target=&#34;_blank&#34;&gt;jekyllbootstrap&lt;/a&gt; for my website.
+Luckily I came across the &lt;a href=&#34;http://toddmotto.com/fluid-and-responsive-youtube-and-vimeo-videos-with-fluidvids-js/&#34; target=&#34;_blank&#34;&gt;excellent
+post&lt;/a&gt;
+Todd Motto made posting his &lt;code&gt;fluidvids.js&lt;/code&gt; implementation.
+I added it to my site, and immediately the youtube videos I had
+embedded began to scale responsively as I expect.
+I encourage you to go to his site if you want to download the code.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Research on Josef Spjut</title>
+    <link>http://josef.spjut.me/research/</link>
+    <description>Recent content in Research on Josef Spjut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Josef Spjut</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/research/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Research</title>
+      <link>http://josef.spjut.me/research/research/</link>
+      <pubDate>Wed, 26 Jul 2017 00:00:00 -0400</pubDate>
+      
+      <guid>http://josef.spjut.me/research/research/</guid>
+      <description>&lt;style&gt;
+a.author{
+	color: grey;
+}
+a.primary{
+	font-weight: bold;
+}
+&lt;/style&gt;
+
+&lt;p&gt;
+My Research interests include Ray Tracing, Computer Graphics, Computer
+Architecture, Computer Displays, Virtual Reality, Augmented Reality,
+Parallel Computing, Real Time Systems, Application
+Specific Processing, and Human Computer Interaction.
+&lt;/p&gt;
+
+&lt;h2&gt;Refereed Publications&lt;/h2&gt;
+&lt;ol&gt;&lt;li&gt;&lt;a href=&#34;https://research.nvidia.com/users/trey-greer&#34; class=&#34;author&#34;&gt;Trey Greer&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://luebke.us/&#34; class=&#34;author&#34;&gt;David Luebke&lt;/a&gt;, &lt;a href=&#34;https://research.nvidia.com/users/turner-whitted&#34; class=&#34;author&#34;&gt;Turner Whitted&lt;/a&gt;;
+&lt;strong&gt;Hybrid Modulation for Near Zero Display Latency&lt;/strong&gt;,
+&lt;em&gt;Society of Information Display&lt;/em&gt;,
+May 24-27, 2016.
+&lt;a href=&#34;http://josef.spjut.me/pubs/greer16.pdf&#34;&gt;paper&lt;/a&gt;
+&lt;a href=&#34;http://onlinelibrary.wiley.com/doi/10.1002/sdtp.10614/full&#34;&gt;alternate&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibc10&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibc10&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{greerspjut16,
+ author = { Trey Greer and Josef Spjut and David Luebke and Turner Whitted },
+ title = { {Hybrid Modulation for Near Zero Display Latency} },
+ year = {2016},
+ booktitle = {Society of Information Display}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.cs.utah.edu/~dkopta/&#34; class=&#34;author&#34;&gt;Daniel Kopta&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~kshkurko/&#34; class=&#34;author&#34;&gt;Konstantin Shkurko&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~elb/&#34; class=&#34;author&#34;&gt;Erik Brunvand&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~ald/&#34; class=&#34;author&#34;&gt;Al Davis&lt;/a&gt;;
+&lt;strong&gt;Memory Considerations for Low Energy Ray Tracing&lt;/strong&gt;,
+&lt;em&gt;Computer Graphics Forum&lt;/em&gt;,
+August 7, 2014.
+&lt;a href=&#34;http://onlinelibrary.wiley.com/doi/10.1111/cgf.12458/abstract?systemMessage=Wiley+Online+Library+will+be+disrupted+9th+Aug+from+10-2+BST+for+essential+maintenance.+Pay+Per+View+will+be+unavailable+from+10-6+BST.&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibc9&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibc9&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{koptashkurko14,
+ author = { Daniel Kopta and Konstantin Shkurko and Josef Spjut and Erik Brunvand and Al Davis },
+ title = { {Memory Considerations for Low Energy Ray Tracing} },
+ year = {2014},
+ booktitle = {Computer Graphics Forum}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.cs.utah.edu/~dkopta/&#34; class=&#34;author&#34;&gt;Daniel Kopta&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~kshkurko/&#34; class=&#34;author&#34;&gt;Konstantin Shkurko&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~elb/&#34; class=&#34;author&#34;&gt;Erik Brunvand&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~ald/&#34; class=&#34;author&#34;&gt;Al Davis&lt;/a&gt;;
+&lt;strong&gt;An Energy and Bandwidth Efficient Ray Tracing Architecture&lt;/strong&gt;,
+&lt;em&gt;High-Performance Graphics (HPG 2013)&lt;/em&gt;,
+Anaheim, July 10-21, 2013.
+&lt;a href=&#34;http://www.cs.utah.edu/~dkopta/papers/hwrt_hpg13.pdf&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibc8&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibc8&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{koptashkurko13,
+ author = { Daniel Kopta and Konstantin Shkurko and Josef Spjut and Erik Brunvand and Al Davis },
+ title = { {An Energy and Bandwidth Efficient Ray Tracing Architecture} },
+ year = {2013},
+ booktitle = {High-Performance Graphics (HPG 2013)}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.cs.utah.edu/~dkopta/&#34; class=&#34;author&#34;&gt;Daniel Kopta&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~thiago&#34; class=&#34;author&#34;&gt;Thiago Ize&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~elb/&#34; class=&#34;author&#34;&gt;Erik Brunvand&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~ald/&#34; class=&#34;author&#34;&gt;Al Davis&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~aek&#34; class=&#34;author&#34;&gt;Andrew Kensler&lt;/a&gt;;
+&lt;strong&gt;Fast, Effective BVH Updates for Animated Scenes&lt;/strong&gt;,
+&lt;em&gt;ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games (I3D 2012)&lt;/em&gt;,
+Irvine, March, 2012.
+&lt;a href=&#34;http://www.cs.utah.edu/~thiago/papers/rotations.pdf&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibc7&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibc7&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{koptaize12,
+ author = { Daniel Kopta and Thiago Ize and Josef Spjut and Erik Brunvand and Al Davis and Andrew Kensler },
+ title = { {Fast, Effective BVH Updates for Animated Scenes} },
+ year = {2012},
+ booktitle = {ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games (I3D 2012)}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~dkopta/&#34; class=&#34;author&#34;&gt;Daniel Kopta&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~elb/&#34; class=&#34;author&#34;&gt;Erik Brunvand&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~ald/&#34; class=&#34;author&#34;&gt;Al Davis&lt;/a&gt;;
+&lt;strong&gt;A Mobile Accelerator Architecture for Ray Tracing&lt;/strong&gt;,
+&lt;em&gt;3rd Workshop on SoCs, Heterogeneous Architectures and Workloads (SHAW-3)&lt;/em&gt;,
+New Orleans, February, 2012.
+&lt;a href=&#34;http://www.cs.utah.edu/~sjosef/papers/spjut-shaw12-final.pdf&#34;&gt;paper&lt;/a&gt;
+&lt;a href=&#34;http://www.cs.utah.edu/~sjosef/slides/spjut-shaw12-slides.pdf&#34;&gt;slides&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibc6&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibc6&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{spjutkopta12,
+ author = { Josef Spjut and Daniel Kopta and Erik Brunvand and Al Davis },
+ title = { {A Mobile Accelerator Architecture for Ray Tracing} },
+ year = {2012},
+ booktitle = {3rd Workshop on SoCs, Heterogeneous Architectures and Workloads (SHAW-3)}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.cs.utah.edu/~dkopta/&#34; class=&#34;author&#34;&gt;Daniel Kopta&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~ald/&#34; class=&#34;author&#34;&gt;Al Davis&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~elb/&#34; class=&#34;author&#34;&gt;Erik Brunvand&lt;/a&gt;;
+&lt;strong&gt;Efficient MIMD Architectures for High-Performance Ray Tracing&lt;/strong&gt;,
+&lt;em&gt;IEEE International Conference on Computer Design (ICCD 2010)&lt;/em&gt;,
+Amsterdam, October, 2010.
+&lt;a href=&#34;http://www.cs.utah.edu/~dkopta/papers/hwrt_iccd10.pdf&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibc5&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibc5&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{koptaspjut10,
+ author = { Daniel Kopta and Josef Spjut and Al Davis and Erik Brunvand },
+ title = { {Efficient MIMD Architectures for High-Performance Ray Tracing} },
+ year = {2010},
+ booktitle = {IEEE International Conference on Computer Design (ICCD 2010)}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.cs.utah.edu/~pugsley&#34; class=&#34;author&#34;&gt;Seth Pugsley&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://david.nellans.org&#34; class=&#34;author&#34;&gt;David Nellans&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~rajeev&#34; class=&#34;author&#34;&gt;Rajeev Balasubramonian&lt;/a&gt;;
+&lt;strong&gt;SWEL: Hardware Cache Coherence Protocols to Map Shared Data onto Shared Caches&lt;/strong&gt;,
+&lt;em&gt;19th International Conference on Parallel Architectures and Compilation Techniques (PACT-19)&lt;/em&gt;,
+Vienna, September, 2010. &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibc4&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibc4&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{pugsleyspjut10,
+ author = { Seth Pugsley and Josef Spjut and David Nellans and Rajeev Balasubramonian },
+ title = { {SWEL: Hardware Cache Coherence Protocols to Map Shared Data onto Shared Caches} },
+ year = {2010},
+ booktitle = {19th International Conference on Parallel Architectures and Compilation Techniques (PACT-19)}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~aek&#34; class=&#34;author&#34;&gt;Andrew Kensler&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~dkopta/&#34; class=&#34;author&#34;&gt;Daniel Kopta&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~elb/&#34; class=&#34;author&#34;&gt;Erik Brunvand&lt;/a&gt;;
+&lt;strong&gt;TRaX: A Multicore Architecture for Real-Time Ray Tracing&lt;/strong&gt;,
+&lt;em&gt;IEEE Transactions on Computer Aided Design of Integrated Circuits and Systems (TCAD)&lt;/em&gt;,
+December, 2009.
+&lt;a href=&#34;http://www.cs.utah.edu/~dkopta/papers/hwrt_tcad09.pdf&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibc3&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibc3&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{spjutkensler09,
+ author = { Josef Spjut and Andrew Kensler and Daniel Kopta and Erik Brunvand },
+ title = { {TRaX: A Multicore Architecture for Real-Time Ray Tracing} },
+ year = {2009},
+ booktitle = {IEEE Transactions on Computer Aided Design of Integrated Circuits and Systems (TCAD)}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~aek&#34; class=&#34;author&#34;&gt;Andrew Kensler&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~elb/&#34; class=&#34;author&#34;&gt;Erik Brunvand&lt;/a&gt;;
+&lt;strong&gt;Hardware-accelerated gradient noise for graphics&lt;/strong&gt;,
+&lt;em&gt;Proceedings of the 19th ACM Great Lakes Symposium on VLSI (GLSVLSI&#39;09)&lt;/em&gt;,
+Boston, May 10-12, 2009. &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibc2&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibc2&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{spjutkensler09a,
+ author = { Josef Spjut and Andrew Kensler and Erik Brunvand },
+ title = { {Hardware-accelerated gradient noise for graphics} },
+ year = {2009},
+ booktitle = {Proceedings of the 19th ACM Great Lakes Symposium on VLSI (GLSVLSI&#39;09)}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.cs.utah.edu/~nil&#34; class=&#34;author&#34;&gt;Niladrish Chatterjee&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~pugsley&#34; class=&#34;author&#34;&gt;Seth Pugsley&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~rajeev&#34; class=&#34;author&#34;&gt;Rajeev Balasubramonian&lt;/a&gt;;
+&lt;strong&gt;Optimizing a Multi-Core Processor for Message-Passing Workloads&lt;/strong&gt;,
+&lt;em&gt;5th Workshop on Unique Chips and Systems (UCAS-5)&lt;/em&gt;,
+Boston, April, 2009. &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibc1&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibc1&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{chatterjeepugsley09,
+ author = { Niladrish Chatterjee and Seth Pugsley and Josef Spjut and Rajeev Balasubramonian },
+ title = { {Optimizing a Multi-Core Processor for Message-Passing Workloads} },
+ year = {2009},
+ booktitle = {5th Workshop on Unique Chips and Systems (UCAS-5)}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://graphics.stanford.edu/~boulos/research.htm&#34; class=&#34;author&#34;&gt;Solomon Boulos&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~dkopta/&#34; class=&#34;author&#34;&gt;Daniel Kopta&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~elb/&#34; class=&#34;author&#34;&gt;Erik Brunvand&lt;/a&gt;, &lt;a href=&#34;http://vis.caltech.edu/~skellis&#34; class=&#34;author&#34;&gt;Spencer Kellis&lt;/a&gt;;
+&lt;strong&gt;TRaX: A Multi-Threaded Architecture for Real-Time Ray Tracing&lt;/strong&gt;,
+&lt;em&gt;Symposium on Application Specific Processors (SASP)&lt;/em&gt;,
+Anaheim, June 8-9, 2008.&lt;strong&gt;(Best paper award)&lt;/strong&gt;
+&lt;a href=&#34;http://www.cs.utah.edu/~dkopta/papers/hwrt_sasp08.pdf&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibc0&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibc0&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{spjutboulos08,
+ author = { Josef Spjut and Solomon Boulos and Daniel Kopta and Erik Brunvand and Spencer Kellis },
+ title = { {TRaX: A Multi-Threaded Architecture for Real-Time Ray Tracing} },
+ year = {2008},
+ booktitle = {Symposium on Application Specific Processors (SASP)}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;Technical Demos&lt;/h2&gt;
+&lt;ol&gt;&lt;li&gt;&lt;a href=&#34;https://kaanaksit.com/&#34; class=&#34;author&#34;&gt;Kaan Aksit&lt;/a&gt;, &lt;a href=&#34;https://research.nvidia.com/users/ward-lopes&#34; class=&#34;author&#34;&gt;Ward Lopes&lt;/a&gt;, &lt;a href=&#34;None&#34; class=&#34;author&#34;&gt;Jonghyun Kim&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://idav.ucdavis.edu/~anjul/&#34; class=&#34;author&#34;&gt;Anjul Patney&lt;/a&gt;, &lt;a href=&#34;https://www.cs.utah.edu/~shirley/&#34; class=&#34;author&#34;&gt;Peter Shirley&lt;/a&gt;, &lt;a href=&#34;http://luebke.us/&#34; class=&#34;author&#34;&gt;David Luebke&lt;/a&gt;, &lt;a href=&#34;http://steven.cholewiak.com/&#34; class=&#34;author&#34;&gt;Steven A. Cholewiak&lt;/a&gt;, &lt;a href=&#34;https://people.eecs.berkeley.edu/~pratul/&#34; class=&#34;author&#34;&gt;Pratul Srinivasan&lt;/a&gt;, &lt;a href=&#34;https://www2.eecs.berkeley.edu/Faculty/Homepages/yirenng.html/&#34; class=&#34;author&#34;&gt;Ren Ng&lt;/a&gt;, &lt;a href=&#34;http://bankslab.berkeley.edu/&#34; class=&#34;author&#34;&gt;Martin S. Banks&lt;/a&gt;, &lt;a href=&#34;https://www.dur.ac.uk/physics/staff/profiles/?id=246&#34; class=&#34;author&#34;&gt;Gordon D. Love&lt;/a&gt;;
+&lt;strong&gt;Varifocal Virtuality: A Novel Optical Layout for Near-Eye Display&lt;/strong&gt;,
+&lt;em&gt;SIGGRAPH Emerging Technologies&lt;/em&gt;,
+Los Angeles, July 30 - August 3, 2017.
+&lt;a href=&#34;http://research.nvidia.com/sites/default/files/publications/final%281%29.pdf&#34;&gt;paper&lt;/a&gt;
+&lt;a href=&#34;http://research.nvidia.com/publication/2017-07_Varifocal-Virtuality%3A-A&#34;&gt;alternate&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibtd2&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibtd2&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{aksitlopes17,
+ author = { Kaan Aksit and Ward Lopes and Jonghyun Kim and Josef Spjut and Anjul Patney and Peter Shirley and David Luebke and Steven A. Cholewiak and Pratul Srinivasan and Ren Ng and Martin S. Banks and Gordon D. Love },
+ title = { {Varifocal Virtuality: A Novel Optical Layout for Near-Eye Display} },
+ year = {2017},
+ booktitle = {SIGGRAPH Emerging Technologies}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://orl.mae.cornell.edu/#people&#34; class=&#34;author&#34;&gt;Robert Shepherd&lt;/a&gt;, &lt;a href=&#34;http://www.gnarlydesign.io/&#34; class=&#34;author&#34;&gt;Bryan Peele&lt;/a&gt;, &lt;a href=&#34;https://orl.mae.cornell.edu/#people&#34; class=&#34;author&#34;&gt;Benjamin Mac Murray&lt;/a&gt;, &lt;a href=&#34;None&#34; class=&#34;author&#34;&gt;Jose Barreiros&lt;/a&gt;, &lt;a href=&#34;http://omershapira.com/#all&#34; class=&#34;author&#34;&gt;Omer Shapira&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://luebke.us/&#34; class=&#34;author&#34;&gt;David Luebke&lt;/a&gt;;
+&lt;strong&gt;Stretchable Transducers for Kinesthetic Interactions in Virtual Reality&lt;/strong&gt;,
+&lt;em&gt;SIGGRAPH Emerging Technologies&lt;/em&gt;,
+Los Angeles, July 30 - August 3, 2017.
+&lt;a href=&#34;http://research.nvidia.com/sites/default/files/publications/peele_siggraph_etech17.pdf&#34;&gt;paper&lt;/a&gt;
+&lt;a href=&#34;http://research.nvidia.com/publication/2017-06_Stretchable-Transducers-for&#34;&gt;alternate&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibtd1&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibtd1&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{shepherdpeele17,
+ author = { Robert Shepherd and Bryan Peele and Benjamin Mac Murray and Jose Barreiros and Omer Shapira and Josef Spjut and David Luebke },
+ title = { {Stretchable Transducers for Kinesthetic Interactions in Virtual Reality} },
+ year = {2017},
+ booktitle = {SIGGRAPH Emerging Technologies}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.gnarlydesign.io/&#34; class=&#34;author&#34;&gt;Bryan Peele&lt;/a&gt;, &lt;a href=&#34;https://orl.mae.cornell.edu/#people&#34; class=&#34;author&#34;&gt;Benjamin Mac Murray&lt;/a&gt;, &lt;a href=&#34;None&#34; class=&#34;author&#34;&gt;Jose Barreiros&lt;/a&gt;, &lt;a href=&#34;https://orl.mae.cornell.edu/#people&#34; class=&#34;author&#34;&gt;Robert Shepherd&lt;/a&gt;, &lt;a href=&#34;http://omershapira.com/#all&#34; class=&#34;author&#34;&gt;Omer Shapira&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://luebke.us/&#34; class=&#34;author&#34;&gt;David Luebke&lt;/a&gt;;
+&lt;strong&gt;Stretchable Transducers for Haptic Interactions in Virtual and Augmented Reality&lt;/strong&gt;,
+&lt;em&gt;GTC VR Village&lt;/em&gt;,
+San Jose, May 9 - 11, 2017. &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibtd0&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibtd0&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{peelemurray17,
+ author = { Bryan Peele and Benjamin Mac Murray and Jose Barreiros and Robert Shepherd and Omer Shapira and Josef Spjut and David Luebke },
+ title = { {Stretchable Transducers for Haptic Interactions in Virtual and Augmented Reality} },
+ year = {2017},
+ booktitle = {GTC VR Village}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;Conference Talks and Courses&lt;/h2&gt;
+&lt;ol&gt;&lt;li&gt;&lt;a href=&#34;http://www.gnarlydesign.io/&#34; class=&#34;author&#34;&gt;Bryan Peele&lt;/a&gt;, &lt;a href=&#34;https://orl.mae.cornell.edu/#people&#34; class=&#34;author&#34;&gt;Benjamin Mac Murray&lt;/a&gt;, &lt;a href=&#34;https://orl.mae.cornell.edu/#people&#34; class=&#34;author&#34;&gt;Robert Shepherd&lt;/a&gt;, &lt;a href=&#34;None&#34; class=&#34;author&#34;&gt;Jose Barreiros&lt;/a&gt;, &lt;a href=&#34;http://omershapira.com/#all&#34; class=&#34;author&#34;&gt;Omer Shapira&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://luebke.us/&#34; class=&#34;author&#34;&gt;David Luebke&lt;/a&gt;;
+&lt;strong&gt;Stretchable Transducers for Kinesthetic Interactions in Virtual Reality&lt;/strong&gt;,
+&lt;em&gt;SIGGRAPH Experience Presentations&lt;/em&gt;,
+Los Angeles, August 3, 2017.
+&lt;a href=&#34;http://research.nvidia.com/sites/default/files/publications/peele_siggraph_etech17.pdf&#34;&gt;paper&lt;/a&gt;
+&lt;a href=&#34;http://research.nvidia.com/publication/2017-06_Stretchable-Transducers-for&#34;&gt;alternate&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibct1&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibct1&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{peelemurray17a,
+ author = { Bryan Peele and Benjamin Mac Murray and Robert Shepherd and Jose Barreiros and Omer Shapira and Josef Spjut and David Luebke },
+ title = { {Stretchable Transducers for Kinesthetic Interactions in Virtual Reality} },
+ year = {2017},
+ booktitle = {SIGGRAPH Experience Presentations}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;None&#34; class=&#34;author&#34;&gt;Richard Piersall&lt;/a&gt;, &lt;a href=&#34;None&#34; class=&#34;author&#34;&gt;Kirklann Lau&lt;/a&gt;;
+&lt;strong&gt;Build your own game controller&lt;/strong&gt;,
+&lt;em&gt;SIGGRAPH Studio&lt;/em&gt;,
+Los Angeles, August 10, 2015.&lt;strong&gt;(Studio Course)&lt;/strong&gt;
+&lt;a href=&#34;http://josef.spjut.me/class/controllerCourseNotes.pdf&#34;&gt;slides&lt;/a&gt;
+&lt;a href=&#34;http://josef.spjut.me/class/game-controller&#34;&gt;webpage&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibct0&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibct0&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{spjutpiersall15,
+ author = { Josef Spjut and Richard Piersall and Kirklann Lau },
+ title = { {Build your own game controller} },
+ year = {2015},
+ booktitle = {SIGGRAPH Studio}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;Dissertation&lt;/h2&gt;
+&lt;ol&gt;&lt;li&gt;&lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;;
+&lt;strong&gt;Efficient Ray Tracing Architectures&lt;/strong&gt;,
+&lt;em&gt;University of Utah Dissertation&lt;/em&gt;,
+2015.
+&lt;a href=&#34;http://josef.spjut.me/pubs/thesis.pdf&#34;&gt;paper&lt;/a&gt;
+&lt;a href=&#34;http://gradworks.umi.com/3727095.pdf&#34;&gt;alternate&lt;/a&gt;
+&lt;a href=&#34;http://content.lib.utah.edu/cdm/ref/collection/etd3/id/3732&#34;&gt;alternate 2&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibd0&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibd0&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{spjut15,
+ author = { Josef Spjut },
+ title = { {Efficient Ray Tracing Architectures} },
+ year = {2015},
+ booktitle = {University of Utah Dissertation}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;Technical Reports&lt;/h2&gt;
+&lt;ol&gt;&lt;li&gt;&lt;a href=&#34;None&#34; class=&#34;author&#34;&gt;Jean Sung&lt;/a&gt;, &lt;a href=&#34;None&#34; class=&#34;author&#34;&gt;Sebastian Krupa&lt;/a&gt;, &lt;a href=&#34;None&#34; class=&#34;author&#34;&gt;Andrew Fishberg&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;;
+&lt;strong&gt;An Approach to Data Prefetching Using 2-Dimensional Selection Criteria&lt;/strong&gt;,
+&lt;em&gt;Tech Report, arXiv:1505.03899&lt;/em&gt;,
+May, 2015.
+&lt;a href=&#34;http://arxiv.org/abs/1505.03899&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibtr6&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibtr6&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{sungkrupa15,
+ author = { Jean Sung and Sebastian Krupa and Andrew Fishberg and Josef Spjut },
+ title = { {An Approach to Data Prefetching Using 2-Dimensional Selection Criteria} },
+ year = {2015},
+ booktitle = {Tech Report, arXiv:1505.03899}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://web.eecs.umich.edu/~dohypark/&#34; class=&#34;author&#34;&gt;Dong-hyeon Park&lt;/a&gt;, &lt;a href=&#34;None&#34; class=&#34;author&#34;&gt;Akhil Bagaria&lt;/a&gt;, &lt;a href=&#34;None&#34; class=&#34;author&#34;&gt;Fabiha Hannan&lt;/a&gt;, &lt;a href=&#34;None&#34; class=&#34;author&#34;&gt;Eric Storm&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;;
+&lt;strong&gt;Sphynx: A Shared Instruction Cache Exporatory Study&lt;/strong&gt;,
+&lt;em&gt;Tech Report, arXiv:1412.1140&lt;/em&gt;,
+December 3, 2014.
+&lt;a href=&#34;http://arxiv.org/abs/1412.1140&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibtr5&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibtr5&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{parkbagaria14,
+ author = { Dong-hyeon Park and Akhil Bagaria and Fabiha Hannan and Eric Storm and Josef Spjut },
+ title = { {Sphynx: A Shared Instruction Cache Exporatory Study} },
+ year = {2014},
+ booktitle = {Tech Report, arXiv:1412.1140}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;None&#34; class=&#34;author&#34;&gt;Eric Storm&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;;
+&lt;strong&gt;A Time-to-Recache Case Study&lt;/strong&gt;,
+&lt;em&gt;Tech Report&lt;/em&gt;,
+March, 2014.
+&lt;a href=&#34;http://josef.spjut.me/pubs/stormttr14.pdf&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibtr4&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibtr4&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{stormspjut14,
+ author = { Eric Storm and Josef Spjut },
+ title = { {A Time-to-Recache Case Study} },
+ year = {2014},
+ booktitle = {Tech Report}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;None&#34; class=&#34;author&#34;&gt;Andrew Carter&lt;/a&gt;, &lt;a href=&#34;None&#34; class=&#34;author&#34;&gt;Max Korbel&lt;/a&gt;, &lt;a href=&#34;None&#34; class=&#34;author&#34;&gt;Paula Ning&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;;
+&lt;strong&gt;Qualitative Cache Performance Analysis&lt;/strong&gt;,
+&lt;em&gt;Tech Report&lt;/em&gt;,
+September, 2013.
+&lt;a href=&#34;http://josef.spjut.me/pubs/carterttr13.pdf&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibtr3&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibtr3&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{carterkorbel13,
+ author = { Andrew Carter and Max Korbel and Paula Ning and Josef Spjut },
+ title = { {Qualitative Cache Performance Analysis} },
+ year = {2013},
+ booktitle = {Tech Report}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~pugsley&#34; class=&#34;author&#34;&gt;Seth Pugsley&lt;/a&gt;;
+&lt;strong&gt;Time to Recache: Measuring Memory Miss Behavior&lt;/strong&gt;,
+&lt;em&gt;Tech Report&lt;/em&gt;,
+September, 2011.
+&lt;a href=&#34;http://josef.spjut.me/pubs/ttr11.pdf&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibtr2&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibtr2&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{spjutpugsley11,
+ author = { Josef Spjut and Seth Pugsley },
+ title = { {Time to Recache: Measuring Memory Miss Behavior} },
+ year = {2011},
+ booktitle = {Tech Report}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.cs.utah.edu/~dkopta/&#34; class=&#34;author&#34;&gt;Daniel Kopta&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~aek&#34; class=&#34;author&#34;&gt;Andrew Kensler&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~thiago&#34; class=&#34;author&#34;&gt;Thiago Ize&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~elb/&#34; class=&#34;author&#34;&gt;Erik Brunvand&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~ald/&#34; class=&#34;author&#34;&gt;Al Davis&lt;/a&gt;;
+&lt;strong&gt;Fast, Effective BVH Updates for Dynamic Ray-Traced Scenes Using Tree Rotations&lt;/strong&gt;,
+&lt;em&gt;Tech Report, UUCS 11-002, University of Utah&lt;/em&gt;,
+July, 2011.
+&lt;a href=&#34;http://www.cs.utah.edu/research/techreports/2011/pdf/UUCS-11-002.pdf&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibtr1&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibtr1&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{koptakensler11,
+ author = { Daniel Kopta and Andrew Kensler and Thiago Ize and Josef Spjut and Erik Brunvand and Al Davis },
+ title = { {Fast, Effective BVH Updates for Dynamic Ray-Traced Scenes Using Tree Rotations} },
+ year = {2011},
+ booktitle = {Tech Report, UUCS 11-002, University of Utah}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;Refereed Posters&lt;/h2&gt;
+&lt;ol&gt;&lt;li&gt;&lt;a href=&#34;http://www.cs.utah.edu/~dkopta/&#34; class=&#34;author&#34;&gt;Daniel Kopta&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~elb/&#34; class=&#34;author&#34;&gt;Erik Brunvand&lt;/a&gt;;
+&lt;strong&gt;Grid-Based Ray Tracing for a Parallel Computing Architecture&lt;/strong&gt;,
+&lt;em&gt;High Performance Graphics (HPG&#39;09)&lt;/em&gt;,
+New Orleans, August 1-3, 2009. &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibp2&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibp2&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{koptaspjut09,
+ author = { Daniel Kopta and Josef Spjut and Erik Brunvand },
+ title = { {Grid-Based Ray Tracing for a Parallel Computing Architecture} },
+ year = {2009},
+ booktitle = {High Performance Graphics (HPG&#39;09)}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.cs.utah.edu/~dkopta/&#34; class=&#34;author&#34;&gt;Daniel Kopta&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~elb/&#34; class=&#34;author&#34;&gt;Erik Brunvand&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~sparker&#34; class=&#34;author&#34;&gt;Steven Parker&lt;/a&gt;;
+&lt;strong&gt;Comparing Incoherent Ray Performance of TRaX vs. Manta&lt;/strong&gt;,
+&lt;em&gt;IEEE Symposium on Interactive Ray Tracing (RT08)&lt;/em&gt;,
+August 9-10, 2008. &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibp1&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibp1&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{koptaspjut08,
+ author = { Daniel Kopta and Josef Spjut and Erik Brunvand and Steven Parker },
+ title = { {Comparing Incoherent Ray Performance of TRaX vs. Manta} },
+ year = {2008},
+ booktitle = {IEEE Symposium on Interactive Ray Tracing (RT08)}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;HMC Clinic Projects&lt;/h2&gt;
+
+&lt;p&gt;At Harvey Mudd College I advised a few &lt;a href=&#34;https://www.hmc.edu/clinic/&#34;&gt;clinic
+projects&lt;/a&gt; with junior and
+senior level students paid for by companies. 
+The following is a list of those projects and the people involved. 
+Those before my name are students, after are liaisons from the
+company.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fabiha Hannan, Cyrus Huang, Sebastian Krupa, Guillaume Legrain, 
+Minh Triet Nguyen, Maggie Rabasca, Zachary Vickland, Tiancheng Yang, 
+&lt;strong&gt;Josef Spjut&lt;/strong&gt;, Philip Cheung, John McNeil, Jef Vivian.
+&lt;strong&gt;Design and Implementation of a Memory Testing Apparatus&lt;/strong&gt;, 
+&lt;em&gt;Clinic Report for Dart Neuroscience&lt;/em&gt;, Harvey Mudd College, 116 pages, May 2015.&lt;/li&gt;
+
+&lt;li&gt;Olivier Cheng, Stephen Ibanez, Amy Ngai, Joshua Sanz, Avi Thaker,
+&lt;strong&gt;Josef Spjut&lt;/strong&gt;, Alon Regev;
+&lt;strong&gt;Computer Network Testing&lt;/strong&gt;,
+&lt;em&gt;Clinic Report for Ixia&lt;/em&gt;, Harvey Mudd College, 48 pages, May 2015.&lt;/li&gt;
+
+&lt;li&gt;Antoine Billig, Chanel Chang, Austin Chen, Obosa Obazuaye, Jeffrey
+Steele, Sean Velazquez, &lt;strong&gt;Josef Spjut&lt;/strong&gt;, Pradeep Batra, Adrian
+Torres, Julia Cline;
+&lt;strong&gt;USB 3.0 to Multi-Protocol Interface Adapter&lt;/strong&gt;,
+&lt;em&gt;Clinic Report for Rambus Incorporate&lt;/em&gt;, Harvey Mudd College, 183
+pages, May 2014.&lt;/li&gt;
+
+&lt;li&gt;Dylan Stow, Carl Pearson, Jeffrey Steele,
+Shreyasha Paudel, Adam Parower, Gurchetan Singh, Dong-hyeon Park,
+&lt;strong&gt;Josef Spjut&lt;/strong&gt;, Warren Furguson;
+&lt;strong&gt;Multiplicative Based Division&lt;/strong&gt;,
+&lt;em&gt;Clinic Report for Intel Corp&lt;/em&gt;, Harvey Mudd College, 117 pages, May
+2013.&lt;/li&gt;
+
+&lt;li&gt;Allison Card, Kacyn Fujii, Hannah
+Kastein, Paula Ning, Matthew Tambara, Stephanie Fawaz, &lt;strong&gt;Josef Spjut&lt;/strong&gt;,
+Sourabh Ravindran, Nitish Murthy,
+&lt;strong&gt;Immersive Audio Game Development Kit&lt;/strong&gt;
+&lt;em&gt;Clinic Report for Texas Instruments&lt;/em&gt;, Harvey Mudd College, 110 pages,
+May 2013.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;People&lt;/h2&gt;
+
+&lt;p&gt;I&amp;#39;ve been fortunate to work with a large number of talented
+people. The ones I&amp;#39;ve worked with on research are listed below. Email
+me if you think you should be on this list and you aren&amp;#39;t.&lt;/p&gt;
+
+
+&lt;h3&gt;Past Research Students&lt;/h3&gt;
+
+&lt;p&gt;Eric Storm &amp;#39;15, Ivan Wong &amp;#39;15, 
+Skyler Williams &amp;#39;16, Ramy Elminyawi &amp;#39;16, 
+ Amy Ngai &amp;#39;16, Richard Piersall &amp;#39;16, Kirklann Lau &amp;#39;16, 
+ Andrew Fishberg &amp;#39;16, Da Eun Shim &amp;#39;16,
+Fabiha Hannan &amp;#39;16, Paul Jolly &amp;#39;16,
+Dong-hyeon Park &amp;#39;14, Sami Mourad &amp;#39;14, Akhil Bagaria &amp;#39;16,
+Andrew Carter &amp;#39;13, Paula Ning &amp;#39;13, Max Korbel &amp;#39;13, Katherine Yang &amp;#39;15&lt;/p&gt;
+
+&lt;h3&gt;Current and Recent (within 3 years) Collaborators&lt;/h3&gt;
+
+&lt;p&gt;Trey Greer, Turner Whitted, David Luebke,
+Timo Aila, Tero Karras, Samuli Laine, 
+ Erik Brunvand, Konstantin Shkurko, Daniel Kopta, Al Davis, 
+Seth Pugsley,
+&lt;/p&gt;
+
+&lt;h3&gt;Past Collaborators&lt;/h3&gt;
+
+&lt;p&gt;Mike Parker, 
+Thiago Ize, Andrew Kensler, 
+Rajeev Balasubramonian
+David Nellans,
+Niladrish Chatterjee, Pete Shirley, Steve Parker,
+Solomon Boulos, Spencer Kellis, 
+Frank Vahid, David Sheldon, Scott Sirowy, Roman Lysecky&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

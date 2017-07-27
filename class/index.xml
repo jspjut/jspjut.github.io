@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Classes on Josef Spjut</title>
+    <link>http://josef.spjut.me/class/</link>
+    <description>Recent content in Classes on Josef Spjut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Josef Spjut</copyright>
+    <lastBuildDate>Mon, 03 Aug 2015 00:00:00 -0400</lastBuildDate>
+    <atom:link href="/class/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Build your own Game Controller</title>
+      <link>http://josef.spjut.me/class/game-controller/</link>
+      <pubDate>Mon, 03 Aug 2015 00:00:00 -0400</pubDate>
+      
+      <guid>http://josef.spjut.me/class/game-controller/</guid>
+      <description>
+
+&lt;h1 id=&#34;course-examples&#34;&gt;Course Examples&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://josef.spjut.me/class/ex/SimpleButton.txt&#34;&gt;Simple Button&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://josef.spjut.me/class/ex/ButtonKeyboard.txt&#34;&gt;Button Keyboard&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://josef.spjut.me/class/ex/ButtonMouse.txt&#34;&gt;Button Mouse&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://josef.spjut.me/class/ex/SimpleAnalog.txt&#34;&gt;Simple Analog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://josef.spjut.me/class/ex/JoystickMouse.txt&#34;&gt;Joystick Mouse&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://josef.spjut.me/class/ex/BasicController.txt&#34;&gt;Full Controller&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;arduino-micro-pinout&#34;&gt;Arduino Micro Pinout&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.arduino.cc/en/uploads/Main/ArduinoMicro_Pinout3.png&#34; alt=&#34;Arduino Micro Pinout&#34; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://josef.spjut.me/class/controllerCourseNotes.pdf&#34;&gt;Course Notes&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Students in this course will build the own game controller from
+scratch capable of providing input to a variety of PC games. The
+course includes instruction on resistors, switches and using Arduino
+to behave as a USB keyboard and mouse.&lt;/p&gt;
+
+&lt;p&gt;This is based on labs &lt;a href=&#34;http://pages.hmc.edu/jspjut/class/s2015/e190u/lab/lab1.html&#34; target=&#34;_blank&#34;&gt;1&lt;/a&gt; and
+&lt;a href=&#34;http://pages.hmc.edu/jspjut/class/s2015/e190u/lab/lab2.html&#34; target=&#34;_blank&#34;&gt;2&lt;/a&gt;
+from E190U offered in Spring 2015 at &lt;a href=&#34;http://www.hmc.edu&#34; target=&#34;_blank&#34;&gt;Harvey Mudd College&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
+
+&lt;p&gt;This course introduces some concepts of basic resistor circuits and
+how they can be read by a microcontroller using an analog to digital
+converter.
+In particular, we will look at the use of joystick potentiometers as a
+standard sensor element for game controllers as well as tactile
+buttons combined with pull-up or pull-down resistors to provide
+digital inputs.
+Additionally, Arduino software will be developed to treat the
+joysticks, buttons and switches as standard USB keyboard and mouse
+input that can be used for PC games.
+With the rapid increase of maker culture and do-it-yourself projects
+in recent years, this course provides an easy introduction to circuits
+and microcontrollers for the uninitiated and allows more advanced
+students the chance to tune the hardware and software to customize the
+user experience.&lt;/p&gt;
+
+&lt;h1 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h1&gt;
+
+&lt;p&gt;This course is intended for people with little to no experience with
+programming or electronic circuits.
+If you have some C programming experience or understand resistor
+circuits you will more quickly be able to complete the tasks in the
+course.&lt;/p&gt;
+
+&lt;h1 id=&#34;materials&#34;&gt;Materials&lt;/h1&gt;
+
+&lt;p&gt;You will need the following materials to complete the construction of
+your own game controller.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I will add links to where I bought the materials for these kits. If you need them now, please email me.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Arduino Micro (or any arduino capable of USB keyboard+mouse control)&lt;/li&gt;
+&lt;li&gt;A computer with the Arduino software development environment installed&lt;/li&gt;
+&lt;li&gt;Mini breadboards&lt;/li&gt;
+&lt;li&gt;2 Joystick Potentiometers with breakout boards&lt;/li&gt;
+&lt;li&gt;8 Push-buttons&lt;/li&gt;
+&lt;li&gt;Wires&lt;/li&gt;
+&lt;li&gt;Soldering Material (only if you don&amp;rsquo;t have appropriate wires)&lt;/li&gt;
+&lt;li&gt;Something to mount these on (this could be wood, metal, tooled plastic, or even 3d printed!)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;parts-for-approximately-1-controller&#34;&gt;Parts for approximately 1 Controller&lt;/h2&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Part&lt;/th&gt;
+&lt;th&gt;Price&lt;/th&gt;
+&lt;th&gt;Vendor Link&lt;/th&gt;
+&lt;th&gt;Quantity&lt;/th&gt;
+&lt;th&gt;Total Price&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Arduino Micro w/ USB cable&lt;/td&gt;
+&lt;td&gt;$8.00&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://www.banggood.com/Micro-R3-ATmega32u4-Microcontroller-Board-With-USB-Cable-For-Arduino-p-911099.html&#34; target=&#34;_blank&#34;&gt;Banggood&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;$8.00&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;5 piece 170-hole mini breadboards&lt;/td&gt;
+&lt;td&gt;$5.68&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://www.banggood.com/5Pcs-White-170-Holes-Mini-Solderless-Prototype-Breadboard-For-Arduino-p-950716.html&#34; target=&#34;_blank&#34;&gt;Banggood&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;$5.68&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;1 Piece Joystick w/ breakout&lt;/td&gt;
+&lt;td&gt;$1.66&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://www.banggood.com/PS2-Game-Joystick-Module-For-Arduino-p-76465.html&#34; target=&#34;_blank&#34;&gt;Banggood&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;$3.32&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Tactile Switches&lt;/td&gt;
+&lt;td&gt;$0.50&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.sparkfun.com/products/9190&#34; target=&#34;_blank&#34;&gt;Sparkfun&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;td&gt;$5.00&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;40 piece female to male cables&lt;/td&gt;
+&lt;td&gt;$2.10&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://www.banggood.com/40pcs-20cm-Male-to-Female-Jumper-Jump-Cable-Wire-For-Arduino-p-75613.html&#34; target=&#34;_blank&#34;&gt;Banggood&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;$2.10&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;3M Outdoor Mounting Tape&lt;/td&gt;
+&lt;td&gt;$4.00&lt;/td&gt;
+&lt;td&gt;Amazon&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;$4.00&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Total&lt;/td&gt;
+&lt;td&gt;&amp;mdash;-&lt;/td&gt;
+&lt;td&gt;&amp;mdash;-&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;$28.10&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;parts-for-multiple-20-controllers&#34;&gt;Parts for multiple (20) controllers&lt;/h2&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Part&lt;/th&gt;
+&lt;th&gt;Price&lt;/th&gt;
+&lt;th&gt;Vendor Link&lt;/th&gt;
+&lt;th&gt;Quantity&lt;/th&gt;
+&lt;th&gt;Total Price&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Arduino Micro w/ USB cable&lt;/td&gt;
+&lt;td&gt;$8.00&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://www.banggood.com/Micro-R3-ATmega32u4-Microcontroller-Board-With-USB-Cable-For-Arduino-p-911099.html&#34; target=&#34;_blank&#34;&gt;Banggood&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;20&lt;/td&gt;
+&lt;td&gt;$160.00&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;10 piece 170-hole mini breadboards&lt;/td&gt;
+&lt;td&gt;$10.20&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://www.banggood.com/10Pcs-White-170-Holes-Mini-Solderless-Prototype-Breadboard-For-Arduino-p-950771.html&#34; target=&#34;_blank&#34;&gt;Banggood&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;$40.80&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;20 Piece Joystick w/ breakout&lt;/td&gt;
+&lt;td&gt;$16.99&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://www.banggood.com/20Pcs-PS2-Game-Joystick-Module-For-Arduino-p-951191.html&#34; target=&#34;_blank&#34;&gt;Banggood&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;$33.98&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Tactile Switches&lt;/td&gt;
+&lt;td&gt;$0.50&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.sparkfun.com/products/9190&#34; target=&#34;_blank&#34;&gt;Sparkfun&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;200&lt;/td&gt;
+&lt;td&gt;$100.00&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;40 piece female to male cables&lt;/td&gt;
+&lt;td&gt;$2.10&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://www.banggood.com/40pcs-20cm-Male-to-Female-Jumper-Jump-Cable-Wire-For-Arduino-p-75613.html&#34; target=&#34;_blank&#34;&gt;Banggood&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;20&lt;/td&gt;
+&lt;td&gt;$42.00&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;3M Outdoor Mounting Tape&lt;/td&gt;
+&lt;td&gt;$4.00&lt;/td&gt;
+&lt;td&gt;Amazon&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;$20.00&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Total&lt;/td&gt;
+&lt;td&gt;$19.84&lt;/td&gt;
+&lt;td&gt;&amp;mdash;-&lt;/td&gt;
+&lt;td&gt;20&lt;/td&gt;
+&lt;td&gt;$396.78&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;For best results, you should have your mount moulded or tooled to be
+ergonomic and comfortable to hold in your hand.
+It should be possible to 3D print a design, or you could purchase the
+design I distributed at SIGGRAPH from pokono. (link to be added).&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
