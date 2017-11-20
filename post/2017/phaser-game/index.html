@@ -46,17 +46,17 @@
     
   
 
-  <link rel="alternate" href="http://josef.spjut.me/tags/programming/index.xml" type="application/rss+xml" title="Josef Spjut">
-  <link rel="feed" href="http://josef.spjut.me/tags/programming/index.xml" type="application/rss+xml" title="Josef Spjut">
+  <link rel="alternate" href="http://josef.spjut.me/index.xml" type="application/rss+xml" title="Josef Spjut">
+  <link rel="feed" href="http://josef.spjut.me/index.xml" type="application/rss+xml" title="Josef Spjut">
 
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="http://josef.spjut.me/tags/programming/">
+  <link rel="canonical" href="http://josef.spjut.me/post/2017/phaser-game/">
 
   
 
-  <title>Programming | Josef Spjut</title>
+  <title>Phaser Game | Josef Spjut</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -151,49 +151,163 @@
 </nav>
 
 
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
 
 
+  <div class="article-container">
+    <h1 itemprop="name">Phaser Game</h1>
+    
 
-<div class="universal-wrapper">
+<div class="article-metadata">
 
-  <h1>Programming</h1>
+  <span class="article-date">
+    <time datetime="2017-10-13 15:14:00 -0400 EDT" itemprop="datePublished">
+      Fri, Oct 13, 2017
+    </time>
+  </span>
 
+  
+  
+  
+  <span class="article-categories">
+    <i class="fa fa-folder"></i>
+    
+    <a href="/categories/game-development">game-development</a
+    >
+    
+  </span>
+  
   
 
   
   
-  <div>
-    <h2><a href="http://josef.spjut.me/post/2017/phaser-game/">Phaser Game</a></h2>
-    <div class="article-style">
-      
-      In the past few weeks, I decided to spend some of my spare time trying out some new methods for game development. In particular, I thought it would be good to come up with something that would allow me to easily create a networked game for multiple players, and would give me a chance to learn something new. I decided to look into javascript frameworks, and there were a wide variety out there.
-      
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a href="/tags/game-design">game-design</a
+    >, 
+    
+    <a href="/tags/programming">programming</a
+    >, 
+    
+    <a href="/tags/javascript">javascript</a
+    >, 
+    
+    <a href="/tags/phaserjs">phaserjs</a
+    >, 
+    
+    <a href="/tags/pixijs">pixijs</a
+    >, 
+    
+    <a href="/tags/game-development">game-development</a
+    >
+    
+  </span>
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fjosef.spjut.me%2fpost%2f2017%2fphaser-game%2f"
+         target="_blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Phaser%20Game&amp;url=http%3a%2f%2fjosef.spjut.me%2fpost%2f2017%2fphaser-game%2f"
+         target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fjosef.spjut.me%2fpost%2f2017%2fphaser-game%2f&amp;title=Phaser%20Game"
+         target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fjosef.spjut.me%2fpost%2f2017%2fphaser-game%2f&amp;title=Phaser%20Game"
+         target="_blank">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Phaser%20Game&amp;body=http%3a%2f%2fjosef.spjut.me%2fpost%2f2017%2fphaser-game%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    <div class="article-style" itemprop="articleBody">
+      <p>In the past few weeks, I decided to spend some of my spare time trying out some new methods for game development.
+In particular, I thought it would be good to come up with something that would allow me to easily create a networked game for multiple players, and would give me a chance to learn something new.
+I decided to look into javascript frameworks, and there were a wide variety out there.
+This post will focus on some of my first thoughts on <a href="http://phaser.io/" target="_blank">Phaser</a>, which I&rsquo;ve been trying out somewhat.
+I&rsquo;m actually using <a href="https://github.com/photonstorm/phaser-ce" target="_blank">phaser ce</a>, but that&rsquo;s beside the point.
+There are tons of tutorials out there, but the one I went through was the first part of <a href="http://gojasonyang.com/post/phaserMultiplayerGamePart1.html" target="_blank">Jason Yang&rsquo;s Multiplayer Game Tutorial</a>.
+I&rsquo;ll write more of my thoughts when I get around to it.</p>
+
     </div>
   </div>
-  
-  <div>
-    <h2><a href="http://josef.spjut.me/programming/2014/01/25/animated-gifs-from-movies/">Animated GIFs from Movies</a></h2>
-    <div class="article-style">
-      
-      I&rsquo;ve often wanted to be able to make animated gifs of things. I have also been interested in simple programmatic video editing from time to time, particularly for animating a series of still frames from images rendered by my graphics architecture simulations. Today on reddit, I came across this blog post that describes a sequence of ways to use the MoviePy library to generate animated gifs. It looks like exactly the kind of solution I want since I like to use python whenever possible for simple things.
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="http://josef.spjut.me/programming/2013/09/25/easiest-development-job-ever/">Easiest Development Job Ever</a></h2>
-    <div class="article-style">
-      
-      Today I came across a blog post from a developer who describes a project he worked on that failed spectacularly. This project was a web database query to sort real estate brokers for an insurance company. If you want to see the results of the project in the way the original author intended, then you should visit the link above. It turns out that the insurance company provides the contact info of real estate brokers solely to collect a referral fee for that service.
-      
-    </div>
-  </div>
-  
 
+</article>
+
+<div class="container">
+  <nav>
+  <ul class="pager">
+    
+    <li class="previous"><a href="http://josef.spjut.me/post/2017/hugo-notes/"><span
+      aria-hidden="true">&larr;</span> Hugo Notes</a></li>
+    
+
+    
+  </ul>
+</nav>
+
+</div>
+
+<div class="article-container">
   
+<section id="comments">
+  <div id="disqus_thread">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'josefspjut';
+    var disqus_identifier = 'http:\/\/josef.spjut.me\/post\/2017\/phaser-game\/';
+    var disqus_title = 'Phaser Game';
+    var disqus_url = 'http:\/\/josef.spjut.me\/post\/2017\/phaser-game\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+</section>
 
 
 </div>
+
 <footer class="site-footer">
   <div class="container">
     <p class="powered-by">
