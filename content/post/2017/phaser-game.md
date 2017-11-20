@@ -1,7 +1,7 @@
 ---
 title: "Phaser Game"
 date: 2017-10-13T15:14:00-04:00
-draft: true
+draft: false
 categories: 
 - game-development
 tags:
@@ -19,5 +19,6 @@ I decided to look into javascript frameworks, and there were a wide variety out 
 This post will focus on some of my first thoughts on [Phaser](http://phaser.io/), which I've been trying out somewhat. 
 I'm actually using [phaser ce](https://github.com/photonstorm/phaser-ce), but that's beside the point.
 There are tons of tutorials out there, but the one I went through was the first part of [Jason Yang's Multiplayer Game Tutorial](http://gojasonyang.com/post/phaserMultiplayerGamePart1.html).
+I'll write more of my thoughts when I get around to it.
 
 
