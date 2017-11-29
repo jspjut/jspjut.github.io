@@ -233,7 +233,18 @@ Los Angeles, August 10, 2015.&lt;strong&gt;(Studio Course)&lt;/strong&gt;
 &lt;/ol&gt;
 
 &lt;h2&gt;Technical Reports&lt;/h2&gt;
-&lt;ol&gt;&lt;li&gt;&lt;a href=&#34;None&#34; class=&#34;author&#34;&gt;Jean Sung&lt;/a&gt;, &lt;a href=&#34;None&#34; class=&#34;author&#34;&gt;Sebastian Krupa&lt;/a&gt;, &lt;a href=&#34;None&#34; class=&#34;author&#34;&gt;Andrew Fishberg&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;;
+&lt;ol&gt;&lt;li&gt;&lt;a href=&#34;https://chrislarson1.github.io/blog/&#34; class=&#34;author&#34;&gt;Chris Larson&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://www.cs.cornell.edu/~rak/&#34; class=&#34;author&#34;&gt;Ross Knepper&lt;/a&gt;, &lt;a href=&#34;https://orl.mae.cornell.edu/#people&#34; class=&#34;author&#34;&gt;Robert Shepherd&lt;/a&gt;;
+&lt;strong&gt;OrbTouch: Recognizing Human Touch in Deformable Interfaces with Deep Neural Networks&lt;/strong&gt;,
+&lt;em&gt;Tech Report, arXiv:1706.02542&lt;/em&gt;,
+June, 2017.
+&lt;a href=&#34;https://arxiv.org/abs/1706.02542&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibtr7&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibtr7&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{larsonspjut17,
+ author = { Chris Larson and Josef Spjut and Ross Knepper and Robert Shepherd },
+ title = { {OrbTouch: Recognizing Human Touch in Deformable Interfaces with Deep Neural Networks} },
+ year = {2017},
+ booktitle = {Tech Report, arXiv:1706.02542}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;None&#34; class=&#34;author&#34;&gt;Jean Sung&lt;/a&gt;, &lt;a href=&#34;None&#34; class=&#34;author&#34;&gt;Sebastian Krupa&lt;/a&gt;, &lt;a href=&#34;None&#34; class=&#34;author&#34;&gt;Andrew Fishberg&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;;
 &lt;strong&gt;An Approach to Data Prefetching Using 2-Dimensional Selection Criteria&lt;/strong&gt;,
 &lt;em&gt;Tech Report, arXiv:1505.03899&lt;/em&gt;,
 May, 2015.
@@ -389,11 +400,11 @@ Andrew Carter &amp;#39;13, Paula Ning &amp;#39;13, Max Korbel &amp;#39;13, Kathe
 
 &lt;h3&gt;Current and Recent Collaborators&lt;/h3&gt;
 
-&lt;p&gt;Kaan Aksit, David Luebke, Daniel Kopta, Trey Greer, Robert Shepherd, Bob Alfieri, Erik Brunvand, Omer Shapira, Kirklann Lau, Turner Whitted, Ren Ng, Anjul Patney, Morgan McGuire, Peter Shirley, Fabiha Hannan, Martin S. Banks, Samuli Laine, Jonghyun Kim, Ward Lopes, Bryan Peele, Eric Storm, Andrew Fishberg, Steven A. Cholewiak, Benjamin Mac Murray, Akhil Bagaria, Konstantin Shkurko, Timo Aila, Tero Karras, Sebastian Krupa, Jose Barreiros, Pratul Srinivasan, Al Davis, Jean Sung, Dong-hyeon Park, Gordon D. Love, Richard Piersall&lt;/p&gt;
+&lt;p&gt;Martin S. Banks, David Luebke, Peter Shirley, Al Davis, Kaan Aksit, Erik Brunvand, Ward Lopes, Jonghyun Kim, Dong-hyeon Park, Richard Piersall, Andrew Fishberg, Daniel Kopta, Benjamin Mac Murray, Steven A. Cholewiak, Morgan McGuire, Akhil Bagaria, Jose Barreiros, Omer Shapira, Fabiha Hannan, Kirklann Lau, Konstantin Shkurko, Chris Larson, Pratul Srinivasan, Turner Whitted, Bob Alfieri, Sebastian Krupa, Timo Aila, Trey Greer, Ren Ng, Gordon D. Love, Ross Knepper, Anjul Patney, Robert Shepherd, Bryan Peele, Samuli Laine, Eric Storm, Jean Sung, Tero Karras&lt;/p&gt;
 
 &lt;h3&gt;Past Collaborators&lt;/h3&gt;
 
-&lt;p&gt;Seth Pugsley, Andrew Carter, Paula Ning, Roman Lysecky, David Sheldon, Steven Parker, Frank Vahid, Max Korbel, Rajeev Balasubramonian, Andrew Kensler, David Nellans, Spencer Kellis, Niladrish Chatterjee, Solomon Boulos, Thiago Ize, Scott Sirowy, Mike Parker&lt;/p&gt;
+&lt;p&gt;Frank Vahid, Solomon Boulos, Max Korbel, David Sheldon, Niladrish Chatterjee, Andrew Carter, Steven Parker, Rajeev Balasubramonian, Roman Lysecky, Scott Sirowy, Spencer Kellis, David Nellans, Andrew Kensler, Paula Ning, Seth Pugsley, Thiago Ize, Mike Parker&lt;/p&gt;
 
 </description>
     </item>
