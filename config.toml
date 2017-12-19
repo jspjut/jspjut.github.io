@@ -77,9 +77,13 @@ defaultContentLanguageInSubdir = false
   #   For more info on the highlighting options, see:
   #   https://gcushen.github.io/hugo-academic-demo/post/writing-markdown-latex/#highlighting-options
   highlight = true
-  highlight_languages = []
-  highlight_style = "github"
+  highlight_languages = ["javascript"]
+  highlight_style = "hybrid"
   # highlight_version = "9.9.0"
+# Syntax highlighting - TODO: figure out highlighting in new hugo versions
+# pygmentsUseClasses=true
+# pygmentsCodeFences=true
+
 
   # Enable native social sharing buttons?
   sharing = true
