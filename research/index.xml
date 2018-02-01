@@ -13,7 +13,7 @@
     <item>
       <title>Research</title>
       <link>http://josef.spjut.me/research/research/</link>
-      <pubDate>Wed, 26 Jul 2017 00:00:00 -0700</pubDate>
+      <pubDate>Wed, 26 Jul 2017 00:00:00 -0400</pubDate>
       
       <guid>http://josef.spjut.me/research/research/</guid>
       <description>&lt;style&gt;
@@ -27,7 +27,18 @@ a.primary{
 
 
 &lt;h2&gt;Refereed Publications&lt;/h2&gt;
-&lt;ol&gt;&lt;li&gt;&lt;a href=&#34;https://research.nvidia.com/users/trey-greer&#34; class=&#34;author&#34;&gt;Trey Greer&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://luebke.us/&#34; class=&#34;author&#34;&gt;David Luebke&lt;/a&gt;, &lt;a href=&#34;https://research.nvidia.com/users/turner-whitted&#34; class=&#34;author&#34;&gt;Turner Whitted&lt;/a&gt;;
+&lt;ol&gt;&lt;li&gt;&lt;a href=&#34;https://orl.mae.cornell.edu/#people&#34; class=&#34;author&#34;&gt;Benjamin Mac Murray&lt;/a&gt;, &lt;a href=&#34;http://www.gnarlydesign.io/&#34; class=&#34;author&#34;&gt;Bryan Peele&lt;/a&gt;, &lt;a href=&#34;None&#34; class=&#34;author&#34;&gt;Patricia Xu&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://omershapira.com/#all&#34; class=&#34;author&#34;&gt;Omer Shapira&lt;/a&gt;, &lt;a href=&#34;http://luebke.us/&#34; class=&#34;author&#34;&gt;David Luebke&lt;/a&gt;, &lt;a href=&#34;https://orl.mae.cornell.edu/#people&#34; class=&#34;author&#34;&gt;Robert Shepherd&lt;/a&gt;;
+&lt;strong&gt;A Variable Shape and Variable Stiffness Controller for Haptic Virtual Interactions&lt;/strong&gt;,
+&lt;em&gt;IEEE International Conference on Soft Robotics&lt;/em&gt;,
+April 24-28, 2018.
+&lt;a href=&#34;None&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibc11&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibc11&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{murraypeele18,
+ author = { Benjamin Mac Murray and Bryan Peele and Patricia Xu and Josef Spjut and Omer Shapira and David Luebke and Robert Shepherd },
+ title = { {A Variable Shape and Variable Stiffness Controller for Haptic Virtual Interactions} },
+ year = {2018},
+ booktitle = {IEEE International Conference on Soft Robotics}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://research.nvidia.com/users/trey-greer&#34; class=&#34;author&#34;&gt;Trey Greer&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://luebke.us/&#34; class=&#34;author&#34;&gt;David Luebke&lt;/a&gt;, &lt;a href=&#34;https://research.nvidia.com/users/turner-whitted&#34; class=&#34;author&#34;&gt;Turner Whitted&lt;/a&gt;;
 &lt;strong&gt;Hybrid Modulation for Near Zero Display Latency&lt;/strong&gt;,
 &lt;em&gt;Society of Information Display&lt;/em&gt;,
 May 24-27, 2016.
@@ -190,7 +201,18 @@ San Jose, May 9 - 11, 2017. &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; 
 &lt;/ol&gt;
 
 &lt;h2&gt;Conference Talks and Courses&lt;/h2&gt;
-&lt;ol&gt;&lt;li&gt;&lt;a href=&#34;http://www.gnarlydesign.io/&#34; class=&#34;author&#34;&gt;Bryan Peele&lt;/a&gt;, &lt;a href=&#34;https://orl.mae.cornell.edu/#people&#34; class=&#34;author&#34;&gt;Benjamin Mac Murray&lt;/a&gt;, &lt;a href=&#34;https://orl.mae.cornell.edu/#people&#34; class=&#34;author&#34;&gt;Robert Shepherd&lt;/a&gt;, &lt;a href=&#34;None&#34; class=&#34;author&#34;&gt;Jose Barreiros&lt;/a&gt;, &lt;a href=&#34;http://omershapira.com/#all&#34; class=&#34;author&#34;&gt;Omer Shapira&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://luebke.us/&#34; class=&#34;author&#34;&gt;David Luebke&lt;/a&gt;;
+&lt;ol&gt;&lt;li&gt;&lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;;
+&lt;strong&gt;The Augmented Frontier: Challenges for Near Eye Display Computing&lt;/strong&gt;,
+&lt;em&gt;[AR In Action](http://arinaction.org/)&lt;/em&gt;,
+January 16-17, 2018.
+&lt;a href=&#34;http://josef.spjut.me/pubs/spjutARIA2018.pdf&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibct2&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibct2&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{spjut18,
+ author = { Josef Spjut },
+ title = { {The Augmented Frontier: Challenges for Near Eye Display Computing} },
+ year = {2018},
+ booktitle = {[AR In Action](http://arinaction.org/)}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.gnarlydesign.io/&#34; class=&#34;author&#34;&gt;Bryan Peele&lt;/a&gt;, &lt;a href=&#34;https://orl.mae.cornell.edu/#people&#34; class=&#34;author&#34;&gt;Benjamin Mac Murray&lt;/a&gt;, &lt;a href=&#34;https://orl.mae.cornell.edu/#people&#34; class=&#34;author&#34;&gt;Robert Shepherd&lt;/a&gt;, &lt;a href=&#34;None&#34; class=&#34;author&#34;&gt;Jose Barreiros&lt;/a&gt;, &lt;a href=&#34;http://omershapira.com/#all&#34; class=&#34;author&#34;&gt;Omer Shapira&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://luebke.us/&#34; class=&#34;author&#34;&gt;David Luebke&lt;/a&gt;;
 &lt;strong&gt;Stretchable Transducers for Kinesthetic Interactions in Virtual Reality&lt;/strong&gt;,
 &lt;em&gt;SIGGRAPH Experience Presentations&lt;/em&gt;,
 Los Angeles, August 3, 2017.
@@ -400,11 +422,11 @@ Andrew Carter &amp;#39;13, Paula Ning &amp;#39;13, Max Korbel &amp;#39;13, Kathe
 
 &lt;h3&gt;Current and Recent Collaborators&lt;/h3&gt;
 
-&lt;p&gt;Martin S. Banks, David Luebke, Peter Shirley, Al Davis, Kaan Aksit, Erik Brunvand, Ward Lopes, Jonghyun Kim, Dong-hyeon Park, Richard Piersall, Andrew Fishberg, Daniel Kopta, Benjamin Mac Murray, Steven A. Cholewiak, Morgan McGuire, Akhil Bagaria, Jose Barreiros, Omer Shapira, Fabiha Hannan, Kirklann Lau, Konstantin Shkurko, Chris Larson, Pratul Srinivasan, Turner Whitted, Bob Alfieri, Sebastian Krupa, Timo Aila, Trey Greer, Ren Ng, Gordon D. Love, Ross Knepper, Anjul Patney, Robert Shepherd, Bryan Peele, Samuli Laine, Eric Storm, Jean Sung, Tero Karras&lt;/p&gt;
+&lt;p&gt;Erik Brunvand, Anjul Patney, Ward Lopes, Trey Greer, Morgan McGuire, Robert Shepherd, Daniel Kopta, Samuli Laine, Timo Aila, Kaan Aksit, David Luebke, Benjamin Mac Murray, Bryan Peele, Omer Shapira, Jonghyun Kim, Al Davis, Dong-hyeon Park, Steven A. Cholewiak, Eric Storm, Martin S. Banks, Jose Barreiros, Richard Piersall, Peter Shirley, Andrew Fishberg, Tero Karras, Fabiha Hannan, Ross Knepper, Chris Larson, Akhil Bagaria, Ren Ng, Konstantin Shkurko, Turner Whitted, Kirklann Lau, Pratul Srinivasan, Jean Sung, Sebastian Krupa, Bob Alfieri, Gordon D. Love&lt;/p&gt;
 
 &lt;h3&gt;Past Collaborators&lt;/h3&gt;
 
-&lt;p&gt;Frank Vahid, Solomon Boulos, Max Korbel, David Sheldon, Niladrish Chatterjee, Andrew Carter, Steven Parker, Rajeev Balasubramonian, Roman Lysecky, Scott Sirowy, Spencer Kellis, David Nellans, Andrew Kensler, Paula Ning, Seth Pugsley, Thiago Ize, Mike Parker&lt;/p&gt;
+&lt;p&gt;Mike Parker, Spencer Kellis, Thiago Ize, Steven Parker, Max Korbel, Scott Sirowy, Roman Lysecky, Paula Ning, Andrew Carter, Andrew Kensler, David Nellans, Solomon Boulos, Frank Vahid, Niladrish Chatterjee, David Sheldon, Seth Pugsley, Rajeev Balasubramonian&lt;/p&gt;
 
 </description>
     </item>

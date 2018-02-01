@@ -7,8 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Josef Spjut</copyright>
-    <lastBuildDate>Thu, 03 Aug 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jan 2018 00:00:00 +0000</lastBuildDate>
     <atom:link href="/publication_types/9/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>The Augmented Frontier: Challenges for Near Eye Display Computing</title>
+      <link>http://josef.spjut.me/publication/ct/ct2/</link>
+      <pubDate>Tue, 16 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ct/ct2/</guid>
+      <description>&lt;p&gt;See also &lt;a href=&#34;http://on-demand.gputechconf.com/siggraph/2017/video/sig1718-morgan-mcguire-virtual-frontier-computer-graphics.html&#34; target=&#34;_blank&#34;&gt;The Virtual Fronteir&lt;/a&gt; by Morgan McGuire from whom I borrowed many of the slides.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Stretchable Transducers for Kinesthetic Interactions in Virtual Reality</title>
