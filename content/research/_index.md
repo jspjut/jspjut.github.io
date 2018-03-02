@@ -1,6 +1,6 @@
 +++
 title = "Research"
-date = "2017-01-01T00:00:00Z"
+date = "2018-01-01T00:00:00Z"
 math = false
 highlight = false
 
@@ -76,9 +76,9 @@ Andrew Carter &#39;13, Paula Ning &#39;13, Max Korbel &#39;13, Katherine Yang &#
 
 <h3>Current and Recent Collaborators</h3>
 
-<p>Erik Brunvand, Anjul Patney, Ward Lopes, Trey Greer, Morgan McGuire, Robert Shepherd, Daniel Kopta, Samuli Laine, Timo Aila, Kaan Aksit, David Luebke, Benjamin Mac Murray, Bryan Peele, Omer Shapira, Jonghyun Kim, Al Davis, Dong-hyeon Park, Steven A. Cholewiak, Eric Storm, Martin S. Banks, Jose Barreiros, Richard Piersall, Peter Shirley, Andrew Fishberg, Tero Karras, Fabiha Hannan, Ross Knepper, Chris Larson, Akhil Bagaria, Ren Ng, Konstantin Shkurko, Turner Whitted, Kirklann Lau, Pratul Srinivasan, Jean Sung, Sebastian Krupa, Bob Alfieri, Gordon D. Love</p>
+<p>Konstantin Shkurko, Al Davis, Gordon D. Love, Tero Karras, Dong-hyeon Park, Trey Greer, Morgan McGuire, Anjul Patney, Ward Lopes, Bryan Peele, Eric Storm, Jonghyun Kim, Benjamin Mac Murray, Daniel Kopta, Andrew Fishberg, Martin S. Banks, Robert Shepherd, Erik Brunvand, Ross Knepper, Akhil Bagaria, Chris Larson, Sebastian Krupa, Jean Sung, Jose Barreiros, Peter Shirley, Samuli Laine, Ren Ng, Pratul Srinivasan, Turner Whitted, Kaan Aksit, Fabiha Hannan, Timo Aila, Richard Piersall, Bob Alfieri, Omer Shapira, David Luebke, Steven A. Cholewiak, Kirklann Lau</p>
 
 <h3>Past Collaborators</h3>
 
-<p>Mike Parker, Spencer Kellis, Thiago Ize, Steven Parker, Max Korbel, Scott Sirowy, Roman Lysecky, Paula Ning, Andrew Carter, Andrew Kensler, David Nellans, Solomon Boulos, Frank Vahid, Niladrish Chatterjee, David Sheldon, Seth Pugsley, Rajeev Balasubramonian</p>
+<p>Scott Sirowy, Solomon Boulos, Spencer Kellis, Steven Parker, Seth Pugsley, Roman Lysecky, Mike Parker, Paula Ning, David Nellans, Thiago Ize, David Sheldon, Andrew Carter, Niladrish Chatterjee, Rajeev Balasubramonian, Frank Vahid, Max Korbel, Andrew Kensler</p>
 
