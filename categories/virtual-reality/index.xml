@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>Josef Spjut</copyright>
     <lastBuildDate>Mon, 18 Aug 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/categories/virtual-reality/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://josef.spjut.me/categories/virtual-reality/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Google Cardboard compatilbe iOS apps</title>
@@ -16,43 +18,7 @@
       <pubDate>Mon, 18 Aug 2014 00:00:00 +0000</pubDate>
       
       <guid>http://josef.spjut.me/virtual-reality/2014/08/18/google-cardboard-compatilbe-ios-apps/</guid>
-      <description>&lt;p&gt;I got a &lt;a href=&#34;https://developers.google.com/cardboard/&#34; target=&#34;_blank&#34;&gt;Google Cardboard&lt;/a&gt;
-last week at
-&lt;a href=&#34;http://www.siggraph.org/&#34; target=&#34;_blank&#34;&gt;SIGGRAPH&lt;/a&gt; and since I don&amp;rsquo;t own
-an Android phone, I set out to find a way to use my iPhone to try it
-out.
-The first thing I noticed is that there were no web pages easily found
-that mentioned a list of apps that are compatible with it, even
-without including the magnetic switch for input.
-What follows is a short list of apps I discovered on my search:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://itunes.apple.com/us/app/di-360/id893235638?mt=8&#34; target=&#34;_blank&#34;&gt;DI 360&lt;/a&gt; lets you replay a 3d video captured while tracking your head
-movements so you can experience whatever part of the video you want
-just by looking around. You have to press a button on the touchscreen
-to switch it to VR mode, but it&amp;rsquo;s an interesting experience once you
-do.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://itunes.apple.com/us/app/dive-zombie/id903661452?mt=8&#34; target=&#34;_blank&#34;&gt;ZOMBIE dive&lt;/a&gt; is a simple empty world where zombies come at you from
-random directions and you have to shoot them. The shotgun is on
-autofire so you just have to look at the zombies to keep them from
-getting you.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://itunes.apple.com/us/app/refugio3d-spacestation/id827207586?mt=8&#34; target=&#34;_blank&#34;&gt;Refugio3D&lt;/a&gt; is a virtual walk through of a couple interesting places,
-including a spaceship interior. It allows walking forward by looking
-down to toggle walking or standing still.
-
-&lt;ul&gt;
-&lt;li&gt;Also on &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.Refugio3D.SpaceStation&amp;amp;hl=en&#34; target=&#34;_blank&#34;&gt;Android&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;After I found these, I CBS News posted &lt;a href=&#34;http://www.cbsnews.com/news/google-cardboard-works-on-the-iphone-too/&#34; target=&#34;_blank&#34;&gt;an
-article&lt;/a&gt;
-listing a few more options, but I have yet to try them.
-There may even be some overlap between our lists.&lt;/p&gt;
-
-&lt;p&gt;In case you want to buy one, &lt;a href=&#34;http://www.dodocase.com/products/google-cardboard-vr-goggle-toolkit&#34; target=&#34;_blank&#34;&gt;DODO Case is selling them for about
-$25&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>I got a Google Cardboard last week at SIGGRAPH and since I don&amp;rsquo;t own an Android phone, I set out to find a way to use my iPhone to try it out. The first thing I noticed is that there were no web pages easily found that mentioned a list of apps that are compatible with it, even without including the magnetic switch for input. What follows is a short list of apps I discovered on my search:</description>
     </item>
     
   </channel>

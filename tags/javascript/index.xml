@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>Josef Spjut</copyright>
     <lastBuildDate>Fri, 13 Oct 2017 15:14:00 -0400</lastBuildDate>
-    <atom:link href="/tags/javascript/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://josef.spjut.me/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Phaser Game</title>
@@ -16,14 +18,7 @@
       <pubDate>Fri, 13 Oct 2017 15:14:00 -0400</pubDate>
       
       <guid>http://josef.spjut.me/post/2017/phaser-game/</guid>
-      <description>&lt;p&gt;In the past few weeks, I decided to spend some of my spare time trying out some new methods for game development.
-In particular, I thought it would be good to come up with something that would allow me to easily create a networked game for multiple players, and would give me a chance to learn something new.
-I decided to look into javascript frameworks, and there were a wide variety out there.
-This post will focus on some of my first thoughts on &lt;a href=&#34;http://phaser.io/&#34; target=&#34;_blank&#34;&gt;Phaser&lt;/a&gt;, which I&amp;rsquo;ve been trying out somewhat.
-I&amp;rsquo;m actually using &lt;a href=&#34;https://github.com/photonstorm/phaser-ce&#34; target=&#34;_blank&#34;&gt;phaser ce&lt;/a&gt;, but that&amp;rsquo;s beside the point.
-There are tons of tutorials out there, but the one I went through was the first part of &lt;a href=&#34;http://gojasonyang.com/post/phaserMultiplayerGamePart1.html&#34; target=&#34;_blank&#34;&gt;Jason Yang&amp;rsquo;s Multiplayer Game Tutorial&lt;/a&gt;.
-I&amp;rsquo;ll write more of my thoughts when I get around to it.&lt;/p&gt;
-</description>
+      <description>In the past few weeks, I decided to spend some of my spare time trying out some new methods for game development. In particular, I thought it would be good to come up with something that would allow me to easily create a networked game for multiple players, and would give me a chance to learn something new. I decided to look into javascript frameworks, and there were a wide variety out there.</description>
     </item>
     
     <item>
@@ -32,22 +27,7 @@ I&amp;rsquo;ll write more of my thoughts when I get around to it.&lt;/p&gt;
       <pubDate>Tue, 15 Oct 2013 00:00:00 +0000</pubDate>
       
       <guid>http://josef.spjut.me/website/2013/10/15/responsive-videos-in-jekyll/</guid>
-      <description>&lt;p&gt;For my &lt;a href=&#34;http://josef.spjut.me/post/prehugo/2013-10-15-musical-projects&#34;&gt;other blog post&lt;/a&gt;
-today, I decided I wanted to embed the youtube videos I recorded
-earlier.
-Since the rest of my website is fully responsive now, I thought it
-would be best to find a way to allow embedded videos to also be
-responsive to the browser window.
-This is one of the main reasons I started using
-&lt;a href=&#34;http://getbootstrap.com/&#34; target=&#34;_blank&#34;&gt;bootstrap&lt;/a&gt; in the first place, and
-&lt;a href=&#34;http://jekyllbootstrap.com/&#34; target=&#34;_blank&#34;&gt;jekyllbootstrap&lt;/a&gt; for my website.
-Luckily I came across the &lt;a href=&#34;http://toddmotto.com/fluid-and-responsive-youtube-and-vimeo-videos-with-fluidvids-js/&#34; target=&#34;_blank&#34;&gt;excellent
-post&lt;/a&gt;
-Todd Motto made posting his &lt;code&gt;fluidvids.js&lt;/code&gt; implementation.
-I added it to my site, and immediately the youtube videos I had
-embedded began to scale responsively as I expect.
-I encourage you to go to his site if you want to download the code.&lt;/p&gt;
-</description>
+      <description>For my other blog post today, I decided I wanted to embed the youtube videos I recorded earlier. Since the rest of my website is fully responsive now, I thought it would be best to find a way to allow embedded videos to also be responsive to the browser window. This is one of the main reasons I started using bootstrap in the first place, and jekyllbootstrap for my website. Luckily I came across the excellent post Todd Motto made posting his fluidvids.</description>
     </item>
     
   </channel>

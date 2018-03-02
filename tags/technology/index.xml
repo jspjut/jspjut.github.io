@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>Josef Spjut</copyright>
     <lastBuildDate>Tue, 20 May 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/technology/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://josef.spjut.me/tags/technology/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Jetson TK1 First Steps</title>
@@ -16,48 +18,7 @@
       <pubDate>Tue, 20 May 2014 00:00:00 +0000</pubDate>
       
       <guid>http://josef.spjut.me/programming/2014/05/20/jetson-tk1-first-steps/</guid>
-      <description>&lt;p&gt;I recently received my &lt;a href=&#34;https://developer.nvidia.com/jetson-tk1&#34; target=&#34;_blank&#34;&gt;Jetson TK1 Development
-Board&lt;/a&gt;, which I&amp;rsquo;m evaluating
-for potential use in an embedded systems course next Spring.
-This board is attractive to me because it has a high-end quad core ARM
-A15 processor as well as a high-end mobile GPU with support for the
-latest OpenGL and CUDA development environments.
-This post is going to serve as a way for me to record the things
-needed to set up the device in the first place, and hopefully more
-posts will follow as I manage to develop some examples on the board
-that will hopefully turn into lab assignments for the class.&lt;/p&gt;
-
-&lt;p&gt;The first thing you notice when you plug in the board and turn it on,
-is that it boots to an OS without any setup because the built-in flash
-has linux on it from the factory.
-However, there is no x11 support out of the box.
-Well that&amp;rsquo;s not quite true&amp;hellip;
-The support is available, but you must &lt;a href=&#34;http://developer.download.nvidia.com/embedded/jetson/TK1/README.txt&#34; target=&#34;_blank&#34;&gt;run a script to install the
-driver&lt;/a&gt;.
-The instructions from the README are copied and inline here:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;This README file lists instructions on how to install the NVIDIA
-Linux driver binary release on your target located in:
-${HOME}/NVIDIA-INSTALLER
-
-Step 1)
-Change directories into the NVIDIA installation directory:
-    cd ${HOME}/NVIDIA-INSTALLER
-
-Step 2)
-Run the installer script to extract and install the Linux driver
-binary release:
-    sudo ./installer.sh
-
-Step 3)
-Reboot the system to have the graphical desktop UI come up.
-
-NOTES:
-- The installer.sh should only be run once.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;More to come&amp;hellip;&lt;/p&gt;
-</description>
+      <description>I recently received my Jetson TK1 Development Board, which I&amp;rsquo;m evaluating for potential use in an embedded systems course next Spring. This board is attractive to me because it has a high-end quad core ARM A15 processor as well as a high-end mobile GPU with support for the latest OpenGL and CUDA development environments. This post is going to serve as a way for me to record the things needed to set up the device in the first place, and hopefully more posts will follow as I manage to develop some examples on the board that will hopefully turn into lab assignments for the class.</description>
     </item>
     
     <item>
@@ -66,41 +27,7 @@ NOTES:
       <pubDate>Fri, 20 Sep 2013 00:00:00 +0000</pubDate>
       
       <guid>http://josef.spjut.me/technology/2013/09/20/iphone-5s-release/</guid>
-      <description>&lt;p&gt;I bought my first iPhone 2 years ago in October of 2011.
-I got the 5th iPhone then, the one called the iPhone 4S (or &lt;em&gt;force&lt;/em&gt;
-for short).
-Two years have passed and I was eligible for a subsidized upgrade on
-the 7th iPhone, which they call iPhone 5S (is that SS or 55?).
-I decided I wanted to get the new upgrade, so I went ahead and ordered
-one online just after midnight when they went on sale.
-I ordered from Apple&amp;rsquo;s website, but there was no option to select
-in-store pick up, which I would have preferred.
-Instead, all shipping options suggested that the phone might not be
-delivered until October, because it wouldn&amp;rsquo;t ship for 1-3 business
-days.
-Still, I placed an order to ensure I&amp;rsquo;d have a spot in line in case I
-couldn&amp;rsquo;t find a way to get one from the retail store later.&lt;/p&gt;
-
-&lt;p&gt;When I left my house in the morning, I decided to drive past the Apple
-store to see if the line was short enough while I was on my way to
-work.
-What I found was a huge line of people wrapping far around the
-building more than an hour before the store was set to open.
-I decided that my time would be best spent going to work and
-performing my work duties for the day.
-After I completed my tasks of the day, I decided I&amp;rsquo;d give the Apple
-store another shot, just in case they got another order in.
-It turned out that they actually had one left of the exact model I
-wanted when I walked in the store to look at them, but someone else
-got in the line seconds before I did and got to walk away with the
-phone.
-However, only 30 minutes later, the store decided to release the other
-unclaimed phones that were reserved by people earlier in the day.
-This included the phone that I got to buy and take home.&lt;/p&gt;
-
-&lt;p&gt;I guess the moral of the story is to buy things because that is one
-way to get things.&lt;/p&gt;
-</description>
+      <description>I bought my first iPhone 2 years ago in October of 2011. I got the 5th iPhone then, the one called the iPhone 4S (or force for short). Two years have passed and I was eligible for a subsidized upgrade on the 7th iPhone, which they call iPhone 5S (is that SS or 55?). I decided I wanted to get the new upgrade, so I went ahead and ordered one online just after midnight when they went on sale.</description>
     </item>
     
   </channel>

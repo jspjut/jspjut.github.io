@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Josef Spjut</copyright>
-    <atom:link href="/teaching/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://josef.spjut.me/teaching/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Letters of Recommendation</title>
@@ -15,63 +17,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://josef.spjut.me/teaching/recs/</guid>
-      <description>&lt;p&gt;If you would like for me to write you a letter of recommendation, and
-are not able to find me in person to request it, please send me an
-email request prior to filling out the below information. Please
-describe in at most 1 paragraph why you think I will be able to write
-you a good letter of recommendation, what the recommendation is for,
-and a rough idea of when the deadline(s) will be.&lt;/p&gt;
-
-&lt;p&gt;If I have agreed to write a recommendation for you, and the
-application requires snail mail, please give me a folder containing&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;all necessary forms, and&lt;/li&gt;
-&lt;li&gt;addressed HMC Math Dept envelopes (see Jocelyn Olds-McSpadden)
-without stamps.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Additionally please send me an electronic copy of the following:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;an unofficial copy of your transcript&lt;/li&gt;
-&lt;li&gt;a copy of your personal statement (if applicable)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Furthermore, at least two weeks before the first letter is due, e-mail
-me your answers to the following questions
-(the more details the better):&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;What is your name, year, and major?&lt;/li&gt;
-&lt;li&gt;For what are you applying (e.g., scholarship, graduate school, summer
-research experience)? List the programs to which you are applying,
-together with due dates.&lt;/li&gt;
-&lt;li&gt;How long have I known you (years and months), and what is my
-relationship to you (instructor, research advisor, etc.)?&lt;/li&gt;
-&lt;li&gt;For what classes have I had you, what final grades did I assign you,
-and how did you distinguish yourself in my classes?&lt;/li&gt;
-&lt;li&gt;How would you describe yourself? What are your strengths? What are
-your weaknesses? Your response to this question is very important to
-me, so the more details the better.&lt;/li&gt;
-&lt;li&gt;What are some of your academic and nonacademic accomplishments?&lt;/li&gt;
-&lt;li&gt;What makes me particularly qualified to write a letter for you?&lt;/li&gt;
-&lt;li&gt;What makes you particularly qualified for this position/honor/award?&lt;/li&gt;
-&lt;li&gt;What are your long term goals and will this position/honor/award help?
-If so, how?&lt;/li&gt;
-&lt;li&gt;Additional comments (REU&amp;rsquo;s, summer research, interesting jobs,
-hobbies, etc.)?&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Please send me e-mail reminders as deadlines approach, and feel free
-to chat with me about other ways you can make the letter writing
-process go as smoothly as possible for you and your letter
-writers. Good luck!&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Based on &lt;a href=&#34;http://www.math.hmc.edu/~orrison/teaching/recs.html&#34; target=&#34;_blank&#34;&gt;Michael Orrison&amp;rsquo;s page&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>If you would like for me to write you a letter of recommendation, and are not able to find me in person to request it, please send me an email request prior to filling out the below information. Please describe in at most 1 paragraph why you think I will be able to write you a good letter of recommendation, what the recommendation is for, and a rough idea of when the deadline(s) will be.</description>
     </item>
     
   </channel>

@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>Josef Spjut</copyright>
     <lastBuildDate>Fri, 13 Oct 2017 15:14:00 -0400</lastBuildDate>
-    <atom:link href="/tags/programming/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://josef.spjut.me/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Phaser Game</title>
@@ -16,14 +18,7 @@
       <pubDate>Fri, 13 Oct 2017 15:14:00 -0400</pubDate>
       
       <guid>http://josef.spjut.me/post/2017/phaser-game/</guid>
-      <description>&lt;p&gt;In the past few weeks, I decided to spend some of my spare time trying out some new methods for game development.
-In particular, I thought it would be good to come up with something that would allow me to easily create a networked game for multiple players, and would give me a chance to learn something new.
-I decided to look into javascript frameworks, and there were a wide variety out there.
-This post will focus on some of my first thoughts on &lt;a href=&#34;http://phaser.io/&#34; target=&#34;_blank&#34;&gt;Phaser&lt;/a&gt;, which I&amp;rsquo;ve been trying out somewhat.
-I&amp;rsquo;m actually using &lt;a href=&#34;https://github.com/photonstorm/phaser-ce&#34; target=&#34;_blank&#34;&gt;phaser ce&lt;/a&gt;, but that&amp;rsquo;s beside the point.
-There are tons of tutorials out there, but the one I went through was the first part of &lt;a href=&#34;http://gojasonyang.com/post/phaserMultiplayerGamePart1.html&#34; target=&#34;_blank&#34;&gt;Jason Yang&amp;rsquo;s Multiplayer Game Tutorial&lt;/a&gt;.
-I&amp;rsquo;ll write more of my thoughts when I get around to it.&lt;/p&gt;
-</description>
+      <description>In the past few weeks, I decided to spend some of my spare time trying out some new methods for game development. In particular, I thought it would be good to come up with something that would allow me to easily create a networked game for multiple players, and would give me a chance to learn something new. I decided to look into javascript frameworks, and there were a wide variety out there.</description>
     </item>
     
     <item>
@@ -32,20 +27,7 @@ I&amp;rsquo;ll write more of my thoughts when I get around to it.&lt;/p&gt;
       <pubDate>Sat, 25 Jan 2014 00:00:00 +0000</pubDate>
       
       <guid>http://josef.spjut.me/programming/2014/01/25/animated-gifs-from-movies/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve often wanted to be able to make animated gifs of things.
-I have also been interested in simple programmatic video editing from
-time to time, particularly for animating a series of still frames from
-images rendered by my graphics architecture simulations.
-Today on reddit, I came across &lt;a href=&#34;http://zulko.github.io/blog/2014/01/23/making-animated-gifs-from-video-files-with-python/&#34; target=&#34;_blank&#34;&gt;this blog
-post&lt;/a&gt;
-that describes a sequence of ways to use the
-&lt;a href=&#34;http://zulko.github.io/moviepy/&#34; target=&#34;_blank&#34;&gt;MoviePy&lt;/a&gt; library to generate
-animated gifs.
-It looks like exactly the kind of solution I want since I like to use
-python whenever possible for simple things.
-I don&amp;rsquo;t have anything profound to say about this, and mostly just
-wanted to record the links for my future reference.&lt;/p&gt;
-</description>
+      <description>I&amp;rsquo;ve often wanted to be able to make animated gifs of things. I have also been interested in simple programmatic video editing from time to time, particularly for animating a series of still frames from images rendered by my graphics architecture simulations. Today on reddit, I came across this blog post that describes a sequence of ways to use the MoviePy library to generate animated gifs. It looks like exactly the kind of solution I want since I like to use python whenever possible for simple things.</description>
     </item>
     
     <item>
@@ -54,27 +36,7 @@ wanted to record the links for my future reference.&lt;/p&gt;
       <pubDate>Wed, 25 Sep 2013 00:00:00 +0000</pubDate>
       
       <guid>http://josef.spjut.me/programming/2013/09/25/easiest-development-job-ever/</guid>
-      <description>&lt;p&gt;Today I came across &lt;a href=&#34;http://blog.plover.com/tech/prudential.html&#34; target=&#34;_blank&#34;&gt;a blog
-post&lt;/a&gt; from a developer
-who describes a project he worked on that failed spectacularly.
-This project was a web database query to sort real estate brokers for
-an insurance company.
-If you want to see the results of the project in the way the original
-author intended, then you should visit the link above.
-It turns out that the insurance company provides the contact info of
-real estate brokers solely to collect a referral fee for that
-service.
-The database query in effect bypassed the referral procedure so that
-clients would be able to locate brokers without the company collecting
-a fee.
-In the end, all of the information from the database was removed so
-that the user was just given a list of names, each with the referral
-number for the company&amp;rsquo;s referral hotline which would allow the
-company to collect the referral fee.
-If this developer had figured out what the company actually wanted at
-the beginning, then it would have been easy for him to just place the
-phone number on the website and call it a day.&lt;/p&gt;
-</description>
+      <description>Today I came across a blog post from a developer who describes a project he worked on that failed spectacularly. This project was a web database query to sort real estate brokers for an insurance company. If you want to see the results of the project in the way the original author intended, then you should visit the link above. It turns out that the insurance company provides the contact info of real estate brokers solely to collect a referral fee for that service.</description>
     </item>
     
   </channel>

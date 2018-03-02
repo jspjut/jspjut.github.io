@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Josef Spjut</copyright>
-    <atom:link href="/games/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://josef.spjut.me/games/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Wizard Fight Race 7II</title>
@@ -15,137 +17,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://josef.spjut.me/games/wfr7ii_web/wfr7ii_web/</guid>
-      <description>&lt;script type=&#39;text/javascript&#39; src=&#39;jquery.min.js&#39;&gt;&lt;/script&gt;
-		&lt;script type=&#34;text/javascript&#34;&gt;
-		&lt;!--
-		var unityObjectUrl = &#34;UnityObject2.js&#34;;
-		if (document.location.protocol == &#39;https:&#39;)
-			unityObjectUrl = unityObjectUrl.replace(&#34;http://&#34;, &#34;https://ssl-&#34;);
-		document.write(&#39;&lt;script type=&#34;text\/javascript&#34; src=&#34;&#39; + unityObjectUrl + &#39;&#34;&gt;&lt;\/script&gt;&#39;);
-		--&gt;
-		&lt;/script&gt;
-		&lt;script type=&#34;text/javascript&#34;&gt;
-		&lt;!--
-			var config = {
-				width: 960, 
-				height: 600,
-				params: { enableDebugging:&#34;0&#34; }
-				
-			};
-			var u = new UnityObject2(config);
-
-			jQuery(function() {
-
-				var $missingScreen = jQuery(&#34;#unityPlayer&#34;).find(&#34;.missing&#34;);
-				var $brokenScreen = jQuery(&#34;#unityPlayer&#34;).find(&#34;.broken&#34;);
-				$missingScreen.hide();
-				$brokenScreen.hide();
-				
-				u.observeProgress(function (progress) {
-					switch(progress.pluginStatus) {
-						case &#34;broken&#34;:
-							$brokenScreen.find(&#34;a&#34;).click(function (e) {
-								e.stopPropagation();
-								e.preventDefault();
-								u.installPlugin();
-								return false;
-							});
-							$brokenScreen.show();
-						break;
-						case &#34;missing&#34;:
-							$missingScreen.find(&#34;a&#34;).click(function (e) {
-								e.stopPropagation();
-								e.preventDefault();
-								u.installPlugin();
-								return false;
-							});
-							$missingScreen.show();
-						break;
-						case &#34;installed&#34;:
-							$missingScreen.remove();
-						break;
-						case &#34;first&#34;:
-						break;
-					}
-				});
-				u.initPlugin(jQuery(&#34;#unityPlayer&#34;)[0], &#34;WFR7II_Web.unity3d&#34;);
-			});
-		--&gt;
-		&lt;/script&gt;
-		&lt;style type=&#34;text/css&#34;&gt;
-		&lt;!--
-		body {
-			font-family: Helvetica, Verdana, Arial, sans-serif;
-			background-color: white;
-			color: black;
-			text-align: center;
-		}
-		a:link, a:visited {
-			color: #000;
-		}
-		a:active, a:hover {
-			color: #666;
-		}
-		p.header {
-			font-size: small;
-		}
-		p.header span {
-			font-weight: bold;
-		}
-		p.footer {
-			font-size: x-small;
-		}
-		div.content {
-			margin: auto;
-			width: 960px;
-		}
-		div.broken,
-		div.missing {
-			margin: auto;
-			position: relative;
-			top: 50%;
-			width: 193px;
-		}
-		div.broken a,
-		div.missing a {
-			height: 63px;
-			position: relative;
-			top: -31px;
-		}
-		div.broken img,
-		div.missing img {
-			border-width: 0px;
-		}
-		div.broken {
-			display: none;
-		}
-		div#unityPlayer {
-			cursor: default;
-			height: 600px;
-			width: 960px;
-		}
-		--&gt;
-		&lt;/style&gt;
-
-
-		&lt;p class=&#34;header&#34;&gt;&lt;span&gt;Unity Web Player | &lt;/span&gt;Wizard Fight Race 7II&lt;/p&gt;
-		&lt;div class=&#34;content&#34;&gt;
-			&lt;div id=&#34;unityPlayer&#34;&gt;
-				&lt;div class=&#34;missing&#34;&gt;
-					&lt;a href=&#34;http://unity3d.com/webplayer/&#34; title=&#34;Unity Web Player. Install now!&#34;&gt;
-						&lt;img alt=&#34;Unity Web Player. Install now!&#34; src=&#34;http://webplayer.unity3d.com/installation/getunity.png&#34; width=&#34;193&#34; height=&#34;63&#34; /&gt;
-					&lt;/a&gt;
-				&lt;/div&gt;
-				&lt;div class=&#34;broken&#34;&gt;
-					&lt;a href=&#34;http://unity3d.com/webplayer/&#34; title=&#34;Unity Web Player. Install now! Restart your browser after install.&#34;&gt;
-						&lt;img alt=&#34;Unity Web Player. Install now! Restart your browser after install.&#34; src=&#34;http://webplayer.unity3d.com/installation/getunityrestart.png&#34; width=&#34;193&#34; height=&#34;63&#34; /&gt;
-					&lt;/a&gt;
-				&lt;/div&gt;
-			&lt;/div&gt;
-		&lt;/div&gt;
-		&lt;p class=&#34;footer&#34;&gt;&amp;laquo; created with &lt;a href=&#34;http://unity3d.com/unity/&#34; title=&#34;Go to unity3d.com&#34;&gt;Unity&lt;/a&gt; &amp;raquo;&lt;/p&gt;
-
-</description>
+      <description>&#39;); --    Unity Web Player | Wizard Fight Race 7II
+      &amp;laquo; created with Unity &amp;raquo;</description>
     </item>
     
   </channel>

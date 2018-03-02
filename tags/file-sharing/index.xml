@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>Josef Spjut</copyright>
     <lastBuildDate>Fri, 05 Sep 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/file-sharing/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://josef.spjut.me/tags/file-sharing/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Automount network drives on a Mac</title>
@@ -16,21 +18,7 @@
       <pubDate>Fri, 05 Sep 2014 00:00:00 +0000</pubDate>
       
       <guid>http://josef.spjut.me/osx/2014/09/05/automount-network-drives-on-a-mac/</guid>
-      <description>&lt;p&gt;I recently added a network storage device to my home network and
-decided I didn&amp;rsquo;t want to have to keep reconnecting to the device every
-time I got home and wanted to use it.
-I did a little searching and found a tool called
-&lt;a href=&#34;http://www.controlplaneapp.com/&#34; target=&#34;_blank&#34;&gt;ControlPlane&lt;/a&gt; that seems ideally
-suited to solve my issue.
-ControlPlane is really a tool to detect where you are using things
-that are already available and allow for automated actions to be taken
-when you arrive or leave a place.
-The particular action that interested me was mounting my network
-storage device, but there are many other actions you can take, such as
-opening a web page, or even starting a Time Machine backup.
-Things like network SSIDs, time of day, light level and geographic
-location can be used to try to detect which location you are at.&lt;/p&gt;
-</description>
+      <description>I recently added a network storage device to my home network and decided I didn&amp;rsquo;t want to have to keep reconnecting to the device every time I got home and wanted to use it. I did a little searching and found a tool called ControlPlane that seems ideally suited to solve my issue. ControlPlane is really a tool to detect where you are using things that are already available and allow for automated actions to be taken when you arrive or leave a place.</description>
     </item>
     
   </channel>

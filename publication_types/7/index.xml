@@ -7,8 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Josef Spjut</copyright>
-    <lastBuildDate>Tue, 24 May 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/publication_types/7/" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 23 May 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://josef.spjut.me/publication_types/7/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SimTrax: Simulation Infrastructure for Exploring Thousands of Cores</title>
+      <link>http://josef.spjut.me/publication/ref/c12/</link>
+      <pubDate>Wed, 23 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ref/c12/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Variable Shape and Variable Stiffness Controller for Haptic Virtual Interactions</title>
+      <link>http://josef.spjut.me/publication/ref/c11/</link>
+      <pubDate>Tue, 24 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ref/c11/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Hybrid Modulation for Near Zero Display Latency</title>

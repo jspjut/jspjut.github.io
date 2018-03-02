@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>Josef Spjut</copyright>
     <lastBuildDate>Thu, 03 Oct 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/verilog/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://josef.spjut.me/tags/verilog/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>FSM vs. English</title>
@@ -16,95 +18,8 @@
       <pubDate>Thu, 03 Oct 2013 00:00:00 +0000</pubDate>
       
       <guid>http://josef.spjut.me/teaching/2013/10/03/fsm-vs-english/</guid>
-      <description>&lt;p&gt;Yesterday, I managed to put together the in-class demo
-&lt;a href=&#34;http://josef.spjut.me/post/2013-10-01-interactive-lecture&#34;&gt;I discussed previously&lt;/a&gt;.
-In this post I&amp;rsquo;d like to give a brief explanation of what I showed and
-how it demonstrates the proper use of SystemVerilog to describe a
-finite state machine (FSM).&lt;/p&gt;
-
-&lt;p&gt;What I saw many students doing in their 3rd lab, was to use an English
-language description of the behavior they wanted that they translated
-directly to behavioral SystemVerilog.
-This is a fundamentally different procedure than I had intented to
-teach in the class, which was to take the English description of the
-behavior they want, and translate it to a FSM.
-The next step is to use that FSM and describe it using a standard
-SystemVerilog implementation.
-This includes 2 pieces of combinational logic, and a single sequential
-state register.&lt;/p&gt;
-
-&lt;p&gt;For this finite state machine, I describe what happens to a student when he or she sleeps.
-First, let&amp;rsquo;s say that a student can be happy, very happy, unhappy, or very unhappy.
-Whenever that student sleeps, happiness increases until it saturates at very happy.
-If a student doesn&amp;rsquo;t sleep, then happiness decreases until it is empty at very unhappy.
-When the student is happy, or very happy, the student will smile.
-The following examples are implementations of this description.&lt;/p&gt;
-
-&lt;p&gt;The first thing I showed in my demo is the following behavioral
-description based on the English description:&lt;/p&gt;
-
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-systemverilog&#34; data-lang=&#34;systemverilog&#34;&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt; 1&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;module&lt;/span&gt; student_beh (&lt;span style=&#34;color:#66d9ef&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;logic&lt;/span&gt; sleep, clk, &lt;span style=&#34;color:#66d9ef&#34;&gt;output&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;logic&lt;/span&gt; smile);
-&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt; 2&lt;/span&gt;
-&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt; 3&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;logic&lt;/span&gt; [&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;] happiness;
-&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt; 4&lt;/span&gt;
-&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt; 5&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;initial&lt;/span&gt; happiness &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&amp;#39;b10&lt;/span&gt;;
-&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt; 6&lt;/span&gt;
-&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt; 7&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;always_ff&lt;/span&gt; @(&lt;span style=&#34;color:#66d9ef&#34;&gt;posedge&lt;/span&gt; clk) &lt;span style=&#34;color:#66d9ef&#34;&gt;begin&lt;/span&gt;
-&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt; 8&lt;/span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (sleep) &lt;span style=&#34;color:#66d9ef&#34;&gt;begin&lt;/span&gt;
-&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt; 9&lt;/span&gt;		&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (happiness &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&amp;#39;b11&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;// if sleeping not fully happy, increase happiness
-&lt;/span&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;10&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;			happiness &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; happiness &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&amp;#39;b01&lt;/span&gt;;
-&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;11&lt;/span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
-&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;12&lt;/span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;begin&lt;/span&gt;
-&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;13&lt;/span&gt;		&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (happiness &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&amp;#39;b00&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;// if not sleeping decrease happiness
-&lt;/span&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;14&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;			happiness &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; happiness &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&amp;#39;b01&lt;/span&gt;;
-&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;15&lt;/span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
-&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;16&lt;/span&gt;	
-&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;17&lt;/span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (happiness &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&amp;#39;b10&lt;/span&gt;) &lt;span style=&#34;color:#66d9ef&#34;&gt;begin&lt;/span&gt; smile &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;// when happy, smile
-&lt;/span&gt;&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;18&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;begin&lt;/span&gt; smile &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
-&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;19&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
-&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;20&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;endmodule&lt;/span&gt;
-&lt;span style=&#34;color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;&#34;&gt;21&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;This module synthesized into the following RTL circuit diagram:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://josef.spjut.me/img/blog/images/2013/10/BEH.png&#34; alt=&#34;Failed FSM&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The next implementation I displayed uses a traditional FSM description
-in SystemVerilog:&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-systemverilog&#34; data-lang=&#34;systemverilog&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;module&lt;/span&gt; student_fsm (&lt;span style=&#34;color:#66d9ef&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;logic&lt;/span&gt; sleep, clk, &lt;span style=&#34;color:#66d9ef&#34;&gt;output&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;logic&lt;/span&gt; smile);
-&lt;span style=&#34;color:#66d9ef&#34;&gt;typedef&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;enum&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;logic&lt;/span&gt; [&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;] {VU, UU, HH, VH} statetype;
-statetype state, nextstate;
-
-&lt;span style=&#34;color:#66d9ef&#34;&gt;always_ff&lt;/span&gt; @(&lt;span style=&#34;color:#66d9ef&#34;&gt;posedge&lt;/span&gt; clk) &lt;span style=&#34;color:#75715e&#34;&gt;// State register
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;	state &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; nextstate;
-
-&lt;span style=&#34;color:#66d9ef&#34;&gt;always_comb&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;// next state logic
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;case&lt;/span&gt;(state)
-		VU:	nextstate &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; sleep &lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; UU &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; VU;
-		UU:	nextstate &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; sleep &lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; HH &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; VU;
-		HH:	nextstate &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; sleep &lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; VH &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; UU;
-		VH:	nextstate &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; sleep &lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; VH &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; HH;
-		&lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; nextstate &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; HH;
-	&lt;span style=&#34;color:#66d9ef&#34;&gt;endcase&lt;/span&gt;
-	
-&lt;span style=&#34;color:#66d9ef&#34;&gt;assign&lt;/span&gt; smile &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (state &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; HH &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; state &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; VH); &lt;span style=&#34;color:#75715e&#34;&gt;// output logic
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
-&lt;span style=&#34;color:#66d9ef&#34;&gt;endmodule&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;This module syntheizes into a much nicer looking FSM as shown:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://josef.spjut.me/img/blog/images/2013/10/FSM.png&#34; alt=&#34;Good FSM&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The first synthesis results sorta resemble an FSM, but are prone to
-bugs and inconsistent behavior, and led many students to spend much
-more time than they should have on the first lab assignment.
-The second synthesis results show exactly an FSM, and if we translated
-our English to an FSM diagram before starting to code, then we will
-easily be able to match our FSM to the results.
-The second technique is very much preferred for any hardware design.&lt;/p&gt;
-</description>
+      <description>Yesterday, I managed to put together the in-class demo I discussed previously. In this post I&amp;rsquo;d like to give a brief explanation of what I showed and how it demonstrates the proper use of SystemVerilog to describe a finite state machine (FSM).
+What I saw many students doing in their 3rd lab, was to use an English language description of the behavior they wanted that they translated directly to behavioral SystemVerilog.</description>
     </item>
     
     <item>
@@ -113,33 +28,7 @@ The second technique is very much preferred for any hardware design.&lt;/p&gt;
       <pubDate>Tue, 01 Oct 2013 00:00:00 +0000</pubDate>
       
       <guid>http://josef.spjut.me/teaching/2013/10/01/interactive-lecture/</guid>
-      <description>&lt;p&gt;In grading some labs this week, I noticed a trend among my students to
-create something that was essentially a finite state machine (FSM)
-without actually explicitly making a finite state machine in their
-verilog description.
-Typically a FSM has 3 parts, a &lt;em&gt;state register&lt;/em&gt;, &lt;em&gt;next state logic&lt;/em&gt;,
-and &lt;em&gt;output logic&lt;/em&gt;.
-The only part of the FSM that should be sequential logic is the
-&lt;em&gt;state register&lt;/em&gt; while the other parts should be purely combinational logic.
-That means that the SystemVerilog should have a single
-&lt;code&gt;always_ff @(posedge clk)&lt;/code&gt; section that only assigns the state register.
-Everything else should be combination using &lt;code&gt;always_comb&lt;/code&gt; or &lt;code&gt;assign&lt;/code&gt;
-statements.&lt;/p&gt;
-
-&lt;p&gt;Since this confusion still seems to be prevalent among the students in
-the class, I&amp;rsquo;ve decided I need to take more action to deliver this
-understanding.
-As a result, I am working on an in-class demo showing the RTL
-(register transfer level) representation of a couple different
-implementations of the same thing in class.
-While I believe this live demo will be quite effective, I also run the
-risk of failing miserably and spending a significant part of class
-debugging the demo and trying to make it work.
-If only there were some way to ensure that live demos never have
-issues.
-My current plan is to just practice the demo 3-4 times before hand to
-hopefully work out any bugs.&lt;/p&gt;
-</description>
+      <description>In grading some labs this week, I noticed a trend among my students to create something that was essentially a finite state machine (FSM) without actually explicitly making a finite state machine in their verilog description. Typically a FSM has 3 parts, a state register, next state logic, and output logic. The only part of the FSM that should be sequential logic is the state register while the other parts should be purely combinational logic.</description>
     </item>
     
   </channel>

@@ -8,7 +8,27 @@
     <language>en-us</language>
     <copyright>Josef Spjut</copyright>
     <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/home/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://josef.spjut.me/home/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://josef.spjut.me/home/about/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/home/about/</guid>
+      <description>Biography Josef Spjut is a Research Scientist at NVIDIA working on new human experiences, such as virtual and augmented reality. Prior to joining NVIDIA full time, he was a Visiting Assistant Professor in the department of Engineering at Harvey Mudd College. He received a Ph.D. from the University of Utah and a B.S. from University of California, Riverside, both in Computer Engineering.</description>
+    </item>
+    
+    <item>
+      <title>Recent Publications</title>
+      <link>http://josef.spjut.me/home/publications/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/home/publications/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

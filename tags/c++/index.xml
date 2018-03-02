@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>Josef Spjut</copyright>
     <lastBuildDate>Thu, 12 Dec 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/c&#43;&#43;/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://josef.spjut.me/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Interesting python style print in C&#43;&#43;</title>
@@ -23,42 +25,7 @@ It includes an implementation of some of the &lt;code&gt;print&lt;/code&gt; synt
 functionality of python 2 implemented in C++.
 Here&amp;rsquo;s the code (copied here, but I&amp;rsquo;m not the original author):&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;#include &amp;lt;iostream&amp;gt;
-
-namespace __hidden__ {
-  struct print {
-    bool space;
-    print() : space(false) {}
-    ~print() { std::cout &amp;lt;&amp;lt; std::endl; }
-
-    template &amp;lt;typename T&amp;gt;
-    print &amp;amp;operator , (const T &amp;amp;t) {
-      if (space) std::cout &amp;lt;&amp;lt; &#39; &#39;;
-      else space = true;
-      std::cout &amp;lt;&amp;lt; t;
-      return *this;
-    }
-  };
-}
-
-#define print __hidden__::print(),
-
-int main() {
-  int a = 1, b = 2;
-  print &amp;quot;this is a test&amp;quot;;
-  print &amp;quot;the sum of&amp;quot;, a, &amp;quot;and&amp;quot;, b, &amp;quot;is&amp;quot;, a + b;
-  return 0;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;While this implementation is interesting, it is missing what I think
-is the best feature of python &lt;code&gt;print&lt;/code&gt; and that is the ability to use
-&lt;code&gt;%&lt;/code&gt; to do C &lt;code&gt;printf&lt;/code&gt; style printing.
-If I end up with a bundle of extra time, I might actually try adding
-that functionality, though it&amp;rsquo;s not immediately apparent to me how to
-overload an operator to take an arbitrarily sized list as input&amp;hellip;&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

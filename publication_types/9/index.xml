@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>Josef Spjut</copyright>
     <lastBuildDate>Tue, 16 Jan 2018 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/publication_types/9/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://josef.spjut.me/publication_types/9/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>The Augmented Frontier: Challenges for Near Eye Display Computing</title>
@@ -16,8 +18,7 @@
       <pubDate>Tue, 16 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>http://josef.spjut.me/publication/ct/ct2/</guid>
-      <description>&lt;p&gt;See also &lt;a href=&#34;http://on-demand.gputechconf.com/siggraph/2017/video/sig1718-morgan-mcguire-virtual-frontier-computer-graphics.html&#34; target=&#34;_blank&#34;&gt;The Virtual Fronteir&lt;/a&gt; by Morgan McGuire from whom I borrowed many of the slides.&lt;/p&gt;
-</description>
+      <description>See also The Virtual Fronteir by Morgan McGuire from whom I borrowed many of the slides.</description>
     </item>
     
     <item>

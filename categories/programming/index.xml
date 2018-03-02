@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>Josef Spjut</copyright>
     <lastBuildDate>Tue, 20 May 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/categories/programming/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://josef.spjut.me/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Jetson TK1 First Steps</title>
@@ -16,48 +18,7 @@
       <pubDate>Tue, 20 May 2014 00:00:00 +0000</pubDate>
       
       <guid>http://josef.spjut.me/programming/2014/05/20/jetson-tk1-first-steps/</guid>
-      <description>&lt;p&gt;I recently received my &lt;a href=&#34;https://developer.nvidia.com/jetson-tk1&#34; target=&#34;_blank&#34;&gt;Jetson TK1 Development
-Board&lt;/a&gt;, which I&amp;rsquo;m evaluating
-for potential use in an embedded systems course next Spring.
-This board is attractive to me because it has a high-end quad core ARM
-A15 processor as well as a high-end mobile GPU with support for the
-latest OpenGL and CUDA development environments.
-This post is going to serve as a way for me to record the things
-needed to set up the device in the first place, and hopefully more
-posts will follow as I manage to develop some examples on the board
-that will hopefully turn into lab assignments for the class.&lt;/p&gt;
-
-&lt;p&gt;The first thing you notice when you plug in the board and turn it on,
-is that it boots to an OS without any setup because the built-in flash
-has linux on it from the factory.
-However, there is no x11 support out of the box.
-Well that&amp;rsquo;s not quite true&amp;hellip;
-The support is available, but you must &lt;a href=&#34;http://developer.download.nvidia.com/embedded/jetson/TK1/README.txt&#34; target=&#34;_blank&#34;&gt;run a script to install the
-driver&lt;/a&gt;.
-The instructions from the README are copied and inline here:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;This README file lists instructions on how to install the NVIDIA
-Linux driver binary release on your target located in:
-${HOME}/NVIDIA-INSTALLER
-
-Step 1)
-Change directories into the NVIDIA installation directory:
-    cd ${HOME}/NVIDIA-INSTALLER
-
-Step 2)
-Run the installer script to extract and install the Linux driver
-binary release:
-    sudo ./installer.sh
-
-Step 3)
-Reboot the system to have the graphical desktop UI come up.
-
-NOTES:
-- The installer.sh should only be run once.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;More to come&amp;hellip;&lt;/p&gt;
-</description>
+      <description>I recently received my Jetson TK1 Development Board, which I&amp;rsquo;m evaluating for potential use in an embedded systems course next Spring. This board is attractive to me because it has a high-end quad core ARM A15 processor as well as a high-end mobile GPU with support for the latest OpenGL and CUDA development environments. This post is going to serve as a way for me to record the things needed to set up the device in the first place, and hopefully more posts will follow as I manage to develop some examples on the board that will hopefully turn into lab assignments for the class.</description>
     </item>
     
     <item>
@@ -66,20 +27,7 @@ NOTES:
       <pubDate>Sat, 25 Jan 2014 00:00:00 +0000</pubDate>
       
       <guid>http://josef.spjut.me/programming/2014/01/25/animated-gifs-from-movies/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve often wanted to be able to make animated gifs of things.
-I have also been interested in simple programmatic video editing from
-time to time, particularly for animating a series of still frames from
-images rendered by my graphics architecture simulations.
-Today on reddit, I came across &lt;a href=&#34;http://zulko.github.io/blog/2014/01/23/making-animated-gifs-from-video-files-with-python/&#34; target=&#34;_blank&#34;&gt;this blog
-post&lt;/a&gt;
-that describes a sequence of ways to use the
-&lt;a href=&#34;http://zulko.github.io/moviepy/&#34; target=&#34;_blank&#34;&gt;MoviePy&lt;/a&gt; library to generate
-animated gifs.
-It looks like exactly the kind of solution I want since I like to use
-python whenever possible for simple things.
-I don&amp;rsquo;t have anything profound to say about this, and mostly just
-wanted to record the links for my future reference.&lt;/p&gt;
-</description>
+      <description>I&amp;rsquo;ve often wanted to be able to make animated gifs of things. I have also been interested in simple programmatic video editing from time to time, particularly for animating a series of still frames from images rendered by my graphics architecture simulations. Today on reddit, I came across this blog post that describes a sequence of ways to use the MoviePy library to generate animated gifs. It looks like exactly the kind of solution I want since I like to use python whenever possible for simple things.</description>
     </item>
     
     <item>
@@ -95,42 +43,7 @@ It includes an implementation of some of the &lt;code&gt;print&lt;/code&gt; synt
 functionality of python 2 implemented in C++.
 Here&amp;rsquo;s the code (copied here, but I&amp;rsquo;m not the original author):&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;#include &amp;lt;iostream&amp;gt;
-
-namespace __hidden__ {
-  struct print {
-    bool space;
-    print() : space(false) {}
-    ~print() { std::cout &amp;lt;&amp;lt; std::endl; }
-
-    template &amp;lt;typename T&amp;gt;
-    print &amp;amp;operator , (const T &amp;amp;t) {
-      if (space) std::cout &amp;lt;&amp;lt; &#39; &#39;;
-      else space = true;
-      std::cout &amp;lt;&amp;lt; t;
-      return *this;
-    }
-  };
-}
-
-#define print __hidden__::print(),
-
-int main() {
-  int a = 1, b = 2;
-  print &amp;quot;this is a test&amp;quot;;
-  print &amp;quot;the sum of&amp;quot;, a, &amp;quot;and&amp;quot;, b, &amp;quot;is&amp;quot;, a + b;
-  return 0;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;While this implementation is interesting, it is missing what I think
-is the best feature of python &lt;code&gt;print&lt;/code&gt; and that is the ability to use
-&lt;code&gt;%&lt;/code&gt; to do C &lt;code&gt;printf&lt;/code&gt; style printing.
-If I end up with a bundle of extra time, I might actually try adding
-that functionality, though it&amp;rsquo;s not immediately apparent to me how to
-overload an operator to take an arbitrarily sized list as input&amp;hellip;&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -139,27 +52,7 @@ overload an operator to take an arbitrarily sized list as input&amp;hellip;&lt;/
       <pubDate>Wed, 25 Sep 2013 00:00:00 +0000</pubDate>
       
       <guid>http://josef.spjut.me/programming/2013/09/25/easiest-development-job-ever/</guid>
-      <description>&lt;p&gt;Today I came across &lt;a href=&#34;http://blog.plover.com/tech/prudential.html&#34; target=&#34;_blank&#34;&gt;a blog
-post&lt;/a&gt; from a developer
-who describes a project he worked on that failed spectacularly.
-This project was a web database query to sort real estate brokers for
-an insurance company.
-If you want to see the results of the project in the way the original
-author intended, then you should visit the link above.
-It turns out that the insurance company provides the contact info of
-real estate brokers solely to collect a referral fee for that
-service.
-The database query in effect bypassed the referral procedure so that
-clients would be able to locate brokers without the company collecting
-a fee.
-In the end, all of the information from the database was removed so
-that the user was just given a list of names, each with the referral
-number for the company&amp;rsquo;s referral hotline which would allow the
-company to collect the referral fee.
-If this developer had figured out what the company actually wanted at
-the beginning, then it would have been easy for him to just place the
-phone number on the website and call it a day.&lt;/p&gt;
-</description>
+      <description>Today I came across a blog post from a developer who describes a project he worked on that failed spectacularly. This project was a web database query to sort real estate brokers for an insurance company. If you want to see the results of the project in the way the original author intended, then you should visit the link above. It turns out that the insurance company provides the contact info of real estate brokers solely to collect a referral fee for that service.</description>
     </item>
     
   </channel>

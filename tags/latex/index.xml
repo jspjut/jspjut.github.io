@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>Josef Spjut</copyright>
     <lastBuildDate>Tue, 02 Dec 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/latex/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://josef.spjut.me/tags/latex/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Submitting my first article to arXiv</title>
@@ -16,66 +18,7 @@
       <pubDate>Tue, 02 Dec 2014 00:00:00 +0000</pubDate>
       
       <guid>http://josef.spjut.me/research/2014/12/02/submitting-my-first-article-to-arxiv/</guid>
-      <description>&lt;p&gt;Today I submitted a technical report done by my students over the last academic year.
-It took a while to get the write-up to the level of quality that I felt good about submitting it,
-but now that it&amp;rsquo;s there, I figured I should push it out.
-I used &lt;a href=&#34;http://arxiv.org/&#34; target=&#34;_blank&#34;&gt;arXiv&lt;/a&gt; to post it since they make it easy to publish a technical report
-while not preventing you from submitting the work to another venue such as a conference or journal
-at a later date.
-I used Latex to write the paper, and in preparing the submission, there were a
-couple modifications I had to make to get it accepted by the system.&lt;/p&gt;
-
-&lt;p&gt;First, I had to include a line that says &lt;code&gt;\pdfoutput=1&lt;/code&gt; somewhere
-in the first 5 lines of the main tex file I submitted.&lt;/p&gt;
-
-&lt;p&gt;Second, I had to include the &lt;code&gt;main.bbl&lt;/code&gt; file that was generated
-locally as part of my build process.
-It appears that they don&amp;rsquo;t actually need the &lt;code&gt;.bib&lt;/code&gt; file and
-only care about the &lt;code&gt;.bbl&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Next, my particular document used a style sheet called &lt;code&gt;jpaper.cls&lt;/code&gt; that
-had a strange error with how it includes the &lt;code&gt;hyperref&lt;/code&gt; package.
-The relevant lines that I had to comment out are below (comments added):&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;% Link and URL formatting.
-%\iftoggle{jp@hyperref}{
-%  \RequirePackage{hyperref}
-%  \hypersetup{
-%    unicode=true,
-%    pdfstartview={FitH},
-%    colorlinks=true,
-%    %citecolor=black,
-%    %filecolor=black,
-%    %linkcolor=black,
-%    %urlcolor=black
-% }}{}
-%\RequirePackage{url}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Finally, I had an issue with figures I included that I think had to do with how
-I uploaded all of the source material.
-Since I submitted each file separately instead of part of a compressed folder,
-the graphics I was trying to include were now a part of the root directory instead
-of being present in the &lt;code&gt;graphics&lt;/code&gt; subdirectory that I use locally.
-Luckily, there was a straightforward fix that I think I&amp;rsquo;ll include in my future
-documents by default because it&amp;rsquo;s much cleaner than what I&amp;rsquo;ve done traditionally.
-In the main &lt;code&gt;.tex&lt;/code&gt; file include a line like the following:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;% graphics path
-\graphicspath{ {./graphics/} }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then, instead of including the relative path to everything in the graphics path,
-just include the graphics directly as in this example:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{figure}
-\centering
-\includegraphics[width=\columnwidth]{PairedCaches}
-\caption{Partly shared instruction caches}
-\label{fig:paired}
-\end{figure}
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <description>Today I submitted a technical report done by my students over the last academic year. It took a while to get the write-up to the level of quality that I felt good about submitting it, but now that it&amp;rsquo;s there, I figured I should push it out. I used arXiv to post it since they make it easy to publish a technical report while not preventing you from submitting the work to another venue such as a conference or journal at a later date.</description>
     </item>
     
     <item>
@@ -84,56 +27,7 @@ just include the graphics directly as in this example:&lt;/p&gt;
       <pubDate>Fri, 03 Jan 2014 00:00:00 +0000</pubDate>
       
       <guid>http://josef.spjut.me/latex/2014/01/03/multiple-author-affiliations-in-latex/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve recently had the pleasure of updating a recent journal article
-submission with my list of affiliations.
-On the article, there are 5 authors, and among them, I am the only one
-with different affiliations, though I share the other affiliation with
-the rest of the authors.
-After some quick googling on how I should perform this, I came up with
-the following snippet of code that should have worked.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\usepackage{authblk}
-
-\author[1]{Daniel Kopta}
-\author[1]{Konstantin Shkurko}
-\author[1,2,3]{Josef Spjut}
-\author[1]{Erik Brunvand}
-\author[1]{Al Davis}
-\affil[1]{School of Computing, University of Utah, Salt Lake City, UT, USA\\
-       \{redacted\}@email.edu}
-\affil[2]{NVIDIA Research}
-\affil[3]{Department of Engineering, Harvey Mudd College, Claremont, CA, USA}
-\renewcommand\Authands{ and }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The &lt;code&gt;authblk&lt;/code&gt; package seems to be beautiful for performing this
-function, however it has one problem when used with the other styles
-for this particular article. It causes &lt;code&gt;\maketitle&lt;/code&gt; to fail
-complaining about some spacing error, and I couldn&amp;rsquo;t figure out how to
-fix it.
-Instead, I opted for the poor man&amp;rsquo;s solution to the problem with the
-following set of lines:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\author[D. Kopta et al.]
-       {D. Kopta$^1$, K. Shkurko$^1$, J. Spjut$^{1,2,3}$,
-       E. Brunvand$^1$, and A. Davis$^1$
-       \\
-       $^1$School of Computing, University of Utah, Salt Lake City,
-       UT, USA\\
-       \{redacted\}@email.edu\\ 
-       $^2$NVIDIA Research\\
-       $^3$Department of Engineering, Harvey Mudd College, Claremont,
-       CA, USA\\
-       }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This code generates into the following on the pdf.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://josef.spjut.me/blog/images/2014/01/authors.png&#34; alt=&#34;Author Affiliations&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s not as graceful as the &lt;code&gt;authblk&lt;/code&gt; code, but it works and it&amp;rsquo;s a
-simple hack that you only have to do once per article.&lt;/p&gt;
-</description>
+      <description>I&amp;rsquo;ve recently had the pleasure of updating a recent journal article submission with my list of affiliations. On the article, there are 5 authors, and among them, I am the only one with different affiliations, though I share the other affiliation with the rest of the authors. After some quick googling on how I should perform this, I came up with the following snippet of code that should have worked.</description>
     </item>
     
   </channel>

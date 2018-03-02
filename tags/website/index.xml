@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>Josef Spjut</copyright>
     <lastBuildDate>Thu, 06 Jul 2017 09:49:57 -0400</lastBuildDate>
-    <atom:link href="/tags/website/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://josef.spjut.me/tags/website/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Hugo Notes</title>
@@ -16,16 +18,9 @@
       <pubDate>Thu, 06 Jul 2017 09:49:57 -0400</pubDate>
       
       <guid>http://josef.spjut.me/post/2017/hugo-notes/</guid>
-      <description>&lt;p&gt;I recently undertook the effort of moving my website from jekyll using jekyll-bootstrap to Hugo and I wanted to record some notes from my efforts. In particular I want to collect a set of useful links that helped me in making the switch.&lt;/p&gt;
-
-&lt;p&gt;For what it&amp;rsquo;s worth, I greatly prefer Hugo now that I&amp;rsquo;ve gotten used to it, though there wasn&amp;rsquo;t too much broken about Jekyll.&lt;/p&gt;
-
-&lt;p&gt;The most useful thing for developing my site was when I found the &lt;a href=&#34;https://sourcethemes.com/academic/&#34; target=&#34;_blank&#34;&gt;academic theme&lt;/a&gt;. It turns out that in Hugo, themes contain a lot of the functionality of a site, and they make it easy to add on functionality either by modifying the theme, or your site in particular. The academic theme is widely used so there a good &lt;a href=&#34;https://sourcethemes.com/academic/post/getting-started/&#34; target=&#34;_blank&#34;&gt;reference page&lt;/a&gt; to help you get started.&lt;/p&gt;
-
-&lt;p&gt;The creator of the academic theme also has a &lt;a href=&#34;https://georgecushen.com/create-your-website-with-hugo/&#34; target=&#34;_blank&#34;&gt;good tutorial&lt;/a&gt; on his blog for how to set up a new hugo site from scratch.&lt;/p&gt;
-
-&lt;p&gt;I ended up testing a lot of my design on a separate repository so I could test out pushing to github sites. It turns out that github user pages need to push to the &lt;code&gt;master&lt;/code&gt; branch in order to publish to the web, so my original script to push to a &lt;code&gt;gh-pages&lt;/code&gt; branch had to be modified. It seems to be working as of July 26, 2017, but there are probably a ton of bugs remaining. If you happen to find any bugs, please leave a comment or sent me a message on twitter to let me know and I&amp;rsquo;ll fix it.&lt;/p&gt;
-</description>
+      <description>I recently undertook the effort of moving my website from jekyll using jekyll-bootstrap to Hugo and I wanted to record some notes from my efforts. In particular I want to collect a set of useful links that helped me in making the switch.
+For what it&amp;rsquo;s worth, I greatly prefer Hugo now that I&amp;rsquo;ve gotten used to it, though there wasn&amp;rsquo;t too much broken about Jekyll.
+The most useful thing for developing my site was when I found the academic theme.</description>
     </item>
     
     <item>
@@ -34,25 +29,7 @@
       <pubDate>Wed, 18 Sep 2013 00:00:00 +0000</pubDate>
       
       <guid>http://josef.spjut.me/website/2013/09/18/jekyll-bootstrap-rake-post/</guid>
-      <description>&lt;p&gt;I recently discovered a new feature that comes with Jekyll bootstrap,
-but I&amp;rsquo;m unsure whether it is only in JB, or if it comes by default
-with Jekyll.
-There is a Rakefile (which is sort of like a Makefile, but written in
-Ruby) that includes a few nice functions.
-The one I discovered most recently allows you to create a new blog
-post complete with the YAML frontmatter and the proper file name for
-Jekyll to do the right thing with.
-The usage is as follows:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# Usage: rake post title=&amp;quot;A Title&amp;quot; [date=&amp;quot;2012-02-09&amp;quot;] [tags=[tag1, tag2]]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If you omit all of the optional arguments, then &lt;code&gt;rake post&lt;/code&gt; will
-create a new post on today&amp;rsquo;s date titled &amp;ldquo;New Post&amp;rdquo; with the default
-values for everything else.
-I personally prefer to include a title in my rake command to get the
-correct file name from the beginning.&lt;/p&gt;
-</description>
+      <description>I recently discovered a new feature that comes with Jekyll bootstrap, but I&amp;rsquo;m unsure whether it is only in JB, or if it comes by default with Jekyll. There is a Rakefile (which is sort of like a Makefile, but written in Ruby) that includes a few nice functions. The one I discovered most recently allows you to create a new blog post complete with the YAML frontmatter and the proper file name for Jekyll to do the right thing with.</description>
     </item>
     
     <item>
@@ -69,29 +46,7 @@ pages, which allows a reasonably good citation syntax for adding links
 to my co-authors.
 As an example, the following is the syntax for one paper along with
 the citations to my co-authors:
-&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;1. [Daniel Kopta][dk], **[Josef Spjut][jbs]**, [Erik Brunvand][elb];
-**Grid-Based Ray Tracing for a Parallel Computing Architecture**,
-*High Performance Graphics (HPG&#39;09)*, New Orleans, August 1-3, 2009.
-   [dk]: http://www.cs.utah.edu/~dkopta
-   [ks]: http://www.cs.utah.edu/~kshkurko
-   [jbs]: http://www3.hmc.edu/~jspjut
-   [elb]: http://www.cs.utah.edu/~elb
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The beauty of this is I now only need to update one spot if anyone
-changes their affiliation or home page. Awesome.&lt;/p&gt;
-
-&lt;p&gt;Conveniently, jekyll-bootstrap also gives all the niceness of &lt;a href=&#34;http://getbootstrap.com&#34; target=&#34;_blank&#34;&gt;twitter
-bootstrap&lt;/a&gt;, such as the decent template you now see (I hope to improve
-it to my liking more in the future).
-The main reason I chose the hooligan template is that it came with
-easy-to-use social media integration that you can see in the top right
-if you are looking at this webpage on a non-mobile browser.&lt;/p&gt;
-
-&lt;p&gt;As an added benefit, I can now easily post blog entries, and hook into
-Disqus for comments. Nice.&lt;/p&gt;</description>
+&lt;/p&gt;</description>
     </item>
     
   </channel>

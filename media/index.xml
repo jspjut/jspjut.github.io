@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Josef Spjut</copyright>
-    <atom:link href="/media/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://josef.spjut.me/media/index.xml" rel="self" type="application/rss+xml" />
+    
     
   </channel>
 </rss>

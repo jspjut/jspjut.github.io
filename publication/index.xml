@@ -8,7 +8,27 @@
     <language>en-us</language>
     <copyright>Josef Spjut</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/publication/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://josef.spjut.me/publication/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SimTrax: Simulation Infrastructure for Exploring Thousands of Cores</title>
+      <link>http://josef.spjut.me/publication/ref/c12/</link>
+      <pubDate>Wed, 23 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ref/c12/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Variable Shape and Variable Stiffness Controller for Haptic Virtual Interactions</title>
+      <link>http://josef.spjut.me/publication/ref/c11/</link>
+      <pubDate>Tue, 24 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ref/c11/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>The Augmented Frontier: Challenges for Near Eye Display Computing</title>
@@ -16,8 +36,7 @@
       <pubDate>Tue, 16 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>http://josef.spjut.me/publication/ct/ct2/</guid>
-      <description>&lt;p&gt;See also &lt;a href=&#34;http://on-demand.gputechconf.com/siggraph/2017/video/sig1718-morgan-mcguire-virtual-frontier-computer-graphics.html&#34; target=&#34;_blank&#34;&gt;The Virtual Fronteir&lt;/a&gt; by Morgan McGuire from whom I borrowed many of the slides.&lt;/p&gt;
-</description>
+      <description>See also The Virtual Fronteir by Morgan McGuire from whom I borrowed many of the slides.</description>
     </item>
     
     <item>
@@ -143,6 +162,114 @@
       <pubDate>Wed, 10 Jul 2013 00:00:00 +0000</pubDate>
       
       <guid>http://josef.spjut.me/publication/ref/c8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fast, Effective BVH Updates for Animated Scenes</title>
+      <link>http://josef.spjut.me/publication/ref/c7/</link>
+      <pubDate>Thu, 01 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ref/c7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Mobile Accelerator Architecture for Ray Tracing</title>
+      <link>http://josef.spjut.me/publication/ref/c6/</link>
+      <pubDate>Wed, 01 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ref/c6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Time to Recache: Measuring Memory Miss Behavior</title>
+      <link>http://josef.spjut.me/publication/tr/tr2/</link>
+      <pubDate>Thu, 01 Sep 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/tr/tr2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fast, Effective BVH Updates for Dynamic Ray-Traced Scenes Using Tree Rotations</title>
+      <link>http://josef.spjut.me/publication/tr/tr1/</link>
+      <pubDate>Fri, 01 Jul 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/tr/tr1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Efficient MIMD Architectures for High-Performance Ray Tracing</title>
+      <link>http://josef.spjut.me/publication/ref/c5/</link>
+      <pubDate>Fri, 01 Oct 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ref/c5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SWEL: Hardware Cache Coherence Protocols to Map Shared Data onto Shared Caches</title>
+      <link>http://josef.spjut.me/publication/ref/c4/</link>
+      <pubDate>Wed, 01 Sep 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ref/c4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TRaX: A Multicore Architecture for Real-Time Ray Tracing</title>
+      <link>http://josef.spjut.me/publication/ref/c3/</link>
+      <pubDate>Tue, 01 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ref/c3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Grid-Based Ray Tracing for a Parallel Computing Architecture</title>
+      <link>http://josef.spjut.me/publication/pos/p2/</link>
+      <pubDate>Sat, 01 Aug 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/pos/p2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hardware-accelerated gradient noise for graphics</title>
+      <link>http://josef.spjut.me/publication/ref/c2/</link>
+      <pubDate>Sun, 10 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ref/c2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Optimizing a Multi-Core Processor for Message-Passing Workloads</title>
+      <link>http://josef.spjut.me/publication/ref/c1/</link>
+      <pubDate>Wed, 01 Apr 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ref/c1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Comparing Incoherent Ray Performance of TRaX vs. Manta</title>
+      <link>http://josef.spjut.me/publication/pos/p1/</link>
+      <pubDate>Sat, 09 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/pos/p1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TRaX: A Multi-Threaded Architecture for Real-Time Ray Tracing</title>
+      <link>http://josef.spjut.me/publication/ref/c0/</link>
+      <pubDate>Sun, 08 Jun 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ref/c0/</guid>
       <description></description>
     </item>
     

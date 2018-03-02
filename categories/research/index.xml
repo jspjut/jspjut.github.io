@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>Josef Spjut</copyright>
     <lastBuildDate>Tue, 02 Dec 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/categories/research/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://josef.spjut.me/categories/research/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Submitting my first article to arXiv</title>
@@ -16,66 +18,7 @@
       <pubDate>Tue, 02 Dec 2014 00:00:00 +0000</pubDate>
       
       <guid>http://josef.spjut.me/research/2014/12/02/submitting-my-first-article-to-arxiv/</guid>
-      <description>&lt;p&gt;Today I submitted a technical report done by my students over the last academic year.
-It took a while to get the write-up to the level of quality that I felt good about submitting it,
-but now that it&amp;rsquo;s there, I figured I should push it out.
-I used &lt;a href=&#34;http://arxiv.org/&#34; target=&#34;_blank&#34;&gt;arXiv&lt;/a&gt; to post it since they make it easy to publish a technical report
-while not preventing you from submitting the work to another venue such as a conference or journal
-at a later date.
-I used Latex to write the paper, and in preparing the submission, there were a
-couple modifications I had to make to get it accepted by the system.&lt;/p&gt;
-
-&lt;p&gt;First, I had to include a line that says &lt;code&gt;\pdfoutput=1&lt;/code&gt; somewhere
-in the first 5 lines of the main tex file I submitted.&lt;/p&gt;
-
-&lt;p&gt;Second, I had to include the &lt;code&gt;main.bbl&lt;/code&gt; file that was generated
-locally as part of my build process.
-It appears that they don&amp;rsquo;t actually need the &lt;code&gt;.bib&lt;/code&gt; file and
-only care about the &lt;code&gt;.bbl&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Next, my particular document used a style sheet called &lt;code&gt;jpaper.cls&lt;/code&gt; that
-had a strange error with how it includes the &lt;code&gt;hyperref&lt;/code&gt; package.
-The relevant lines that I had to comment out are below (comments added):&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;% Link and URL formatting.
-%\iftoggle{jp@hyperref}{
-%  \RequirePackage{hyperref}
-%  \hypersetup{
-%    unicode=true,
-%    pdfstartview={FitH},
-%    colorlinks=true,
-%    %citecolor=black,
-%    %filecolor=black,
-%    %linkcolor=black,
-%    %urlcolor=black
-% }}{}
-%\RequirePackage{url}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Finally, I had an issue with figures I included that I think had to do with how
-I uploaded all of the source material.
-Since I submitted each file separately instead of part of a compressed folder,
-the graphics I was trying to include were now a part of the root directory instead
-of being present in the &lt;code&gt;graphics&lt;/code&gt; subdirectory that I use locally.
-Luckily, there was a straightforward fix that I think I&amp;rsquo;ll include in my future
-documents by default because it&amp;rsquo;s much cleaner than what I&amp;rsquo;ve done traditionally.
-In the main &lt;code&gt;.tex&lt;/code&gt; file include a line like the following:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;% graphics path
-\graphicspath{ {./graphics/} }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then, instead of including the relative path to everything in the graphics path,
-just include the graphics directly as in this example:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{figure}
-\centering
-\includegraphics[width=\columnwidth]{PairedCaches}
-\caption{Partly shared instruction caches}
-\label{fig:paired}
-\end{figure}
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <description>Today I submitted a technical report done by my students over the last academic year. It took a while to get the write-up to the level of quality that I felt good about submitting it, but now that it&amp;rsquo;s there, I figured I should push it out. I used arXiv to post it since they make it easy to publish a technical report while not preventing you from submitting the work to another venue such as a conference or journal at a later date.</description>
     </item>
     
     <item>
@@ -84,40 +27,8 @@ just include the graphics directly as in this example:&lt;/p&gt;
       <pubDate>Thu, 19 Sep 2013 00:00:00 +0000</pubDate>
       
       <guid>http://josef.spjut.me/research/2013/09/19/undergraduated-research/</guid>
-      <description>&lt;p&gt;Over the last year, I advised 5 undergraduate students on a couple
-research projects. One of them included the development of tutorials
-and lab assignments for a new class, but didn&amp;rsquo;t have a goal of
-publishing an academic paper. This student did a good job, and added
-on a persistance of vision display to a combat robot&amp;rsquo;s spinning arm
-that wouldn&amp;rsquo;t have otherwise been there.&lt;/p&gt;
-
-&lt;p&gt;The other main project involved the rest of my research students.
-Three of those students were seniors, and have since graduated and
-began working full-time jobs in industry.
-However, the research they performed was very good, and we are
-currently working on an academic paper that I believe to represent a
-significant contribution to the field of cache performance analysis.
-In fact one of these former students believes that our methods may be
-useful to his current employer where he&amp;rsquo;s involved in a dram caching
-layer for a large database.&lt;/p&gt;
-
-&lt;p&gt;The real difficulty I&amp;rsquo;ve discovered in finishing off this paper comes
-from the lack of availability from the authors, and the lack of
-accountability to me for performing work.
-The project took some time to get started last fall, and as a result
-we only finished about half of what I had planned for the year.
-It seems that student pay is a poor motivator for students that will
-be making significantly more based on their course grades.
-The students I had doing research for grades seemed much more likely
-to try to do what I asked, though one had some serious problems
-describing what was missing from that student&amp;rsquo;s knowledge.
-The end result was that I could not advise this student effectively.&lt;/p&gt;
-
-&lt;p&gt;Even after all of the challenges, the goal is to submit the paper in
-the next week. Right now it&amp;rsquo;s not even close to complete. Here&amp;rsquo;s
-hoping that the (former) students can find the time to complete the
-paper.&lt;/p&gt;
-</description>
+      <description>Over the last year, I advised 5 undergraduate students on a couple research projects. One of them included the development of tutorials and lab assignments for a new class, but didn&amp;rsquo;t have a goal of publishing an academic paper. This student did a good job, and added on a persistance of vision display to a combat robot&amp;rsquo;s spinning arm that wouldn&amp;rsquo;t have otherwise been there.
+The other main project involved the rest of my research students.</description>
     </item>
     
   </channel>
