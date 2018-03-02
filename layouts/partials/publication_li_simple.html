@@ -13,6 +13,7 @@
         {{ .Params.publication | markdownify }},
         {{ end }}
         {{ dateFormat "2006" .Params.date }}
+        {{ if now.Before .Params.date }}(to appear){{ end }}
       </span><br />
       <span class="pub-authors" itemprop="author">
         {{ with .Params.authors }}
