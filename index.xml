@@ -45,12 +45,12 @@ a.primary{
 
 
 &lt;h2&gt;Refereed Publications&lt;/h2&gt;
-&lt;ol&gt;&lt;li&gt;&lt;a href=&#34;https://www.cs.utah.edu/~tgrant/&#34; class=&#34;author&#34;&gt;Tim Grant&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~kshkurko/&#34; class=&#34;author&#34;&gt;Konstantin Shkurko&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~dkopta/&#34; class=&#34;author&#34;&gt;Daniel Kopta&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~elb/&#34; class=&#34;author&#34;&gt;Erik Brunvand&lt;/a&gt;;
+&lt;ol&gt;&lt;li&gt;&lt;a href=&#34;http://www.cs.utah.edu/~kshkurko/&#34; class=&#34;author&#34;&gt;Konstantin Shkurko&lt;/a&gt;, &lt;a href=&#34;https://www.cs.utah.edu/~tgrant/&#34; class=&#34;author&#34;&gt;Tim Grant&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~elb/&#34; class=&#34;author&#34;&gt;Erik Brunvand&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~dkopta/&#34; class=&#34;author&#34;&gt;Daniel Kopta&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~elvasiou/&#34; class=&#34;author&#34;&gt;Elena Vasiou&lt;/a&gt;, &lt;a href=&#34;https://geometrian.com/&#34; class=&#34;author&#34;&gt;Ian Mallett&lt;/a&gt;, &lt;a href=&#34;http://www.cemyuksel.com/&#34; class=&#34;author&#34;&gt;Cem Yuksel&lt;/a&gt;;
 &lt;strong&gt;SimTrax: Simulation Infrastructure for Exploring Thousands of Cores&lt;/strong&gt;,
 &lt;em&gt;ACM Great Lakes Symposium on VLSI&lt;/em&gt;,
 May 23-25, 2018. (to appear)
-&lt;a href=&#34;None&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibc12&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibc12&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{grantshkurko18,
- author = { Tim Grant and Konstantin Shkurko and Daniel Kopta and Josef Spjut and Erik Brunvand },
+&lt;a href=&#34;None&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibc12&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibc12&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{shkurkogrant18,
+ author = { Konstantin Shkurko and Tim Grant and Erik Brunvand and Daniel Kopta and Josef Spjut and Elena Vasiou and Ian Mallett and Cem Yuksel },
  title = { {SimTrax: Simulation Infrastructure for Exploring Thousands of Cores} },
  year = {2018},
  booktitle = {ACM Great Lakes Symposium on VLSI}
@@ -60,7 +60,8 @@ May 23-25, 2018. (to appear)
 &lt;strong&gt;A Variable Shape and Variable Stiffness Controller for Haptic Virtual Interactions&lt;/strong&gt;,
 &lt;em&gt;IEEE International Conference on Soft Robotics&lt;/em&gt;,
 April 24-28, 2018. (to appear)
-&lt;a href=&#34;None&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibc11&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibc11&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{murraypeele18,
+&lt;a href=&#34;http://research.nvidia.com/sites/default/files/pubs/2018-04_A-Variable-Shape/Mac%20Murray%20Final%2020180228.pdf&#34;&gt;paper&lt;/a&gt;
+&lt;a href=&#34;http://research.nvidia.com/publication/2018-04_A-Variable-Shape&#34;&gt;alternate&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibc11&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibc11&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{murraypeele18,
  author = { Benjamin Mac Murray and Bryan Peele and Patricia Xu and Josef Spjut and Omer Shapira and David Luebke and Robert Shepherd },
  title = { {A Variable Shape and Variable Stiffness Controller for Haptic Virtual Interactions} },
  year = {2018},
@@ -452,11 +453,11 @@ Andrew Carter &amp;#39;13, Paula Ning &amp;#39;13, Max Korbel &amp;#39;13, Kathe
 
 &lt;h3&gt;Current and Recent Collaborators&lt;/h3&gt;
 
-&lt;p&gt;Konstantin Shkurko, Al Davis, Gordon D. Love, Tero Karras, Dong-hyeon Park, Trey Greer, Morgan McGuire, Anjul Patney, Ward Lopes, Bryan Peele, Eric Storm, Jonghyun Kim, Benjamin Mac Murray, Daniel Kopta, Andrew Fishberg, Martin S. Banks, Robert Shepherd, Erik Brunvand, Ross Knepper, Akhil Bagaria, Chris Larson, Sebastian Krupa, Jean Sung, Jose Barreiros, Peter Shirley, Samuli Laine, Ren Ng, Pratul Srinivasan, Turner Whitted, Kaan Aksit, Fabiha Hannan, Timo Aila, Richard Piersall, Bob Alfieri, Omer Shapira, David Luebke, Steven A. Cholewiak, Kirklann Lau&lt;/p&gt;
+&lt;p&gt;Bryan Peele, Timo Aila, Pratul Srinivasan, Al Davis, Richard Piersall, Trey Greer, Jonghyun Kim, Peter Shirley, Eric Storm, Daniel Kopta, Ward Lopes, Dong-hyeon Park, Fabiha Hannan, Andrew Fishberg, Jose Barreiros, Martin S. Banks, Sebastian Krupa, Turner Whitted, Ren Ng, Konstantin Shkurko, Kirklann Lau, Gordon D. Love, Tero Karras, Akhil Bagaria, Jean Sung, David Luebke, Kaan Aksit, Samuli Laine, Erik Brunvand, Robert Shepherd, Benjamin Mac Murray, Chris Larson, Ross Knepper, Bob Alfieri, Morgan McGuire, Anjul Patney, Omer Shapira, Steven A. Cholewiak&lt;/p&gt;
 
 &lt;h3&gt;Past Collaborators&lt;/h3&gt;
 
-&lt;p&gt;Scott Sirowy, Solomon Boulos, Spencer Kellis, Steven Parker, Seth Pugsley, Roman Lysecky, Mike Parker, Paula Ning, David Nellans, Thiago Ize, David Sheldon, Andrew Carter, Niladrish Chatterjee, Rajeev Balasubramonian, Frank Vahid, Max Korbel, Andrew Kensler&lt;/p&gt;
+&lt;p&gt;Mike Parker, Spencer Kellis, Steven Parker, Max Korbel, David Sheldon, David Nellans, Niladrish Chatterjee, Frank Vahid, Paula Ning, Scott Sirowy, Seth Pugsley, Rajeev Balasubramonian, Solomon Boulos, Thiago Ize, Andrew Carter, Andrew Kensler, Roman Lysecky&lt;/p&gt;
 
 </description>
     </item>
