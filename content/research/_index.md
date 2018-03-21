@@ -76,9 +76,9 @@ Andrew Carter &#39;13, Paula Ning &#39;13, Max Korbel &#39;13, Katherine Yang &#
 
 <h3>Current and Recent Collaborators</h3>
 
-<p>Konstantin Shkurko, Al Davis, Gordon D. Love, Tero Karras, Dong-hyeon Park, Trey Greer, Morgan McGuire, Anjul Patney, Ward Lopes, Bryan Peele, Eric Storm, Jonghyun Kim, Benjamin Mac Murray, Daniel Kopta, Andrew Fishberg, Martin S. Banks, Robert Shepherd, Erik Brunvand, Ross Knepper, Akhil Bagaria, Chris Larson, Sebastian Krupa, Jean Sung, Jose Barreiros, Peter Shirley, Samuli Laine, Ren Ng, Pratul Srinivasan, Turner Whitted, Kaan Aksit, Fabiha Hannan, Timo Aila, Richard Piersall, Bob Alfieri, Omer Shapira, David Luebke, Steven A. Cholewiak, Kirklann Lau</p>
+<p>Bryan Peele, Timo Aila, Pratul Srinivasan, Al Davis, Richard Piersall, Trey Greer, Jonghyun Kim, Peter Shirley, Eric Storm, Daniel Kopta, Ward Lopes, Dong-hyeon Park, Fabiha Hannan, Andrew Fishberg, Jose Barreiros, Martin S. Banks, Sebastian Krupa, Turner Whitted, Ren Ng, Konstantin Shkurko, Kirklann Lau, Gordon D. Love, Tero Karras, Akhil Bagaria, Jean Sung, David Luebke, Kaan Aksit, Samuli Laine, Erik Brunvand, Robert Shepherd, Benjamin Mac Murray, Chris Larson, Ross Knepper, Bob Alfieri, Morgan McGuire, Anjul Patney, Omer Shapira, Steven A. Cholewiak</p>
 
 <h3>Past Collaborators</h3>
 
-<p>Scott Sirowy, Solomon Boulos, Spencer Kellis, Steven Parker, Seth Pugsley, Roman Lysecky, Mike Parker, Paula Ning, David Nellans, Thiago Ize, David Sheldon, Andrew Carter, Niladrish Chatterjee, Rajeev Balasubramonian, Frank Vahid, Max Korbel, Andrew Kensler</p>
+<p>Mike Parker, Spencer Kellis, Steven Parker, Max Korbel, David Sheldon, David Nellans, Niladrish Chatterjee, Frank Vahid, Paula Ning, Scott Sirowy, Seth Pugsley, Rajeev Balasubramonian, Solomon Boulos, Thiago Ize, Andrew Carter, Andrew Kensler, Roman Lysecky</p>
 
