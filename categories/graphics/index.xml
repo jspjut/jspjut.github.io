@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Josef Spjut</copyright>
-    <lastBuildDate>Fri, 18 Oct 2013 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 16 Jun 2018 08:24:00 -0400</lastBuildDate>
     
 	<atom:link href="http://josef.spjut.me/categories/graphics/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>G3D Starter Project</title>
+      <link>http://josef.spjut.me/post/2018/g3d-starter/</link>
+      <pubDate>Sat, 16 Jun 2018 08:24:00 -0400</pubDate>
+      
+      <guid>http://josef.spjut.me/post/2018/g3d-starter/</guid>
+      <description>I&amp;rsquo;ve recently been spending a lot of my time working on projects based on the G3D Innovation Engine by Morgan McGuire. I personally learned how to program using unix development tools, so I&amp;rsquo;m used to using the command line for everything, and Makefiles are the build tool I&amp;rsquo;m most comfortable with. G3D, being a research game engine, primarily for graphics research, has had to focus on Windows-based development for a number of years now.</description>
+    </item>
     
     <item>
       <title>NVIDIA GameWorks</title>

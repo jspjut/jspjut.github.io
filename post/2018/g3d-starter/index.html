@@ -52,11 +52,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="http://josef.spjut.me/post/2017/phaser-game/">
+  <link rel="canonical" href="http://josef.spjut.me/post/2018/g3d-starter/">
 
   
 
-  <title>Phaser Game | Josef Spjut</title>
+  <title>G3D Starter Project | Josef Spjut</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -157,14 +157,14 @@
 
 
   <div class="article-container">
-    <h1 itemprop="name">Phaser Game</h1>
+    <h1 itemprop="name">G3D Starter Project</h1>
     
 
 <div class="article-metadata">
 
   <span class="article-date">
-    <time datetime="2017-10-13 15:14:00 -0400 EDT" itemprop="datePublished">
-      Fri, Oct 13, 2017
+    <time datetime="2018-06-16 08:24:00 -0400 EDT" itemprop="datePublished">
+      Sat, Jun 16, 2018
     </time>
   </span>
 
@@ -174,7 +174,7 @@
   <span class="article-categories">
     <i class="fa fa-folder"></i>
     
-    <a href="/categories/game-development">game-development</a
+    <a href="/categories/graphics">graphics</a
     >
     
   </span>
@@ -187,22 +187,13 @@
   <span class="article-tags">
     <i class="fa fa-tags"></i>
     
-    <a href="/tags/game-design">game-design</a
+    <a href="/tags/graphics">graphics</a
     >, 
     
     <a href="/tags/programming">programming</a
     >, 
     
-    <a href="/tags/javascript">javascript</a
-    >, 
-    
-    <a href="/tags/phaserjs">phaserjs</a
-    >, 
-    
-    <a href="/tags/pixijs">pixijs</a
-    >, 
-    
-    <a href="/tags/game-development">game-development</a
+    <a href="/tags/research">research</a
     >
     
   </span>
@@ -215,35 +206,35 @@
   <ul class="share">
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fjosef.spjut.me%2fpost%2f2017%2fphaser-game%2f"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fjosef.spjut.me%2fpost%2f2018%2fg3d-starter%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Phaser%20Game&amp;url=http%3a%2f%2fjosef.spjut.me%2fpost%2f2017%2fphaser-game%2f"
+         href="https://twitter.com/intent/tweet?text=G3D%20Starter%20Project&amp;url=http%3a%2f%2fjosef.spjut.me%2fpost%2f2018%2fg3d-starter%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fjosef.spjut.me%2fpost%2f2017%2fphaser-game%2f&amp;title=Phaser%20Game"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fjosef.spjut.me%2fpost%2f2018%2fg3d-starter%2f&amp;title=G3D%20Starter%20Project"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fjosef.spjut.me%2fpost%2f2017%2fphaser-game%2f&amp;title=Phaser%20Game"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fjosef.spjut.me%2fpost%2f2018%2fg3d-starter%2f&amp;title=G3D%20Starter%20Project"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Phaser%20Game&amp;body=http%3a%2f%2fjosef.spjut.me%2fpost%2f2017%2fphaser-game%2f">
+         href="mailto:?subject=G3D%20Starter%20Project&amp;body=http%3a%2f%2fjosef.spjut.me%2fpost%2f2018%2fg3d-starter%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -256,13 +247,44 @@
 </div>
 
     <div class="article-style" itemprop="articleBody">
-      <p>In the past few weeks, I decided to spend some of my spare time trying out some new methods for game development.
-In particular, I thought it would be good to come up with something that would allow me to easily create a networked game for multiple players, and would give me a chance to learn something new.
-I decided to look into javascript frameworks, and there were a wide variety out there.
-This post will focus on some of my first thoughts on <a href="http://phaser.io/" target="_blank">Phaser</a>, which I&rsquo;ve been trying out somewhat.
-I&rsquo;m actually using <a href="https://github.com/photonstorm/phaser-ce" target="_blank">phaser ce</a>, but that&rsquo;s beside the point.
-There are tons of tutorials out there, but the one I went through was the first part of <a href="http://gojasonyang.com/post/phaserMultiplayerGamePart1.html" target="_blank">Jason Yang&rsquo;s Multiplayer Game Tutorial</a>.
-I&rsquo;ll write more of my thoughts when I get around to it.</p>
+      
+
+<p>I&rsquo;ve recently been spending a lot of my time working on projects based on the <a href="https://casual-effects.com/g3d/www/index.html" target="_blank">G3D Innovation Engine</a> by <a href="https://casual-effects.com/morgan/index.html" target="_blank">Morgan McGuire</a>. I personally learned how to program using unix development tools, so I&rsquo;m used to using the command line for everything, and Makefiles are the build tool I&rsquo;m most comfortable with. G3D, being a research game engine, primarily for graphics research, has had to focus on Windows-based development for a number of years now. This means the best way to do research on graphics is to use Visual Studio and Windows, which I never took a class to learn how to use. Makefiles on the other hand I had a large number of classes to teach me how they work, and I had used all through undergrad and grad school, for over 10 years of experience with that build process.</p>
+
+<p>Visual Studio&rsquo;s build process is completely opaque to someone coming from Makefiles (xcode and other similar GUI-based tools are no better). If I were to teach someone how Visual Studio&rsquo;s build process works, I would start by telling them that the configuration is hidden in XML files, which have many fields that are option and populated with default values which do something whether they are there or not. Microsoft has a <a href="https://docs.microsoft.com/en-us/cpp/ide/project-and-solution-files" target="_blank">nice overview</a> of the types of XML files. You probably don&rsquo;t need to know what all of the optional fields do, but some subset of those fields will be quite useful to know and understand. I&rsquo;ll give my top N list here. These can be found by right clicking on a project in Visual Studio and selecting the &ldquo;Properties&rdquo; option at the bottom of the menu, then clicking on &ldquo;VC++ Directories&rdquo; under &ldquo;Configuration Properties&rdquo; on the left side of the Property Page. Note that the &ldquo;Configuration&rdquo; drop down at the top allows you to specify different values for &ldquo;Release&rdquo;, &ldquo;Debug&rdquo; or any other build configuration you create, which can be managed from the Property Page by clicking on the &ldquo;Configuration Manager&hellip;&rdquo; in the top right corner. The second value below is what the field in the Property Page corresponds to in the XML.</p>
+
+<ol>
+<li>Include Directories - <code>IncludePath</code></li>
+<li>Library Directories - <code>LibraryPath</code></li>
+<li>Executable Directories - <code>ExecutablePath</code></li>
+</ol>
+
+<p>Each of these items does what you would expect it to do based on the name, &ldquo;Include Directories&rdquo; managing what headers will be searched when compiling code (useful for &ldquo;.h not found&rdquo; errors). &ldquo;Library Directories&rdquo; configures which directories to search for statically linked libraries during the linking stage of the compiler. Executable Directories sets the path to use for executables, which is used both for programs you want to run, but also dynamically linked libraries (dlls) that you need to be found by your executable at startup.</p>
+
+<p>In G3D&rsquo;s automated build script and the <a href="https://casual-effects.com/g3d/G3D10/readme.md.html?#toc3.2" target="_blank">Configure and Build</a> instructions, it recommends setting some global system or user settings which could actually be handled by the vcxproj XML file in a more portable way. I understand why G3D recommends developers use the user and global settings to fix this since all future projects can be created with much fewer settings, however this makes the assumption that no other project or build system will need to modify the user and global settings, or that the developer will be smart enough to figure out how to merge these setting for her or himself. In an effort to help improve portability of my own G3D-based projects, I&rsquo;ve started a <a href="https://github.com/jspjut/g3d-starter" target="_blank">g3d-starter</a> project on github which depends only on a couple G3D-specific environment variables rather than all of the global/user Include, Path and Library settings. Feel free to check it out!</p>
+
+<p>My updated instructions modified from the <a href="https://casual-effects.com/g3d/G3D10/readme.md.html?#toc3.2" target="_blank">G3D Configure and Build</a> instructions follow below. You&rsquo;ll still need Visual Studio 2017 and an install of python 3 before the following.</p>
+
+<h1 id="configure-build">Configure &amp; Build</h1>
+
+<ol>
+<li><p>Set your <strong>user</strong> or <strong>system</strong> environment variable <code>g3d</code> to the location that you&rsquo;d like to be the
+root of the G3D tree (such as <code>c:\g3d</code>). In Windows 10, do this by &#9881; ==&gt; System ==&gt; About ==&gt; System Info ==&gt; Advanced System Settings ==&gt; Environment Variables&hellip;
+(or by searching for &ldquo;Environment Variables&rdquo; in the start menu search)</p></li>
+
+<li><p>Set the <strong>user</strong> or <strong>system</strong> environment variable <code>G3D10DATA</code> to
+<code>%g3d%\G3D10\data-files;%g3d%\data10\common;%g3d%\data10\game;%g3d%\data10\research</code></p></li>
+
+<li><p>SVN check out <code>https://svn.code.sf.net/p/g3d/code/</code> to <code>%g3d%</code>. This is very large, and likely to timeout if sourceforge has a hickup. Be prepared to <code>svn cleanup</code> and <code>svn up</code> if it doesn&rsquo;t finish</p></li>
+
+<li><p>At a command prompt in the <code>%g3d%\G3D10</code> directory, run:</p></li>
+</ol>
+
+<p><code>buildg3d local</code></p>
+
+<ol>
+<li>Copy my <a href="https://github.com/jspjut/g3d-starter" target="_blank">g3d-starter</a> and follow the rest of the instructions from the <a href="http://casual-effects.com/g3d/G3D10/build/manual/guidenewproject.html" target="_blank">G3D new project guide</a></li>
+</ol>
 
     </div>
   </div>
@@ -273,13 +295,10 @@ I&rsquo;ll write more of my thoughts when I get around to it.</p>
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="http://josef.spjut.me/post/2017/hugo-notes/"><span
-      aria-hidden="true">&larr;</span> Hugo Notes</a></li>
+    <li class="previous"><a href="http://josef.spjut.me/post/2017/phaser-game/"><span
+      aria-hidden="true">&larr;</span> Phaser Game</a></li>
     
 
-    
-    <li class="next"><a href="http://josef.spjut.me/post/2018/g3d-starter/">G3D Starter Project <span
-      aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
 </nav>

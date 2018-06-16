@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>Adaptive Temporal Antialiasing</title>
+      <link>http://josef.spjut.me/publication/ref/c13/</link>
+      <pubDate>Fri, 10 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ref/c13/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>SimTrax: Simulation Infrastructure for Exploring Thousands of Cores</title>
       <link>http://josef.spjut.me/publication/ref/c12/</link>
       <pubDate>Wed, 23 May 2018 00:00:00 +0000</pubDate>
@@ -27,6 +36,15 @@
       <pubDate>Tue, 24 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>http://josef.spjut.me/publication/ref/c11/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SimTrax: Simulation Infrastructure for Exploring Thousands of Cores</title>
+      <link>http://josef.spjut.me/publication/tr/c12/</link>
+      <pubDate>Thu, 29 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/tr/c12/</guid>
       <description></description>
     </item>
     
