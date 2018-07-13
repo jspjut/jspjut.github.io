@@ -11,6 +11,15 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Steerable Application-Adaptive Near-Eye Displays</title>
+      <link>http://josef.spjut.me/publication/td/td3/</link>
+      <pubDate>Sun, 12 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/td/td3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Adaptive Temporal Antialiasing</title>
       <link>http://josef.spjut.me/publication/ref/c13/</link>
       <pubDate>Fri, 10 Aug 2018 00:00:00 +0000</pubDate>
@@ -114,7 +123,8 @@ a.primary{
 &lt;strong&gt;Adaptive Temporal Antialiasing&lt;/strong&gt;,
 &lt;em&gt;High-Performance Graphics (HPG 2018)&lt;/em&gt;,
 Vancouver, August 10-12, 2018. (to appear)
-&lt;a href=&#34;None&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibc13&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibc13&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{marrsspjut18,
+&lt;a href=&#34;http://research.nvidia.com/sites/default/files/pubs/2018-08_Adaptive-Temporal-Antialiasing/adaptive-temporal-antialiasing-preprint_0.pdf&#34;&gt;paper&lt;/a&gt;
+&lt;a href=&#34;http://research.nvidia.com/publication/2018-08_Adaptive-Temporal-Antialiasing&#34;&gt;alternate&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibc13&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibc13&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{marrsspjut18,
  author = { Adam Marrs and Josef Spjut and Holger Gruen and Rahul Sathe and Morgan McGuire },
  title = { {Adaptive Temporal Antialiasing} },
  year = {2018},
@@ -270,7 +280,18 @@ Anaheim, June 8-9, 2008.&lt;strong&gt;(Best paper award)&lt;/strong&gt;
 &lt;/ol&gt;
 
 &lt;h2&gt;Technical Demos&lt;/h2&gt;
-&lt;ol&gt;&lt;li&gt;&lt;a href=&#34;https://kaanaksit.com/&#34; class=&#34;author&#34;&gt;Kaan Aksit&lt;/a&gt;, &lt;a href=&#34;https://research.nvidia.com/users/ward-lopes&#34; class=&#34;author&#34;&gt;Ward Lopes&lt;/a&gt;, &lt;a href=&#34;None&#34; class=&#34;author&#34;&gt;Jonghyun Kim&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://idav.ucdavis.edu/~anjul/&#34; class=&#34;author&#34;&gt;Anjul Patney&lt;/a&gt;, &lt;a href=&#34;https://www.cs.utah.edu/~shirley/&#34; class=&#34;author&#34;&gt;Peter Shirley&lt;/a&gt;, &lt;a href=&#34;http://luebke.us/&#34; class=&#34;author&#34;&gt;David Luebke&lt;/a&gt;, &lt;a href=&#34;http://steven.cholewiak.com/&#34; class=&#34;author&#34;&gt;Steven A. Cholewiak&lt;/a&gt;, &lt;a href=&#34;https://people.eecs.berkeley.edu/~pratul/&#34; class=&#34;author&#34;&gt;Pratul Srinivasan&lt;/a&gt;, &lt;a href=&#34;https://www2.eecs.berkeley.edu/Faculty/Homepages/yirenng.html/&#34; class=&#34;author&#34;&gt;Ren Ng&lt;/a&gt;, &lt;a href=&#34;http://bankslab.berkeley.edu/&#34; class=&#34;author&#34;&gt;Martin S. Banks&lt;/a&gt;, &lt;a href=&#34;https://www.dur.ac.uk/physics/staff/profiles/?id=246&#34; class=&#34;author&#34;&gt;Gordon D. Love&lt;/a&gt;;
+&lt;ol&gt;&lt;li&gt;&lt;a href=&#34;https://sites.google.com/site/kishorerathinavel/&#34; class=&#34;author&#34;&gt;Kishore Rathinavel&lt;/a&gt;, &lt;a href=&#34;http://www.ee.iitm.ac.in/~ee11b061/&#34; class=&#34;author&#34;&gt;Praneeth Chakravarthula&lt;/a&gt;, &lt;a href=&#34;https://kaanaksit.com/&#34; class=&#34;author&#34;&gt;Kaan Aksit&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;https://www.linkedin.com/in/ben-boudaoud/&#34; class=&#34;author&#34;&gt;Ben Boudaoud&lt;/a&gt;, &lt;a href=&#34;https://research.nvidia.com/users/turner-whitted&#34; class=&#34;author&#34;&gt;Turner Whitted&lt;/a&gt;, &lt;a href=&#34;http://luebke.us/&#34; class=&#34;author&#34;&gt;David Luebke&lt;/a&gt;, &lt;a href=&#34;http://henryfuchs.web.unc.edu/&#34; class=&#34;author&#34;&gt;Henry Fuchs&lt;/a&gt;;
+&lt;strong&gt;Steerable Application-Adaptive Near-Eye Displays&lt;/strong&gt;,
+&lt;em&gt;SIGGRAPH Emerging Technologies&lt;/em&gt;,
+Vancouver, August 12 - 16, 2018. (to appear)
+&lt;a href=&#34;None&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibtd3&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibtd3&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{rathinavelchakravarthula18,
+ author = { Kishore Rathinavel and Praneeth Chakravarthula and Kaan Aksit and Josef Spjut and Ben Boudaoud and Turner Whitted and David Luebke and Henry Fuchs },
+ title = { {Steerable Application-Adaptive Near-Eye Displays} },
+ year = {2018},
+ booktitle = {SIGGRAPH Emerging Technologies}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kaanaksit.com/&#34; class=&#34;author&#34;&gt;Kaan Aksit&lt;/a&gt;, &lt;a href=&#34;https://research.nvidia.com/users/ward-lopes&#34; class=&#34;author&#34;&gt;Ward Lopes&lt;/a&gt;, &lt;a href=&#34;None&#34; class=&#34;author&#34;&gt;Jonghyun Kim&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://idav.ucdavis.edu/~anjul/&#34; class=&#34;author&#34;&gt;Anjul Patney&lt;/a&gt;, &lt;a href=&#34;https://www.cs.utah.edu/~shirley/&#34; class=&#34;author&#34;&gt;Peter Shirley&lt;/a&gt;, &lt;a href=&#34;http://luebke.us/&#34; class=&#34;author&#34;&gt;David Luebke&lt;/a&gt;, &lt;a href=&#34;http://steven.cholewiak.com/&#34; class=&#34;author&#34;&gt;Steven A. Cholewiak&lt;/a&gt;, &lt;a href=&#34;https://people.eecs.berkeley.edu/~pratul/&#34; class=&#34;author&#34;&gt;Pratul Srinivasan&lt;/a&gt;, &lt;a href=&#34;https://www2.eecs.berkeley.edu/Faculty/Homepages/yirenng.html/&#34; class=&#34;author&#34;&gt;Ren Ng&lt;/a&gt;, &lt;a href=&#34;http://bankslab.berkeley.edu/&#34; class=&#34;author&#34;&gt;Martin S. Banks&lt;/a&gt;, &lt;a href=&#34;https://www.dur.ac.uk/physics/staff/profiles/?id=246&#34; class=&#34;author&#34;&gt;Gordon D. Love&lt;/a&gt;;
 &lt;strong&gt;Varifocal Virtuality: A Novel Optical Layout for Near-Eye Display&lt;/strong&gt;,
 &lt;em&gt;SIGGRAPH Emerging Technologies&lt;/em&gt;,
 Los Angeles, July 30 - August 3, 2017.
@@ -540,7 +561,7 @@ Andrew Carter &amp;#39;13, Paula Ning &amp;#39;13, Max Korbel &amp;#39;13, Kathe
 
 &lt;h3&gt;Current and Recent Collaborators&lt;/h3&gt;
 
-&lt;p&gt;Adam Marrs, Andrew Fishberg, Anjul Patney, Benjamin Mac Murray, Bob Alfieri, Bryan Peele, Cem Yuksel, Chris Larson, Daniel Kopta, David Luebke, Elena Vasiou, Erik Brunvand, Gordon D. Love, Holger Gruen, Ian Mallett, Jean Sung, Jonghyun Kim, Jose Barreiros, Kaan Aksit, Kirklann Lau, Konstantin Shkurko, Martin S. Banks, Morgan McGuire, Omer Shapira, Patricia Xu, Peter Shirley, Pratul Srinivasan, Rahul Sathe, Ren Ng, Richard Piersall, Robert Shepherd, Ross Knepper, Samuli Laine, Sebastian Krupa, Steven A. Cholewiak, Tero Karras, Tim Grant, Timo Aila, Trey Greer, Turner Whitted, Ward Lopes&lt;/p&gt;
+&lt;p&gt;Adam Marrs, Andrew Fishberg, Anjul Patney, Ben Boudaoud, Benjamin Mac Murray, Bob Alfieri, Bryan Peele, Cem Yuksel, Chris Larson, Daniel Kopta, David Luebke, Elena Vasiou, Erik Brunvand, Gordon D. Love, Henry Fuchs, Holger Gruen, Ian Mallett, Jean Sung, Jonghyun Kim, Jose Barreiros, Kaan Aksit, Kirklann Lau, Kishore Rathinavel, Konstantin Shkurko, Martin S. Banks, Morgan McGuire, Omer Shapira, Patricia Xu, Peter Shirley, Praneeth Chakravarthula, Pratul Srinivasan, Rahul Sathe, Ren Ng, Richard Piersall, Robert Shepherd, Ross Knepper, Samuli Laine, Sebastian Krupa, Steven A. Cholewiak, Tero Karras, Tim Grant, Timo Aila, Trey Greer, Turner Whitted, Ward Lopes&lt;/p&gt;
 
 &lt;h3&gt;Past Collaborators&lt;/h3&gt;
 
@@ -635,15 +656,6 @@ I&amp;rsquo;ll write more of my thoughts when I get around to it.&lt;/p&gt;
       <pubDate>Tue, 09 May 2017 00:00:00 +0000</pubDate>
       
       <guid>http://josef.spjut.me/publication/td/td0/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hybrid Modulation for Near Zero Display Latency</title>
-      <link>http://josef.spjut.me/publication/ref/c10/</link>
-      <pubDate>Tue, 24 May 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://josef.spjut.me/publication/ref/c10/</guid>
       <description></description>
     </item>
     
