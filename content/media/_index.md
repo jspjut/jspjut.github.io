@@ -2,6 +2,20 @@
 title = "Media Coverage"
 +++
 
+## Adaptive Temporal Anti-Aliasing
+NVIDIA Research
+
+* wccftech - August 01 2018,
+[Adaptive Temporal Antialiasing (ATAA) in Development at NVIDIA, Powered by Ray Tracing](https://wccftech.com/ataa-nvidia-powered-by-ray-tracing/)
+* Hot Hardware - July 31 2018,
+[NVIDIA Adds Adaptive Temporal Antialiasing To Its Ray Tracing Toolbox For GeForce](https://amp.hothardware.com/news/nvidia-adds-adaptive-temporal-antialiasing-ray-tracing-toolbox)
+* Tom's Hardware - July 31 2018,
+[Nvidia Presents Adaptive Temporal Anti-Aliasing Technology](https://www.tomshardware.com/news/nvidia-adaptive-temporal-antialiasing,37534.html)
+* Overclock 3D - July 31 2018,
+[Nvidia discusses Adaptive Temporal Anti-Aliasing with Ray Tracing](https://www.overclock3d.net/news/gpu_displays/nvidia_discusses_adaptive_temporal_anti-aliasing_with_ray_tracing/1)
+* videocardz - July 30 2018,
+[NVIDIA introduces Adaptive Temporal Antialiasing with ray tracing](https://videocardz.com/76902/nvidia-introduces-adaptive-temporal-antialiasing-with-ray-tracing)
+
 ## Kinesthetic Haptics for Virtual Reality
 Collaboration between Cornell Organic Robotics Lab and NVIDIA.
 
