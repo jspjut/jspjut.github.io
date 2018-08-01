@@ -5,6 +5,16 @@ title = "Media Coverage"
 ## Adaptive Temporal Anti-Aliasing
 NVIDIA Research
 
+* Tech Watch - July 31 2018,
+[Nvidia Showcases Adaptive Temporal Anti-Aliasing Technology with Ray Tracing](https://tyrone.tech/nvidia-showcases-adaptive-temporal-anti-aliasing-technology-with-ray-tracing/)
+* Hexus - August 01 2018,
+[Nvidia adds ray tracing tech to Temporal Anti-Aliasing (TAA)](http://www.hexus.net/tech/news/graphics/120656-nvidia-adds-ray-tracing-tech-temporal-anti-aliasing-taa/)
+* Tech Power Up - August 01 2018,
+[NVIDIA Unveils Adaptive Temporal Anti-Aliasing with Ray-Tracing](https://www.techpowerup.com/246413/nvidia-unveils-adaptive-temporal-anti-aliasing-with-ray-tracing)
+* bitfeed - August 01 2018,
+[Nvidia at work on the Adaptive Temporal anti-Aliasing (ATAA), which is based on Ray Tracing](https://www.bitfeed.co/page/nvidia-at-work-on-the-adaptive-temporal-anti-aliasing-ataa-which-is-based-on-ray-tracing?utm_source=twitter&utm_medium=tweet&utm_campaign=twitter-status)
+* Giga Trick - August 01 2018,
+[Adaptive Temporal Antialiasing (ATAA) in Development at NVIDIA, Powered by Ray Tracing](https://gigatrick.com/index.php/2018/08/01/adaptive-temporal-antialiasing-ataa-in-development-at-nvidia-powered-by-ray-tracing/)
 * wccftech - August 01 2018,
 [Adaptive Temporal Antialiasing (ATAA) in Development at NVIDIA, Powered by Ray Tracing](https://wccftech.com/ataa-nvidia-powered-by-ray-tracing/)
 * Hot Hardware - July 31 2018,
