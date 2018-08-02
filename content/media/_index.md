@@ -7,6 +7,8 @@ NVIDIA Research
 
 * Segment Next - August 02 2018,
 [Nvidia Ray Tracing In Temporal Anti-aliasing Will Revolutionize The Future Of Gaming](https://segmentnext.com/2018/08/02/nvidia-ray-tracing-temporal-anti-aliasing/)
+* PC Games N - August 01 2018,
+[Nvidia research team hoping for ray tracing in games "over the next few years"](https://www.pcgamesn.com/nvidia-ataa-real-time-ray-tracing-anti-aliasing)
 * Dark Side of Gaming - August 01 2018,
 [NVIDIA announces Adaptive Ray Tracing Temporal Antialiasing for games](https://www.dsogaming.com/news/nvidia-announces-adaptive-ray-tracing-temporal-antialiasing-for-games/)
 * wccftech - August 01 2018,
