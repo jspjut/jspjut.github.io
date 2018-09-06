@@ -122,7 +122,7 @@ a.primary{
 &lt;ol&gt;&lt;li&gt;&lt;a href=&#34;http://visualextract.com/&#34; class=&#34;author&#34;&gt;Adam Marrs&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;https://www.linkedin.com/in/holger-gruen-b456791/&#34; class=&#34;author&#34;&gt;Holger Gruen&lt;/a&gt;, &lt;a href=&#34;https://www.linkedin.com/in/rasathe/&#34; class=&#34;author&#34;&gt;Rahul Sathe&lt;/a&gt;, &lt;a href=&#34;https://casual-effects.com/morgan/index.html&#34; class=&#34;author&#34;&gt;Morgan McGuire&lt;/a&gt;;
 &lt;strong&gt;Adaptive Temporal Antialiasing&lt;/strong&gt;,
 &lt;em&gt;High-Performance Graphics (HPG 2018)&lt;/em&gt;,
-Vancouver, August 10-12, 2018. (to appear)
+Vancouver, August 10-12, 2018.
 &lt;a href=&#34;http://research.nvidia.com/sites/default/files/pubs/2018-08_Adaptive-Temporal-Antialiasing/adaptive-temporal-antialiasing-preprint.pdf&#34;&gt;paper&lt;/a&gt;
 &lt;a href=&#34;http://research.nvidia.com/publication/2018-08_Adaptive-Temporal-Antialiasing&#34;&gt;alternate&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibc13&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibc13&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{marrsspjut18,
  author = { Adam Marrs and Josef Spjut and Holger Gruen and Rahul Sathe and Morgan McGuire },
@@ -283,8 +283,8 @@ Anaheim, June 8-9, 2008.&lt;strong&gt;(Best paper award)&lt;/strong&gt;
 &lt;ol&gt;&lt;li&gt;&lt;a href=&#34;https://sites.google.com/site/kishorerathinavel/&#34; class=&#34;author&#34;&gt;Kishore Rathinavel&lt;/a&gt;, &lt;a href=&#34;http://www.ee.iitm.ac.in/~ee11b061/&#34; class=&#34;author&#34;&gt;Praneeth Chakravarthula&lt;/a&gt;, &lt;a href=&#34;https://kaanaksit.com/&#34; class=&#34;author&#34;&gt;Kaan Aksit&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;https://www.linkedin.com/in/ben-boudaoud/&#34; class=&#34;author&#34;&gt;Ben Boudaoud&lt;/a&gt;, &lt;a href=&#34;https://research.nvidia.com/users/turner-whitted&#34; class=&#34;author&#34;&gt;Turner Whitted&lt;/a&gt;, &lt;a href=&#34;http://luebke.us/&#34; class=&#34;author&#34;&gt;David Luebke&lt;/a&gt;, &lt;a href=&#34;http://henryfuchs.web.unc.edu/&#34; class=&#34;author&#34;&gt;Henry Fuchs&lt;/a&gt;;
 &lt;strong&gt;Steerable Application-Adaptive Near-Eye Displays&lt;/strong&gt;,
 &lt;em&gt;SIGGRAPH Emerging Technologies&lt;/em&gt;,
-Vancouver, August 12 - 16, 2018. (to appear)
-&lt;a href=&#34;None&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibtd3&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibtd3&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{rathinavelchakravarthula18,
+Vancouver, August 12 - 16, 2018.&lt;strong&gt;(Best in show award)&lt;/strong&gt;
+&lt;a href=&#34;https://kaanaksit.com/portfolio/manufacturing-application-driven-near-eye-displays/&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibtd3&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibtd3&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{rathinavelchakravarthula18,
  author = { Kishore Rathinavel and Praneeth Chakravarthula and Kaan Aksit and Josef Spjut and Ben Boudaoud and Turner Whitted and David Luebke and Henry Fuchs },
  title = { {Steerable Application-Adaptive Near-Eye Displays} },
  year = {2018},
