@@ -2,6 +2,12 @@
 title = "Media Coverage"
 +++
 
+## Steerable Application-Adaptive Near-Eye Displays
+NVIDIA Research - Best in Show Award
+
+* SIGGRAPH - August 16 2018,
+[SIGGRAPH 2018 Celebrates Generations in Vancouver](https://s2018.siggraph.org/press/news-releases/siggraph-2018-celebrates-generations-vancouver/)
+
 ## Adaptive Temporal Anti-Aliasing
 NVIDIA Research
 
