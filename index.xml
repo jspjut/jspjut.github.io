@@ -7,105 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Josef Spjut</copyright>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Apr 2018 00:00:00 +0000</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Steerable Application-Adaptive Near-Eye Displays</title>
-      <link>http://josef.spjut.me/publication/td/td3/</link>
-      <pubDate>Sun, 12 Aug 2018 00:00:00 +0000</pubDate>
+      <title>Augmented Reality Graphics: An Encroaching Future</title>
+      <link>http://josef.spjut.me/talk/utahgfx2018/</link>
+      <pubDate>Tue, 25 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://josef.spjut.me/publication/td/td3/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Adaptive Temporal Antialiasing</title>
-      <link>http://josef.spjut.me/publication/ref/c13/</link>
-      <pubDate>Fri, 10 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://josef.spjut.me/publication/ref/c13/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>G3D Starter Project</title>
-      <link>http://josef.spjut.me/post/2018/g3d-starter/</link>
-      <pubDate>Sat, 16 Jun 2018 08:24:00 -0400</pubDate>
-      
-      <guid>http://josef.spjut.me/post/2018/g3d-starter/</guid>
-      <description>
-
-&lt;p&gt;I&amp;rsquo;ve recently been spending a lot of my time working on projects based on the &lt;a href=&#34;https://casual-effects.com/g3d/www/index.html&#34; target=&#34;_blank&#34;&gt;G3D Innovation Engine&lt;/a&gt; by &lt;a href=&#34;https://casual-effects.com/morgan/index.html&#34; target=&#34;_blank&#34;&gt;Morgan McGuire&lt;/a&gt;. I personally learned how to program using unix development tools, so I&amp;rsquo;m used to using the command line for everything, and Makefiles are the build tool I&amp;rsquo;m most comfortable with. G3D, being a research game engine, primarily for graphics research, has had to focus on Windows-based development for a number of years now. This means the best way to do research on graphics is to use Visual Studio and Windows, which I never took a class to learn how to use. Makefiles on the other hand I had a large number of classes to teach me how they work, and I had used all through undergrad and grad school, for over 10 years of experience with that build process.&lt;/p&gt;
-
-&lt;p&gt;Visual Studio&amp;rsquo;s build process is completely opaque to someone coming from Makefiles (xcode and other similar GUI-based tools are no better). If I were to teach someone how Visual Studio&amp;rsquo;s build process works, I would start by telling them that the configuration is hidden in XML files, which have many fields that are option and populated with default values which do something whether they are there or not. Microsoft has a &lt;a href=&#34;https://docs.microsoft.com/en-us/cpp/ide/project-and-solution-files&#34; target=&#34;_blank&#34;&gt;nice overview&lt;/a&gt; of the types of XML files. You probably don&amp;rsquo;t need to know what all of the optional fields do, but some subset of those fields will be quite useful to know and understand. I&amp;rsquo;ll give my top N list here. These can be found by right clicking on a project in Visual Studio and selecting the &amp;ldquo;Properties&amp;rdquo; option at the bottom of the menu, then clicking on &amp;ldquo;VC++ Directories&amp;rdquo; under &amp;ldquo;Configuration Properties&amp;rdquo; on the left side of the Property Page. Note that the &amp;ldquo;Configuration&amp;rdquo; drop down at the top allows you to specify different values for &amp;ldquo;Release&amp;rdquo;, &amp;ldquo;Debug&amp;rdquo; or any other build configuration you create, which can be managed from the Property Page by clicking on the &amp;ldquo;Configuration Manager&amp;hellip;&amp;rdquo; in the top right corner. The second value below is what the field in the Property Page corresponds to in the XML.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Include Directories - &lt;code&gt;IncludePath&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Library Directories - &lt;code&gt;LibraryPath&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Executable Directories - &lt;code&gt;ExecutablePath&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Each of these items does what you would expect it to do based on the name, &amp;ldquo;Include Directories&amp;rdquo; managing what headers will be searched when compiling code (useful for &amp;ldquo;.h not found&amp;rdquo; errors). &amp;ldquo;Library Directories&amp;rdquo; configures which directories to search for statically linked libraries during the linking stage of the compiler. Executable Directories sets the path to use for executables, which is used both for programs you want to run, but also dynamically linked libraries (dlls) that you need to be found by your executable at startup.&lt;/p&gt;
-
-&lt;p&gt;In G3D&amp;rsquo;s automated build script and the &lt;a href=&#34;https://casual-effects.com/g3d/G3D10/readme.md.html?#toc3.2&#34; target=&#34;_blank&#34;&gt;Configure and Build&lt;/a&gt; instructions, it recommends setting some global system or user settings which could actually be handled by the vcxproj XML file in a more portable way. I understand why G3D recommends developers use the user and global settings to fix this since all future projects can be created with much fewer settings, however this makes the assumption that no other project or build system will need to modify the user and global settings, or that the developer will be smart enough to figure out how to merge these setting for her or himself. In an effort to help improve portability of my own G3D-based projects, I&amp;rsquo;ve started a &lt;a href=&#34;https://github.com/jspjut/g3d-starter&#34; target=&#34;_blank&#34;&gt;g3d-starter&lt;/a&gt; project on github which depends only on a couple G3D-specific environment variables rather than all of the global/user Include, Path and Library settings. Feel free to check it out!&lt;/p&gt;
-
-&lt;p&gt;My updated instructions modified from the &lt;a href=&#34;https://casual-effects.com/g3d/G3D10/readme.md.html?#toc3.2&#34; target=&#34;_blank&#34;&gt;G3D Configure and Build&lt;/a&gt; instructions follow below. You&amp;rsquo;ll still need Visual Studio 2017 and an install of python 3 before the following.&lt;/p&gt;
-
-&lt;h1 id=&#34;configure-build&#34;&gt;Configure &amp;amp; Build&lt;/h1&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Set your &lt;strong&gt;user&lt;/strong&gt; or &lt;strong&gt;system&lt;/strong&gt; environment variable &lt;code&gt;g3d&lt;/code&gt; to the location that you&amp;rsquo;d like to be the
-root of the G3D tree (such as &lt;code&gt;c:\g3d&lt;/code&gt;). In Windows 10, do this by &amp;#9881; ==&amp;gt; System ==&amp;gt; About ==&amp;gt; System Info ==&amp;gt; Advanced System Settings ==&amp;gt; Environment Variables&amp;hellip;
-(or by searching for &amp;ldquo;Environment Variables&amp;rdquo; in the start menu search)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Set the &lt;strong&gt;user&lt;/strong&gt; or &lt;strong&gt;system&lt;/strong&gt; environment variable &lt;code&gt;G3D10DATA&lt;/code&gt; to
-&lt;code&gt;%g3d%\G3D10\data-files;%g3d%\data10\common;%g3d%\data10\game;%g3d%\data10\research&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;SVN check out &lt;code&gt;https://svn.code.sf.net/p/g3d/code/&lt;/code&gt; to &lt;code&gt;%g3d%&lt;/code&gt;. This is very large, and likely to timeout if sourceforge has a hickup. Be prepared to &lt;code&gt;svn cleanup&lt;/code&gt; and &lt;code&gt;svn up&lt;/code&gt; if it doesn&amp;rsquo;t finish&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;At a command prompt in the &lt;code&gt;%g3d%\G3D10&lt;/code&gt; directory, run:&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;code&gt;buildg3d local&lt;/code&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Copy my &lt;a href=&#34;https://github.com/jspjut/g3d-starter&#34; target=&#34;_blank&#34;&gt;g3d-starter&lt;/a&gt; and follow the rest of the instructions from the &lt;a href=&#34;http://casual-effects.com/g3d/G3D10/build/manual/guidenewproject.html&#34; target=&#34;_blank&#34;&gt;G3D new project guide&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>SimTrax: Simulation Infrastructure for Exploring Thousands of Cores</title>
-      <link>http://josef.spjut.me/publication/ref/c12/</link>
-      <pubDate>Wed, 23 May 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://josef.spjut.me/publication/ref/c12/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>A Variable Shape and Variable Stiffness Controller for Haptic Virtual Interactions</title>
-      <link>http://josef.spjut.me/publication/ref/c11/</link>
-      <pubDate>Tue, 24 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://josef.spjut.me/publication/ref/c11/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>SimTrax: Simulation Infrastructure for Exploring Thousands of Cores</title>
-      <link>http://josef.spjut.me/publication/tr/c12/</link>
-      <pubDate>Thu, 29 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://josef.spjut.me/publication/tr/c12/</guid>
+      <guid>http://josef.spjut.me/talk/utahgfx2018/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Research</title>
       <link>http://josef.spjut.me/research/research/</link>
-      <pubDate>Fri, 26 Jan 2018 00:00:00 -0500</pubDate>
+      <pubDate>Thu, 20 Sep 2018 00:00:00 -0400</pubDate>
       
       <guid>http://josef.spjut.me/research/research/</guid>
       <description>&lt;style&gt;
@@ -571,6 +488,107 @@ Andrew Carter &amp;#39;13, Paula Ning &amp;#39;13, Max Korbel &amp;#39;13, Kathe
     </item>
     
     <item>
+      <title>Augmented Reality User eXperience: The Encroaching Future</title>
+      <link>http://josef.spjut.me/talk/nexux2018/</link>
+      <pubDate>Fri, 07 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/talk/nexux2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Steerable Application-Adaptive Near-Eye Displays</title>
+      <link>http://josef.spjut.me/publication/td/td3/</link>
+      <pubDate>Sun, 12 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/td/td3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Adaptive Temporal Antialiasing</title>
+      <link>http://josef.spjut.me/publication/ref/c13/</link>
+      <pubDate>Fri, 10 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ref/c13/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>G3D Starter Project</title>
+      <link>http://josef.spjut.me/post/2018/g3d-starter/</link>
+      <pubDate>Sat, 16 Jun 2018 08:24:00 -0400</pubDate>
+      
+      <guid>http://josef.spjut.me/post/2018/g3d-starter/</guid>
+      <description>
+
+&lt;p&gt;I&amp;rsquo;ve recently been spending a lot of my time working on projects based on the &lt;a href=&#34;https://casual-effects.com/g3d/www/index.html&#34; target=&#34;_blank&#34;&gt;G3D Innovation Engine&lt;/a&gt; by &lt;a href=&#34;https://casual-effects.com/morgan/index.html&#34; target=&#34;_blank&#34;&gt;Morgan McGuire&lt;/a&gt;. I personally learned how to program using unix development tools, so I&amp;rsquo;m used to using the command line for everything, and Makefiles are the build tool I&amp;rsquo;m most comfortable with. G3D, being a research game engine, primarily for graphics research, has had to focus on Windows-based development for a number of years now. This means the best way to do research on graphics is to use Visual Studio and Windows, which I never took a class to learn how to use. Makefiles on the other hand I had a large number of classes to teach me how they work, and I had used all through undergrad and grad school, for over 10 years of experience with that build process.&lt;/p&gt;
+
+&lt;p&gt;Visual Studio&amp;rsquo;s build process is completely opaque to someone coming from Makefiles (xcode and other similar GUI-based tools are no better). If I were to teach someone how Visual Studio&amp;rsquo;s build process works, I would start by telling them that the configuration is hidden in XML files, which have many fields that are option and populated with default values which do something whether they are there or not. Microsoft has a &lt;a href=&#34;https://docs.microsoft.com/en-us/cpp/ide/project-and-solution-files&#34; target=&#34;_blank&#34;&gt;nice overview&lt;/a&gt; of the types of XML files. You probably don&amp;rsquo;t need to know what all of the optional fields do, but some subset of those fields will be quite useful to know and understand. I&amp;rsquo;ll give my top N list here. These can be found by right clicking on a project in Visual Studio and selecting the &amp;ldquo;Properties&amp;rdquo; option at the bottom of the menu, then clicking on &amp;ldquo;VC++ Directories&amp;rdquo; under &amp;ldquo;Configuration Properties&amp;rdquo; on the left side of the Property Page. Note that the &amp;ldquo;Configuration&amp;rdquo; drop down at the top allows you to specify different values for &amp;ldquo;Release&amp;rdquo;, &amp;ldquo;Debug&amp;rdquo; or any other build configuration you create, which can be managed from the Property Page by clicking on the &amp;ldquo;Configuration Manager&amp;hellip;&amp;rdquo; in the top right corner. The second value below is what the field in the Property Page corresponds to in the XML.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Include Directories - &lt;code&gt;IncludePath&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Library Directories - &lt;code&gt;LibraryPath&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Executable Directories - &lt;code&gt;ExecutablePath&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Each of these items does what you would expect it to do based on the name, &amp;ldquo;Include Directories&amp;rdquo; managing what headers will be searched when compiling code (useful for &amp;ldquo;.h not found&amp;rdquo; errors). &amp;ldquo;Library Directories&amp;rdquo; configures which directories to search for statically linked libraries during the linking stage of the compiler. Executable Directories sets the path to use for executables, which is used both for programs you want to run, but also dynamically linked libraries (dlls) that you need to be found by your executable at startup.&lt;/p&gt;
+
+&lt;p&gt;In G3D&amp;rsquo;s automated build script and the &lt;a href=&#34;https://casual-effects.com/g3d/G3D10/readme.md.html?#toc3.2&#34; target=&#34;_blank&#34;&gt;Configure and Build&lt;/a&gt; instructions, it recommends setting some global system or user settings which could actually be handled by the vcxproj XML file in a more portable way. I understand why G3D recommends developers use the user and global settings to fix this since all future projects can be created with much fewer settings, however this makes the assumption that no other project or build system will need to modify the user and global settings, or that the developer will be smart enough to figure out how to merge these setting for her or himself. In an effort to help improve portability of my own G3D-based projects, I&amp;rsquo;ve started a &lt;a href=&#34;https://github.com/jspjut/g3d-starter&#34; target=&#34;_blank&#34;&gt;g3d-starter&lt;/a&gt; project on github which depends only on a couple G3D-specific environment variables rather than all of the global/user Include, Path and Library settings. Feel free to check it out!&lt;/p&gt;
+
+&lt;p&gt;My updated instructions modified from the &lt;a href=&#34;https://casual-effects.com/g3d/G3D10/readme.md.html?#toc3.2&#34; target=&#34;_blank&#34;&gt;G3D Configure and Build&lt;/a&gt; instructions follow below. You&amp;rsquo;ll still need Visual Studio 2017 and an install of python 3 before the following.&lt;/p&gt;
+
+&lt;h1 id=&#34;configure-build&#34;&gt;Configure &amp;amp; Build&lt;/h1&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Set your &lt;strong&gt;user&lt;/strong&gt; or &lt;strong&gt;system&lt;/strong&gt; environment variable &lt;code&gt;g3d&lt;/code&gt; to the location that you&amp;rsquo;d like to be the
+root of the G3D tree (such as &lt;code&gt;c:\g3d&lt;/code&gt;). In Windows 10, do this by &amp;#9881; ==&amp;gt; System ==&amp;gt; About ==&amp;gt; System Info ==&amp;gt; Advanced System Settings ==&amp;gt; Environment Variables&amp;hellip;
+(or by searching for &amp;ldquo;Environment Variables&amp;rdquo; in the start menu search)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Set the &lt;strong&gt;user&lt;/strong&gt; or &lt;strong&gt;system&lt;/strong&gt; environment variable &lt;code&gt;G3D10DATA&lt;/code&gt; to
+&lt;code&gt;%g3d%\G3D10\data-files;%g3d%\data10\common;%g3d%\data10\game;%g3d%\data10\research&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;SVN check out &lt;code&gt;https://svn.code.sf.net/p/g3d/code/&lt;/code&gt; to &lt;code&gt;%g3d%&lt;/code&gt;. This is very large, and likely to timeout if sourceforge has a hickup. Be prepared to &lt;code&gt;svn cleanup&lt;/code&gt; and &lt;code&gt;svn up&lt;/code&gt; if it doesn&amp;rsquo;t finish&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;At a command prompt in the &lt;code&gt;%g3d%\G3D10&lt;/code&gt; directory, run:&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;code&gt;buildg3d local&lt;/code&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Copy my &lt;a href=&#34;https://github.com/jspjut/g3d-starter&#34; target=&#34;_blank&#34;&gt;g3d-starter&lt;/a&gt; and follow the rest of the instructions from the &lt;a href=&#34;http://casual-effects.com/g3d/G3D10/build/manual/guidenewproject.html&#34; target=&#34;_blank&#34;&gt;G3D new project guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SimTrax: Simulation Infrastructure for Exploring Thousands of Cores</title>
+      <link>http://josef.spjut.me/publication/ref/c12/</link>
+      <pubDate>Wed, 23 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ref/c12/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Variable Shape and Variable Stiffness Controller for Haptic Virtual Interactions</title>
+      <link>http://josef.spjut.me/publication/ref/c11/</link>
+      <pubDate>Tue, 24 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ref/c11/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SimTrax: Simulation Infrastructure for Exploring Thousands of Cores</title>
+      <link>http://josef.spjut.me/publication/tr/c12/</link>
+      <pubDate>Thu, 29 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/tr/c12/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>The Augmented Frontier: Challenges for Near Eye Display Computing</title>
       <link>http://josef.spjut.me/publication/ct/ct2/</link>
       <pubDate>Tue, 16 Jan 2018 00:00:00 +0000</pubDate>
@@ -639,24 +657,6 @@ I&amp;rsquo;ll write more of my thoughts when I get around to it.&lt;/p&gt;
 
 &lt;p&gt;I ended up testing a lot of my design on a separate repository so I could test out pushing to github sites. It turns out that github user pages need to push to the &lt;code&gt;master&lt;/code&gt; branch in order to publish to the web, so my original script to push to a &lt;code&gt;gh-pages&lt;/code&gt; branch had to be modified. It seems to be working as of July 26, 2017, but there are probably a ton of bugs remaining. If you happen to find any bugs, please leave a comment or sent me a message on twitter to let me know and I&amp;rsquo;ll fix it.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>OrbTouch: Recognizing Human Touch in Deformable Interfaces with Deep Neural Networks</title>
-      <link>http://josef.spjut.me/publication/tr/tr7/</link>
-      <pubDate>Thu, 08 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://josef.spjut.me/publication/tr/tr7/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Stretchable Transducers for Haptic Interactions in Virtual and Augmented Reality</title>
-      <link>http://josef.spjut.me/publication/td/td0/</link>
-      <pubDate>Tue, 09 May 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://josef.spjut.me/publication/td/td0/</guid>
-      <description></description>
     </item>
     
   </channel>

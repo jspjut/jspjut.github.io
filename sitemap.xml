@@ -5,6 +5,33 @@
     
     <url>
     
+      <loc>http://josef.spjut.me/talk/utahgfx2018/</loc>
+      <lastmod>2018-09-25T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://josef.spjut.me/research/research/</loc>
+      <lastmod>2018-09-20T00:00:00-04:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://josef.spjut.me/talk/nexux2018/</loc>
+      <lastmod>2018-09-07T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://josef.spjut.me/publication/td/td3/</loc>
       <lastmod>2018-08-12T00:00:00+00:00</lastmod>
     </url>
@@ -59,8 +86,8 @@
     
     <url>
     
-      <loc>http://josef.spjut.me/research/research/</loc>
-      <lastmod>2018-01-26T00:00:00-05:00</lastmod>
+      <loc>http://josef.spjut.me/publication/ct/ct2/</loc>
+      <lastmod>2018-01-16T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -68,8 +95,26 @@
     
     <url>
     
-      <loc>http://josef.spjut.me/publication/ct/ct2/</loc>
-      <lastmod>2018-01-16T00:00:00+00:00</lastmod>
+      <loc>http://josef.spjut.me/post/</loc>
+      <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://josef.spjut.me/publication/</loc>
+      <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://josef.spjut.me/talk/</loc>
+      <lastmod>2018-01-01T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -142,33 +187,6 @@
     
       <loc>http://josef.spjut.me/publication/td/td0/</loc>
       <lastmod>2017-05-09T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>http://josef.spjut.me/post/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>http://josef.spjut.me/publication/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>http://josef.spjut.me/talk/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -1092,7 +1110,7 @@
     <url>
     
       <loc>http://josef.spjut.me/</loc>
-      <lastmod>2016-04-20T00:00:00+00:00</lastmod>
+      <lastmod>2018-04-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
