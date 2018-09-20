@@ -104,12 +104,12 @@ defaultContentLanguageInSubdir = false
     'Conference proceedings',  # 1
     'Journal',  # 2
     'Work in progress',  # 3
-    'Technical report',  # 4
+    'Technical Report',  # 4
     'Book',  # 5
-    'Book chapter',  # 6
-    'Refereed publication',  #7
-    'Technical demo',  #8
-    'Conference talk', #9
+    'Book Chapter',  # 6
+    'Refereed Publication',  #7
+    'Technical Demo',  #8
+    'Conference Talk', #9
     'Dissertation', #10
     'Poster', #11
     'Clinic Project' #12
