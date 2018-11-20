@@ -12,10 +12,10 @@ weight = 1
 # List your academic interests.
 [interests]
   interests = [
-    "Human Computer Experiences",
+    "Esports",
     "Computer Graphics",
     "Computer Architecture",
-    "Embedded Systems"
+    "Augmented Reality"
   ]
 
 # List your qualifications (such as academic degrees).
@@ -42,4 +42,4 @@ weight = 1
 
 # Biography
 
-Josef Spjut is a Research Scientist at NVIDIA working on new human experiences, such as virtual and augmented reality. Prior to joining NVIDIA full time, he was a Visiting Assistant Professor in the department of Engineering at Harvey Mudd College. He received a Ph.D. from the University of Utah and a B.S. from University of California, Riverside, both in Computer Engineering.
+Josef Spjut is a Research Scientist at NVIDIA working on new human experiences, such as esports and augmented reality. Previously he was a Visiting Assistant Professor in the department of Engineering at Harvey Mudd College. He received a Ph.D. from the University of Utah and a B.S. from University of California, Riverside, both in Computer Engineering.
