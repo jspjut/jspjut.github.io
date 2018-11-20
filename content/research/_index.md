@@ -76,7 +76,7 @@ Andrew Carter &#39;13, Paula Ning &#39;13, Max Korbel &#39;13, Katherine Yang &#
 
 <h3>Current and Recent Collaborators</h3>
 
-<p>Adam Marrs, Andrew Fishberg, Anjul Patney, Ben Boudaoud, Benjamin Mac Murray, Bob Alfieri, Bryan Peele, Cem Yuksel, Chris Larson, Daniel Kopta, David Luebke, Elena Vasiou, Erik Brunvand, Gordon D. Love, Henry Fuchs, Holger Gruen, Ian Mallett, Jean Sung, Jonghyun Kim, Jose Barreiros, Kaan Aksit, Kirklann Lau, Kishore Rathinavel, Konstantin Shkurko, Martin S. Banks, Morgan McGuire, Omer Shapira, Patricia Xu, Peter Shirley, Praneeth Chakravarthula, Pratul Srinivasan, Rahul Sathe, Ren Ng, Richard Piersall, Robert Shepherd, Ross Knepper, Samuli Laine, Sebastian Krupa, Steven A. Cholewiak, Tero Karras, Tim Grant, Timo Aila, Trey Greer, Turner Whitted, Ward Lopes</p>
+<p>Adam Marrs, Andrew Fishberg, Anjul Patney, Ben Boudaoud, Benjamin Mac Murray, Bob Alfieri, Bryan Peele, Cem Yuksel, Chris Larson, Daniel Kopta, David Luebke, Elena Vasiou, Erik Brunvand, Gordon D. Love, Henry Fuchs, Holger Gruen, Ian Mallett, Jean Sung, Jonghyun Kim, Jose Barreiros, Kaan Aksit, Kirklann Lau, Kishore Rathinavel, Konstantin Shkurko, Margrit Betke, Martin S. Banks, Mona Jalal, Morgan McGuire, Niveditha Kalavakonda, Omer Shapira, Patricia Xu, Peter Shirley, Praneeth Chakravarthula, Pratul Srinivasan, Rahul Sathe, Ren Ng, Richard Piersall, Robert Shepherd, Ross Knepper, Samuli Laine, Sebastian Krupa, Steven A. Cholewiak, Tero Karras, Tim Grant, Timo Aila, Trey Greer, Turner Whitted, Ward Lopes</p>
 
 <h3>Past Collaborators</h3>
 
