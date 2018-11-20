@@ -11,6 +11,24 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Fluidic Elastomer Actuators for Haptic Interactions in Virtual Reality</title>
+      <link>http://josef.spjut.me/publication/ref/c14/</link>
+      <pubDate>Wed, 27 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ref/c14/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Large-scale Synthetic Domain Randomized 6DoF Object Pose Estimation Dataset</title>
+      <link>http://josef.spjut.me/publication/pos/p3/</link>
+      <pubDate>Mon, 26 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/pos/p3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Augmented Reality Graphics: An Encroaching Future</title>
       <link>http://josef.spjut.me/talk/utahgfx2018/</link>
       <pubDate>Tue, 25 Sep 2018 00:00:00 +0000</pubDate>
@@ -36,7 +54,18 @@ a.primary{
 
 
 &lt;h2&gt;Refereed Publications&lt;/h2&gt;
-&lt;ol&gt;&lt;li&gt;&lt;a href=&#34;http://visualextract.com/&#34; class=&#34;author&#34;&gt;Adam Marrs&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;https://www.linkedin.com/in/holger-gruen-b456791/&#34; class=&#34;author&#34;&gt;Holger Gruen&lt;/a&gt;, &lt;a href=&#34;https://www.linkedin.com/in/rasathe/&#34; class=&#34;author&#34;&gt;Rahul Sathe&lt;/a&gt;, &lt;a href=&#34;https://casual-effects.com/morgan/index.html&#34; class=&#34;author&#34;&gt;Morgan McGuire&lt;/a&gt;;
+&lt;ol&gt;&lt;li&gt;&lt;a href=&#34;https://orl.mae.cornell.edu//#people&#34; class=&#34;author&#34;&gt;Jose Barreiros&lt;/a&gt;, &lt;a href=&#34;https://www.linkedin.com/in/houston-claure-33793771/&#34; class=&#34;author&#34;&gt;Houston Claure&lt;/a&gt;, &lt;a href=&#34;http://www.gnarlydesign.io/&#34; class=&#34;author&#34;&gt;Bryan Peele&lt;/a&gt;, &lt;a href=&#34;http://omershapira.com/#all&#34; class=&#34;author&#34;&gt;Omer Shapira&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://luebke.us/&#34; class=&#34;author&#34;&gt;David Luebke&lt;/a&gt;, &lt;a href=&#34;http://mjung.infosci.cornell.edu/&#34; class=&#34;author&#34;&gt;Malte Jung&lt;/a&gt;, &lt;a href=&#34;https://orl.mae.cornell.edu/#people&#34; class=&#34;author&#34;&gt;Robert Shepherd&lt;/a&gt;;
+&lt;strong&gt;Fluidic Elastomer Actuators for Haptic Interactions in Virtual Reality&lt;/strong&gt;,
+&lt;em&gt;IEEE Robotics and Automation Letters&lt;/em&gt;,
+None, February, 2019. (to appear)
+&lt;a href=&#34;None&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibc14&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibc14&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{barreirosclaure19,
+ author = { Jose Barreiros and Houston Claure and Bryan Peele and Omer Shapira and Josef Spjut and David Luebke and Malte Jung and Robert Shepherd },
+ title = { {Fluidic Elastomer Actuators for Haptic Interactions in Virtual Reality} },
+ year = {2019},
+ booktitle = {IEEE Robotics and Automation Letters}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://visualextract.com/&#34; class=&#34;author&#34;&gt;Adam Marrs&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;https://www.linkedin.com/in/holger-gruen-b456791/&#34; class=&#34;author&#34;&gt;Holger Gruen&lt;/a&gt;, &lt;a href=&#34;https://www.linkedin.com/in/rasathe/&#34; class=&#34;author&#34;&gt;Rahul Sathe&lt;/a&gt;, &lt;a href=&#34;https://casual-effects.com/morgan/index.html&#34; class=&#34;author&#34;&gt;Morgan McGuire&lt;/a&gt;;
 &lt;strong&gt;Adaptive Temporal Antialiasing&lt;/strong&gt;,
 &lt;em&gt;High-Performance Graphics (HPG 2018)&lt;/em&gt;,
 Vancouver, August 10-12, 2018.
@@ -304,7 +333,7 @@ Los Angeles, August 10, 2015.&lt;strong&gt;(Studio Course)&lt;/strong&gt;
 &lt;strong&gt;SimTrax: Simulation Infrastructure for Exploring Thousands of Cores&lt;/strong&gt;,
 &lt;em&gt;Tech Report&lt;/em&gt;,
 March 29, 2018.
-&lt;a href=&#34;http://josef.spjut.me/pubs/shkurko18_tr.pdf&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibc12&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibc12&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{shkurkogrant18a,
+&lt;a href=&#34;http://josef.spjut.me/pubs/shkurko18_tr.pdf&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibtr8&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibtr8&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{shkurkogrant18a,
  author = { Konstantin Shkurko and Tim Grant and Erik Brunvand and Daniel Kopta and Josef Spjut and Elena Vasiou and Ian Mallett and Cem Yuksel },
  title = { {SimTrax: Simulation Infrastructure for Exploring Thousands of Cores} },
  year = {2018},
@@ -391,7 +420,18 @@ July, 2011.
 &lt;/ol&gt;
 
 &lt;h2&gt;Refereed Posters&lt;/h2&gt;
-&lt;ol&gt;&lt;li&gt;&lt;a href=&#34;http://www.cs.utah.edu/~dkopta/&#34; class=&#34;author&#34;&gt;Daniel Kopta&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~elb/&#34; class=&#34;author&#34;&gt;Erik Brunvand&lt;/a&gt;;
+&lt;ol&gt;&lt;li&gt;&lt;a href=&#34;http://monajalal.com/&#34; class=&#34;author&#34;&gt;Mona Jalal&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;https://www.linkedin.com/in/ben-boudaoud/&#34; class=&#34;author&#34;&gt;Ben Boudaoud&lt;/a&gt;, &lt;a href=&#34;http://www.cs.bu.edu/~betke/&#34; class=&#34;author&#34;&gt;Margrit Betke&lt;/a&gt;;
+&lt;strong&gt;Large-scale Synthetic Domain Randomized 6DoF Object Pose Estimation Dataset&lt;/strong&gt;,
+&lt;em&gt;New England Computer Vision Workshop&lt;/em&gt;,
+Boston, November 26, 2018. (to appear)
+&lt;a href=&#34;None&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibp3&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibp3&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{jalalspjut18,
+ author = { Mona Jalal and Josef Spjut and Ben Boudaoud and Margrit Betke },
+ title = { {Large-scale Synthetic Domain Randomized 6DoF Object Pose Estimation Dataset} },
+ year = {2018},
+ booktitle = {New England Computer Vision Workshop}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.cs.utah.edu/~dkopta/&#34; class=&#34;author&#34;&gt;Daniel Kopta&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://www.cs.utah.edu/~elb/&#34; class=&#34;author&#34;&gt;Erik Brunvand&lt;/a&gt;;
 &lt;strong&gt;Grid-Based Ray Tracing for a Parallel Computing Architecture&lt;/strong&gt;,
 &lt;em&gt;High Performance Graphics (HPG&#39;09)&lt;/em&gt;,
 New Orleans, August 1-3, 2009.
@@ -478,7 +518,7 @@ Andrew Carter &amp;#39;13, Paula Ning &amp;#39;13, Max Korbel &amp;#39;13, Kathe
 
 &lt;h3&gt;Current and Recent Collaborators&lt;/h3&gt;
 
-&lt;p&gt;Adam Marrs, Andrew Fishberg, Anjul Patney, Ben Boudaoud, Benjamin Mac Murray, Bob Alfieri, Bryan Peele, Cem Yuksel, Chris Larson, Daniel Kopta, David Luebke, Elena Vasiou, Erik Brunvand, Gordon D. Love, Henry Fuchs, Holger Gruen, Ian Mallett, Jean Sung, Jonghyun Kim, Jose Barreiros, Kaan Aksit, Kirklann Lau, Kishore Rathinavel, Konstantin Shkurko, Martin S. Banks, Morgan McGuire, Omer Shapira, Patricia Xu, Peter Shirley, Praneeth Chakravarthula, Pratul Srinivasan, Rahul Sathe, Ren Ng, Richard Piersall, Robert Shepherd, Ross Knepper, Samuli Laine, Sebastian Krupa, Steven A. Cholewiak, Tero Karras, Tim Grant, Timo Aila, Trey Greer, Turner Whitted, Ward Lopes&lt;/p&gt;
+&lt;p&gt;Adam Marrs, Andrew Fishberg, Anjul Patney, Ben Boudaoud, Benjamin Mac Murray, Bob Alfieri, Bryan Peele, Cem Yuksel, Chris Larson, Daniel Kopta, David Luebke, Elena Vasiou, Erik Brunvand, Gordon D. Love, Henry Fuchs, Holger Gruen, Ian Mallett, Jean Sung, Jonghyun Kim, Jose Barreiros, Kaan Aksit, Kirklann Lau, Kishore Rathinavel, Konstantin Shkurko, Margrit Betke, Martin S. Banks, Mona Jalal, Morgan McGuire, Niveditha Kalavakonda, Omer Shapira, Patricia Xu, Peter Shirley, Praneeth Chakravarthula, Pratul Srinivasan, Rahul Sathe, Ren Ng, Richard Piersall, Robert Shepherd, Ross Knepper, Samuli Laine, Sebastian Krupa, Steven A. Cholewiak, Tero Karras, Tim Grant, Timo Aila, Trey Greer, Turner Whitted, Ward Lopes&lt;/p&gt;
 
 &lt;h3&gt;Past Collaborators&lt;/h3&gt;
 
@@ -581,10 +621,10 @@ root of the G3D tree (such as &lt;code&gt;c:\g3d&lt;/code&gt;). In Windows 10, d
     
     <item>
       <title>SimTrax: Simulation Infrastructure for Exploring Thousands of Cores</title>
-      <link>http://josef.spjut.me/publication/tr/c12/</link>
+      <link>http://josef.spjut.me/publication/tr/tr8/</link>
       <pubDate>Thu, 29 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://josef.spjut.me/publication/tr/c12/</guid>
+      <guid>http://josef.spjut.me/publication/tr/tr8/</guid>
       <description></description>
     </item>
     
@@ -630,33 +670,6 @@ I&amp;rsquo;ll write more of my thoughts when I get around to it.&lt;/p&gt;
       
       <guid>http://josef.spjut.me/publication/td/td1/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Varifocal Virtuality: A Novel Optical Layout for Near-Eye Display</title>
-      <link>http://josef.spjut.me/publication/td/td2/</link>
-      <pubDate>Sun, 30 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://josef.spjut.me/publication/td/td2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hugo Notes</title>
-      <link>http://josef.spjut.me/post/2017/hugo-notes/</link>
-      <pubDate>Thu, 06 Jul 2017 09:49:57 -0400</pubDate>
-      
-      <guid>http://josef.spjut.me/post/2017/hugo-notes/</guid>
-      <description>&lt;p&gt;I recently undertook the effort of moving my website from jekyll using jekyll-bootstrap to Hugo and I wanted to record some notes from my efforts. In particular I want to collect a set of useful links that helped me in making the switch.&lt;/p&gt;
-
-&lt;p&gt;For what it&amp;rsquo;s worth, I greatly prefer Hugo now that I&amp;rsquo;ve gotten used to it, though there wasn&amp;rsquo;t too much broken about Jekyll.&lt;/p&gt;
-
-&lt;p&gt;The most useful thing for developing my site was when I found the &lt;a href=&#34;https://sourcethemes.com/academic/&#34; target=&#34;_blank&#34;&gt;academic theme&lt;/a&gt;. It turns out that in Hugo, themes contain a lot of the functionality of a site, and they make it easy to add on functionality either by modifying the theme, or your site in particular. The academic theme is widely used so there a good &lt;a href=&#34;https://sourcethemes.com/academic/post/getting-started/&#34; target=&#34;_blank&#34;&gt;reference page&lt;/a&gt; to help you get started.&lt;/p&gt;
-
-&lt;p&gt;The creator of the academic theme also has a &lt;a href=&#34;https://georgecushen.com/create-your-website-with-hugo/&#34; target=&#34;_blank&#34;&gt;good tutorial&lt;/a&gt; on his blog for how to set up a new hugo site from scratch.&lt;/p&gt;
-
-&lt;p&gt;I ended up testing a lot of my design on a separate repository so I could test out pushing to github sites. It turns out that github user pages need to push to the &lt;code&gt;master&lt;/code&gt; branch in order to publish to the web, so my original script to push to a &lt;code&gt;gh-pages&lt;/code&gt; branch had to be modified. It seems to be working as of July 26, 2017, but there are probably a ton of bugs remaining. If you happen to find any bugs, please leave a comment or sent me a message on twitter to let me know and I&amp;rsquo;ll fix it.&lt;/p&gt;
-</description>
     </item>
     
   </channel>
