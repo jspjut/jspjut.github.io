@@ -20,6 +20,48 @@
     </item>
     
     <item>
+      <title>AR Research 2015-2018</title>
+      <link>http://josef.spjut.me/post/2018/ar-research-2015-2018/</link>
+      <pubDate>Mon, 03 Dec 2018 08:24:00 -0400</pubDate>
+      
+      <guid>http://josef.spjut.me/post/2018/ar-research-2015-2018/</guid>
+      <description>
+
+&lt;p&gt;Since 2015, I&amp;rsquo;ve worked on a variety of research projects that I&amp;rsquo;d retrospectively say were all related to the future of augmented reality, and particularly head mounted displays for augmented reality. I&amp;rsquo;ve recently started shifting my research focus to a new area, so I figured this would be a good time to post a retrospective of what I&amp;rsquo;ve done and what I feel I&amp;rsquo;ve learned over these last 3 years. Obviously that&amp;rsquo;s a lot of time to compress in a single blog post, so it&amp;rsquo;s safe to say this is going to be very brief in comparison to the level of depth of the work and effort. Since this is 3 years of time, I&amp;rsquo;m going to use the number 3 heavily here.&lt;/p&gt;
+
+&lt;h2 id=&#34;three-things-i-ve-tried&#34;&gt;Three things I&amp;rsquo;ve tried&lt;/h2&gt;
+
+&lt;p&gt;At NVIDIA, we&amp;rsquo;ve been experimenting with HMDs, GPU-based rendering for them, and evolving the interface between GPUs and displays. Here are a few projects I&amp;rsquo;ve worked on that are firmly in that space.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=OwpqSupFRnw&#34; target=&#34;_blank&#34;&gt;Binary refreshing OLED for reduced latency&lt;/a&gt; (and 1700Hz+ framerate!)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://research.nvidia.com/publication/2017-07_Varifocal-Virtuality%3A-A&#34; target=&#34;_blank&#34;&gt;Varifocal virtuality&lt;/a&gt;: codesigned display optics and computational blur&lt;/li&gt;
+&lt;li&gt;Foveated displays - not yet published!&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;three-collaborations&#34;&gt;Three collaborations&lt;/h2&gt;
+
+&lt;p&gt;While I&amp;rsquo;ve worked with others, I wanted to draw attention to the great work Rob Shepherd and his &lt;a href=&#34;https://orl.mae.cornell.edu/&#34; target=&#34;_blank&#34;&gt;Organic Robotics Lab&lt;/a&gt; at Cornell University have been doing. All of these represent work at the interface between the human&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.gnarlydesign.io/portfolio-items/haptic-feedback-for-virtual-reality/&#34; target=&#34;_blank&#34;&gt;HTC Vive skin&lt;/a&gt; for kinesthetic haptic feedback&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://josef.spjut.me/publication/ref/c11/&#34; target=&#34;_blank&#34;&gt;A custom controller&lt;/a&gt; for passive haptic feedback&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://chrislarson1.github.io/blog/2017/06/09/orbtouch/&#34; target=&#34;_blank&#34;&gt;OrbTouch&lt;/a&gt;: A soft tetris controller trained with machine learning&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;three-things-others-have-done&#34;&gt;Three things others have done&lt;/h2&gt;
+
+&lt;p&gt;There has been an incredible amount of progress in AR since 2015. I&amp;rsquo;m going to just call attention to a few things I&amp;rsquo;ve personally found interesting over that time in the research space.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/facebookresearch/HVVR&#34; target=&#34;_blank&#34;&gt;Fast primary ray visibility on GPUs!&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=HZPQUSbVFLY&#34; target=&#34;_blank&#34;&gt;High dynamic range augmented reality&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://dl.acm.org/citation.cfm?id=3201294&#34; target=&#34;_blank&#34;&gt;Saccadic redirected walking&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Large-scale Synthetic Domain Randomized 6DoF Object Pose Estimation Dataset</title>
       <link>http://josef.spjut.me/publication/pos/p3/</link>
       <pubDate>Mon, 26 Nov 2018 00:00:00 +0000</pubDate>
@@ -660,15 +702,6 @@ I&amp;rsquo;ll write more of my thoughts when I get around to it.&lt;/p&gt;
       <pubDate>Thu, 03 Aug 2017 00:00:00 +0000</pubDate>
       
       <guid>http://josef.spjut.me/publication/ct/ct1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Stretchable Transducers for Kinesthetic Interactions in Virtual Reality</title>
-      <link>http://josef.spjut.me/publication/td/td1/</link>
-      <pubDate>Sun, 30 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://josef.spjut.me/publication/td/td1/</guid>
       <description></description>
     </item>
     

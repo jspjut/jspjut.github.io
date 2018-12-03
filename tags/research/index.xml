@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Josef Spjut</copyright>
-    <lastBuildDate>Sat, 16 Jun 2018 08:24:00 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 03 Dec 2018 08:24:00 -0400</lastBuildDate>
     
 	<atom:link href="http://josef.spjut.me/tags/research/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>AR Research 2015-2018</title>
+      <link>http://josef.spjut.me/post/2018/ar-research-2015-2018/</link>
+      <pubDate>Mon, 03 Dec 2018 08:24:00 -0400</pubDate>
+      
+      <guid>http://josef.spjut.me/post/2018/ar-research-2015-2018/</guid>
+      <description>Since 2015, I&amp;rsquo;ve worked on a variety of research projects that I&amp;rsquo;d retrospectively say were all related to the future of augmented reality, and particularly head mounted displays for augmented reality. I&amp;rsquo;ve recently started shifting my research focus to a new area, so I figured this would be a good time to post a retrospective of what I&amp;rsquo;ve done and what I feel I&amp;rsquo;ve learned over these last 3 years.</description>
+    </item>
     
     <item>
       <title>G3D Starter Project</title>

@@ -14,6 +14,15 @@
     
     <url>
     
+      <loc>http://josef.spjut.me/post/2018/ar-research-2015-2018/</loc>
+      <lastmod>2018-12-03T08:24:00-04:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://josef.spjut.me/publication/pos/p3/</loc>
       <lastmod>2018-11-26T00:00:00+00:00</lastmod>
     </url>
@@ -782,6 +791,16 @@
     
     <url>
     
+      <loc>http://josef.spjut.me/tags/augmented-reality/</loc>
+      <lastmod>2018-12-03T08:24:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://josef.spjut.me/tags/automation/</loc>
       <lastmod>2014-09-05T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -931,16 +950,6 @@
     
     <url>
     
-      <loc>http://josef.spjut.me/categories/game-design/</loc>
-      <lastmod>2014-01-14T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
       <loc>http://josef.spjut.me/tags/game-design/</loc>
       <lastmod>2017-10-13T15:14:00-04:00</lastmod>
       <priority>0</priority>
@@ -951,8 +960,8 @@
     
     <url>
     
-      <loc>http://josef.spjut.me/categories/game-development/</loc>
-      <lastmod>2017-10-13T15:14:00-04:00</lastmod>
+      <loc>http://josef.spjut.me/categories/game-design/</loc>
+      <lastmod>2014-01-14T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -962,6 +971,16 @@
     <url>
     
       <loc>http://josef.spjut.me/tags/game-development/</loc>
+      <lastmod>2017-10-13T15:14:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://josef.spjut.me/categories/game-development/</loc>
       <lastmod>2017-10-13T15:14:00-04:00</lastmod>
       <priority>0</priority>
     </url>
@@ -1019,8 +1038,8 @@
     
     <url>
     
-      <loc>http://josef.spjut.me/categories/graphics/</loc>
-      <lastmod>2018-06-16T08:24:00-04:00</lastmod>
+      <loc>http://josef.spjut.me/tags/graphics/</loc>
+      <lastmod>2018-12-03T08:24:00-04:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1029,7 +1048,7 @@
     
     <url>
     
-      <loc>http://josef.spjut.me/tags/graphics/</loc>
+      <loc>http://josef.spjut.me/categories/graphics/</loc>
       <lastmod>2018-06-16T08:24:00-04:00</lastmod>
       <priority>0</priority>
     </url>
@@ -1157,8 +1176,8 @@
     
     <url>
     
-      <loc>http://josef.spjut.me/categories/latex/</loc>
-      <lastmod>2014-01-03T00:00:00+00:00</lastmod>
+      <loc>http://josef.spjut.me/tags/latex/</loc>
+      <lastmod>2014-12-02T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1167,8 +1186,8 @@
     
     <url>
     
-      <loc>http://josef.spjut.me/tags/latex/</loc>
-      <lastmod>2014-12-02T00:00:00+00:00</lastmod>
+      <loc>http://josef.spjut.me/categories/latex/</loc>
+      <lastmod>2014-01-03T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1273,7 +1292,7 @@
     
     <url>
     
-      <loc>http://josef.spjut.me/categories/osx/</loc>
+      <loc>http://josef.spjut.me/tags/osx/</loc>
       <lastmod>2014-09-05T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -1283,7 +1302,7 @@
     
     <url>
     
-      <loc>http://josef.spjut.me/tags/osx/</loc>
+      <loc>http://josef.spjut.me/categories/osx/</loc>
       <lastmod>2014-09-05T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -1353,8 +1372,8 @@
     
     <url>
     
-      <loc>http://josef.spjut.me/categories/programming/</loc>
-      <lastmod>2014-05-20T00:00:00+00:00</lastmod>
+      <loc>http://josef.spjut.me/tags/programming/</loc>
+      <lastmod>2018-12-03T08:24:00-04:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1363,8 +1382,8 @@
     
     <url>
     
-      <loc>http://josef.spjut.me/tags/programming/</loc>
-      <lastmod>2018-06-16T08:24:00-04:00</lastmod>
+      <loc>http://josef.spjut.me/categories/programming/</loc>
+      <lastmod>2014-05-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1403,8 +1422,8 @@
     
     <url>
     
-      <loc>http://josef.spjut.me/categories/research/</loc>
-      <lastmod>2014-12-02T00:00:00+00:00</lastmod>
+      <loc>http://josef.spjut.me/tags/research/</loc>
+      <lastmod>2018-12-03T08:24:00-04:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1413,8 +1432,8 @@
     
     <url>
     
-      <loc>http://josef.spjut.me/tags/research/</loc>
-      <lastmod>2018-06-16T08:24:00-04:00</lastmod>
+      <loc>http://josef.spjut.me/categories/research/</loc>
+      <lastmod>2018-12-03T08:24:00-04:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1471,8 +1490,8 @@
     
     <url>
     
-      <loc>http://josef.spjut.me/categories/technology/</loc>
-      <lastmod>2013-09-20T00:00:00+00:00</lastmod>
+      <loc>http://josef.spjut.me/tags/technology/</loc>
+      <lastmod>2014-05-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1481,8 +1500,8 @@
     
     <url>
     
-      <loc>http://josef.spjut.me/tags/technology/</loc>
-      <lastmod>2014-05-20T00:00:00+00:00</lastmod>
+      <loc>http://josef.spjut.me/categories/technology/</loc>
+      <lastmod>2013-09-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1511,7 +1530,7 @@
     
     <url>
     
-      <loc>http://josef.spjut.me/categories/virtual-reality/</loc>
+      <loc>http://josef.spjut.me/tags/virtual-reality/</loc>
       <lastmod>2014-08-18T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -1521,7 +1540,7 @@
     
     <url>
     
-      <loc>http://josef.spjut.me/tags/virtual-reality/</loc>
+      <loc>http://josef.spjut.me/categories/virtual-reality/</loc>
       <lastmod>2014-08-18T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -1539,7 +1558,7 @@
     
     <url>
     
-      <loc>http://josef.spjut.me/categories/website/</loc>
+      <loc>http://josef.spjut.me/tags/website/</loc>
       <lastmod>2017-07-06T09:49:57-04:00</lastmod>
       <priority>0</priority>
     </url>
@@ -1549,7 +1568,7 @@
     
     <url>
     
-      <loc>http://josef.spjut.me/tags/website/</loc>
+      <loc>http://josef.spjut.me/categories/website/</loc>
       <lastmod>2017-07-06T09:49:57-04:00</lastmod>
       <priority>0</priority>
     </url>
