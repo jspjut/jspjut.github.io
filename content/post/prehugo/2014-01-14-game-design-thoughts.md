@@ -6,7 +6,6 @@ description: ""
 tags:
 - game design
 - research
-- games
 title: Game Design Thoughts
 url: /game design/2014/01/14/game-design-thoughts/
 ---
