@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Josef Spjut</copyright>
-    <lastBuildDate>Wed, 02 Jan 2019 16:51:24 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 15 Jan 2019 22:00:24 -0500</lastBuildDate>
     
 	<atom:link href="http://josef.spjut.me/tags/game-design/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Gaming Toxicity for Developers</title>
+      <link>http://josef.spjut.me/post/2019/gaming-toxicity-for-devs/</link>
+      <pubDate>Tue, 15 Jan 2019 22:00:24 -0500</pubDate>
+      
+      <guid>http://josef.spjut.me/post/2019/gaming-toxicity-for-devs/</guid>
+      <description>Toxicity is a huge problem in online video games. Some of the most well-known toxic online gaming communities include League of Legends, Dota and your favorite console shooters. While console shooters have generally included voice chat and a range of &amp;ldquo;your mom&amp;rdquo; insults screamed by the 13 year olds on the other end of the line, PC games typically include text chat, and a clearly visible record of every toxic statement.</description>
+    </item>
     
     <item>
       <title>Console to PC Game Port Requests</title>
