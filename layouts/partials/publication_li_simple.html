@@ -27,7 +27,7 @@
     </p>
     <span id="bib{{ .Params.unique_id }}" class="b" style="display: none;"><pre>
 @inproceedings{ {{ .Params.unique_id }},
-  author = { {{ with .Params.authors_flat }}{{ delimit . ", " | markdownify }}{{ end }} },
+  author = { {{ with .Params.authors_flat }}{{ delimit . " and " | markdownify }}{{ end }} },
   title = { {{ .Title }} },
   year = { {{ dateFormat "2006" .Params.date }} },
   booktitle = { {{ .Params.publication | markdownify }} }
