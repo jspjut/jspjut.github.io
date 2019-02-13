@@ -11,6 +11,15 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Improving Temporal Antialiasing with Adaptive Ray Tracing</title>
+      <link>http://josef.spjut.me/publication/bc/bc1/</link>
+      <pubDate>Sun, 31 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/bc/bc1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Fluidic Elastomer Actuators for Haptic Interactions in Virtual Reality</title>
       <link>http://josef.spjut.me/publication/ref/c14/</link>
       <pubDate>Wed, 27 Feb 2019 00:00:00 +0000</pubDate>
@@ -194,13 +203,13 @@ a.primary{
 &lt;h2&gt;Refereed Publications&lt;/h2&gt;
 &lt;ol&gt;&lt;li&gt;&lt;a href=&#34;https://orl.mae.cornell.edu//#people&#34; class=&#34;author&#34;&gt;Jose Barreiros&lt;/a&gt;, &lt;a href=&#34;https://www.linkedin.com/in/houston-claure-33793771/&#34; class=&#34;author&#34;&gt;Houston Claure&lt;/a&gt;, &lt;a href=&#34;http://www.gnarlydesign.io/&#34; class=&#34;author&#34;&gt;Bryan Peele&lt;/a&gt;, &lt;a href=&#34;http://omershapira.com/#all&#34; class=&#34;author&#34;&gt;Omer Shapira&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://luebke.us/&#34; class=&#34;author&#34;&gt;David Luebke&lt;/a&gt;, &lt;a href=&#34;http://mjung.infosci.cornell.edu/&#34; class=&#34;author&#34;&gt;Malte Jung&lt;/a&gt;, &lt;a href=&#34;https://orl.mae.cornell.edu/#people&#34; class=&#34;author&#34;&gt;Robert Shepherd&lt;/a&gt;;
 &lt;strong&gt;Fluidic Elastomer Actuators for Haptic Interactions in Virtual Reality&lt;/strong&gt;,
-&lt;em&gt;IEEE Robotics and Automation Letters&lt;/em&gt;,
+&lt;em&gt;IEEE Robotics and Automation Letters (RA-L)&lt;/em&gt;,
 None, February, 2019. (to appear)
 &lt;a href=&#34;None&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibc14&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibc14&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{barreirosclaure19,
  author = { Jose Barreiros and Houston Claure and Bryan Peele and Omer Shapira and Josef Spjut and David Luebke and Malte Jung and Robert Shepherd },
  title = { {Fluidic Elastomer Actuators for Haptic Interactions in Virtual Reality} },
  year = {2019},
- booktitle = {IEEE Robotics and Automation Letters}
+ booktitle = {IEEE Robotics and Automation Letters (RA-L)}
 }
 &lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://visualextract.com/&#34; class=&#34;author&#34;&gt;Adam Marrs&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;https://www.linkedin.com/in/holger-gruen-b456791/&#34; class=&#34;author&#34;&gt;Holger Gruen&lt;/a&gt;, &lt;a href=&#34;https://www.linkedin.com/in/rasathe/&#34; class=&#34;author&#34;&gt;Rahul Sathe&lt;/a&gt;, &lt;a href=&#34;https://casual-effects.com/morgan/index.html&#34; class=&#34;author&#34;&gt;Morgan McGuire&lt;/a&gt;;
@@ -359,6 +368,20 @@ Anaheim, June 8-9, 2008.&lt;strong&gt;(Best paper award)&lt;/strong&gt;
  title = { {TRaX: A Multi-Threaded Architecture for Real-Time Ray Tracing} },
  year = {2008},
  booktitle = {Symposium on Application Specific Processors (SASP)}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;Book Chapter&lt;/h2&gt;
+&lt;ol&gt;&lt;li&gt;&lt;a href=&#34;http://visualextract.com/&#34; class=&#34;author&#34;&gt;Adam Marrs&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;https://www.linkedin.com/in/holger-gruen-b456791/&#34; class=&#34;author&#34;&gt;Holger Gruen&lt;/a&gt;, &lt;a href=&#34;https://www.linkedin.com/in/rasathe/&#34; class=&#34;author&#34;&gt;Rahul Sathe&lt;/a&gt;, &lt;a href=&#34;https://casual-effects.com/morgan/index.html&#34; class=&#34;author&#34;&gt;Morgan McGuire&lt;/a&gt;;
+&lt;strong&gt;Improving Temporal Antialiasing with Adaptive Ray Tracing&lt;/strong&gt;,
+&lt;em&gt;Ray Tracing Gems&lt;/em&gt;,
+March, 2019. (to appear)
+&lt;a href=&#34;https://developer.nvidia.com/books/raytracing/raytracing_gems_preview&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibbc1&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibbc1&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{marrsspjut19,
+ author = { Adam Marrs and Josef Spjut and Holger Gruen and Rahul Sathe and Morgan McGuire },
+ title = { {Improving Temporal Antialiasing with Adaptive Ray Tracing} },
+ year = {2019},
+ booktitle = {Ray Tracing Gems}
 }
 &lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
 &lt;/ol&gt;
@@ -561,7 +584,7 @@ July, 2011.
 &lt;ol&gt;&lt;li&gt;&lt;a href=&#34;http://monajalal.com/&#34; class=&#34;author&#34;&gt;Mona Jalal&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;https://www.linkedin.com/in/ben-boudaoud/&#34; class=&#34;author&#34;&gt;Ben Boudaoud&lt;/a&gt;, &lt;a href=&#34;http://www.cs.bu.edu/~betke/&#34; class=&#34;author&#34;&gt;Margrit Betke&lt;/a&gt;;
 &lt;strong&gt;Large-scale Synthetic Domain Randomized 6DoF Object Pose Estimation Dataset&lt;/strong&gt;,
 &lt;em&gt;New England Computer Vision Workshop&lt;/em&gt;,
-Boston, November 26, 2018. (to appear)
+Boston, November 26, 2018.
 &lt;a href=&#34;None&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibp3&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibp3&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{jalalspjut18,
  author = { Mona Jalal and Josef Spjut and Ben Boudaoud and Margrit Betke },
  title = { {Large-scale Synthetic Domain Randomized 6DoF Object Pose Estimation Dataset} },
@@ -764,16 +787,6 @@ root of the G3D tree (such as &lt;code&gt;c:\g3d&lt;/code&gt;). In Windows 10, d
       
       <guid>http://josef.spjut.me/publication/tr/tr8/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>The Augmented Frontier: Challenges for Near Eye Display Computing</title>
-      <link>http://josef.spjut.me/publication/ct/ct2/</link>
-      <pubDate>Tue, 16 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://josef.spjut.me/publication/ct/ct2/</guid>
-      <description>&lt;p&gt;See also &lt;a href=&#34;http://on-demand.gputechconf.com/siggraph/2017/video/sig1718-morgan-mcguire-virtual-frontier-computer-graphics.html&#34; target=&#34;_blank&#34;&gt;The Virtual Fronteir&lt;/a&gt; by Morgan McGuire from whom I borrowed many of the slides.&lt;/p&gt;
-</description>
     </item>
     
   </channel>
