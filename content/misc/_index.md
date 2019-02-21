@@ -28,6 +28,7 @@ For (former) students: [How to Request a Letter of Recommendation](/teaching/rec
 
 ## Other links
 
+* [Mouse Sensitivity Converter](http://www.mousesensitivity.net/)
 * [Indie Game Share](http://itch.io/)
 * [Web-based equation tool](http://www.sciweavers.org/free-online-latex-equation-editor)
 * [Web-based FSM tool](http://madebyevan.com/fsm/)
