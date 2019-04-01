@@ -201,10 +201,10 @@ a.primary{
 
 
 &lt;h2&gt;Refereed Publications&lt;/h2&gt;
-&lt;ol&gt;&lt;li&gt;&lt;a href=&#34;https://orl.mae.cornell.edu//#people&#34; class=&#34;author&#34;&gt;Jose Barreiros&lt;/a&gt;, &lt;a href=&#34;https://www.linkedin.com/in/houston-claure-33793771/&#34; class=&#34;author&#34;&gt;Houston Claure&lt;/a&gt;, &lt;a href=&#34;http://www.gnarlydesign.io/&#34; class=&#34;author&#34;&gt;Bryan Peele&lt;/a&gt;, &lt;a href=&#34;http://omershapira.com/#all&#34; class=&#34;author&#34;&gt;Omer Shapira&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://luebke.us/&#34; class=&#34;author&#34;&gt;David Luebke&lt;/a&gt;, &lt;a href=&#34;http://mjung.infosci.cornell.edu/&#34; class=&#34;author&#34;&gt;Malte Jung&lt;/a&gt;, &lt;a href=&#34;https://orl.mae.cornell.edu/#people&#34; class=&#34;author&#34;&gt;Robert Shepherd&lt;/a&gt;;
+&lt;ol&gt;&lt;li&gt;&lt;a href=&#34;https://www.josebarreiros.com&#34; class=&#34;author&#34;&gt;Jose Barreiros&lt;/a&gt;, &lt;a href=&#34;https://www.linkedin.com/in/houston-claure-33793771/&#34; class=&#34;author&#34;&gt;Houston Claure&lt;/a&gt;, &lt;a href=&#34;http://www.gnarlydesign.io/&#34; class=&#34;author&#34;&gt;Bryan Peele&lt;/a&gt;, &lt;a href=&#34;http://omershapira.com/#all&#34; class=&#34;author&#34;&gt;Omer Shapira&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://luebke.us/&#34; class=&#34;author&#34;&gt;David Luebke&lt;/a&gt;, &lt;a href=&#34;http://mjung.infosci.cornell.edu/&#34; class=&#34;author&#34;&gt;Malte Jung&lt;/a&gt;, &lt;a href=&#34;https://orl.mae.cornell.edu/#people&#34; class=&#34;author&#34;&gt;Robert Shepherd&lt;/a&gt;;
 &lt;strong&gt;Fluidic Elastomer Actuators for Haptic Interactions in Virtual Reality&lt;/strong&gt;,
 &lt;em&gt;IEEE Robotics and Automation Letters (RA-L)&lt;/em&gt;,
-None, February, 2019. (to appear)
+None, February, 2019.
 &lt;a href=&#34;None&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibc14&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibc14&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{barreirosclaure19,
  author = { Jose Barreiros and Houston Claure and Bryan Peele and Omer Shapira and Josef Spjut and David Luebke and Malte Jung and Robert Shepherd },
  title = { {Fluidic Elastomer Actuators for Haptic Interactions in Virtual Reality} },
@@ -376,7 +376,7 @@ Anaheim, June 8-9, 2008.&lt;strong&gt;(Best paper award)&lt;/strong&gt;
 &lt;ol&gt;&lt;li&gt;&lt;a href=&#34;http://visualextract.com/&#34; class=&#34;author&#34;&gt;Adam Marrs&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;https://www.linkedin.com/in/holger-gruen-b456791/&#34; class=&#34;author&#34;&gt;Holger Gruen&lt;/a&gt;, &lt;a href=&#34;https://www.linkedin.com/in/rasathe/&#34; class=&#34;author&#34;&gt;Rahul Sathe&lt;/a&gt;, &lt;a href=&#34;https://casual-effects.com/morgan/index.html&#34; class=&#34;author&#34;&gt;Morgan McGuire&lt;/a&gt;;
 &lt;strong&gt;Improving Temporal Antialiasing with Adaptive Ray Tracing&lt;/strong&gt;,
 &lt;em&gt;Ray Tracing Gems&lt;/em&gt;,
-March, 2019. (to appear)
+March, 2019.
 &lt;a href=&#34;https://developer.nvidia.com/books/raytracing/raytracing_gems_preview&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibbc1&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibbc1&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{marrsspjut19,
  author = { Adam Marrs and Josef Spjut and Holger Gruen and Rahul Sathe and Morgan McGuire },
  title = { {Improving Temporal Antialiasing with Adaptive Ray Tracing} },
@@ -411,7 +411,7 @@ Los Angeles, July 30 - August 3, 2017.
  booktitle = {SIGGRAPH Emerging Technologies}
 }
 &lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://orl.mae.cornell.edu/#people&#34; class=&#34;author&#34;&gt;Robert Shepherd&lt;/a&gt;, &lt;a href=&#34;http://www.gnarlydesign.io/&#34; class=&#34;author&#34;&gt;Bryan Peele&lt;/a&gt;, &lt;a href=&#34;https://orl.mae.cornell.edu/#people&#34; class=&#34;author&#34;&gt;Benjamin Mac Murray&lt;/a&gt;, &lt;a href=&#34;https://orl.mae.cornell.edu//#people&#34; class=&#34;author&#34;&gt;Jose Barreiros&lt;/a&gt;, &lt;a href=&#34;http://omershapira.com/#all&#34; class=&#34;author&#34;&gt;Omer Shapira&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://luebke.us/&#34; class=&#34;author&#34;&gt;David Luebke&lt;/a&gt;;
+&lt;li&gt;&lt;a href=&#34;https://orl.mae.cornell.edu/#people&#34; class=&#34;author&#34;&gt;Robert Shepherd&lt;/a&gt;, &lt;a href=&#34;http://www.gnarlydesign.io/&#34; class=&#34;author&#34;&gt;Bryan Peele&lt;/a&gt;, &lt;a href=&#34;https://orl.mae.cornell.edu/#people&#34; class=&#34;author&#34;&gt;Benjamin Mac Murray&lt;/a&gt;, &lt;a href=&#34;https://www.josebarreiros.com&#34; class=&#34;author&#34;&gt;Jose Barreiros&lt;/a&gt;, &lt;a href=&#34;http://omershapira.com/#all&#34; class=&#34;author&#34;&gt;Omer Shapira&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://luebke.us/&#34; class=&#34;author&#34;&gt;David Luebke&lt;/a&gt;;
 &lt;strong&gt;Stretchable Transducers for Kinesthetic Interactions in Virtual Reality&lt;/strong&gt;,
 &lt;em&gt;SIGGRAPH Emerging Technologies&lt;/em&gt;,
 Los Angeles, July 30 - August 3, 2017.
@@ -423,7 +423,7 @@ Los Angeles, July 30 - August 3, 2017.
  booktitle = {SIGGRAPH Emerging Technologies}
 }
 &lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.gnarlydesign.io/&#34; class=&#34;author&#34;&gt;Bryan Peele&lt;/a&gt;, &lt;a href=&#34;https://orl.mae.cornell.edu/#people&#34; class=&#34;author&#34;&gt;Benjamin Mac Murray&lt;/a&gt;, &lt;a href=&#34;https://orl.mae.cornell.edu//#people&#34; class=&#34;author&#34;&gt;Jose Barreiros&lt;/a&gt;, &lt;a href=&#34;https://orl.mae.cornell.edu/#people&#34; class=&#34;author&#34;&gt;Robert Shepherd&lt;/a&gt;, &lt;a href=&#34;http://omershapira.com/#all&#34; class=&#34;author&#34;&gt;Omer Shapira&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://luebke.us/&#34; class=&#34;author&#34;&gt;David Luebke&lt;/a&gt;;
+&lt;li&gt;&lt;a href=&#34;http://www.gnarlydesign.io/&#34; class=&#34;author&#34;&gt;Bryan Peele&lt;/a&gt;, &lt;a href=&#34;https://orl.mae.cornell.edu/#people&#34; class=&#34;author&#34;&gt;Benjamin Mac Murray&lt;/a&gt;, &lt;a href=&#34;https://www.josebarreiros.com&#34; class=&#34;author&#34;&gt;Jose Barreiros&lt;/a&gt;, &lt;a href=&#34;https://orl.mae.cornell.edu/#people&#34; class=&#34;author&#34;&gt;Robert Shepherd&lt;/a&gt;, &lt;a href=&#34;http://omershapira.com/#all&#34; class=&#34;author&#34;&gt;Omer Shapira&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://luebke.us/&#34; class=&#34;author&#34;&gt;David Luebke&lt;/a&gt;;
 &lt;strong&gt;Stretchable Transducers for Haptic Interactions in Virtual and Augmented Reality&lt;/strong&gt;,
 &lt;em&gt;GPU Technology Conference VR Village&lt;/em&gt;,
 San Jose, May 9 - 11, 2017. &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibtd0&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibtd0&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{peelemurray17,
@@ -447,7 +447,7 @@ January 16-17, 2018.
  booktitle = {[AR In Action](http://arinaction.org/)}
 }
 &lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.gnarlydesign.io/&#34; class=&#34;author&#34;&gt;Bryan Peele&lt;/a&gt;, &lt;a href=&#34;https://orl.mae.cornell.edu/#people&#34; class=&#34;author&#34;&gt;Benjamin Mac Murray&lt;/a&gt;, &lt;a href=&#34;https://orl.mae.cornell.edu/#people&#34; class=&#34;author&#34;&gt;Robert Shepherd&lt;/a&gt;, &lt;a href=&#34;https://orl.mae.cornell.edu//#people&#34; class=&#34;author&#34;&gt;Jose Barreiros&lt;/a&gt;, &lt;a href=&#34;http://omershapira.com/#all&#34; class=&#34;author&#34;&gt;Omer Shapira&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://luebke.us/&#34; class=&#34;author&#34;&gt;David Luebke&lt;/a&gt;;
+&lt;li&gt;&lt;a href=&#34;http://www.gnarlydesign.io/&#34; class=&#34;author&#34;&gt;Bryan Peele&lt;/a&gt;, &lt;a href=&#34;https://orl.mae.cornell.edu/#people&#34; class=&#34;author&#34;&gt;Benjamin Mac Murray&lt;/a&gt;, &lt;a href=&#34;https://orl.mae.cornell.edu/#people&#34; class=&#34;author&#34;&gt;Robert Shepherd&lt;/a&gt;, &lt;a href=&#34;https://www.josebarreiros.com&#34; class=&#34;author&#34;&gt;Jose Barreiros&lt;/a&gt;, &lt;a href=&#34;http://omershapira.com/#all&#34; class=&#34;author&#34;&gt;Omer Shapira&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;http://luebke.us/&#34; class=&#34;author&#34;&gt;David Luebke&lt;/a&gt;;
 &lt;strong&gt;Stretchable Transducers for Kinesthetic Interactions in Virtual Reality&lt;/strong&gt;,
 &lt;em&gt;SIGGRAPH Experience Presentations&lt;/em&gt;,
 Los Angeles, August 3, 2017.
