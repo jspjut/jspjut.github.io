@@ -2,17 +2,15 @@
 title = "Media Coverage"
 +++
 
-## Steerable Application-Adaptive Near-Eye Displays
-NVIDIA Research - Best in Show Award
-
-* SIGGRAPH Blog - November 09 2018,
-[2018 Emerging Technologies Best in Show: Steerable Application-Adaptive Near-Eye Displays](https://blog.siggraph.org/2018/11/2018-emerging-technologies-best-in-show-steerable-application-adaptive-near-eye-displays.html/)
-* SIGGRAPH - August 16 2018,
-[SIGGRAPH 2018 Celebrates Generations in Vancouver](https://s2018.siggraph.org/press/news-releases/siggraph-2018-celebrates-generations-vancouver/)
-
 ## Adaptive Temporal Anti-Aliasing
 NVIDIA Research
 
+* 3D Juegos - February 19 2019,
+[Nvidia planea mejorar la calidad del TAA con el raytracing](https://www.3djuegos.com/noticias-ver/190174/nvidia-planea-mejorar-la-calidad-del-taa-con-el-raytracing/)
+* Overclock 3D - February 18 2019,
+[Nvidia Plans to Improve Temporal Anti-aliasing with Ray Tracing](https://www.overclock3d.net/news/gpu_displays/nvidia_plans_to_improve_temporal_anti-aliasing_with_ray_tracing/1)
+* Dark Side of Gaming - February 18 2019,
+[NVIDIA aims to remove TAA blurring and ghosting artifacts with adaptive ray tracing in games](https://www.dsogaming.com/news/nvidia-aims-to-remove-blurring-and-ghosting-artifacts-in-taa-with-adaptive-ray-tracing-in-games/)
 * Segment Next - August 02 2018,
 [Nvidia Ray Tracing In Temporal Anti-aliasing Will Revolutionize The Future Of Gaming](https://segmentnext.com/2018/08/02/nvidia-ray-tracing-temporal-anti-aliasing/)
 * PC Games N - August 01 2018,
@@ -39,6 +37,14 @@ NVIDIA Research
 [Nvidia discusses Adaptive Temporal Anti-Aliasing with Ray Tracing](https://www.overclock3d.net/news/gpu_displays/nvidia_discusses_adaptive_temporal_anti-aliasing_with_ray_tracing/1)
 * videocardz - July 30 2018,
 [NVIDIA introduces Adaptive Temporal Antialiasing with ray tracing](https://videocardz.com/76902/nvidia-introduces-adaptive-temporal-antialiasing-with-ray-tracing)
+
+## Steerable Application-Adaptive Near-Eye Displays
+NVIDIA Research - Best in Show Award
+
+* SIGGRAPH Blog - November 09 2018,
+[2018 Emerging Technologies Best in Show: Steerable Application-Adaptive Near-Eye Displays](https://blog.siggraph.org/2018/11/2018-emerging-technologies-best-in-show-steerable-application-adaptive-near-eye-displays.html/)
+* SIGGRAPH - August 16 2018,
+[SIGGRAPH 2018 Celebrates Generations in Vancouver](https://s2018.siggraph.org/press/news-releases/siggraph-2018-celebrates-generations-vancouver/)
 
 ## Kinesthetic Haptics for Virtual Reality
 Collaboration between Cornell Organic Robotics Lab and NVIDIA.
