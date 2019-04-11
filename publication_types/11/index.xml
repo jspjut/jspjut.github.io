@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Josef Spjut</copyright>
-    <lastBuildDate>Mon, 26 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://josef.spjut.me/publication_types/11/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Esports Arms Race: Latency and Refresh Rate for Competitive Gaming Tasks</title>
+      <link>http://josef.spjut.me/publication/pos/p4/</link>
+      <pubDate>Fri, 17 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/pos/p4/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Large-scale Synthetic Domain Randomized 6DoF Object Pose Estimation Dataset</title>
