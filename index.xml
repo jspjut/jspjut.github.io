@@ -477,12 +477,12 @@ March, 2019.
 &lt;/ol&gt;
 
 &lt;h2&gt;Technical Demos&lt;/h2&gt;
-&lt;ol&gt;&lt;li&gt;&lt;a href=&#34;http://j-kim.kr/&#34; class=&#34;author&#34;&gt;Jonghyun Kim&lt;/a&gt;;
+&lt;ol&gt;&lt;li&gt;&lt;a href=&#34;http://j-kim.kr/&#34; class=&#34;author&#34;&gt;Jonghyun Kim&lt;/a&gt;, &lt;a href=&#34;https://scholar.google.com/citations?user=9_GCtwUAAAAJ&#34; class=&#34;author&#34;&gt;Michael Stengel&lt;/a&gt;, &lt;a href=&#34;https://www.linkedin.com/in/daronwu/&#34; class=&#34;author&#34;&gt;Jui-Yi Wu&lt;/a&gt;, &lt;a href=&#34;https://www.linkedin.com/in/ben-boudaoud/&#34; class=&#34;author&#34;&gt;Ben Boudaoud&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;https://kaanaksit.com/&#34; class=&#34;author&#34;&gt;Kaan Aksit&lt;/a&gt;, &lt;a href=&#34;http://www.rachelalbert.com/&#34; class=&#34;author&#34;&gt;Rachel Albert&lt;/a&gt;, &lt;a href=&#34;https://research.nvidia.com/users/trey-greer&#34; class=&#34;author&#34;&gt;Trey Greer&lt;/a&gt;, &lt;a href=&#34;http://www.youngmoj.com/&#34; class=&#34;author&#34;&gt;Youngmo Jeong&lt;/a&gt;, &lt;a href=&#34;https://research.nvidia.com/users/ward-lopes&#34; class=&#34;author&#34;&gt;Ward Lopes&lt;/a&gt;, &lt;a href=&#34;https://research.nvidia.com/person/zander-majercik&#34; class=&#34;author&#34;&gt;Alexander Majercik&lt;/a&gt;, &lt;a href=&#34;https://www.cs.utah.edu/~shirley/&#34; class=&#34;author&#34;&gt;Peter Shirley&lt;/a&gt;, &lt;a href=&#34;https://casual-effects.com/morgan/index.html&#34; class=&#34;author&#34;&gt;Morgan McGuire&lt;/a&gt;, &lt;a href=&#34;http://luebke.us/&#34; class=&#34;author&#34;&gt;David Luebke&lt;/a&gt;;
 &lt;strong&gt;Matching Visual Acuity &amp; Prescription: Towards AR for Humans&lt;/strong&gt;,
 &lt;em&gt;SIGGRAPH Emerging Technologies&lt;/em&gt;,
 Los Angeles, July 28 - August 1, 2019. (to appear)
-&lt;a href=&#34;None&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibtd4&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibtd4&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{kim19,
- author = { Jonghyun Kim },
+&lt;a href=&#34;None&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibtd4&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibtd4&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{kimstengel19,
+ author = { Jonghyun Kim and Michael Stengel and Jui-Yi Wu and Ben Boudaoud and Josef Spjut and Kaan Aksit and Rachel Albert and Trey Greer and Youngmo Jeong and Ward Lopes and Alexander Majercik and Peter Shirley and Morgan McGuire and David Luebke },
  title = { {Matching Visual Acuity &amp; Prescription: Towards AR for Humans} },
  year = {2019},
  booktitle = {SIGGRAPH Emerging Technologies}
