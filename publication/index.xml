@@ -13,6 +13,33 @@
     
     
     <item>
+      <title>Foveated AR: Dynamically-Foveated Augmented Reality Display</title>
+      <link>http://josef.spjut.me/publication/ref/c16/</link>
+      <pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ref/c16/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Foveated Displays: Toward Classification of the Emerging Field</title>
+      <link>http://josef.spjut.me/publication/ct/ct3/</link>
+      <pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ct/ct3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Matching Visual Acuity &amp; Prescription: Towards AR for Humans</title>
+      <link>http://josef.spjut.me/publication/td/td4/</link>
+      <pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/td/td4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>SIDOD: A Synthetic Image Dataset for 3D Object Pose Recognition with Distractors</title>
       <link>http://josef.spjut.me/publication/ref/c15/</link>
       <pubDate>Sun, 16 Jun 2019 00:00:00 +0000</pubDate>
@@ -27,6 +54,15 @@
       <pubDate>Fri, 17 May 2019 00:00:00 +0000</pubDate>
       
       <guid>http://josef.spjut.me/publication/pos/p4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Adaptive Anti-Aliasing using Conservative Rasterization and GPU Ray Tracing</title>
+      <link>http://josef.spjut.me/publication/bc/bc2/</link>
+      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/bc/bc2/</guid>
       <description></description>
     </item>
     

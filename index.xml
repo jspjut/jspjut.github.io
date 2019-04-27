@@ -11,6 +11,33 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Foveated AR: Dynamically-Foveated Augmented Reality Display</title>
+      <link>http://josef.spjut.me/publication/ref/c16/</link>
+      <pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ref/c16/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Foveated Displays: Toward Classification of the Emerging Field</title>
+      <link>http://josef.spjut.me/publication/ct/ct3/</link>
+      <pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ct/ct3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Matching Visual Acuity &amp; Prescription: Towards AR for Humans</title>
+      <link>http://josef.spjut.me/publication/td/td4/</link>
+      <pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/td/td4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>SIDOD: A Synthetic Image Dataset for 3D Object Pose Recognition with Distractors</title>
       <link>http://josef.spjut.me/publication/ref/c15/</link>
       <pubDate>Sun, 16 Jun 2019 00:00:00 +0000</pubDate>
@@ -25,6 +52,15 @@
       <pubDate>Fri, 17 May 2019 00:00:00 +0000</pubDate>
       
       <guid>http://josef.spjut.me/publication/pos/p4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Adaptive Anti-Aliasing using Conservative Rasterization and GPU Ray Tracing</title>
+      <link>http://josef.spjut.me/publication/bc/bc2/</link>
+      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/bc/bc2/</guid>
       <description></description>
     </item>
     
@@ -219,11 +255,23 @@ a.primary{
 
 
 &lt;h2&gt;Refereed Publications&lt;/h2&gt;
-&lt;ol&gt;&lt;li&gt;&lt;a href=&#34;http://monajalal.com/&#34; class=&#34;author&#34;&gt;Mona Jalal&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;https://www.linkedin.com/in/ben-boudaoud/&#34; class=&#34;author&#34;&gt;Ben Boudaoud&lt;/a&gt;, &lt;a href=&#34;http://www.cs.bu.edu/~betke/&#34; class=&#34;author&#34;&gt;Margrit Betke&lt;/a&gt;;
+&lt;ol&gt;&lt;li&gt;&lt;a href=&#34;http://j-kim.kr/&#34; class=&#34;author&#34;&gt;Jonghyun Kim&lt;/a&gt;, &lt;a href=&#34;http://www.youngmoj.com/&#34; class=&#34;author&#34;&gt;Youngmo Jeong&lt;/a&gt;, &lt;a href=&#34;https://scholar.google.com/citations?user=9_GCtwUAAAAJ&#34; class=&#34;author&#34;&gt;Michael Stengel&lt;/a&gt;, &lt;a href=&#34;https://kaanaksit.com/&#34; class=&#34;author&#34;&gt;Kaan Aksit&lt;/a&gt;, &lt;a href=&#34;http://www.rachelalbert.com/&#34; class=&#34;author&#34;&gt;Rachel Albert&lt;/a&gt;, &lt;a href=&#34;https://research.nvidia.com/users/ward-lopes&#34; class=&#34;author&#34;&gt;Ward Lopes&lt;/a&gt;, &lt;a href=&#34;https://research.nvidia.com/users/trey-greer&#34; class=&#34;author&#34;&gt;Trey Greer&lt;/a&gt;, &lt;a href=&#34;https://www.linkedin.com/in/ben-boudaoud/&#34; class=&#34;author&#34;&gt;Ben Boudaoud&lt;/a&gt;, &lt;a href=&#34;https://research.nvidia.com/person/zander-majercik&#34; class=&#34;author&#34;&gt;Alexander Majercik&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;https://casual-effects.com/morgan/index.html&#34; class=&#34;author&#34;&gt;Morgan McGuire&lt;/a&gt;, &lt;a href=&#34;http://luebke.us/&#34; class=&#34;author&#34;&gt;David Luebke&lt;/a&gt;;
+&lt;strong&gt;Foveated AR: Dynamically-Foveated Augmented Reality Display&lt;/strong&gt;,
+&lt;em&gt;ACM SIGGRAPH Proceedings&lt;/em&gt;,
+Los Angeles, July, 2019. (to appear)
+&lt;a href=&#34;None&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibc16&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibc16&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{kimjeong19,
+ author = { Jonghyun Kim and Youngmo Jeong and Michael Stengel and Kaan Aksit and Rachel Albert and Ward Lopes and Trey Greer and Ben Boudaoud and Alexander Majercik and Josef Spjut and Morgan McGuire and David Luebke },
+ title = { {Foveated AR: Dynamically-Foveated Augmented Reality Display} },
+ year = {2019},
+ booktitle = {ACM SIGGRAPH Proceedings}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://monajalal.com/&#34; class=&#34;author&#34;&gt;Mona Jalal&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;https://www.linkedin.com/in/ben-boudaoud/&#34; class=&#34;author&#34;&gt;Ben Boudaoud&lt;/a&gt;, &lt;a href=&#34;http://www.cs.bu.edu/~betke/&#34; class=&#34;author&#34;&gt;Margrit Betke&lt;/a&gt;;
 &lt;strong&gt;SIDOD: A Synthetic Image Dataset for 3D Object Pose Recognition with Distractors&lt;/strong&gt;,
 &lt;em&gt;Women in Computer Vision Workshop&lt;/em&gt;,
 Long Beach, June 16, 2019. (to appear)
-&lt;a href=&#34;None&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibc15&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibc15&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{jalalspjut19,
+&lt;a href=&#34;https://research.nvidia.com/publication/2019-06_SIDOD%3A-A-Synthetic&#34;&gt;paper&lt;/a&gt;
+&lt;a href=&#34;https://research.nvidia.com/sites/default/files/pubs/2019-06_SIDOD%3A-A-Synthetic/SIDOD_tech_report.pdf&#34;&gt;alternate&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibc15&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibc15&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{jalalspjut19,
  author = { Mona Jalal and Josef Spjut and Ben Boudaoud and Margrit Betke },
  title = { {SIDOD: A Synthetic Image Dataset for 3D Object Pose Recognition with Distractors} },
  year = {2019},
@@ -402,11 +450,24 @@ Anaheim, June 8-9, 2008.&lt;strong&gt;(Best paper award)&lt;/strong&gt;
 &lt;/ol&gt;
 
 &lt;h2&gt;Book Chapter&lt;/h2&gt;
-&lt;ol&gt;&lt;li&gt;&lt;a href=&#34;http://visualextract.com/&#34; class=&#34;author&#34;&gt;Adam Marrs&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;https://www.linkedin.com/in/holger-gruen-b456791/&#34; class=&#34;author&#34;&gt;Holger Gruen&lt;/a&gt;, &lt;a href=&#34;https://www.linkedin.com/in/rasathe/&#34; class=&#34;author&#34;&gt;Rahul Sathe&lt;/a&gt;, &lt;a href=&#34;https://casual-effects.com/morgan/index.html&#34; class=&#34;author&#34;&gt;Morgan McGuire&lt;/a&gt;;
+&lt;ol&gt;&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/in/rasathe/&#34; class=&#34;author&#34;&gt;Rahul Sathe&lt;/a&gt;, &lt;a href=&#34;https://www.linkedin.com/in/holger-gruen-b456791/&#34; class=&#34;author&#34;&gt;Holger Gruen&lt;/a&gt;, &lt;a href=&#34;http://visualextract.com/&#34; class=&#34;author&#34;&gt;Adam Marrs&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;https://casual-effects.com/morgan/index.html&#34; class=&#34;author&#34;&gt;Morgan McGuire&lt;/a&gt;, &lt;a href=&#34;https://www.linkedin.com/in/yuryuralsky/&#34; class=&#34;author&#34;&gt;Yury Uralsky&lt;/a&gt;;
+&lt;strong&gt;Adaptive Anti-Aliasing using Conservative Rasterization and GPU Ray Tracing&lt;/strong&gt;,
+&lt;em&gt;GPU Zen 2&lt;/em&gt;,
+April, 2019.
+&lt;a href=&#34;https://www.amazon.com/dp/179758314X&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibbc2&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibbc2&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{sathegruen19,
+ author = { Rahul Sathe and Holger Gruen and Adam Marrs and Josef Spjut and Morgan McGuire and Yury Uralsky },
+ title = { {Adaptive Anti-Aliasing using Conservative Rasterization and GPU Ray Tracing} },
+ year = {2019},
+ booktitle = {GPU Zen 2}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://visualextract.com/&#34; class=&#34;author&#34;&gt;Adam Marrs&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;https://www.linkedin.com/in/holger-gruen-b456791/&#34; class=&#34;author&#34;&gt;Holger Gruen&lt;/a&gt;, &lt;a href=&#34;https://www.linkedin.com/in/rasathe/&#34; class=&#34;author&#34;&gt;Rahul Sathe&lt;/a&gt;, &lt;a href=&#34;https://casual-effects.com/morgan/index.html&#34; class=&#34;author&#34;&gt;Morgan McGuire&lt;/a&gt;;
 &lt;strong&gt;Improving Temporal Antialiasing with Adaptive Ray Tracing&lt;/strong&gt;,
 &lt;em&gt;Ray Tracing Gems&lt;/em&gt;,
 March, 2019.
-&lt;a href=&#34;https://developer.nvidia.com/books/raytracing/raytracing_gems_preview&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibbc1&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibbc1&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{marrsspjut19,
+&lt;a href=&#34;https://link.springer.com/content/pdf/10.1007%2F978-1-4842-4427-2_22.pdf&#34;&gt;paper&lt;/a&gt;
+&lt;a href=&#34;https://research.nvidia.com/publication/2019-03_Improving-Temporal-Antialiasing&#34;&gt;alternate&lt;/a&gt;
+&lt;a href=&#34;https://developer.nvidia.com/books/raytracing/raytracing_gems_preview&#34;&gt;alternate 2&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibbc1&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibbc1&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{marrsspjut19,
  author = { Adam Marrs and Josef Spjut and Holger Gruen and Rahul Sathe and Morgan McGuire },
  title = { {Improving Temporal Antialiasing with Adaptive Ray Tracing} },
  year = {2019},
@@ -416,7 +477,18 @@ March, 2019.
 &lt;/ol&gt;
 
 &lt;h2&gt;Technical Demos&lt;/h2&gt;
-&lt;ol&gt;&lt;li&gt;&lt;a href=&#34;https://sites.google.com/site/kishorerathinavel/&#34; class=&#34;author&#34;&gt;Kishore Rathinavel&lt;/a&gt;, &lt;a href=&#34;http://www.ee.iitm.ac.in/~ee11b061/&#34; class=&#34;author&#34;&gt;Praneeth Chakravarthula&lt;/a&gt;, &lt;a href=&#34;https://kaanaksit.com/&#34; class=&#34;author&#34;&gt;Kaan Aksit&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;https://www.linkedin.com/in/ben-boudaoud/&#34; class=&#34;author&#34;&gt;Ben Boudaoud&lt;/a&gt;, &lt;a href=&#34;https://research.nvidia.com/users/turner-whitted&#34; class=&#34;author&#34;&gt;Turner Whitted&lt;/a&gt;, &lt;a href=&#34;http://luebke.us/&#34; class=&#34;author&#34;&gt;David Luebke&lt;/a&gt;, &lt;a href=&#34;http://henryfuchs.web.unc.edu/&#34; class=&#34;author&#34;&gt;Henry Fuchs&lt;/a&gt;;
+&lt;ol&gt;&lt;li&gt;&lt;a href=&#34;http://j-kim.kr/&#34; class=&#34;author&#34;&gt;Jonghyun Kim&lt;/a&gt;;
+&lt;strong&gt;Matching Visual Acuity &amp; Prescription: Towards AR for Humans&lt;/strong&gt;,
+&lt;em&gt;SIGGRAPH Emerging Technologies&lt;/em&gt;,
+Los Angeles, July 28 - August 1, 2019. (to appear)
+&lt;a href=&#34;None&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibtd4&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibtd4&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{kim19,
+ author = { Jonghyun Kim },
+ title = { {Matching Visual Acuity &amp; Prescription: Towards AR for Humans} },
+ year = {2019},
+ booktitle = {SIGGRAPH Emerging Technologies}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sites.google.com/site/kishorerathinavel/&#34; class=&#34;author&#34;&gt;Kishore Rathinavel&lt;/a&gt;, &lt;a href=&#34;http://www.ee.iitm.ac.in/~ee11b061/&#34; class=&#34;author&#34;&gt;Praneeth Chakravarthula&lt;/a&gt;, &lt;a href=&#34;https://kaanaksit.com/&#34; class=&#34;author&#34;&gt;Kaan Aksit&lt;/a&gt;, &lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;https://www.linkedin.com/in/ben-boudaoud/&#34; class=&#34;author&#34;&gt;Ben Boudaoud&lt;/a&gt;, &lt;a href=&#34;https://research.nvidia.com/users/turner-whitted&#34; class=&#34;author&#34;&gt;Turner Whitted&lt;/a&gt;, &lt;a href=&#34;http://luebke.us/&#34; class=&#34;author&#34;&gt;David Luebke&lt;/a&gt;, &lt;a href=&#34;http://henryfuchs.web.unc.edu/&#34; class=&#34;author&#34;&gt;Henry Fuchs&lt;/a&gt;;
 &lt;strong&gt;Steerable Application-Adaptive Near-Eye Displays&lt;/strong&gt;,
 &lt;em&gt;SIGGRAPH Emerging Technologies&lt;/em&gt;,
 Vancouver, August 12 - 16, 2018.&lt;strong&gt;(Best in show award)&lt;/strong&gt;
@@ -465,10 +537,21 @@ San Jose, May 9 - 11, 2017. &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; 
 &lt;/ol&gt;
 
 &lt;h2&gt;Conference Talks and Courses&lt;/h2&gt;
-&lt;ol&gt;&lt;li&gt;&lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;;
+&lt;ol&gt;&lt;li&gt;&lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;, &lt;a href=&#34;https://www.linkedin.com/in/ben-boudaoud/&#34; class=&#34;author&#34;&gt;Ben Boudaoud&lt;/a&gt;;
+&lt;strong&gt;Foveated Displays: Toward Classification of the Emerging Field&lt;/strong&gt;,
+&lt;em&gt;SIGGRAPH Talk&lt;/em&gt;,
+Los Angeles, July 28-31, 2019. (to appear)
+&lt;a href=&#34;None&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibct3&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibct3&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{spjutboudaoud19,
+ author = { Josef Spjut and Ben Boudaoud },
+ title = { {Foveated Displays: Toward Classification of the Emerging Field} },
+ year = {2019},
+ booktitle = {SIGGRAPH Talk}
+}
+&lt;/pre&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://josef.spjut.me&#34; class=&#34;author primary&#34;&gt;Josef Spjut&lt;/a&gt;;
 &lt;strong&gt;The Augmented Frontier: Challenges for Near Eye Display Computing&lt;/strong&gt;,
 &lt;em&gt;[AR In Action](http://arinaction.org/)&lt;/em&gt;,
-January 16-17, 2018.
+Boston, January 16-17, 2018.
 &lt;a href=&#34;http://josef.spjut.me/pubs/spjutARIA2018.pdf&#34;&gt;paper&lt;/a&gt; &lt;a class=&#34;ec&#34; href=&#34;javascript:&#34; onclick=&#34;e=document.getElementById(&#39;bibct2&#39;).style;e.display=(e.display==&#39;block&#39;?&#39;none&#39;:&#39;block&#39;)&#34;&gt;Bibtex&lt;/a&gt;&lt;span id=&#34;bibct2&#34; class=&#34;b&#34; style=&#34;display: none;&#34;&gt;&lt;pre&gt;@inproceedings{spjut18,
  author = { Josef Spjut },
  title = { {The Augmented Frontier: Challenges for Near Eye Display Computing} },
@@ -734,80 +817,6 @@ Andrew Carter &amp;#39;13, Paula Ning &amp;#39;13, Max Korbel &amp;#39;13, Kathe
       <pubDate>Fri, 07 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>http://josef.spjut.me/talk/nexux2018/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Steerable Application-Adaptive Near-Eye Displays</title>
-      <link>http://josef.spjut.me/publication/td/td3/</link>
-      <pubDate>Sun, 12 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://josef.spjut.me/publication/td/td3/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Adaptive Temporal Antialiasing</title>
-      <link>http://josef.spjut.me/publication/ref/c13/</link>
-      <pubDate>Fri, 10 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://josef.spjut.me/publication/ref/c13/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>G3D Starter Project</title>
-      <link>http://josef.spjut.me/post/2018/g3d-starter/</link>
-      <pubDate>Sat, 16 Jun 2018 08:24:00 -0400</pubDate>
-      
-      <guid>http://josef.spjut.me/post/2018/g3d-starter/</guid>
-      <description>
-
-&lt;p&gt;I&amp;rsquo;ve recently been spending a lot of my time working on projects based on the &lt;a href=&#34;https://casual-effects.com/g3d/www/index.html&#34; target=&#34;_blank&#34;&gt;G3D Innovation Engine&lt;/a&gt; by &lt;a href=&#34;https://casual-effects.com/morgan/index.html&#34; target=&#34;_blank&#34;&gt;Morgan McGuire&lt;/a&gt;. I personally learned how to program using unix development tools, so I&amp;rsquo;m used to using the command line for everything, and Makefiles are the build tool I&amp;rsquo;m most comfortable with. G3D, being a research game engine, primarily for graphics research, has had to focus on Windows-based development for a number of years now. This means the best way to do research on graphics is to use Visual Studio and Windows, which I never took a class to learn how to use. Makefiles on the other hand I had a large number of classes to teach me how they work, and I had used all through undergrad and grad school, for over 10 years of experience with that build process.&lt;/p&gt;
-
-&lt;p&gt;Visual Studio&amp;rsquo;s build process is completely opaque to someone coming from Makefiles (xcode and other similar GUI-based tools are no better). If I were to teach someone how Visual Studio&amp;rsquo;s build process works, I would start by telling them that the configuration is hidden in XML files, which have many fields that are option and populated with default values which do something whether they are there or not. Microsoft has a &lt;a href=&#34;https://docs.microsoft.com/en-us/cpp/ide/project-and-solution-files&#34; target=&#34;_blank&#34;&gt;nice overview&lt;/a&gt; of the types of XML files. You probably don&amp;rsquo;t need to know what all of the optional fields do, but some subset of those fields will be quite useful to know and understand. I&amp;rsquo;ll give my top N list here. These can be found by right clicking on a project in Visual Studio and selecting the &amp;ldquo;Properties&amp;rdquo; option at the bottom of the menu, then clicking on &amp;ldquo;VC++ Directories&amp;rdquo; under &amp;ldquo;Configuration Properties&amp;rdquo; on the left side of the Property Page. Note that the &amp;ldquo;Configuration&amp;rdquo; drop down at the top allows you to specify different values for &amp;ldquo;Release&amp;rdquo;, &amp;ldquo;Debug&amp;rdquo; or any other build configuration you create, which can be managed from the Property Page by clicking on the &amp;ldquo;Configuration Manager&amp;hellip;&amp;rdquo; in the top right corner. The second value below is what the field in the Property Page corresponds to in the XML.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Include Directories - &lt;code&gt;IncludePath&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Library Directories - &lt;code&gt;LibraryPath&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Executable Directories - &lt;code&gt;ExecutablePath&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Each of these items does what you would expect it to do based on the name, &amp;ldquo;Include Directories&amp;rdquo; managing what headers will be searched when compiling code (useful for &amp;ldquo;.h not found&amp;rdquo; errors). &amp;ldquo;Library Directories&amp;rdquo; configures which directories to search for statically linked libraries during the linking stage of the compiler. Executable Directories sets the path to use for executables, which is used both for programs you want to run, but also dynamically linked libraries (dlls) that you need to be found by your executable at startup.&lt;/p&gt;
-
-&lt;p&gt;In G3D&amp;rsquo;s automated build script and the &lt;a href=&#34;https://casual-effects.com/g3d/G3D10/readme.md.html?#toc3.2&#34; target=&#34;_blank&#34;&gt;Configure and Build&lt;/a&gt; instructions, it recommends setting some global system or user settings which could actually be handled by the vcxproj XML file in a more portable way. I understand why G3D recommends developers use the user and global settings to fix this since all future projects can be created with much fewer settings, however this makes the assumption that no other project or build system will need to modify the user and global settings, or that the developer will be smart enough to figure out how to merge these setting for her or himself. In an effort to help improve portability of my own G3D-based projects, I&amp;rsquo;ve started a &lt;a href=&#34;https://github.com/jspjut/g3d-starter&#34; target=&#34;_blank&#34;&gt;g3d-starter&lt;/a&gt; project on github which depends only on a couple G3D-specific environment variables rather than all of the global/user Include, Path and Library settings. Feel free to check it out!&lt;/p&gt;
-
-&lt;p&gt;My updated instructions modified from the &lt;a href=&#34;https://casual-effects.com/g3d/G3D10/readme.md.html?#toc3.2&#34; target=&#34;_blank&#34;&gt;G3D Configure and Build&lt;/a&gt; instructions follow below. You&amp;rsquo;ll still need Visual Studio 2017 and an install of python 3 before the following.&lt;/p&gt;
-
-&lt;h1 id=&#34;configure-build&#34;&gt;Configure &amp;amp; Build&lt;/h1&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Set your &lt;strong&gt;user&lt;/strong&gt; or &lt;strong&gt;system&lt;/strong&gt; environment variable &lt;code&gt;g3d&lt;/code&gt; to the location that you&amp;rsquo;d like to be the
-root of the G3D tree (such as &lt;code&gt;c:\g3d&lt;/code&gt;). In Windows 10, do this by &amp;#9881; ==&amp;gt; System ==&amp;gt; About ==&amp;gt; System Info ==&amp;gt; Advanced System Settings ==&amp;gt; Environment Variables&amp;hellip;
-(or by searching for &amp;ldquo;Environment Variables&amp;rdquo; in the start menu search)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Set the &lt;strong&gt;user&lt;/strong&gt; or &lt;strong&gt;system&lt;/strong&gt; environment variable &lt;code&gt;G3D10DATA&lt;/code&gt; to
-&lt;code&gt;%g3d%\G3D10\data-files;%g3d%\data10\common;%g3d%\data10\game;%g3d%\data10\research&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;SVN check out &lt;code&gt;https://svn.code.sf.net/p/g3d/code/&lt;/code&gt; to &lt;code&gt;%g3d%&lt;/code&gt;. This is very large, and likely to timeout if sourceforge has a hickup. Be prepared to &lt;code&gt;svn cleanup&lt;/code&gt; and &lt;code&gt;svn up&lt;/code&gt; if it doesn&amp;rsquo;t finish&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;At a command prompt in the &lt;code&gt;%g3d%\G3D10&lt;/code&gt; directory, run:&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;code&gt;buildg3d local&lt;/code&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Copy my &lt;a href=&#34;https://github.com/jspjut/g3d-starter&#34; target=&#34;_blank&#34;&gt;g3d-starter&lt;/a&gt; and follow the rest of the instructions from the &lt;a href=&#34;http://casual-effects.com/g3d/G3D10/build/manual/guidenewproject.html&#34; target=&#34;_blank&#34;&gt;G3D new project guide&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>SimTrax: Simulation Infrastructure for Exploring Thousands of Cores</title>
-      <link>http://josef.spjut.me/publication/ref/c12/</link>
-      <pubDate>Wed, 23 May 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://josef.spjut.me/publication/ref/c12/</guid>
       <description></description>
     </item>
     

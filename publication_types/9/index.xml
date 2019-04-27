@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Josef Spjut</copyright>
-    <lastBuildDate>Tue, 16 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 28 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://josef.spjut.me/publication_types/9/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Foveated Displays: Toward Classification of the Emerging Field</title>
+      <link>http://josef.spjut.me/publication/ct/ct3/</link>
+      <pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ct/ct3/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>The Augmented Frontier: Challenges for Near Eye Display Computing</title>
