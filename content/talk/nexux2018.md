@@ -13,7 +13,7 @@ math = false
 highlight = true
 
 url_pdf = ""
-url_slides = ""
+url_slides = "https://www.google.com/url?q=https://drive.google.com/open?id%3D1Jd7hoATTGfU66USxMLFfTCLPRZ-k-O5g&sa=D&source=hangouts&ust=1560261868164000&usg=AFQjCNFCozsiFRUmc4mMUS4nuU1kMj5JsA"
 url_video = ""
 
 # Optional featured image (relative to `static/img/` folder).
