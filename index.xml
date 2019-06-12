@@ -38,6 +38,15 @@
     </item>
     
     <item>
+      <title>Temporally Dense Ray Tracing</title>
+      <link>http://josef.spjut.me/publication/ref/c17/</link>
+      <pubDate>Mon, 08 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ref/c17/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>SIDOD: A Synthetic Image Dataset for 3D Object Pose Recognition with Distractors</title>
       <link>http://josef.spjut.me/publication/ref/c15/</link>
       <pubDate>Sun, 16 Jun 2019 00:00:00 +0000</pubDate>
@@ -245,15 +254,6 @@
 &lt;li&gt;&lt;a href=&#34;https://dl.acm.org/citation.cfm?id=3201294&#34; target=&#34;_blank&#34;&gt;Saccadic redirected walking&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Large-scale Synthetic Domain Randomized 6DoF Object Pose Estimation Dataset</title>
-      <link>http://josef.spjut.me/publication/pos/p3/</link>
-      <pubDate>Mon, 26 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://josef.spjut.me/publication/pos/p3/</guid>
-      <description></description>
     </item>
     
   </channel>
