@@ -76,9 +76,9 @@ Andrew Carter &#39;13, Paula Ning &#39;13, Max Korbel &#39;13, Katherine Yang &#
 
 <h3>Current and Recent Collaborators</h3>
 
-<p>Adam Marrs, Andrew Fishberg, Anjul Patney, Ben Boudaoud, Benjamin Mac Murray, Bob Alfieri, Bryan Peele, Cem Yuksel, Chris Larson, Daniel Kopta, David Luebke, Elena Vasiou, Erik Brunvand, Gordon D. Love, Henry Fuchs, Holger Gruen, Ian Mallett, Jean Sung, Jonghyun Kim, Jose Barreiros, Kaan Aksit, Kirklann Lau, Kishore Rathinavel, Konstantin Shkurko, Margrit Betke, Martin S. Banks, Mona Jalal, Morgan McGuire, Niveditha Kalavakonda, Omer Shapira, Patricia Xu, Peter Shirley, Praneeth Chakravarthula, Pratul Srinivasan, Rahul Sathe, Ren Ng, Richard Piersall, Robert Shepherd, Ross Knepper, Samuli Laine, Sebastian Krupa, Steven A. Cholewiak, Tero Karras, Tim Grant, Timo Aila, Trey Greer, Turner Whitted, Ward Lopes</p>
+<p>Adam Marrs, Anjul Patney, Ben Boudaoud, Benjamin Mac Murray, Bob Alfieri, Bryan Peele, Cem Yuksel, Chris Larson, Daniel Kopta, David Luebke, Elena Vasiou, Erik Brunvand, Gordon D. Love, Henry Fuchs, Holger Gruen, Ian Mallett, Jonghyun Kim, Jose Barreiros, Kaan Aksit, Kishore Rathinavel, Konstantin Shkurko, Margrit Betke, Martin S. Banks, Mona Jalal, Morgan McGuire, Niveditha Kalavakonda, Omer Shapira, Patricia Xu, Peter Shirley, Praneeth Chakravarthula, Pratul Srinivasan, Rahul Sathe, Ren Ng, Robert Shepherd, Ross Knepper, Steven A. Cholewiak, Tim Grant, Trey Greer, Turner Whitted, Ward Lopes</p>
 
 <h3>Past Collaborators</h3>
 
-<p>Akhil Bagaria, Al Davis, Andrew Carter, Andrew Kensler, David Nellans, David Sheldon, Dong-hyeon Park, Eric Storm, Fabiha Hannan, Frank Vahid, Max Korbel, Mike Parker, Niladrish Chatterjee, Paula Ning, Rajeev Balasubramonian, Roman Lysecky, Scott Sirowy, Seth Pugsley, Solomon Boulos, Spencer Kellis, Steven Parker, Thiago Ize</p>
+<p>Akhil Bagaria, Al Davis, Andrew Carter, Andrew Fishberg, Andrew Kensler, David Nellans, David Sheldon, Dong-hyeon Park, Eric Storm, Fabiha Hannan, Frank Vahid, Jean Sung, Kirklann Lau, Max Korbel, Mike Parker, Niladrish Chatterjee, Paula Ning, Rajeev Balasubramonian, Richard Piersall, Roman Lysecky, Samuli Laine, Scott Sirowy, Sebastian Krupa, Seth Pugsley, Solomon Boulos, Spencer Kellis, Steven Parker, Tero Karras, Thiago Ize, Timo Aila</p>
 
