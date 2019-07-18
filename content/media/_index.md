@@ -2,6 +2,14 @@
 title = "Media Coverage"
 +++
 
+## Matching Prescription & Visual Acuity: Towards AR for Humans
+NVIDIA Research
+
+* UploadVR - July 16 2019,
+[SIGGRAPH 2019: Foveated AR With Prescriptions And A Physical Tail](https://uploadvr.com/siggraph-2019-foveated-ar-tail/)
+* Next Reality - July 16 2019,
+[Nvidia Uncovers Breakthroughs with Dynamic Focus & Prescription Lenses for Augmented Reality Displays](https://next.reality.news/news/nvidia-uncovers-breakthroughs-with-dynamic-focus-prescription-lenses-for-augmented-reality-displays-0201326/)
+
 ## Adaptive Temporal Anti-Aliasing
 NVIDIA Research
 
