@@ -5,6 +5,10 @@ title = "Media Coverage"
 ## Matching Prescription & Visual Acuity: Towards AR for Humans
 NVIDIA Research
 
+* Business Wire - July 19 2019,
+[The Human Effect of Tech: SIGGRAPH 2019 Shines Light on Adaptive Technology](https://www.businesswire.com/news/home/20190719005423/en/)
+* Yahoo! Finance - July 19 2019,
+[The Human Effect of Tech: SIGGRAPH 2019 Shines Light on Adaptive Technology](https://finance.yahoo.com/news/human-effect-tech-siggraph-2019-215900050.html)
 * UploadVR - July 16 2019,
 [SIGGRAPH 2019: Foveated AR With Prescriptions And A Physical Tail](https://uploadvr.com/siggraph-2019-foveated-ar-tail/)
 * Next Reality - July 16 2019,
