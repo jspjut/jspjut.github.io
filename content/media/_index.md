@@ -5,12 +5,22 @@ title = "Media Coverage"
 ## Matching Prescription & Visual Acuity: Towards AR for Humans
 NVIDIA Research
 
+* UploadVR - August 08 2019,
+[SIGGRAPH 2019: Foveated AR With Prescriptions And A Physical Tail](https://uploadvr.com/siggraph-2019-foveated-ar-tail/)
+* Venture Beat - July 30 2019,
+[Siggraph 2019 offers a sneak peek into what’s next for AR, VR, and CG](https://venturebeat.com/2019/07/30/siggraph-2019-offers-a-sneak-peek-into-whats-next-for-ar-vr-and-cg/)
+* Tom's Guide - July 31 2019,
+[Nvidia's Killer AR Tech Doubles Hololens 2's Field of View](https://www.tomsguide.com/news/nvidias-killer-ar-tech-doubles-hololens-2s-field-of-view)
+* ZDNet - July 30 2019,
+[Nvidia Research demos Prescription AR glasses](https://www.zdnet.com/article/nvidia-research-demos-prescription-ar-glasses/)
+* UploadVR - July 29 2019,
+[Foveated AR Demo From NVIDIA At SIGGRAPH](https://uploadvr.com/foveated-ar-nvidia-siggraph/)
+* Graphic Speak - August 12 2019,
+[NVIDIA brings ray tracing and AI to Siggraph again](https://gfxspeak.com/2019/08/12/nvidia-tracing-siggraph/)
 * Business Wire - July 19 2019,
 [The Human Effect of Tech: SIGGRAPH 2019 Shines Light on Adaptive Technology](https://www.businesswire.com/news/home/20190719005423/en/)
 * Yahoo! Finance - July 19 2019,
 [The Human Effect of Tech: SIGGRAPH 2019 Shines Light on Adaptive Technology](https://finance.yahoo.com/news/human-effect-tech-siggraph-2019-215900050.html)
-* UploadVR - July 16 2019,
-[SIGGRAPH 2019: Foveated AR With Prescriptions And A Physical Tail](https://uploadvr.com/siggraph-2019-foveated-ar-tail/)
 * Next Reality - July 16 2019,
 [Nvidia Uncovers Breakthroughs with Dynamic Focus & Prescription Lenses for Augmented Reality Displays](https://next.reality.news/news/nvidia-uncovers-breakthroughs-with-dynamic-focus-prescription-lenses-for-augmented-reality-displays-0201326/)
 
