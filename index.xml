@@ -11,6 +11,15 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>FirstPersonScience: Quantifying Psychophysics for First Person Shooter Tasks</title>
+      <link>http://josef.spjut.me/publication/pos/p5/</link>
+      <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/pos/p5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Improving Temporal Anti-aliasing with Adaptive Ray Tracing</title>
       <link>http://josef.spjut.me/talk/ataasiggraph2019/</link>
       <pubDate>Wed, 31 Jul 2019 00:00:00 +0000</pubDate>
@@ -173,53 +182,6 @@
 &lt;p&gt;The thing I&amp;rsquo;m most worried about is a situation where developers think that the only way to deal with bad behavior is to punish offenders. Obviously there&amp;rsquo;s some room for sticks (in the &lt;a href=&#34;https://en.wikipedia.org/wiki/Carrot_and_stick&#34; target=&#34;_blank&#34;&gt;carrot/stick paradigm&lt;/a&gt; ), but I believe they should be used sparingly. If punishments are too harsh, the people being punished have no chance to learn and grow from the experience. I believe that when done right, online games and communities provide excellent opportunities for humans to develop into successful members of society. As a game developer, you&amp;rsquo;re effectively being placed in a position of legal authority over the behavior of your game, but without multiple branches of government to balance out your power. Please keep your use of tools and punishments metered.&lt;/p&gt;
 
 &lt;p&gt;Players bear a large part of the responsibility for good behavior, so stay tuned for &lt;a href=&#34;&#34; target=&#34;_blank&#34;&gt;my next post&lt;/a&gt; on that part of the problem.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Console to PC Game Port Requests</title>
-      <link>http://josef.spjut.me/post/2019/console-to-pc-port/</link>
-      <pubDate>Wed, 02 Jan 2019 16:51:24 -0500</pubDate>
-      
-      <guid>http://josef.spjut.me/post/2019/console-to-pc-port/</guid>
-      <description>
-
-&lt;p&gt;Over the holiday break, I had a chance to play a number of different games. Among these games, I tried out a few PC ports of primarily console-focused games, and I was reminded of some things that frustrate me when I have my &amp;ldquo;PC Gamer&amp;rdquo; hat on. Without calling out any particular developer or publisher, I&amp;rsquo;d like to take this change to suggest a few recommendations for PC ports that I wish every developer would follow.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Don&amp;rsquo;t use the mouse like a joystick&lt;/li&gt;
-&lt;li&gt;Use my default PC resolution on first boot&lt;/li&gt;
-&lt;li&gt;Test your (primarily shooter) game with gaming mice&lt;/li&gt;
-&lt;li&gt;Provide an option for unlocked framerate&lt;/li&gt;
-&lt;li&gt;Allow 3D render resolution to be set independently from 2D resolution&lt;/li&gt;
-&lt;li&gt;Allow borderless window fullscreen mode&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h1 id=&#34;mouse-like-a-joystick&#34;&gt;Mouse like a joystick?&lt;/h1&gt;
-
-&lt;p&gt;This is my number one complaint with PC ports of console games, and it doesn&amp;rsquo;t make sense how anyone releases games with such a terrible user experience any more. The mouse is expected to have a linear mapping from motion on desk to motion in game. I&amp;rsquo;ve played a few games that turn the linear motion into an acceleration or set a velocity of motion with at most a spring constant of damping that doesn&amp;rsquo;t make sense. I understand that I could get out a controller to play the game, and I do appreciate that control scheme at times, but if your game isn&amp;rsquo;t even playable with mouse, just tell me up front and disable the mouse entirely.&lt;/p&gt;
-
-&lt;p&gt;A sub-point about mouse behavior is that if you allow mouse input in your game on PC, please make the mouse work like a mouse in your menus. A common shortfall here is creating an inventory management system built for controller input and then treating it the same on PC where &amp;ldquo;wasd&amp;rdquo; controls the object selection and only the mouse button (or even worse the spacebar) selects the highlighted item. If I have a mouse, you can expect me to be ready to click on things and to drag and drop inventory items to be where I want them to be. Decades of desktop operating system use has trained nearly all of humanity how this works. Why would you build a game interface in 2019 that throws away things we learned &lt;a href=&#34;https://en.wikipedia.org/wiki/Computer_mouse&#34; target=&#34;_blank&#34;&gt;in 1968&lt;/a&gt;?&lt;/p&gt;
-
-&lt;h1 id=&#34;boot-resolution&#34;&gt;Boot resolution&lt;/h1&gt;
-
-&lt;p&gt;I don&amp;rsquo;t have much to say about this, except it&amp;rsquo;s super irritating to have all of your windows resize themselves because a game decided that on first boot it had to be absolutely sure it would start by setting a fullscreen resolution of 640x480. If you can&amp;rsquo;t be bothered to query the OS for the right resolution, could you please at least start in windowed mode to not throw off everything else I have going on my PC? Thanks.&lt;/p&gt;
-
-&lt;h1 id=&#34;gaming-mice&#34;&gt;Gaming mice&lt;/h1&gt;
-
-&lt;p&gt;This one isn&amp;rsquo;t relevant to every type of game, and is primarily related to shooter games and other games that use the mouse to aim. I&amp;rsquo;ve been learning a lot about mice as input devices for shooter games lately, and hope to write more on that topic soon. However, I&amp;rsquo;ve started a few games recently which are shooter games. I&amp;rsquo;m not particularly mad about the ones that have mouse acceleration turned on by default as long as there&amp;rsquo;s an option to turn it off. But some of these games have had mouse sensitivity settings that are much too high by default, and often won&amp;rsquo;t even go low enough without resorting to editing &lt;code&gt;.ini&lt;/code&gt; files manually. For reference, standard issue mice have a built in DPI setting of 800 but gaming mice default to 2400-3200, which is 3-4x &lt;em&gt;higher&lt;/em&gt; than what a normal mouse has. If you can&amp;rsquo;t afford to buy $50 gaming mice for your QA testers, could you at least take your mouse sensitivity range and make sure it goes to values 4x lower than the lowest setting that your testers are comfortable with?&lt;/p&gt;
-
-&lt;h1 id=&#34;unlock-framerate&#34;&gt;Unlock framerate&lt;/h1&gt;
-
-&lt;p&gt;I know this is the classic PC gamer complaint, but 30 fps vsync on is extremely frustrating, especially when I just finished playing a few rounds of Overwatch at 240Hz. The difference is jarring. Thankfully most game ports now default to a limit of 60 after some successful complaint campaigns, but you could avoid having problems if you just query the OS for what it thinks the display framerate can go up to, and allow that. Then you won&amp;rsquo;t have to patch your game 5 years from now when everyone is complaining that you don&amp;rsquo;t support 480Hz, or whatever the fps of the moment is.&lt;/p&gt;
-
-&lt;h1 id=&#34;independent-2d-and-3d-resolution&#34;&gt;Independent 2D and 3D resolution&lt;/h1&gt;
-
-&lt;p&gt;The first time I remember seeing this option was on &lt;a href=&#34;www.champions-online.com/&#34; target=&#34;_blank&#34;&gt;Champions Online&lt;/a&gt; and it completely blew my mind. Having looked a bit deeper at how game engines produce their images, it is relatively straightforward to set your text and UI elements to full display resolution while allowing the in-game resolution to scale down (or up) to match the capabilities of the GPU in the system. This gives the user a better experience and allows them to customize based on their situation (laptop gamers especially enjoy these settings!).&lt;/p&gt;
-
-&lt;h1 id=&#34;borderless-window&#34;&gt;Borderless window&lt;/h1&gt;
-
-&lt;p&gt;I like to do multiple things with my computer. In particular, I really like to be able to stay in contact with my friends. When you launch a fullscreen application in windows, the alt-tab switch to my messenger client of choice (Discord these days) both hides your game, and takes entirely too long to switch to and from. If you&amp;rsquo;re a fullscreen application and I end up involved in a discussion about when and where our next group meetup is going to happen, I may never return, either because I forget you&amp;rsquo;re there in the background or because I get too frustrated to keep going back.&lt;/p&gt;
 </description>
     </item>
     

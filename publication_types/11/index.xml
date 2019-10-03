@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Josef Spjut</copyright>
-    <lastBuildDate>Fri, 17 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 10 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://josef.spjut.me/publication_types/11/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>FirstPersonScience: Quantifying Psychophysics for First Person Shooter Tasks</title>
+      <link>http://josef.spjut.me/publication/pos/p5/</link>
+      <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/pos/p5/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Esports Arms Race: Latency and Refresh Rate for Competitive Gaming Tasks</title>
