@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Josef Spjut</copyright>
-    <lastBuildDate>Sun, 28 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 04 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://josef.spjut.me/publication_types/7/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A deformable interface for human touch recognition using stretchable carbon nanotube dielectric elastomer sensors and deep neural networks</title>
+      <link>http://josef.spjut.me/publication/ref/c18/</link>
+      <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ref/c18/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Foveated AR: Dynamically-Foveated Augmented Reality Display</title>
