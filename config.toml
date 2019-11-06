@@ -112,7 +112,8 @@ defaultContentLanguageInSubdir = false
     'Conference Talk', #9
     'Dissertation', #10
     'Poster', #11
-    'Clinic Project' #12
+    'Patent', #12
+    'Clinic Project' #13
   ]
 
   # Social/Academic Networking
