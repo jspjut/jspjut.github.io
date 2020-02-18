@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Josef Spjut</copyright>
-    <lastBuildDate>Sun, 17 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://josef.spjut.me/publication_types/7/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Toward Standardized Classification of Foveated Displays</title>
+      <link>http://josef.spjut.me/publication/ref/c20/</link>
+      <pubDate>Sun, 22 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://josef.spjut.me/publication/ref/c20/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Latency of 30 ms Benefits First Person Targeting Tasks More Than Refresh Rate Above 60 Hz</title>
