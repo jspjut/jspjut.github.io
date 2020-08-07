@@ -15,6 +15,13 @@ or enthusiasts to create simple experiments, and collect data related to
 their player performance. You can see more about it on the [github page](https://github.com/NVlabs/abstract-fps)
 or you can download releases from the [release page](https://github.com/NVlabs/abstract-fps/releases).
 
+## Auto-Go (Game Jam)
+In 2019 for the Global Game Jam, I built a Pico-8 game I call Auto Go.
+The name is a parady of Auto Chess, which spawned a revival of the auto-battler genre
+I had been a fan of since the LegionTD days back in WarCraft 3.
+You can see my [global game jam page](https://globalgamejam.org/2019/games/auto-go) or head over
+to the [lexaloffle forum post](https://www.lexaloffle.com/bbs/?pid=61253) to play the game in a browser.
+
 ## Wizard Fight Race 7II
 Starting at 9:30 am on March 15, 2012, for about 72 hours, I led a
 small group of 4 total contributors in creating a simple arcade-style
