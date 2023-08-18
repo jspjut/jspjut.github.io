@@ -2,6 +2,20 @@
 title = "Media Coverage"
 +++
 
+## System Latency Challenge
+NVIDIA Research and The Meta (KovaaK's)
+
+* Kit Guru - December 14 2021,
+[Nvidia calls on gamers to test their FPS aim and system latency for a chance to win an RTX 3080 Ti](https://www.kitguru.net/gaming/matthew-wilson/nvidia-calls-on-gamers-to-test-their-fps-aim-and-system-latency-for-a-chance-to-win-an-rtx-3080-ti/)
+* WCCF Tech - December 14 2021,
+[NVIDIA System Latency Challenge Available for Free This Week in Kovaak’s Aim Trainer](https://wccftech.com/nvidia-system-latency-challenge-available-for-free-this-week-in-kovaaks-aim-trainer/)
+* CNET - December 14 2021,
+[Win a shot at an RTX 3080 Ti in Nvidia’s System Latency Challenge](https://www.cnet.com/tech/gaming/win-a-shot-at-an-rtx-3080-ti-in-nvidias-system-latency-challenge/)
+* PC Games N - December 14 2021,
+[Win RTX 3080 GPUs by taking part in Nvidia’s system latency challenge](https://www.pcgamesn.com/nvidia/system-latency-challenge-rtx-3080)
+* Hot Hardware - December 14 2021,
+[NVIDIA's System Latency Challenge Tests Your Ninja Gamer Reflexes For Sweet Prizes](https://hothardware.com/news/nvidia-system-latency-challenge-gamer-reflexes-prizes)
+
 ## Matching Prescription & Visual Acuity: Towards AR for Humans
 NVIDIA Research
 
